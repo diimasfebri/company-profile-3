@@ -1,57 +1,86 @@
 <template>
-<div class="container">
-  <div class="left">
-    <span class="button">services</span>
-    <span class="button">out work</span>
-    <span class="button">our process</span>
-    <span class="button">about us</span>
+<div clas="container">
+ <div class="top">
+    <div class="left">
+      <span class="button">SERVICES</span>
+      <span class="button">OUR WORK</span>
+      <span class="button">OUR PROCESS</span>
+      <span class="button">ABOUT US</span>
+    </div>
+    <div class="center">
+      <div class="image"></div>
+    </div>
+    <div class="right">
+
+      <span class="button-hire"> HIRE US</span>
+    </div>
   </div>
-  <div class="center">
-    <div class="image"></div>
-  </div>
-  <div class="right">
-    <span class="hire us"> HIRE US</span>
-  </div>
+  <nuxt />
+ <!-- <div class="bottom">
+
+ </div> -->
 </div>
+
 </template>
 
 
 
 <style lang="scss" scoped>
 .container{
-  position: relative;
-  width: 100vw;
-  height: 3rem;
-  display: flex;
-<<<<<<< HEAD
-  color:red; 
-  margin-top: 2rem;
-  .left{
+ position: relative;
+ width: 100vw;
+ display: flex;
+ justify-content: flex-start; 
+  .top{
     position: relative;
+    width: 100vw;
+    height: 3rem;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 2rem;
-    span.button{
-      font-family: 'Manrope';
-      color: blue;
-      font-size: 16px;
-      font-weight: 400;
-      margin: 14px;
+    color:red; 
+    margin-top: 2rem;
+    .left{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 40rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 2.5rem;
+      span.button{
+        font-family: 'Antonio';
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 14px;
+      }
     }
+    .center{
+      position: relative;
+      width: 30rem;
+      background: red;
+      left: 3.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right{
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 2.5rem;
+      span.button-hire{
+        width: 3rem;
+        height: 1rem;
+      }
+    }
+    
+  }
+  // .bottom{
 
-  }
-  .right{
-    position: relative;
-    display: flex;
-    justify-items: flex-start;
-  }
-  
-=======
-  font-family: 'Antonio';
-  font-size: 24px;
->>>>>>> 255c06e31e8abeaeabf5cab1931d4bebf561859c
+  // } 
 }
 </style>
 
