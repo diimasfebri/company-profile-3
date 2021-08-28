@@ -82,14 +82,17 @@
   justify-content: flex-start;
   align-items: flex-start;
   .top{
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 3rem;
     display: flex;
     color: black; 
+    align-items: center;
     margin-top: 2rem;
+    z-index:3000;
     .left{
-      position: relative;
+      position: absolute;
+      left: 0;
       display: flex;
       flex-direction: row;
       width: 100%;
@@ -125,10 +128,9 @@
       }
     }
     .center{
-      position: relative;
+      position: absolute;
       width: 100%;
       display: flex;
-      right: 9rem;
       justify-content: center;
       align-items: center;
       .image{
@@ -140,7 +142,8 @@
       }
     }
     .right{
-      position: relative;
+      position: absolute;
+      right: 0;
       display: flex;
       width: 6rem;
       height: 100%;
