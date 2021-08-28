@@ -1,7 +1,62 @@
 <template>
 <div class="container">
-tes
-</div>
+ <div class="top">
+    <div class="left">
+      <span class="button">SERVICES</span>
+      <span class="button">OUR WORK</span>
+      <span class="button">OUR PROCESS</span>
+      <span class="button">ABOUT US</span>
+    </div>
+    <div class="center">
+      <div class="image"></div>
+    </div>
+    <div class="right">
+
+      <span class="button-hire"> HIRE US</span>
+    </div>
+ </div>
+ <nuxt />
+ <div class="bottom">
+   <div class="top-section">
+     <div class="left">
+       <div class="address">
+         <span>Jl. Ketintang Baru IV No.17, Surabaya, Jawa Timur</span>
+       </div>
+       <div class="number">
+         <span>+62 857-3378-4892</span>
+       </div>
+       <div class="email">
+       </div>
+     </div>
+     <div class="right">
+       <div class="sign-up">
+         <span>SIGN UP FOR OUR NEWSLETTER</span>
+       </div>
+       <div class="submit">
+         <!-- <input type="email"> -->
+       </div>
+     </div>
+   </div>
+   <div class="center-section">
+     <span> TEST</span>
+   </div>
+   <div class="bottom-section">
+     <div class="left">
+      <span class="button">ABOUT US</span>
+      <span class="button">OUR WORK</span>
+      <span class="button">OUR PROCESS</span>
+     </div>
+     <div class="right">
+       <span class="button">CUSTOM DESIGN</span>
+      <span class="button">SCREEN PRINTING</span>
+      <span class="button">HEADWEAR</span>
+      <span class="button">CUT AND SEW</span>
+      <span class="button">ACCESSORIES</span>
+     </div>
+   </div>
+   <div class="social-media"></div>
+ </div>
+</div> 
 </template>
 
 
@@ -9,10 +64,70 @@ tes
 <style lang="scss" scoped>
 .container{
   position: relative;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  font-family: 'Antonio';
+  justify-content: flex-start;
+  .top{
+    position: relative;
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    color:red; 
+    margin-top: 2rem;
+    .left{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 40rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 2.5rem;
+      span.button{
+        font-family: 'Antonio';
+        color: black;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 14px;
+      }
+    }
+    .center{
+      position: relative;
+      width: 30rem;
+      background: red;
+      left: 3.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .right{
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      margin-right: 2.5rem;
+      span.button-hire{
+        width: 3rem;
+        height: 1rem;
+      }
+    }
+    
+  }
+  .bottom{
+    position: relative;
+    display: flex;
+
+    width: 100%;
+    height: 120%;
+  }
 }
+
 </style>
+
+
+
 
 <style lang="scss">
 ::-webkit-scrollbar {
