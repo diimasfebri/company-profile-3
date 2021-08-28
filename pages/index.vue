@@ -1,6 +1,5 @@
 <template>
 <div class="body-container"> 
-  test
 </div>
 </template>
 
