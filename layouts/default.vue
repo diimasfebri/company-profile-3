@@ -1,6 +1,17 @@
 <template>
 <div class="container">
-tes
+  <div class="left">
+    <span class="button">services</span>
+    <span class="button">out work</span>
+    <span class="button">our process</span>
+    <span class="button">about us</span>
+  </div>
+  <div class="center">
+    <div class="image"></div>
+  </div>
+  <div class="right">
+    <span class="hire us"> HIRE US</span>
+  </div>
 </div>
 </template>
 
@@ -9,9 +20,38 @@ tes
 <style lang="scss" scoped>
 .container{
   position: relative;
+  width: 100vw;
+  height: 3rem;
   display: flex;
+  color:red; 
+  margin-top: 2rem;
+  .left{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 2rem;
+    span.button{
+      font-family: 'Manrope';
+      color: blue;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 14px;
+    }
+
+  }
+  .right{
+    position: relative;
+    display: flex;
+    justify-items: flex-start;
+  }
+  
 }
 </style>
+
+
+
 
 <style lang="scss">
 ::-webkit-scrollbar {
