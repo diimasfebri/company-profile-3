@@ -1,5 +1,8 @@
 <template>
 <div class="body-container"> 
+  <div class="background">
+
+  </div>
 </div>
 </template>
 
