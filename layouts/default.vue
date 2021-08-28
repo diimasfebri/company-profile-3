@@ -2,6 +2,17 @@
 <div class="container">
  <div class="top">
     <div class="left">
+<<<<<<< HEAD
+=======
+      <div class="dragdown" @click="opacity=1">
+        <div class="list">ALL</div>
+        <div class="list">CUSTOM DESIGN</div>
+        <div class="list">SCREEN PRINTING</div>
+        <div class="list">HEADWEAR</div>
+        <div class="list">CUT & SAW</div>
+        <div class="list">ACCESSORIES</div>
+      </div>
+>>>>>>> 7415f256b78d8fdb63a22b67060cbd2e985a5345
       <span class="button">SERVICES</span>
       <span class="button">OUR WORK</span>
       <span class="button">OUR PROCESS</span>
@@ -74,12 +85,13 @@
   justify-content: flex-start;
   align-items: flex-start;
   .top{
-    position: relative;
+    position: fixed;
     width: 100%;
     height: 3rem;
     display: flex;
     color:red; 
     margin-top: 2rem;
+    z-index:3000;
     .left{
       position: relative;
       display: flex;
@@ -88,6 +100,29 @@
       justify-content: flex-start;
       align-items: center;
       margin-left: 2.5rem;
+<<<<<<< HEAD
+=======
+      .dragdown{
+          position: absolute;
+          width: 6rem;
+          height: 8rem;
+          top: 2.5rem;
+          left: 0.5rem;
+          background: #f0EEE3;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          line-height: 1.75;
+          padding-left: 1rem;
+          opacity: 0;
+          .list{
+            font-family: 'Antonio';
+            font-weight: 700;
+            font-size: 15px;
+          }
+      }
+>>>>>>> 7415f256b78d8fdb63a22b67060cbd2e985a5345
       span.button{
         font-family: 'Antonio';
         font-weight: 700;
