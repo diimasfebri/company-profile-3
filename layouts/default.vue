@@ -2,14 +2,6 @@
 <div class="container">
  <div class="top">
     <div class="left">
-      <div class="dragdown">
-        <div class="list">ALL</div>
-        <div class="list">CUSTOM DESIGN</div>
-        <div class="list">SCREEN PRINTING</div>
-        <div class="list">HEADWEAR</div>
-        <div class="list">CUT & SAW</div>
-        <div class="list">ACCESSORIES</div>
-      </div>
       <span class="button">SERVICES</span>
       <span class="button">OUR WORK</span>
       <span class="button">OUR PROCESS</span>
@@ -86,38 +78,16 @@
     width: 100%;
     height: 3rem;
     display: flex;
-    color: black; 
-    align-items: center;
+    color:red; 
     margin-top: 2rem;
     .left{
-      position: absolute;
-      left: 0;
+      position: relative;
       display: flex;
       flex-direction: row;
       width: 100%;
       justify-content: flex-start;
       align-items: center;
       margin-left: 2.5rem;
-      .dragdown{
-          position: absolute;
-          width: 6rem;
-          height: 8rem;
-          top: 2.5rem;
-          left: 0.5rem;
-          background: #f0EEE3;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
-          line-height: 1.75;
-          padding-left: 1rem;
-          
-          .list{
-            font-family: 'Antonio';
-            font-weight: 700;
-            font-size: 15px;
-          }
-      }
       span.button{
         font-family: 'Antonio';
         font-weight: 700;
@@ -127,9 +97,10 @@
       }
     }
     .center{
-      position: absolute;
+      position: relative;
       width: 100%;
       display: flex;
+      right: 9rem;
       justify-content: center;
       align-items: center;
       .image{
@@ -141,8 +112,7 @@
       }
     }
     .right{
-      position: absolute;
-      right: 0;
+      position: relative;
       display: flex;
       width: 6rem;
       height: 100%;
@@ -185,7 +155,7 @@
     .top-section{ 
       position: relative;
       top: 2rem;
-      width: 100%;
+      width: 40%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -199,6 +169,7 @@
         span.address{
         font-family: "Quicksand";
         font-size: 1rem;
+
         }
       }
     }
@@ -206,7 +177,28 @@
 
     }
     .bottom-section{
-
+      .left{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span.button{
+           font-family: "Quicksand";
+           font-size: 1rem;
+        }
+      }
+      .right{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span.button{
+          font-family: "Quicksand";
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
