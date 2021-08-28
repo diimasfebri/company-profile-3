@@ -1,5 +1,5 @@
 <template>
-<div clas="container">
+<div class="container">
  <div class="top">
     <div class="left">
       <span class="button">SERVICES</span>
@@ -14,12 +14,9 @@
 
       <span class="button-hire"> HIRE US</span>
     </div>
-  </div>
-  <nuxt />
- <!-- <div class="bottom">
+ </div>
+</div> 
 
- </div> -->
-</div>
 
 </template>
 
@@ -27,13 +24,14 @@
 
 <style lang="scss" scoped>
 .container{
- position: relative;
- width: 100vw;
- display: flex;
- justify-content: flex-start; 
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: flex-start;
   .top{
     position: relative;
-    width: 100vw;
+    width: 100%;
     height: 3rem;
     display: flex;
     color:red; 
@@ -78,10 +76,8 @@
     }
     
   }
-  // .bottom{
-
-  // } 
 }
+
 </style>
 
 
