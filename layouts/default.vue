@@ -26,6 +26,46 @@
       </div>
     </div>
  </div>
+ <nuxt />
+ <div class="bottom">
+   <div class="top-section">
+     <div class="left">
+       <span class="address">Jl. Ketintang Baru IV No.17, Surabaya, Jawa Timur</span>
+       <span class="number">+62 857-3378-4892</span>
+       <div class="email-container">
+         <span class="email">Email : </span>
+         <span class="name">redian@gmail.com</span>
+       </div>
+
+     </div>
+     <div class="right">
+       <div class="sign-up">
+         <span>SIGN UP FOR OUR NEWSLETTER</span>
+       </div>
+       <div class="submit">
+         <!-- <input type="email"> -->
+       </div>
+     </div>
+   </div>
+   <div class="center-section">
+     <span> TEST</span>
+   </div>
+   <div class="bottom-section">
+     <div class="left">
+      <span class="button">ABOUT US</span>
+      <span class="button">OUR WORK</span>
+      <span class="button">OUR PROCESS</span>
+     </div>
+     <div class="right">
+       <span class="button">CUSTOM DESIGN</span>
+      <span class="button">SCREEN PRINTING</span>
+      <span class="button">HEADWEAR</span>
+      <span class="button">CUT AND SEW</span>
+      <span class="button">ACCESSORIES</span>
+     </div>
+   </div>
+   <div class="social-media"></div>
+ </div>
 </div> 
 </template>
 
@@ -35,9 +75,12 @@
 .container{
   position: relative;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
+  min-height: calc((var(--vh, lvh) *100));
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   .top{
     position: relative;
     width: 100%;
@@ -127,6 +170,42 @@
       }
     }
     
+  }
+  .bottom{
+    position: relative;
+    display: flex;
+    background: #282829;
+    width: 100%;
+    height: 110vh; 
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    .top-section{ 
+      position: relative;
+      top: 2rem;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      .left{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span.address{
+        font-family: "Quicksand";
+        font-size: 1rem;
+        }
+      }
+    }
+    .center-section{
+
+    }
+    .bottom-section{
+
+    }
   }
 }
 
