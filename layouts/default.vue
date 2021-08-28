@@ -10,6 +10,8 @@ tes
 .container{
   position: relative;
   display: flex;
+  font-family: 'Antonio';
+  font-size: 24px;
 }
 </style>
 
