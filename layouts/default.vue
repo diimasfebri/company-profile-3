@@ -23,6 +23,7 @@
   width: 100vw;
   height: 3rem;
   display: flex;
+<<<<<<< HEAD
   color:red; 
   margin-top: 2rem;
   .left{
@@ -47,6 +48,10 @@
     justify-items: flex-start;
   }
   
+=======
+  font-family: 'Antonio';
+  font-size: 24px;
+>>>>>>> 255c06e31e8abeaeabf5cab1931d4bebf561859c
 }
 </style>
 
