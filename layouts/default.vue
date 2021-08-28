@@ -2,7 +2,7 @@
 <div class="container">
  <div class="top">
     <div class="left">
-      <div class="dragdown">
+      <div class="dragdown" @click="opacity=1">
         <div class="list">ALL</div>
         <div class="list">CUSTOM DESIGN</div>
         <div class="list">SCREEN PRINTING</div>
@@ -68,7 +68,7 @@
           align-items: flex-start;
           line-height: 1.75;
           padding-left: 1rem;
-          
+          opacity: 0;
           .list{
             font-family: 'Antonio';
             font-weight: 700;
