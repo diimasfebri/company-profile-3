@@ -160,7 +160,7 @@
         background-color: #b48645;
         span.button-hire{
           position: relative;
-          width: 3rem;
+          width: 4rem;
           height: 1rem;
           color: white;
           font-family: Antonio;
