@@ -2,6 +2,9 @@
 <div class="body-container"> 
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+<<<<<<< HEAD
+    <div class="semua">test</div>
+=======
   <div class="desc-container">
     <div class="desc">
       <span>D*MN GOOD APPAREL</span>
@@ -9,6 +12,7 @@
     <div class="button">
       <span class="desc">VIEW OR WORK</span>
     </div>
+>>>>>>> 0139df769163faf3c7466b26b0bdcbe6672e5eb9
   </div>
   </div>
   <div class="slide-two">
@@ -66,12 +70,22 @@
       width: 100vw;
       height: 100vh;
     }
+<<<<<<< HEAD
+    .semua{
+=======
      
     .desc-container{
+>>>>>>> 0139df769163faf3c7466b26b0bdcbe6672e5eb9
       position: relative;
       display: flex;
       width: 100%;
       height: 100%;
+<<<<<<< HEAD
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+=======
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -116,7 +130,12 @@
       position: absolute;
       width: 100vw;
       height: 100vh;
+<<<<<<< HEAD
   }
+=======
+>>>>>>> 0139df769163faf3c7466b26b0bdcbe6672e5eb9
+ }
+>>>>>>> b8b50a54c0cd45a4cef2cc513100874648ff2cca
  .button-container{
   position: relative;
   display: flex;
