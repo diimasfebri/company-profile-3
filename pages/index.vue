@@ -2,9 +2,6 @@
 <div class="body-container"> 
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-<<<<<<< HEAD
-    <div class="semua">test</div>
-=======
   <div class="desc-container">
     <div class="desc">
       <span>D*MN GOOD APPAREL</span>
@@ -12,12 +9,11 @@
     <div class="button">
       <span class="desc">VIEW OR WORK</span>
     </div>
->>>>>>> 0139df769163faf3c7466b26b0bdcbe6672e5eb9
   </div>
   </div>
   <div class="slide-two">
     <img class="bg-content" src="https://images.unsplash.com/32/9FybtVFNSEOxogGzIvHJ_IMG_2226.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" >
-  <div class="button-container">
+    <div class="button-container">
     <div class="button">
       <span class="desc">OUR WORK</span>
     </div>
@@ -47,22 +43,12 @@
       width: 100vw;
       height: 100vh;
     }
-<<<<<<< HEAD
-    .semua{
-=======
      
     .desc-container{
->>>>>>> 0139df769163faf3c7466b26b0bdcbe6672e5eb9
       position: relative;
       display: flex;
       width: 100%;
       height: 100%;
-<<<<<<< HEAD
-      justify-content: center;
-      align-items: center;
-      color: white;
-    }
-=======
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -96,7 +82,6 @@
         }
       }
     }
-
  }
  .slide-two{
    position: relative;
@@ -107,7 +92,6 @@
       position: absolute;
       width: 100vw;
       height: 100vh;
->>>>>>> 0139df769163faf3c7466b26b0bdcbe6672e5eb9
  }
  .button-container{
   position: relative;
