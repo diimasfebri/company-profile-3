@@ -2,8 +2,6 @@
 <div class="container">
  <div class="top">
     <div class="left">
-<<<<<<< HEAD
-=======
       <div class="dragdown" @click="opacity=1">
         <div class="list">ALL</div>
         <div class="list">CUSTOM DESIGN</div>
@@ -12,7 +10,6 @@
         <div class="list">CUT & SAW</div>
         <div class="list">ACCESSORIES</div>
       </div>
->>>>>>> 7415f256b78d8fdb63a22b67060cbd2e985a5345
       <span class="button">SERVICES</span>
       <span class="button">OUR WORK</span>
       <span class="button">OUR PROCESS</span>
@@ -100,8 +97,6 @@
       justify-content: flex-start;
       align-items: center;
       margin-left: 2.5rem;
-<<<<<<< HEAD
-=======
       .dragdown{
           position: absolute;
           width: 6rem;
@@ -122,7 +117,6 @@
             font-size: 15px;
           }
       }
->>>>>>> 7415f256b78d8fdb63a22b67060cbd2e985a5345
       span.button{
         font-family: 'Antonio';
         font-weight: 700;
