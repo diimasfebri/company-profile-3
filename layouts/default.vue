@@ -2,6 +2,8 @@
 <div class="container">
  <div class="top">
     <div class="left">
+<<<<<<< HEAD
+=======
       <div class="dragdown" @click="opacity=1">
         <div class="list">ALL</div>
         <div class="list">CUSTOM DESIGN</div>
@@ -10,6 +12,7 @@
         <div class="list">CUT & SAW</div>
         <div class="list">ACCESSORIES</div>
       </div>
+>>>>>>> 7415f256b78d8fdb63a22b67060cbd2e985a5345
       <span class="button">SERVICES</span>
       <span class="button">OUR WORK</span>
       <span class="button">OUR PROCESS</span>
@@ -86,19 +89,19 @@
     width: 100%;
     height: 3rem;
     display: flex;
-    color: black; 
-    align-items: center;
+    color:red; 
     margin-top: 2rem;
     z-index:3000;
     .left{
-      position: absolute;
-      left: 0;
+      position: relative;
       display: flex;
       flex-direction: row;
       width: 100%;
       justify-content: flex-start;
       align-items: center;
       margin-left: 2.5rem;
+<<<<<<< HEAD
+=======
       .dragdown{
           position: absolute;
           width: 6rem;
@@ -119,6 +122,7 @@
             font-size: 15px;
           }
       }
+>>>>>>> 7415f256b78d8fdb63a22b67060cbd2e985a5345
       span.button{
         font-family: 'Antonio';
         font-weight: 700;
@@ -128,9 +132,10 @@
       }
     }
     .center{
-      position: absolute;
+      position: relative;
       width: 100%;
       display: flex;
+      right: 9rem;
       justify-content: center;
       align-items: center;
       .image{
@@ -142,8 +147,7 @@
       }
     }
     .right{
-      position: absolute;
-      right: 0;
+      position: relative;
       display: flex;
       width: 6rem;
       height: 100%;
@@ -186,7 +190,7 @@
     .top-section{ 
       position: relative;
       top: 2rem;
-      width: 100%;
+      width: 40%;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
@@ -200,6 +204,7 @@
         span.address{
         font-family: "Quicksand";
         font-size: 1rem;
+
         }
       }
     }
@@ -207,7 +212,28 @@
 
     }
     .bottom-section{
-
+      .left{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span.button{
+           font-family: "Quicksand";
+           font-size: 1rem;
+        }
+      }
+      .right{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        span.button{
+          font-family: "Quicksand";
+          font-size: 1rem;
+        }
+      }
     }
   }
 }
