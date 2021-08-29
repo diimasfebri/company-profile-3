@@ -35,15 +35,16 @@
          <span class="email">Email : </span>
          <span class="name"> redian@gmail.com</span>
        </div>
-
      </div>
      <div class="right">
        <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
        <div class="signup-container">
-         <input id="" type="email" name="" required placeholder="Your Email" >
-         <div class="button">
-          <span class="submit"> SUBMIT</span>
-         </div>
+          <input  value="your email" class="sign-up">
+            <span>Your-email</span>
+          <input>
+          <div class="submit">
+            <span>SUBMIT</span>
+          </div>
        </div>
      </div>
     </div>
@@ -160,7 +161,7 @@
         background-color: #b48645;
         span.button-hire{
           position: relative;
-          width: 3rem;
+          width: 4rem;
           height: 1rem;
           color: white;
           font-family: Antonio;
@@ -253,34 +254,16 @@
           flex-direction: row;
           justify-content: flex-start;
           align-items: flex-start;
-          input{
+          input.sign-up{
             position: relative;
             display: flex;
-            margin-top: 0.5rem;
-            height: 28px;
-            width: 60%;
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
             background: #282829;
-            border: 1px solid #b48645;
-          }
-          .button{
-            position: relative;
-            display: flex;
-            width: 40%; 
-            height: 30px; 
-            margin-top: 0.5rem;
-            margin-left: 0.5rem;
-            background: #f0EEE3;
-            justify-content: center;
-            align-items: center;
-            span.submit{
-              font-family: "Antonio";
-              font-size: 18px;
-              color: #282829;
-              font-weight: 900;
-
-            }
           }
         }
+
       }
     }
     .center-section{
