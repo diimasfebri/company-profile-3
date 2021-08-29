@@ -35,13 +35,16 @@
          <span class="email">Email : </span>
          <span class="name"> redian@gmail.com</span>
        </div>
-
      </div>
      <div class="right">
        <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
-       <div class="sign-up">
-       </div>
-       <div class="submit">
+       <div class="signup-container">
+          <input  value="your email" class="sign-up">
+            <span>Your-email</span>
+          </input>
+          <div class="submit">
+            <span>SUBMIT</span>
+          </div>
        </div>
      </div>
     </div>
@@ -192,6 +195,7 @@
         position: relative;
         display: flex;
         width: 40%;
+        height: 100%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -228,6 +232,7 @@
         position: relative;
         display: flex;
         width: 60%;
+        height: 100%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -241,6 +246,23 @@
           justify-content: flex-start;
           align-items: center;
         }
+        .signup-container{
+          position: relative;
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          input.sign-up{
+            position: relative;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            border: 1px solid black;
+            background: #282829;
+          }
+        }
+
       }
     }
     .center-section{
