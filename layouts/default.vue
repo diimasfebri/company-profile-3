@@ -100,8 +100,6 @@
       justify-content: flex-start;
       align-items: center;
       margin-left: 2.5rem;
-<<<<<<< HEAD
-=======
       .dragdown{
           position: absolute;
           width: 6rem;
@@ -122,7 +120,6 @@
             font-size: 15px;
           }
       }
->>>>>>> 7415f256b78d8fdb63a22b67060cbd2e985a5345
       span.button{
         font-family: 'Antonio';
         font-weight: 700;
