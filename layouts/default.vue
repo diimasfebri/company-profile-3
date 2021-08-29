@@ -39,17 +39,20 @@
      </div>
      <div class="right">
        <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
-       <div class="sign-up">
-       </div>
-       <div class="submit">
+       <div class="signup-container">
+         <input id="" type="email" name="" required placeholder="Your Email" >
+         <div class="button">
+          <span class="submit"> SUBMIT</span>
+         </div>
        </div>
      </div>
     </div>
    <div class="center-section">
-     <!-- <span> TEST</span> -->
-    </div>
-   <!-- <div class="bottom-section">
+     <span class="desc">SOME MORE INFO, AKA THE FOOTER</span>
+   </div>
+   <div class="bottom-section">
      <div class="left">
+       <span class="desc">SITE</span>
       <span class="button">ABOUT US</span>
       <span class="button">OUR WORK</span>
       <span class="button">OUR PROCESS</span>
@@ -61,7 +64,7 @@
       <span class="button">CUT AND SEW</span>
       <span class="button">ACCESSORIES</span>
      </div>
-    </div> -->
+    </div> 
    <div class="social-media">
     </div>
    </div>
@@ -176,22 +179,23 @@
     display: flex;
     background: #282829;
     width: 100%;
-    height: 110vh; 
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     .top-section{ 
       position: relative;
       width: 40%;
+      height: 100%;
       display: flex;
       top: 5rem;
       flex-direction: row;
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-start;
       .left{
         position: relative;
         display: flex;
         width: 40%;
+        height: 100%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -228,6 +232,7 @@
         position: relative;
         display: flex;
         width: 60%;
+        height: 100%;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -241,20 +246,69 @@
           justify-content: flex-start;
           align-items: center;
         }
+        .signup-container{
+          position: relative;
+          display: flex;
+          width: 100%;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: flex-start;
+          input{
+            position: relative;
+            display: flex;
+            margin-top: 0.5rem;
+            height: 28px;
+            width: 60%;
+            background: #282829;
+            border: 1px solid #b48645;
+          }
+          .button{
+            position: relative;
+            display: flex;
+            width: 40%; 
+            height: 30px; 
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+            background: #f0EEE3;
+            justify-content: center;
+            align-items: center;
+            span.submit{
+              font-family: "Antonio";
+              font-size: 18px;
+              color: #282829;
+              font-weight: 900;
+
+            }
+          }
+        }
       }
     }
     .center-section{
-      span{
-
-      }
+      position: relative;
+      display: flex;
+      background: #282829;
+      width: 40%;
+      height: 100%;
+      justify-content: flex-start;
+      align-items: flex-start; 
+      span.desc{
+        position: relative;
+        color: white;
+        font-family: "Antonio";
+        font-size: 5.5rem;
+        font-weight: 600;
+        display: flex;
+      }     
     }
     .bottom-section{
       .left{
-        position: relative;
-        display: flex;
-        width: 100%;
-        justify-content: flex-start;
-        align-items: flex-start;
+        span.desc{
+         position: relative;
+         display: flex;
+         width: 100%;
+         justify-content: flex-start;
+         align-items: flex-start;
+        }
         span.button{
           font-family: "Quicksand";
           font-size: 1.5rem;
@@ -274,11 +328,9 @@
       }
     }
     .social-media{
-
     }
   }
 }
-
 </style>
 
 
