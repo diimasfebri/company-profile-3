@@ -13,12 +13,36 @@
   </div>
   <div class="slide-two">
     <img class="bg-content" src="https://images.unsplash.com/32/9FybtVFNSEOxogGzIvHJ_IMG_2226.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" >
-    <div class="button-container">
+  <div class="button-container">
     <div class="button">
       <span class="desc">OUR WORK</span>
     </div>
   </div>
   </div>
+  <div class="slide-three">
+    <img class="bg-content" src="https://images.unsplash.com/photo-1515768678138-4ba95ba6ec96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80">
+  <div class="desc-container">
+    <span class="desc">OUR SERVICES</span>
+    <div class="menu-list">
+      <div class="menu-item">
+        <span>CUSTOM DESIGN</span>
+      </div>
+      <div class="menu-item">
+        <span>SCREEN PRINTING</span>
+      </div>
+      <div class="menu-item">
+        <span>HEADWEAR</span>
+      </div>
+      <div class="menu-item">
+        <span>CUT & SAW</span>
+      </div>
+      <div class="menu-item">
+        <span>ACCESSORIES</span>
+      </div>
+    </div>
+  </div>
+  </div>
+
 
 </div>
 </template>
@@ -33,7 +57,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
- .slide-one{
+.slide-one{
    position: relative;
    width: 100vw;
    height: 100vh;
@@ -117,10 +141,52 @@
       font-size: 0.8rem;
       font-weight: 900;
       color: white;
-  
-   }
+      }
    }
  }
+}
+.slide-three{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+   img.bg-content{
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+   }
+  .desc-container{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 4rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+   span.desc{
+     font-family: Antonio;
+     color: white;
+     font-size: 0.8rem;
+     font-weight: 900;
+    .menu-list{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .menu-item{
+        position: relative;
+        display: flex;
+        border-top: 1px solid black;
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+   }
+  }
 }
 }
 </style>
