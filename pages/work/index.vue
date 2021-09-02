@@ -3,55 +3,57 @@
     <div class="slide-one">
       <img
         class="bg-content"
-        src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+        src="https://images.unsplash.com/photo-1514483127413-f72f273478c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
       />
       <div class="desc-container">
         <div class="desc">
-          <span>test</span>
-        </div>
-        <div class="button">
-          <span class="desc">VIEW OR WORK</span>
+          <span>OUR WORK</span>
         </div>
       </div>
     </div>
     <div class="slide-two">
       <img
         class="bg-content"
-        src="https://images.unsplash.com/32/9FybtVFNSEOxogGzIvHJ_IMG_2226.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
+        src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
       />
       <div class="button-container">
+        <div class="desc">
+          <span>RECENT WORK</span>
+        </div>
+        <div class="item">
+          <span>For the last 6 years, we have been supplying Hangar 24 with world class and designs and top quality 
+            apparel that has catapulted their retail sales
+          </span>
+        </div>
         <div class="button">
-          <span class="desc">OUR WORK</span>
+          <span class="desc">HIRE US</span>
         </div>
       </div>
     </div>
     <div class="slide-three">
       <img
         class="bg-content"
-        src="https://images.unsplash.com/photo-1515768678138-4ba95ba6ec96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80"
+        src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
       />
       <div class="desc-container">
-        <span class="desc">OUR SERVICES</span>
-        <div class="menu-list">
-          <div class="menu-item">
-            <span>CUSTOM DESIGN</span>
-          </div>
-          <div class="menu-item">
-            <span>SCREEN PRINTING</span>
-          </div>
-          <div class="menu-item">
-            <span>HEADWEAR</span>
-          </div>
-          <div class="menu-item">
-            <span>CUT & SAW</span>
-          </div>
-          <div class="menu-item">
-            <span>ACCESSORIES</span>
-          </div>
+        <span>SCROLL TO SEE MORE COOL SH*T -- ></span>
         </div>
       </div>
-    </div>
+      <div class="slide-four">
+        <img
+        class="bg-content"
+        src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80"
+        />
+      </div>
+      <div class="slide-five">
+        <img
+        class="bg-content"
+        src="https://images.unsplash.com/photo-1520529890308-f503006340b4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=747&q=80"
+        />
+      </div>
   </div>
+  </div>
+    
 </template>
 
 <style lang="scss" scoped>
@@ -132,12 +134,26 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      .desc{
+        font-family: 'Antonio';
+        font-size: 100px;
+      }
+      .item{
+        font-family: 'Antonio';
+        position: relative;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+      }
       .button {
         position: relative;
         display: flex;
         width: 9.5rem;
         height: 1.5rem;
-        background: #282829;
+        background: #b48645;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -195,5 +211,27 @@
       }
     }
   }
+}
+.slide-four{
+  position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    img.bg-content {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+    }
+}
+.slide-five{
+  position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    img.bg-content {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+    }
 }
 </style>
