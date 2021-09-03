@@ -1,99 +1,98 @@
 <template>
-<div class="container">
-  <div class="top">
-    <div class="left">
-      <div class="dragdown">
-        <div class="list">CUSTOM DESIGN</div>
-        <div class="list">SCREEN PRINTING</div>
-        <div class="list">HEADWEAR</div>
-        <div class="list">CUT & SAW</div>
-        <div class="list">ACCESSORIES</div>
-      </div>
+  <div class="container">
+    <div class="top">
+      <div class="left">
+        <div class="dragdown">
+          <div class="list">CUSTOM DESIGN</div>
+          <div class="list">SCREEN PRINTING</div>
+          <div class="list">HEADWEAR</div>
+          <div class="list">CUT & SAW</div>
+          <div class="list">ACCESSORIES</div>
+        </div>
         <span class="button">SERVICES</span>
         <span class="button">OUR WORK</span>
         <span class="button">OUR PROGRESS</span>
         <span class="button">ABOUT US</span>
-    </div>
-    <div class="center">
+      </div>
+      <div class="center">
         <div class="image">
-          <img src="/suavecito.png" alt="">
+          <img src="/suavecito.png" alt="" />
         </div>
-    </div>
-    <div class="right">
+      </div>
+      <div class="right">
         <div class="button">
           <span class="button-hire"> HIRE US</span>
         </div>
+      </div>
+    </div>
+    <nuxt />
+    <div class="bottom">
+      <div class="top-section">
+        <div class="left">
+          <span class="address"
+            >Jl. Ketintang Baru IV No.17, Surabaya, Jawa Timur</span
+          >
+          <span class="number">+62 857-3378-4892</span>
+          <div class="email-container">
+            <span class="email">Email : </span>
+            <span class="name"> redian@gmail.com</span>
+          </div>
+        </div>
+        <div class="right">
+          <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
+          <div class="signup-container">
+            <input value="your email" class="sign-up" />
+            <span>Your-email</span>
+            <input />
+            <div class="submit">
+              <span>SUBMIT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="center-section">
+        <span class="desc">SOME MORE INFO, AKA THE FOOTER</span>
+      </div>
+      <div class="bottom-section">
+        <div class="left">
+          <span class="desc">SITE</span>
+          <span class="button">ABOUT US</span>
+          <span class="button">OUR WORK</span>
+          <span class="button">OUR PROCESS</span>
+        </div>
+        <div class="right">
+          <span class="desc">SERVICES</span>
+          <span class="button">CUSTOM DESIGN</span>
+          <span class="button">SCREEN PRINTING</span>
+          <span class="button">HEADWEAR</span>
+          <span class="button">CUT AND SEW</span>
+          <span class="button">ACCESSORIES</span>
+        </div>
+      </div>
+      <div class="social-media"></div>
     </div>
   </div>
-   <nuxt />
-  <div class="bottom">
-   <div class="top-section">
-     <div class="left">
-       <span class="address">Jl. Ketintang Baru IV No.17, Surabaya, Jawa Timur</span>
-       <span class="number">+62 857-3378-4892</span>
-       <div class="email-container">
-         <span class="email">Email : </span>
-         <span class="name"> redian@gmail.com</span>
-       </div>
-     </div>
-     <div class="right">
-       <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
-       <div class="signup-container">
-          <input  value="your email" class="sign-up">
-            <span>Your-email</span>
-          <input>
-          <div class="submit">
-            <span>SUBMIT</span>
-          </div>
-       </div>
-     </div>
-    </div>
-   <div class="center-section">
-     <span class="desc">SOME MORE INFO, AKA THE FOOTER</span>
-   </div>
-   <div class="bottom-section">
-     <div class="left">
-      <span class="desc">SITE</span>
-      <span class="button">ABOUT US</span>
-      <span class="button">OUR WORK</span>
-      <span class="button">OUR PROCESS</span>
-     </div>
-     <div class="right">
-       <span class="desc">SERVICES</span>
-       <span class="button">CUSTOM DESIGN</span>
-      <span class="button">SCREEN PRINTING</span>
-      <span class="button">HEADWEAR</span>
-      <span class="button">CUT AND SEW</span>
-      <span class="button">ACCESSORIES</span>
-     </div>
-    </div> 
-   <div class="social-media">
-    </div>
-   </div>
- </div>
 </template>
 
-
-
 <style lang="scss" scoped>
-.container{
+.container {
   position: relative;
   width: 100vw;
   min-height: 100vh;
-  min-height: calc((var(--vh, lvh) *100));
+  min-height: calc((var(--vh, lvh) * 100));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  .top{
+  .top {
     position: fixed;
     width: 100%;
     height: 3rem;
     display: flex;
     align-items: center;
     margin-top: 2rem;
-    z-index:3000;
-    .left{
+    z-index: 3000;
+    .left {
       position: absolute;
       display: flex;
       flex-direction: row;
@@ -102,26 +101,26 @@
       justify-content: flex-start;
       align-items: center;
       margin-left: 2.5rem;
-      .dragdown{
-          position: absolute;
-          width: 6rem;
-          height: 8rem;
-          top: 2.5rem;
-          left: 0.5rem;
-          background: #f0EEE3;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: flex-start;
-          line-height: 1.75;
-          padding-left: 1rem;
-          .list{
-            font-family: 'Antonio';
-            font-weight: 700;
-            font-size: 15px;
-          }
+      .dragdown {
+        position: absolute;
+        width: 6rem;
+        height: 8rem;
+        top: 2.5rem;
+        left: 0.5rem;
+        background: #f0eee3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        line-height: 1.75;
+        padding-left: 1rem;
+        .list {
+          font-family: 'Antonio';
+          font-weight: 700;
+          font-size: 15px;
+        }
       }
-      span.button{
+      span.button {
         font-family: 'Antonio';
         font-weight: 700;
         color: white;
@@ -129,21 +128,21 @@
         margin: 14px;
       }
     }
-    .center{
+    .center {
       position: relative;
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      .image{
+      .image {
         position: absolute;
-        img{
+        img {
           width: 6.5rem;
           height: 5.5rem;
         }
       }
     }
-    .right{
+    .right {
       position: absolute;
       display: flex;
       width: 6rem;
@@ -153,14 +152,14 @@
       justify-content: center;
       align-items: center;
       margin-right: 4rem;
-      .button{
+      .button {
         position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 1.5rem;
         background-color: #b48645;
-        span.button-hire{
+        span.button-hire {
           position: relative;
           width: 4rem;
           height: 1rem;
@@ -174,17 +173,17 @@
         }
       }
     }
-    
   }
-  .bottom{
+  .bottom {
     position: relative;
     display: flex;
     background: #282829;
     width: 100%;
+    height: 120vh;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    .top-section{ 
+    .top-section {
       position: relative;
       width: 40%;
       height: 100%;
@@ -193,7 +192,7 @@
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
-      .left{
+      .left {
         position: relative;
         display: flex;
         width: 40%;
@@ -201,36 +200,36 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-          span.address{
-          font-family: "Quicksand";
+        span.address {
+          font-family: 'Quicksand';
           font-size: 18px;
-          color: #f0EEE3;
-          }
-          span.number{
-          font-family: "Quicksand";
+          color: #f0eee3;
+        }
+        span.number {
+          font-family: 'Quicksand';
           font-size: 18px;
-          color: #B48645;
+          color: #b48645;
+        }
+        .email-container {
+          position: relative;
+          display: flex;
+          justify-content: flex-start;
+          padding-top: 1rem;
+          align-items: flex-start;
+          font-family: 'Quicksand';
+          font-size: 18px;
+          span.email {
+            color: #f0eee3;
           }
-          .email-container{
-            position: relative;
-            display: flex;
-            justify-content: flex-start;
-            padding-top: 1rem;
-            align-items: flex-start;
-            font-family: 'Quicksand';
-            font-size: 18px;
-            span.email{
-            color: #f0EEE3;
-            }
-            span.name {
+          span.name {
             position: relative;
             display: flex;
             left: 0.4rem;
             color: #b48645;
-            }
           }
+        }
       }
-      .right{
+      .right {
         position: relative;
         display: flex;
         width: 60%;
@@ -238,24 +237,24 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        span.desc{
+        span.desc {
           position: relative;
-          font-family: "Antonio";
+          font-family: 'Antonio';
           font-size: 18px;
           font-weight: 400;
-          color: #f0EEE3;
+          color: #f0eee3;
           display: flex;
           justify-content: flex-start;
           align-items: center;
         }
-        .signup-container{
+        .signup-container {
           position: relative;
           display: flex;
           width: 100%;
           flex-direction: row;
           justify-content: flex-start;
           align-items: flex-start;
-          input.sign-up{
+          input.sign-up {
             position: relative;
             display: flex;
             width: 100%;
@@ -264,34 +263,33 @@
             background: #282829;
           }
         }
-
       }
     }
-    .center-section{
+    .center-section {
       position: relative;
       display: flex;
       background: #282829;
       width: 40%;
       height: 100%;
       justify-content: flex-start;
-      align-items: flex-start; 
-      span.desc{
+      align-items: flex-start;
+      span.desc {
         position: relative;
         color: white;
-        font-family: "Antonio";
+        font-family: 'Antonio';
         font-size: 5.5rem;
         font-weight: 600;
         display: flex;
-      }     
+      }
     }
-    .bottom-section{
+    .bottom-section {
       position: relative;
       display: flex;
-      width: 100%;
-      justify-content: flex-start;
+      width: 40%;
+      justify-content: center;
       align-items: center;
-      flex-direction: column;
-      .left{
+      flex-direction: row;
+      .left {
         position: relative;
         display: flex;
         width: 40%;
@@ -299,21 +297,21 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        span.desc{
-         position: relative;
-         display: flex;
-         width: 100%;
-         color: #B48645;
-         justify-content: flex-start;
-         align-items: flex-start;
+        span.desc {
+          position: relative;
+          display: flex;
+          width: 100%;
+          color: #b48645;
+          justify-content: flex-start;
+          align-items: flex-start;
         }
-        span.button{
-          font-family: "Quicksand";
+        span.button {
+          font-family: 'Quicksand';
           font-size: 1.5rem;
           color: white;
         }
       }
-      .right{
+      .right {
         position: relative;
         display: flex;
         width: 40%;
@@ -321,35 +319,33 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        span.desc{
+        span.desc {
           position: relative;
           display: flex;
           width: 100%;
-          color: #B48645;
+          color: #b48645;
           justify-content: flex-start;
           align-items: flex-start;
         }
-        span.button{
-          font-family: "Quicksand";
+        span.button {
+          font-family: 'Quicksand';
           font-size: 1rem;
           color: white;
         }
       }
     }
-    .social-media{
+    .social-media {
     }
   }
 }
 </style>
 
-
-
-
 <style lang="scss">
 ::-webkit-scrollbar {
   display: none;
 }
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-size: 24px;
