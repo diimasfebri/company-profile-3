@@ -2,6 +2,7 @@
 <div class="body-container"> 
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+    <div class="filter-black"></div>
   <div class="desc-container">
     <div class="desc">
       <span>D*MN GOOD APPAREL</span>
@@ -36,7 +37,7 @@
         <div class="menu-item">
           <span class="txt">CUT & SAW</span>
         </div>
-        <div class="menu-item">
+        <div class="menu-item btm">
           <span class="txt">ACCESSORIES</span>
         </div>
       </div>
@@ -64,6 +65,12 @@
       position: absolute;
       width: 100vw;
       height: 100vh;
+    }
+    .filter-black{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, 0.7);;
     }
      
     .desc-container{
@@ -146,12 +153,12 @@
 .slide-three{
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   display: flex;
    img.bg-content{
       position: absolute;
       width: 100vw;
-      height: 100vh;
+      height: 120vh;
    }
   .desc-container{
     position: relative;
@@ -167,6 +174,7 @@
      color: white;
      font-size: 1.2rem;
      font-weight: 900;
+     transform: translateY(-2rem);
     }
     .menu-list{
       position: relative;
@@ -180,9 +188,8 @@
         position: relative;
         display: flex;
         flex-direction: row;
-        width: 100vw;
-        border-top: 1px solid black;
-        height: 4rem;
+        width: 60vw;
+        border-top: 1px solid rgba(128, 128, 122, 1);
         margin-bottom: 0.5rem;
         span.txt{
           position: relative;
@@ -190,8 +197,13 @@
           width: 100%;
           margin-bottom: 1.5rem;
           font-family: 'Antonio';
-          font-size: 5rem;
+          font-size: 4rem;
           color: white;
+        }
+
+        &.btm{
+          border-bottom: 1px solid rgba(128, 128, 122, 1);
+
         }
       }
     }
