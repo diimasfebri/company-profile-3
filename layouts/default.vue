@@ -53,12 +53,13 @@
    </div>
    <div class="bottom-section">
      <div class="left">
-       <span class="desc">SITE</span>
+      <span class="desc">SITE</span>
       <span class="button">ABOUT US</span>
       <span class="button">OUR WORK</span>
       <span class="button">OUR PROCESS</span>
      </div>
      <div class="right">
+       <span class="desc">SERVICES</span>
        <span class="button">CUSTOM DESIGN</span>
       <span class="button">SCREEN PRINTING</span>
       <span class="button">HEADWEAR</span>
@@ -284,11 +285,25 @@
       }     
     }
     .bottom-section{
+      position: relative;
+      display: flex;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
       .left{
+        position: relative;
+        display: flex;
+        width: 40%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
         span.desc{
          position: relative;
          display: flex;
          width: 100%;
+         color: #B48645;
          justify-content: flex-start;
          align-items: flex-start;
         }
@@ -301,12 +316,23 @@
       .right{
         position: relative;
         display: flex;
-        width: 100%;
+        width: 40%;
+        height: 100%;
+        flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        span.desc{
+          position: relative;
+          display: flex;
+          width: 100%;
+          color: #B48645;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
         span.button{
           font-family: "Quicksand";
           font-size: 1rem;
+          color: white;
         }
       }
     }
