@@ -112,6 +112,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        opacity: 0;
         line-height: 1.75;
         padding-left: 1rem;
         .list {
