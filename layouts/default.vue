@@ -111,11 +111,13 @@
         justify-content: center;
         align-items: flex-start;
         line-height: 1.75;
+        opacity: 0;
         padding-left: 1rem;
         .list {
           font-family: 'Antonio';
           font-weight: 700;
           font-size: 15px;
+          cursor: pointer;
         }
       }
       span.button {
