@@ -40,14 +40,12 @@
         </div>
         <div class="right">
           <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
-          <div class="signup-container">
-            <input value="your email" class="sign-up" />
-            <span>Your-email</span>
-            <input />
-            <div class="submit">
-              <span>SUBMIT</span>
-            </div>
-          </div>
+        <div class="signup-container">
+         <input id="" type="email" name="" required placeholder="Your Email" >
+         <div class="button">
+          <span class="submit"> SUBMIT</span>
+         </div>
+        </div>
         </div>
       </div>
       <div class="center-section">
@@ -56,17 +54,17 @@
       <div class="bottom-section">
         <div class="left">
           <span class="desc">SITE</span>
-          <span class="button">ABOUT US</span>
-          <span class="button">OUR WORK</span>
-          <span class="button">OUR PROCESS</span>
+          <span class="button">About Us</span>
+          <span class="button">Our Work</span>
+          <span class="button">Our Process</span>
         </div>
         <div class="right">
           <span class="desc">SERVICES</span>
-          <span class="button">CUSTOM DESIGN</span>
-          <span class="button">SCREEN PRINTING</span>
-          <span class="button">HEADWEAR</span>
-          <span class="button">CUT AND SEW</span>
-          <span class="button">ACCESSORIES</span>
+          <span class="button">Custom Design</span>
+          <span class="button">Screen Printing</span>
+          <span class="button">Headwear</span>
+          <span class="button">Cut & Sew</span>
+          <span class="button">Accessories</span>
         </div>
       </div>
       <div class="social-media"></div>
@@ -179,16 +177,15 @@
     display: flex;
     background: #282829;
     width: 100%;
-    height: 150vh;
+    height: 160vh;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     .top-section {
       position: relative;
       width: 40%;
-      height: 100%;
       display: flex;
-      top: 5rem;
+      margin-top: 8rem;
       flex-direction: row;
       justify-content: flex-start;
       align-items: flex-start;
@@ -251,44 +248,66 @@
           position: relative;
           display: flex;
           width: 100%;
+          height: 1.5rem;
           flex-direction: row;
           justify-content: flex-start;
           align-items: flex-start;
-          input.sign-up {
+          input{
             position: relative;
             display: flex;
-            width: 100%;
+            margin-top: 0.5rem;
             height: 100%;
-            border: 1px solid black;
+            width: 60%;
             background: #282829;
+            border: 1px solid #b48645;
           }
-        }
+          .button{
+            position: relative;
+            display: flex;
+            width: 30%; 
+            height: 100%; 
+            margin-top: 0.5rem;
+            margin-left: 0.5rem;
+            background: #f0EEE3;
+            justify-content: center;
+            align-items: center;
+            span.submit{
+              font-family: "Antonio";
+              font-size: 18px;
+              color: #282829;
+              font-weight: 900;
+            }
+          }
+           }
       }
     }
-    .center-section {
+    .center-section{
       position: relative;
       display: flex;
       background: #282829;
       width: 40%;
       height: 100%;
+      margin-top: 2rem;
       justify-content: flex-start;
       align-items: flex-start;
-      span.desc {
+      span.desc{
         position: relative;
         color: white;
         font-family: 'Antonio';
         font-size: 5.5rem;
-        font-weight: 600;
+        font-weight: 900;
         display: flex;
       }
     }
     .bottom-section {
       position: relative;
+      width: 40%;
+      height: 100%;
+      margin-top: 4rem;
       display: flex;
-      width: 100%;
+      flex-direction: row;
       justify-content: flex-start;
-      align-items: center;
-      flex-direction: column;
+      align-items: flex-start;
       .left {
         position: relative;
         display: flex;
@@ -297,18 +316,21 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        font-family: 'Quicksand';
         span.desc {
-          position: relative;
-          display: flex;
           width: 100%;
-          color: #b48645;
+          color: white;
+          font-weight: 400;
+          padding-bottom: 1rem;
+          font-size: 19px;
           justify-content: flex-start;
           align-items: flex-start;
         }
         span.button {
-          font-family: 'Quicksand';
-          font-size: 1.5rem;
-          color: white;
+          font-weight: 400;
+          font-size: 19px;
+          line-height: 2;
+          color: #b48645;
         }
       }
       .right {
@@ -319,18 +341,21 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        font-family: 'quicksand';
         span.desc {
-          position: relative;
-          display: flex;
           width: 100%;
-          color: #b48645;
+          color: white;
+          font-weight: 400;
+          padding-bottom: 1rem;
+          font-size: 19px;
           justify-content: flex-start;
           align-items: flex-start;
         }
         span.button {
-          font-family: 'Quicksand';
-          font-size: 1rem;
-          color: white;
+          font-weight: 400;
+          font-size: 19px;
+          line-height: 2;
+          color: #b48645;
         }
       }
     }

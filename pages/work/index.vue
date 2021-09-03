@@ -1,3 +1,4 @@
+
 <template>
   <div class="body-container">
     <div class="slide-one">
@@ -184,7 +185,6 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
       }
       .button {
         position: relative;
