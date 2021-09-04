@@ -68,12 +68,18 @@
     <div class="left">
       <img class="bg-content" src="https://images.unsplash.com/photo-1426543881949-cbd9a76740a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGJhY2tncm91bmQlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60">
       <div class="filter-black"></div> 
-      <span class="desc">LET'S BE BROS</span>   
+      <span class="desc">LET'S BE BROS</span>
+      <div class="button">
+        <span>HIRE US</span>
+      </div>   
     </div>
     <div class="right">
       <img class="bg-content" src="https://images.unsplash.com/photo-1496602910407-bacda74a0fe4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">
       <div class="filter"></div>
       <span class="desc">WE'VE GOT YOUR SIX</span>
+      <div class="button">
+        <span>SEE OUR WORK</span>
+      </div>
     </div>
   </div>
 </div>
@@ -448,7 +454,7 @@
     height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     img{
       width: 100%;
       height: 100%;
@@ -464,8 +470,28 @@
     span.desc{
       font-family: Antonio;
       font-size: 3rem;
-      color: black;
+      color: white;
       font-weight: 900;
+      z-index: 5;
+    }
+    .button{
+      position: relative;
+      display: flex;
+      width: 9.5rem;
+      height: 1.7rem;
+      background: #282829;
+      justify-content: center;
+      margin-top: 1rem;
+    span{
+      position: relative;
+      display: flex;
+      color: white;
+      font-family: Antonio;
+      font-size: 0.7rem;
+      font-weight: 900;
+      align-items: center;
+      justify-content: center;
+    }
     }
   }
   .right{
@@ -475,7 +501,7 @@
     height: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     
      img{
       width: 100%;
@@ -489,6 +515,32 @@
       height: 100%;
       background: rgba(black, 0.6);
     }
+    span.desc{
+      font-family: Antonio;
+      font-size: 3rem;
+      color: white;
+      font-weight: 900;
+      z-index: 5;
+    }
+    .button{
+      position: relative;
+      display: flex;
+      width: 12rem;
+      height: 1.7rem;
+      background: #b48645;
+      justify-content: center;
+      margin-top: 1rem;
+    span{
+      position: relative;
+      display: flex;
+      color: white;
+      font-family: Antonio;
+      font-size: 0.7rem;
+      font-weight: 900;
+      align-items: center;
+      justify-content: center;
+    }
+      }
   }
 
   }
