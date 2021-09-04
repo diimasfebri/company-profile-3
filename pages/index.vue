@@ -2,6 +2,7 @@
 <div class="body-container"> 
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+    <div class="filter-black"></div>
   <div class="desc-container">
     <div class="desc">
       <span>D*MN GOOD APPAREL</span>
@@ -21,29 +22,27 @@
   </div>
   <div class="slide-three">
     <img class="bg-content" src="https://images.unsplash.com/photo-1515768678138-4ba95ba6ec96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80">
-  <div class="desc-container">
-    <span class="desc">OUR SERVICES</span>
-    <div class="menu-list">
-      <div class="menu-item">
-        <span>CUSTOM DESIGN</span>
-      </div>
-      <div class="menu-item">
-        <span>SCREEN PRINTING</span>
-      </div>
-      <div class="menu-item">
-        <span>HEADWEAR</span>
-      </div>
-      <div class="menu-item">
-        <span>CUT & SAW</span>
-      </div>
-      <div class="menu-item">
-        <span>ACCESSORIES</span>
+    <div class="desc-container">
+      <span class="desc">OUR SERVICES</span>
+      <div class="menu-list">
+        <div class="menu-item">
+          <span class="txt">CUSTOM DESIGN</span>
+        </div>
+        <div class="menu-item">
+          <span class="txt">SCREEN PRINTING</span>
+        </div>
+        <div class="menu-item">
+          <span class="txt">HEADWEAR</span>
+        </div>
+        <div class="menu-item">
+          <span class="txt">CUT & SAW</span>
+        </div>
+        <div class="menu-item btm">
+          <span class="txt">ACCESSORIES</span>
+        </div>
       </div>
     </div>
   </div>
-  </div>
-
-
 </div>
 </template>
 
@@ -66,6 +65,12 @@
       position: absolute;
       width: 100vw;
       height: 100vh;
+    }
+    .filter-black{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, 0.7);;
     }
      
     .desc-container{
@@ -144,49 +149,65 @@
       }
    }
  }
-}
+ }
 .slide-three{
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
   display: flex;
    img.bg-content{
       position: absolute;
       width: 100vw;
-      height: 100vh;
+      height: 120vh;
    }
   .desc-container{
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  padding: 5rem 4rem;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-   span.desc{
-     font-family: Antonio;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 4rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    span.desc{
+     font-family: 'Antonio';
      color: white;
-     font-size: 0.8rem;
+     font-size: 1.2rem;
      font-weight: 900;
+     transform: translateY(-2rem);
+    }
     .menu-list{
       position: relative;
       display: flex;
       width: 100%;
-      height: 100%;
+      height: 100vw;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
       .menu-item{
         position: relative;
         display: flex;
-        border-top: 1px solid black;
-        width: 4rem;
-        height: 4rem;
+        flex-direction: row;
+        width: 60vw;
+        border-top: 1px solid rgba(128, 128, 122, 1);
+        margin-bottom: 0.5rem;
+        span.txt{
+          position: relative;
+          display: flex;
+          width: 100%;
+          margin-bottom: 1.5rem;
+          font-family: 'Antonio';
+          font-size: 4rem;
+          color: white;
+        }
+
+        &.btm{
+          border-bottom: 1px solid rgba(128, 128, 122, 1);
+
+        }
       }
     }
-   }
   }
-}
+ }
 }
 </style>

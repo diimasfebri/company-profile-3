@@ -9,7 +9,7 @@
           <div class="list">CUT & SAW</div>
           <div class="list">ACCESSORIES</div>
         </div>
-        <span class="button">SERVICES</span>
+        <span  class="button">SERVICES</span>
         <span class="button">OUR WORK</span>
         <span class="button">OUR PROGRESS</span>
         <span class="button">ABOUT US</span>
@@ -111,25 +111,35 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+        opacity: 0;
         line-height: 1.75;
+        opacity: 0;
         padding-left: 1rem;
         .list {
           font-family: 'Antonio';
           font-weight: 700;
           font-size: 15px;
+          cursor: pointer;
         }
       }
       span.button {
         font-family: 'Antonio';
         font-weight: 700;
+        cursor: pointer;
         color: white;
         font-size: 18px;
         margin: 14px;
+        width: auto;
+        
+        &:hover{
+          border-bottom: 2px solid #b48645;
+        }
       }
     }
     .center {
       position: relative;
       width: 100%;
+      cursor: pointer;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -154,6 +164,7 @@
       .button {
         position: relative;
         display: flex;
+        cursor: pointer;
         justify-content: center;
         align-items: center;
         height: 1.5rem;
