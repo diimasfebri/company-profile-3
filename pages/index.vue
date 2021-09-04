@@ -85,6 +85,11 @@
       </div>
     </div>
   </div>
+  <div class="slide-five">
+    <div class="desc-container">
+
+    </div>
+  </div>
 </div>
 </template>
 
@@ -364,6 +369,17 @@
         font-weight: 900;
       }
     }
+  }
+ }
+ .slide-five{
+  position: relative;
+  width: 100vw;
+  height: 85h;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .desc-container{
+    position: relative;
   }
  }
 }
