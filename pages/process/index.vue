@@ -34,8 +34,34 @@
         <span class="desc-1">WE'LL DESIGN YOU A CUSTOM CATALOG</span>
         <span class="desc-2">Collaborate with our world-class design, production and merchandising teams to create lifestyle driven apparel with timeless design.</span>
     </div>
+  </div>
+  <div class="slide-five">
+    <div class="img-container">
+    <img class="bg-content" src="https://images.unsplash.com/photo-1530543787849-128d94430c6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
     </div>
+  <div class="desc-container">
+    <span class="desc">03</span>
+    <span class="desc-1">ORDER AND RECEIVE DAMN GOOD APPAREL</span>
+    <span class="desc-2">We’ll produce and ship your brand new collection in as quickly as 21 days with the highest quality printing, garments and material.</span>
    </div> 
+  </div>
+  <div class="slide-six">
+    <div class="desc-container">
+      <span class="desc">WE'RE HERE FOR YOU</span>
+      <span class="desc-1">From providing imagery to use on your social channels to giving advice on how to merchandise your apparel, we’re here to support you.</span>
+      <img src="/CP.png" alt="">
+    </div>
+
+  </div>
+    <div class="slide-seven">
+  <div class="desc-container">
+    <span class="desc">"</span>
+    <span class="desc-1">The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel.</span>
+    <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
+    <span class="desc-3">"</span>
+  </div>
+  </div>
+</div>
 </template>
 
 <style lang="scss" scoped>
@@ -165,8 +191,8 @@
   height: 100%;
   padding: 5rem 2rem;
   flex-direction: column;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: flex-start;
+  align-items: flex-start;
    span.desc{
         font-family: Antonio;
         color:#b48645;
@@ -187,7 +213,7 @@
         transform: translateY(-1rem);
     }
    }
-  }
+ }
 .slide-four{
   position: relative;
   width: 100vw;
@@ -209,6 +235,57 @@
       } 
   }
 .desc-container{
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: 100%;
+  margin-left: 27rem;
+  padding: 5rem 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+   span.desc{
+        font-family: Antonio;
+        color:#b48645;
+        font-size: 6rem;
+        font-weight: 900;
+        }
+    span.desc-1{
+        font-family: Antonio;
+        color: black;
+        font-size: 1rem;
+        font-weight: 900;
+        transform: translateY(-2.5rem);
+    }
+    span.desc-2{
+        font-family: Quicksand;
+        color: black;
+        font-size: 0.7rem;
+        transform: translateY(-1rem);
+    }
+}
+ }
+.slide-five{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .img-container{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      align-items: flex-end;
+      display: flex;
+      justify-content: flex-end  ;
+      img.bg-content{
+         position: relative;
+         width: 50vw;
+         height: 100vh;
+         object-fit: cover;
+      }
+  }
+  .desc-container{
   position: relative;
   display: flex;
   width: 40%;
@@ -237,6 +314,83 @@
         transform: translateY(-1rem);
     }
 }
+ }
+ .slide-six{
+  position: relative;
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .desc-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 3rem;
+        align-items: center;
+        
+        
+        span.desc{
+          color: black;
+          font-family: 'Antonio';
+          font-size: 3rem;
+          font-weight: 900;
+          margin-bottom: 1.5rem;
+        }
+        span.desc-1{
+        text-align: center;
+        font-family: 'Quicksand';
+        font-size: 0.7rem;
+        color: black;
+        width: 60%;   
+        margin-bottom: 2rem;
+        }
+        img{
+          position: relative;
+          display: flex;
+          width: 45rem;
+          height: 18rem;
+          object-fit: cover;
+        }
+  }
+ 
+ }
+  .slide-seven{
+  position: relative;
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  background: #f0eee3;
+  }
+  .desc-container{
+  position: relative;
+  display: flex;
+  width: 40%;
+  height: 100%;
+  margin-left: 27rem;
+  padding: 5rem 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+    span.desc{
+
+    }
+    span.desc-1{
+        font-family: Antonio;
+        color: black;
+        
+    }
+    span.desc-2{
+      
+    }
+    span.desc-3{
+    
+    }
+  }
 }
-}
+
 </style>
