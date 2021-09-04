@@ -11,7 +11,7 @@
         </div>
         <span  class="button">SERVICES</span>
         <span class="button">OUR WORK</span>
-        <span class="button">OUR PROGRESS</span>
+        <span class="button">OUR PROCESS</span>
         <span class="button">ABOUT US</span>
       </div>
       <div class="center">
