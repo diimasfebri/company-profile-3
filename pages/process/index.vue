@@ -53,13 +53,28 @@
     </div>
 
   </div>
-    <div class="slide-seven">
-  <div class="desc-container">
+  <div class="slide-seven">
+    <img src="https://images.prismic.io/andersonbrothers/9f71cd88-4950-4a20-875a-f909777cfeaa_226077030_340112087762285_3510021914681768504_n.jpeg?auto=compress,format&w=804&h=864&fit=crop&q=85" alt="">
+      <div class="desc-container">
     <span class="desc">"</span>
     <span class="desc-1">The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel.</span>
-    <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
-    <span class="desc-3">"</span>
+    <div class="auth">
+      <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
+      <span class="desc-3">"</span>
+    </div>
+      </div>
   </div>
+  <div class="slide-eight">
+    <div class="left">
+      <img class="bg-content" src="https://images.unsplash.com/photo-1426543881949-cbd9a76740a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGJhY2tncm91bmQlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60">
+      <div class="filter-black"></div> 
+      <span class="desc">LET'S BE BROS</span>   
+    </div>
+    <div class="right">
+      <img class="bg-content" src="https://images.unsplash.com/photo-1496602910407-bacda74a0fe4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">
+      <div class="filter"></div>
+      <span class="desc">WE'VE GOT YOUR SIX</span>
+    </div>
   </div>
 </div>
 </template>
@@ -318,7 +333,7 @@
  .slide-six{
   position: relative;
   width: 100vw;
-  height: 120vh;
+  height: 140vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -328,7 +343,7 @@
         width: 100%;
         height: 100%;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
         margin-top: 3rem;
         align-items: center;
         
@@ -358,39 +373,124 @@
   }
  
  }
-  .slide-seven{
+ .slide-seven{
   position: relative;
   width: 100vw;
   height: 120vh;
   display: flex;
-  flex-direction: column;
-  background: #f0eee3;
-  }
-  .desc-container{
-  position: relative;
-  display: flex;
-  width: 40%;
-  height: 100%;
-  margin-left: 27rem;
-  padding: 5rem 2rem;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
-    span.desc{
+  background: #f0eee3;
+  img{
+    width: 23rem;
+    height: 24rem;
+    margin-left:4.2rem;
+    margin-top: 3rem;
+  }
+    .desc-container{
+    position: relative;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    padding: 5rem 2rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+      span.desc{
+          color: #b48645;
+          font-family: 'Antonio';
+          font-size: 3rem;
+          font-weight: 900;
+      }
+      span.desc-1{
+          font-family: Antonio;
+          color: black;
+          font-size: 1.8rem;
+          font-weight: 900;
+          transform: translateY(-1rem);
+      }
+      .auth{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        span.desc-2{
+            font-family: Antonio;
+            color: #b48645;
+            font-size: 0.7rem;
+            font-weight: 900;
+          }
+      }
 
-    }
-    span.desc-1{
-        font-family: Antonio;
-        color: black;
-        
-    }
-    span.desc-2{
-      
-    }
-    span.desc-3{
-    
+      span.desc-3{
+          color: #b48645;
+          font-family: Antonio;
+          font-size: 3rem;
+          font-weight: 900;
+          transform: translateX(4rem);
+      }
     }
   }
-}
+.slide-eight{
+  position: relative;
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  .left{
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+    .filter-black{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(#b48645, 0.6);
+    }
+    span.desc{
+      font-family: Antonio;
+      font-size: 3rem;
+      color: black;
+      font-weight: 900;
+    }
+  }
+  .right{
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    
+     img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+    }
+      .filter{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(black, 0.6);
+    }
+  }
 
+  }
+}
 </style>
