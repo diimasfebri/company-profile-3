@@ -8,16 +8,22 @@
   </div>
   <div class="slide-two">
     <img class="bg-content" src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" >
-  <div class="button-container">
+   <div class="desc-container">
       <span class="desc">ABOUT US</span>
-      <span class="desc-1">OUR STUDIO & SERVICES</span>
-      <span class="desc-2">We are a full package design agency and production house based in Seal Beach, California. Whether you're looking
-          to grow your business or expand your swag, we're here to help. We offer best-in-class screen printing, custom design services, and 
+      <div class="title-container">
+        <span class="desc-1">OUR STUDIO & SERVICES</span>
+        <span class="desc-2">We are a full package design agency and production house based in Seal Beach, California. Whether you're looking to grow your business or expand your swag, we're here to help. We offer best-in-class screen printing, custom design services, and 
           a variety of wereables designed to showcase your brand.</span>
+      </div>  
+    </div>           
+    <div class="img-container">
+        <div class="img">
+        <img src="https://images.prismic.io/andersonbrothers/e15448ba-c281-4ebf-852b-5113cb6d13a5_about-slide-1.jpg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center" alt="">
+        </div>
+        <div class="img">
+        <img src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center" alt="">
+        </div>
     </div>
-    <div class="content-container">
-        <img src="" alt="">
-  </div>
   </div>
   <div class="slide-three">
     <div class="img-container">
@@ -116,10 +122,23 @@
       </div>    
     </div>
   </div>
-    <div class="slide-five">
-        <span class="desc"></span>
+  <div class="slide-five">
+      <div class="desc-container">
+      <span class="desc-1">REALLY DAMN GOOD STUFF</span>
+      <div class="card-item">
+        <div class="card">
+        <img src="https://images.prismic.io/andersonbrothers/36aef18f-d5e1-4c56-bf08-a10f7de29606_duke.png?auto=compress,format&w=553&h=372&fit=crop&q=85&f=center" alt="">
+        <span class="name">The DUKE</span>
+        <span class="role"> Mascot</span>
+        </div>
    </div> 
+    </div>
+  </div> 
 </div>
+    
+    
+    
+    
 </template>
 
 <style lang="scss" scoped>
@@ -185,43 +204,52 @@
  }
  .slide-two{
    position: relative;
-   width: 100vw;
-   height: 60vh;
+   width: 100%;
+   height: 100vh;
    display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
     img.bg-content{
       position: absolute;
       width: 100vw;
-      height: 60vh;
+      height: 100vh;
  }
- .button-container{
-    position: relative;
-    display: flex;
-    width: 55%;
-    height: 60vh;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    line-height: 1.5;
-    margin-left: 3rem;;
-    span.desc{
-        font-family: 'Antonio';
-        color: white;
-        font-size: 3rem;
-        font-weight: 900;
-        margin-bottom: 1rem;
-      }
-    span.desc-1{
-        font-family: 'Antonio';
-        font-size: 1rem;
-        color: white;
-        margin-bottom: 0.5rem;
+    .desc-container{
+        position: relative;
+        display: flex;
+        width: 80%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        line-height: 1.5;
+        span.desc{
+            font-family: 'Antonio';
+            color: white;
+            width: 25%;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 900;
+          }
+          .title-container{
+            span.desc-1{
+                font-family: 'Antonio';
+                font-size: 1rem;
+                color: white;
+                margin-bottom: 0.5rem;
+                justify-content: flex-start;
+                transform: translateY(-2.5rem);
+            }
+            span.desc-2{
+                font-family: 'Quicksand';
+                font-size: 0.7rem;
+                color: white;
+                transform: translateY(-1rem);
+            }
+          }
     }
-    span.desc-2{
-        font-family: 'Quicksand';
-        font-size: 0.7rem;
-        color: white;
-    }
-    .content-container{
+    .img-container{
         position: relative;
         display: flex;
         width: 80%;
@@ -233,9 +261,10 @@
        display: flex;
        width: 12rem;
        height: 8rem;
+       margin-left: 2rem;
+       margin-top: 2rem;
      }
     }
- }
  }
 .slide-three{
   position: relative;
@@ -346,34 +375,113 @@
           background: #f4f4f4;
           width: 330px;
           height: 370px;
+          margin-left: 1rem;
           transform: translateY(-1.89rem);
           span.name-1{
-            font-family: 'Quicksand';
-            font-size: 18px;
-            margin-top: 0.5rem;
-            margin-bottom: 0.5rem;
+            font-family: 'Antonio';
+            font-size: 45px;
+            line-height: 2rem;
+            width: 40%;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
             font-weight: bold;
-            justify-content: flex-start;
-            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
             display: flex;
-            margin-left: 1rem;
+            margin-left: 4rem;
           }
           span.role-1{
-            font-family: 'Quicksand';
-            font-size: 1px;
-            margin-top: 0.5rem;
+            font-family: 'Antonio';
+            font-size: 25px;
+            margin-top: 2rem;
             margin-bottom: 0.5rem;
             font-weight: bold;
             justify-content: flex-start;
             align-items: flex-start;
             display: flex;
-            margin-left: 1rem;
+            color: #b48645;
+            margin-left: 4rem;
           }
           &:hover{
             background: #b48645;
+            span.role-1{
+              color: #f4f4f4
+            }
           }
         }
       }
+  }
+}
+}
+.slide-five{
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+.desc-container{
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  span.desc-1{
+        font-family: Antonio;
+        color: black;
+        width: 40%;
+        text-align: center;
+        margin: 4rem 0 2rem 0;
+        font-size: 4rem;
+        font-weight: 900;
+    }
+}
+.card-item{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  .card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    img{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-left: 1rem;
+      transform: translateY(-3rem);
+    }
+    span.name{
+      font-family: 'Quicksand';
+      font-size: 15px;
+      width: 100%;
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      justify-content: center;
+      align-items: flex-start;
+      display: flex;
+      margin-left: 1rem;
+      transform: translateY(-6rem);
+    }
+    span.role{
+      font-family: 'Quicksand';
+      font-size: 10px;
+      width: 100%;
+      justify-content: center;
+      align-items: flex-start;
+      display: flex;
+      margin-top: 0.5rem;
+      margin-bottom: 1rem;
+       transform: translateY(-6.8rem);
+    }
   }
 }
 }
