@@ -262,7 +262,6 @@
 
         &.btm{
           border-bottom: 1px solid rgba(128, 128, 122, 1);
-
         }
       }
     }
