@@ -429,7 +429,6 @@
             font-weight: 900;
           }
       }
-
       span.desc-3{
           color: #b48645;
           font-family: Antonio;
@@ -542,7 +541,6 @@
     }
       }
   }
-
   }
 }
 </style>
