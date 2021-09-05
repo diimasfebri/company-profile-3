@@ -41,7 +41,7 @@
         <div class="right">
           <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
         <div class="signup-container">
-         <input id="" type="email" name="" required placeholder="Your Email" >
+         <input type="email" name="" required placeholder="Your Email" >
          <div class="button">
           <span class="submit"> SUBMIT</span>
          </div>
