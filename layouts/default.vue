@@ -105,6 +105,7 @@
         height: 8rem;
         top: 2.5rem;
         left: 0.5rem;
+        opacity:0;
         background: #f0eee3;
         display: flex;
         flex-direction: column;
