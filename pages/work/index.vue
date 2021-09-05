@@ -1,4 +1,3 @@
-
 <template>
   <div class="body-container">
     <div class="slide-one">
