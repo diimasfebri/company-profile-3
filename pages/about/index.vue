@@ -7,7 +7,6 @@
     </div>  
   </div>
   <div class="slide-two">
-    <img class="bg-content" src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" >
    <div class="desc-container">
       <span class="desc">ABOUT US</span>
       <div class="title-container">
@@ -17,12 +16,8 @@
       </div>  
     </div>           
     <div class="img-container">
-        <div class="img">
-        <img src="https://images.prismic.io/andersonbrothers/e15448ba-c281-4ebf-852b-5113cb6d13a5_about-slide-1.jpg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center" alt="">
-        </div>
-        <div class="img">
-        <img src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center" alt="">
-        </div>
+        <img class="img one" src="https://images.prismic.io/andersonbrothers/e15448ba-c281-4ebf-852b-5113cb6d13a5_about-slide-1.jpg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center" alt="">
+        <img class="img two" src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center" alt="">
     </div>
   </div>
   <div class="slide-three">
@@ -210,11 +205,7 @@
    flex-direction: column;
    justify-content: flex-start;
    align-items: center;
-    img.bg-content{
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
- }
+   background: #282829;
     .desc-container{
         position: relative;
         display: flex;
@@ -225,14 +216,22 @@
         align-items: center;
         line-height: 1.5;
         span.desc{
-            font-family: 'Antonio';
-            color: white;
-            width: 25%;
-            text-align: center;
-            font-size: 3rem;
-            font-weight: 900;
+          font-family: 'Antonio';
+          color: white;
+          width: 50%;
+          text-align: center;
+          padding-bottom: 3rem;
+          font-size: 5rem;
+          font-weight: 900;
           }
           .title-container{
+            position: relative;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start ;
+
             span.desc-1{
                 font-family: 'Antonio';
                 font-size: 1rem;
@@ -251,19 +250,19 @@
     }
     .img-container{
         position: relative;
-        display: flex;
         width: 80%;
         height: 100%;
-        justify-content: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
-     img{
-       position: relative;
-       display: flex;
-       width: 12rem;
-       height: 8rem;
-       margin-left: 2rem;
-       margin-top: 2rem;
-     }
+      img{
+        position: relative;
+        display: flex;
+        width: 15rem;
+        height: 8rem;
+         
+      }
     }
  }
 .slide-three{
