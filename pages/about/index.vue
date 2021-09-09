@@ -7,7 +7,6 @@
     </div>  
   </div>
   <div class="slide-two">
-    <img class="bg-content" src="https://images.unsplash.com/photo-1550684376-efcbd6e3f031?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" >
    <div class="desc-container">
       <span class="desc">ABOUT US</span>
       <div class="title-container">
@@ -17,12 +16,8 @@
       </div>  
     </div>           
     <div class="img-container">
-        <div class="img">
-        <img src="https://images.prismic.io/andersonbrothers/e15448ba-c281-4ebf-852b-5113cb6d13a5_about-slide-1.jpg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center" alt="">
-        </div>
-        <div class="img">
-        <img src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center" alt="">
-        </div>
+        <img class="img-one" src="https://images.prismic.io/andersonbrothers/e15448ba-c281-4ebf-852b-5113cb6d13a5_about-slide-1.jpg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center" alt="">
+        <img class="img-two" src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center" alt="">
     </div>
   </div>
   <div class="slide-three">
@@ -124,14 +119,17 @@
   </div>
   <div class="slide-five">
       <div class="desc-container">
-      <span class="desc-1">REALLY DAMN GOOD STUFF</span>
-      <div class="card-item">
-        <div class="card">
-        <img src="https://images.prismic.io/andersonbrothers/36aef18f-d5e1-4c56-bf08-a10f7de29606_duke.png?auto=compress,format&w=553&h=372&fit=crop&q=85&f=center" alt="">
-        <span class="name">The DUKE</span>
-        <span class="role"> Mascot</span>
-        </div>
-   </div> 
+        <span class="desc-1">REALLY DAMN GOOD STUFF</span>
+        <div class="card-item">
+          <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/36aef18f-d5e1-4c56-bf08-a10f7de29606_duke.png?auto=compress,format&w=553&h=372&fit=crop&q=85&f=center" alt="">
+            <span class="name">The DUKE</span>
+            <span class="role"> Mascot</span>
+            <div class="button">
+              <span class="desc">VIEW SERVICES</span>
+            </div>
+          </div>
+        </div> 
     </div>
   </div> 
 </div>
@@ -205,34 +203,38 @@
  .slide-two{
    position: relative;
    width: 100%;
-   height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: flex-start;
    align-items: center;
-    img.bg-content{
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
- }
+   background: #282829;
     .desc-container{
         position: relative;
         display: flex;
         width: 80%;
+        padding-top: 5rem;
         height: 100%;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         line-height: 1.5;
         span.desc{
-            font-family: 'Antonio';
-            color: white;
-            width: 25%;
-            text-align: center;
-            font-size: 3rem;
-            font-weight: 900;
+          font-family: 'Antonio';
+          color: white;
+          width: 50%;
+          text-align: center;
+          padding-bottom: 3rem;
+          font-size: 5rem;
+          font-weight: 900;
           }
           .title-container{
+            position: relative;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start ;
+
             span.desc-1{
                 font-family: 'Antonio';
                 font-size: 1rem;
@@ -251,19 +253,27 @@
     }
     .img-container{
         position: relative;
-        display: flex;
-        width: 80%;
+        width: 85%;
         height: 100%;
-        justify-content: center;
+        padding-bottom: 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
-     img{
-       position: relative;
-       display: flex;
-       width: 12rem;
-       height: 8rem;
-       margin-left: 2rem;
-       margin-top: 2rem;
-     }
+        object-fit: cover;
+      .img-one{
+        position: relative;
+        display: flex;
+        width: 30%;
+        height: 24rem;
+      }
+      .img-two{
+        position: relative;
+        display: flex;
+        margin-left: 2rem;
+        width: 70%;
+        height: 24rem;
+      }
     }
  }
 .slide-three{
@@ -271,18 +281,17 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
   .img-container{
-      position: absolute;
-      width: 100%;
+      position: relative;
+      width: 50%;
       height: 100%;
       display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
       img.bg-content{
          position: relative;
-         width: 50vw;
-         height: 100vh;
+         width: 100%;
+         height: 100%;
          object-fit: cover;
       }
   }
@@ -291,23 +300,22 @@
       display: flex;
       width: 40%;
       height: 100%;
-      margin-left: 30rem;
-      padding: 5rem 2rem;
+      margin-left: 5rem;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: flex-start;
     span.desc-1{
         font-family: Antonio;
         color: black;
         font-size: 1rem;
         font-weight: 900;
-        transform: translateY(-2.5rem);
+        margin-bottom: 2rem;
+
     }
     span.desc-2{
         font-family: Quicksand;
         color: black;
         font-size: 0.7rem;
-        transform: translateY(-1rem);
     }
    }
   }
@@ -448,7 +456,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-items: center;
     img{
       position: relative;
       display: flex;
@@ -481,6 +489,27 @@
       margin-top: 0.5rem;
       margin-bottom: 1rem;
        transform: translateY(-6.8rem);
+    }
+    .button {
+      position: relative;
+      display: flex;
+      transform: translateY(-5rem);
+      cursor: pointer;
+      width: 9.5rem;
+      height: 1.8rem;
+      background: #b48645;
+      justify-content: center;
+      align-items: center;
+      span.desc {
+        width: 100%;
+        height: 100%;
+        font-family: 'Antonio';
+        text-align: center;
+        transform: translateY(0.3rem);
+        font-size: 0.8rem;
+        font-weight: 900;
+        color: white;
+      }
     }
   }
 }

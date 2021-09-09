@@ -16,24 +16,28 @@
         class="bg-content"
         src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
       />
-      <div class="button-container">
-        <div class="desc">
-          <span>RECENT WORK</span>
-        </div>
-          <div class="center-img">
+      <div class="content-container">
+        <span class="desc">RECENT WORK RECENT WORK RECENT WORK RECENT WORK RECENT WORK</span>
+        <div class="center-img">
           <img src="https://images.unsplash.com/photo-1508427953056-b00b8d78ebf5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="" />
         </div>
-        <div class="item">
-          <span>For the last 6 years, we have been supplying Hangar 24 with world class and designs and top quality 
-            apparel that has catapulted their retail sales
-          </span>
-        </div>
-        <div class="button">
-          <span class="desc">HIRE US</span>
+        <div class="bottom">
+          <img src="https://images.prismic.io/andersonbrothers/664bfdcc-2c84-4e98-89ad-3c62edb8bc9d_HangarCraftBrewing-Logo.png?auto=compress,format" alt="">
+          <div class="item">
+            <span>For the last 6 years, we have been supplying Hangar 24 with world class and designs and top quality 
+              apparel that has catapulted their retail sales
+            </span>
+            <div class="button">
+              <span class="desc">HIRE US</span>
+            </div>
+          </div>
         </div>
       </div>
       </div>
     <div class="slide-three">
+
+      </div>
+    <div class="slide-four">
       <img
         class="bg-content"
         src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
@@ -41,26 +45,33 @@
       <div class="desc-container">
         <span>SCROLL TO SEE MORE COOL SH*T -- ></span>
       </div>
-      <div class="center-img">
-          <img class="product" src="https://img.freepik.com/free-vector/vintage-design-with-ornamental-decorations_52683-57748.jpg?size=626&ext=jpg&ga=GA1.2.2107986711.1630540800" alt="" />
-          <img class="product" src="https://images.unsplash.com/photo-1503341338985-c0477be52513?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="" />
-          <img class="product" src="https://images.unsplash.com/photo-1502389614483-e475fc34407e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" />
-          <img class="product" src="https://images.unsplash.com/photo-1564859228273-274232fdb516?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" />
+        <div class="center-img">
+            <img class="product" src="https://images.prismic.io/andersonbrothers/fd026fdf-4dbd-44b8-95ad-c288df1236c2_220678617_680120279716175_5527426254914584402_n.jpeg?auto=compress,format&w=412&h=686&fit=crop&q=85&f=center" alt="" />
+            <img class="product one" src="https://images.unsplash.com/photo-1503341338985-c0477be52513?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80" alt="" />
+            <img class="product one" src="https://images.unsplash.com/photo-1502389614483-e475fc34407e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" />
+            <img class="product one" src="https://images.unsplash.com/photo-1564859228273-274232fdb516?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" />
+        </div>
       </div>
-      </div>
-    <div class="slide-four">
+    <div class="slide-five">
         <img
         class="bg-content"
         src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80"
         />
+        <div class="filter-black"></div>
         <div class="desc-container">
-        <span>TESTIMONIALS</span>
+          <span class="txt">TESTIMONIALS</span>
+          <div class="subtxt-container">
+          <span class="desc">"</span>
+          <span class="desc-1">The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel.</span>
+          <div class="auth">
+            <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
+            <span class="desc-3">"</span>
+          </div>
+            </div>
+
         </div>
-        <div class="item-container">
-        <span>"I love working with ABDS. I really value their design process and the friendship we've developed over the years. It's more than a business transaction. It's a way to mutually propel our business and i've enjoyed the journey so far!"</span> 
-        </div> 
       </div>
-    <div class="slide-five">
+    <div class="slide-six">
           <div class="content-container">
            <img src="https://images.unsplash.com/photo-1564859227552-81fde4a1df0b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=751&q=80" alt="">
             <div class="desc-container">
@@ -119,7 +130,7 @@
           width: 10%;
           color: white;
           font-family: Antonio;
-          font-size: 5rem;
+          font-size: 6.5rem;
           font-weight: 900;
         }
       }
@@ -144,223 +155,292 @@
   .slide-two {
     position: relative;
     width: 100vw;
-    height: 100vh;
+    height: 140vh;
     display: flex;
     img.bg-content {
       position: absolute;
       width: 100vw;
-      height: 100vh;
+      height: 140vh;
     }
-    .button-container {
+    .content-container {
       position: relative;
       display: flex;
       width: 100%;
       height: 100%;
+      padding-top: 6rem;
       flex-direction: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
+      span.desc{
+        text-align: center;
+        font-family: 'Antonio';
+        font-size: 4rem;
+        font-weight: 900;
+      } 
       .center-img {
         position: absolute;
-        width: 70vw;
-        height: 60vh;
+        width: 120%;
+        margin-top: 4rem;
         display: flex;
+        overflow-x: scroll;
         justify-content: center;
         align-items: center;
+        img{
+          width: 60vw;
+          height: 75vh;
+        } 
       }
-      .desc{
-        font-family: 'Antonio';
-        font-size: 100px;
-      }
-      .item{
-        font-family: 'Antonio';
+      .bottom{
         position: relative;
-        font-size: 20px;
-        margin-bottom: 1.5rem;
+        width: 60vw;
+        height: 100%;
         display: flex;
-        justify-content: center;
+        margin-top: 15rem;
+        flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
-        flex-direction: column;
-      }
-      .button {
-        position: relative;
-        display: flex;
-        width: 9.5rem;
-        height: 1.5rem;
-        background: #b48645;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        span.desc {
+        
+        .item{
           position: relative;
+          flex-direction: column;
           display: flex;
-          font-family: Antonio;
-          font-size: 0.8rem;
-          font-weight: 900;
-          color: white;
+          margin-left: 2rem;
+          justify-content: flex-start;
+          align-items: flex-start;
+            span{
+            font-family: 'Quicksand';
+            position: relative;
+            font-size: 0.8rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            }
+            .button {
+              position: relative;
+              display: flex;
+              cursor: pointer;
+              width: 9.5rem;
+              height: 1.8rem;
+              background: #b48645;
+              span.desc {
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                text-align: center;
+                font-family: Antonio;
+                font-size: 0.8rem;
+                font-weight: 900;
+                color: white;
+              }
+            }
         }
       }
     }
   }
-  .slide-three {
+  .slide-three{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+  }
+  .slide-four {
     position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     img.bg-content {
       position: absolute;
       width: 100vw;
       height: 100vh;
+     }
+    .desc-container {
+      position: relative;
+      display: flex;
+      width: 85%;
+      margin-top: 4rem;
+      justify-content: flex-start;
+      align-items: flex-start;
+      span {
+        font-family: 'Antonio';
+        color: #282829;
+        font-size: 1rem;
+        font-weight: 900;
+       }
+     }
+    .center-img{
+        position: relative;
+        display: flex;
+        margin-left: 12rem;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 100%;
+        img.product{
+          position: relative;
+          display: flex;
+          margin-top: 1rem;
+          height: 28rem;
+          width: 19rem;
+          object-fit: cover;
+
+          &.one{
+            margin-left: 2rem;
+          }
+        }
+     }        
+    }
+  .slide-five{
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;;
+    justify-content: flex-start;
+    align-items: center;
+    img.bg-content {
+      position: absolute;
+      width: 100vw;
+      height: 85vh;
+      object-fit: cover;
+    }
+    .filter-black{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(#000, 0.6);
     }
     .desc-container {
       position: relative;
       display: flex;
-      width: 100%;
+      width: 85%;
       height: 100%;
-      padding: 5rem 4rem;
+      padding: 7rem 0;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      span.desc {
-        font-family: Antonio;
+      span.txt{
         color: white;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
+        font-family: 'Antonio';
         font-weight: 900;
-    .center-img{
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      align-items: center;
-      width: 120%;
-      height: 100%;
-      img.product{
+      }
+      .subtxt-container{
         position: relative;
         display: flex;
-        height: 6rem;
-        width: 4rem;
-      }
-    }
-        .menu-list {
-          position: relative;
-          display: flex;
-          width: 100%;
-          height: 100%;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          .menu-item {
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+          span.desc{
+              color: #b48645;
+              font-family: 'Antonio';
+              font-size: 3rem;
+              font-weight: 900;
+          }
+          span.desc-1{
+              font-family: 'Antonio';
+              color: white;
+              font-size: 2.5rem;
+              font-weight: 900;
+              transform: translateY(-1rem);
+          }
+          .auth{
             position: relative;
             display: flex;
-            border-top: 1px solid black;
-            width: 4rem;
-            height: 4rem;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            span.desc-2{
+                font-family: Antonio;
+                color: #b48645;
+                font-size: 1rem;
+                font-weight: 900;
+                transform: translateX(-3rem);
+              }
           }
-        }
+          span.desc-3{
+              color: #b48645;
+              font-family: Antonio;
+              font-size: 3rem;
+              font-weight: 900;
+          }
       }
+
     }
+   
   }
-  .slide-four{
-  position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    img.bg-content {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-    }
-  .desc-container {
-      position: relative;
-      display: flex;
-      font-family: 'Antonio';
-      font-size: 25px;
-      color: white;
-      width: 100%;
-      height: 100%;
-      padding: 5rem 4rem;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-}
-  .item-container{
-      position: relative;
-      display: flex;
-      font-family: 'Antonio';
-      font-size: 25px;
-      color: white;
-      width: 100%;
-      height: 100%;
-      padding: 5rem 4rem;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-  }
-  }
-  .slide-five{
+  .slide-six{
     position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
     .content-container{
      position: relative;
      display: flex;
      width: 80%;
      height: 100%;
-     justify-content: center;
+     flex-direction: row;
+     justify-content: flex-start;
      align-items: center;
      img{
        position: relative;
        display: flex;
-       width: 12rem;
-       height: 8rem;
-     }
-      .desc-container{
+       width: 35rem;
+       height: 22rem;
+      }
+    .desc-container{
         position: relative;
         display: flex;
         width: 100%;
         height: 100%;
+        margin-left: 7rem;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
         span.desc{
           font-family: 'Antonio';
           color:black;
           font-size: 25px;
           margin-bottom: 1.5rem;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
         }
         span.desc-1{
           font-family: 'Quicksand';
           color:black;
           font-size: 18px;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
         }
         .button {
+          cursor: pointer;
+          position: relative;
+          display: flex;
+          width: 19rem;
+          height: 1.5rem;
+          background: #b48645;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 2rem;
+          span.desc-2 {
             position: relative;
             display: flex;
-            width: 20rem;
-            height: 1.5rem;
-            background: #b48645;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin-top: 2rem;
-            span.desc-2 {
-              position: relative;
-              display: flex;
-              font-family: Antonio;
-              font-size: 0.8rem;
-              font-weight: 900;
-              color: white;
-            }
+            font-family: Antonio;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: white;
           }
-      
-      }
-
+        }
+    
+    }
     }
   }
 }

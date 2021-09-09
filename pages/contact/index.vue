@@ -108,8 +108,9 @@
                     </div>
                 </div>
                 <div class="buttongede">
-                    <span class="kumpul">SUBMIT</span>
+                    <span class="kumpul">SUBMIT!</span>
                 </div>
+                <span class= "desc-2">PULL THE TRIGGER</span>
             </div>
                 </div>
             </div>
@@ -489,6 +490,14 @@
                    background: #282829;
                }
            }
+     span.desc-2{
+            text-align: center;
+            font-family: 'Antonio';
+            color: black;
+            font-size: 4.5rem;
+            font-weight: 900; 
+            font-weight: bold; 
+     }
   }
   }
 
