@@ -16,6 +16,10 @@
     <video loop autoplay muted playsinline>
       <source src="/suave.mp4" type="video/mp4">
     </video>
+     <div class="desc">
+      <span class="title"> OUR VISION</span>
+      <span class="subtitle">From conception to production, our promise is to help grow your brand through custom design and premium apparel.</span>
+    </div>
   </div>
   <div class="slide-two">
    <div class="desc-container">
@@ -164,17 +168,17 @@
   position: relative;
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: 130vh;
   box-sizing: border-box;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   
   svg {
 	width: 100%;
 	height: 0;
 	position: absolute;
-}
-    video{
+  }
+  video{
       position: absolute;
       left: 0px;
       top: 0px;
@@ -183,7 +187,31 @@
       object-fit: cover;		
       clip-path: url(#clip-00);
       overflow: hidden;
+  }
+   .desc{
+    position: relative;
+    width: 100%;
+    display: flex;
+    margin: 4rem 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    span.title{
+      font-family: 'Antonio';
+      font-size: 1rem;
+      color: #282829;
+      font-weight: bolder;
     }
+    span.subtitle{
+      font-family: 'Quicksand';
+      margin-top: 2rem;
+      width: 30%;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #282829;
+      font-weight: 400;
+    }
+  } 
   
  }
  .slide-two{
