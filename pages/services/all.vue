@@ -4,7 +4,14 @@
   <div class="desc-container">
     <span class="desc-1"> D*MN GOOD QUALITY </span>
     <span class="desc-2"> Our goal is to help grow your brand through custom design and premium apparel. We offer quick turnaround times and affordable pricing. We are a full package design agency and production house in Seal Beach, California.</span>
-    </div>  
+    </div>
+  <div class="item-container">
+    <span class="desc-3">CUSTOM DESIGN</span>
+    <span class="desc-3">SCREEN PRINTING</span>
+    <span class="desc-3">HEADWER</span>
+    <span class="desc-3">CUT & SEW</span>
+    <span class="desc-3">ACCESSORIES</span>
+  </div>  
   </div>
   <div class="slide-two">
     <div class="img-container">
@@ -49,10 +56,11 @@
 .slide-one{
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 200vh;
   display: flex;
   background: black;
   justify-content: center;
+  flex-direction: column;
   align-items: flex-start;
    img.bg-content{
       position: absolute;
@@ -67,21 +75,45 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        margin-left:  20rem;
+        margin-left:  8rem;
         margin-top: 2rem;
-        line-height: 1.5;
-        span.desc{
-            font-family: 'Antonio';
-            color: #b48645;
-            font-size: 1rem;
-            font-weight: 900;
-        }
         span.desc-1{
-          color: white;
-          font-family: 'Antonio';
-          font-size: 3rem;
-          font-weight: 900;
+            font-family: 'Antonio';
+            color: white;
+            font-size: 25px;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
         }
+        span.desc-2{
+          color: white;
+          font-family: 'Quicksand';
+          font-size: 15px;
+          width: 35%;
+          flex-direction: column;
+          font-weight: 500;
+        }
+        }
+        .item-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-left: 9rem;
+        margin-top: 2rem;
+        transform: translateY(-4cm);
+        font-weight: bold;
+        span.desc-3{
+           font-family: 'Antonio';
+           color: white;
+           font-size: 100px;
+           font-weight: 400;
+           margin-bottom: 0.5rem;
+           line-height: 1.5;
+      }
     }
  }
  .slide-two{
