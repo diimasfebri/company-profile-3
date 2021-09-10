@@ -1,5 +1,5 @@
 <template>
-<div class="body-container" @scroll="scrollHandler" > 
+<div class="body-container" @scroll="scrollHandler"> 
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
     <div class="filter-black"></div>
@@ -11,7 +11,7 @@
       <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
     </div>
   </div>
-  </div>
+    </div>
   <div class="slide-two">
     <img class="bg-content" src="https://images.prismic.io/andersonbrothers/c48c2615-02be-44f4-8aae-2f5ba88b7061_work-logos.jpg?auto=compress,format&w=1652&h=678&fit=crop&q=85&f=center" >
   <div class="button-container">
@@ -19,7 +19,7 @@
       <span class="desc" >OUR WORK</span>
     </div>
   </div>
-  </div>
+    </div>
   <div class="slide-three">
     <img class="bg-content" src="https://images.unsplash.com/photo-1515768678138-4ba95ba6ec96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80">
     <div class="filter-black"></div>
@@ -43,7 +43,7 @@
         </div>
       </div>
     </div>
-  </div>
+    </div>
   <div class="slide-four">
     <div class="content-container">
       <span class="desc"> WE KEEP IT SIMPLE </span>
@@ -95,7 +95,7 @@
 
         </div>
   </div>
-  </div>
+    </div>
   <div class="slide-five">
     <svg>
 	<defs>
@@ -116,7 +116,7 @@
       <span class="title"> OUR VISION</span>
       <span class="subtitle">From conception to production, our promise is to help grow your brand through custom design and premium apparel.</span>
     </div>
-  </div>
+    </div>
   <div class="slide-six">
     <div class="content-container">
         <img src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format?w=897&h=585&fit=fill&q=85&f=center" alt="">
@@ -128,14 +128,14 @@
         </div>
       </div>
     </div>
-</div>
+    </div>
   <div class="marquee">
     <div class="track">
       <div class="content">&nbsp;ANDERSON BROTHER WE HAVE A PHD IN CUSTOM APPAREAL
          QUALITY GOODS</div>
     </div>
+    </div>
   </div>
-</div>
 </template>
  
  <script>
@@ -155,6 +155,7 @@
       }))
       this.scrollTargets.sort((a, b) => a.distance - b.distance)
     },
+    
     methods: {
     scrollHandler(e) {
       const top = e.target.scrollTop

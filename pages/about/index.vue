@@ -1,5 +1,5 @@
 <template>
-<div  class="body-container"> 
+<div  class="body-container" @scroll="scrollHandler"> 
   <div class="slide-one">
     <svg>
 	<defs>
@@ -48,7 +48,7 @@
   </div>
   </div>
   <div class="slide-four">
-    <div class="desc-container">
+    <div class="desc-container target">
       <span class="desc-1">THE TEAM</span>
       <div class="card-list">
         <div class="card">
@@ -67,7 +67,7 @@
           <span class="role"> Marketing </span>
         </div>
       </div>  
-      <div class="card-list">
+      <div class="card-list ">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/6eb97008-65a2-427b-ab41-a835617f3abb_AfterlightImage+22.JPG?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> Esmeralda </span>
@@ -84,7 +84,7 @@
           <span class="role"> Graphic Designer </span>
         </div>
       </div>  
-       <div class="card-list">
+       <div class="card-list ">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/4ecfbc98-ced8-40ae-8082-ea5c65e06ba8_Madison-Bailey-Production-Manager.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> Madison </span>
@@ -101,7 +101,7 @@
           <span class="role"> Production Assistant </span>
         </div>
       </div> 
-      <div class="card-list">
+      <div class="card-list ">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/bffdf4de-2a14-43b1-b47b-4ad306efc9d2_Alex-Coleman-Logistics-Manager-.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> Alex </span>
@@ -118,7 +118,7 @@
           <span class="role"> Retail Merchandiser </span>
         </div>
       </div>
-       <div class="card-list">
+       <div class="card-list ">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/1eb15567-0d64-4d42-a3cb-8bd6d08fdf1f_AfterlightImage+23.JPG?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> Ashley </span>
@@ -150,6 +150,41 @@
 </div>
 </template>
 
+ <script>
+ import gsap from 'gsap'
+
+  export default {
+    data() {
+      return {
+        scrollTargets: [],
+      }
+    },
+    mounted() {
+      const targets = document.querySelectorAll('.target')
+      this.scrollTargets = [...targets].map((a) => ({
+        distance: a.getBoundingClientRect().top - window.innerHeight,
+        el: a,
+      }))
+      this.scrollTargets.sort((a, b) => a.distance - b.distance)
+    },
+    methods: {
+    scrollHandler(e) {
+      const top = e.target.scrollTop
+      if (this.scrollTargets.length && top >= this.scrollTargets[0].distance) {
+        // play anim
+        gsap.to(this.scrollTargets[0].el.children, {
+          opacity: 1,
+          duration: 2,
+          stagger: 0.5
+        })
+        this.scrollTargets.splice(0, 1)
+      }
+      console.log("test")
+    },
+    },
+  }
+ </script>
+
 <style lang="scss" scoped>
 .body-container{
   position: relative;
@@ -160,6 +195,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+ 
 .slide-one{
   position: relative;
   display: flex;
@@ -328,7 +365,7 @@
         font-size: 0.7rem;
     }
    }
-  }
+ }
 .slide-four{
   position: relative;
   width: 100vw;
@@ -341,6 +378,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+    opacity: 0;
   span.desc-1{
         font-family: Antonio;
         color: black;
@@ -431,7 +469,7 @@
       }
   }
 }
-}
+ }
 .slide-five{
   position: relative;
   width: 100vw;
@@ -526,6 +564,6 @@
     }
   }
 }
-}
+ } 
 }
 </style>

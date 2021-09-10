@@ -2,17 +2,17 @@
   <div class="container" >
     <div class="top">
       <div class="left">
-        <div class="dragdown">
+        <div ref="drop" class="dropdown">
           <div class="list">CUSTOM DESIGN</div>
           <div class="list">SCREEN PRINTING</div>
           <div class="list">HEADWEAR</div>
           <div class="list">CUT & SAW</div>
           <div class="list">ACCESSORIES</div>
         </div>
-        <span  class="button">SERVICES</span>
-        <span class="button" @click="$router.push('/work')">OUR WORK</span>
-        <span class="button" @click="$router.push('/process')">OUR PROCESS</span>
-        <span class="button" @click="$router.push('/about')">ABOUT US</span>
+        <span class="button"  @click="openDropdown" >SERVICES</span>
+        <span class="button"  @click="$router.push('/work')">OUR WORK</span>
+        <span class="button"  @click="$router.push('/process')">OUR PROCESS</span>
+        <span class="button"  @click="$router.push('/about')">ABOUT US</span>
       </div>
       <div class="center">
         <div class="image" @click="$router.push('/')">
@@ -72,6 +72,32 @@
   </div>
 </template>
 
+<script>
+import gsap from 'gsap'
+
+
+export default {
+  methods: {
+    openDropdown(){
+      const {
+        $refs: {
+         drop,
+        }
+      } = this
+       const tl = gsap.timeline({
+        onComplete() {
+          tl.to(drop, {
+            display: 'flex',
+            duration: 0
+          })
+        }
+      })
+
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
 .container {
   position: relative;
@@ -100,21 +126,18 @@
       justify-content: flex-start;
       align-items: center;
       margin-left: 2.5rem;
-      .dragdown {
+      .dropdown {
         position: absolute;
         width: 6rem;
         height: 8rem;
         top: 2.5rem;
         left: 0.5rem;
-        opacity:0;
         background: #f0eee3;
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-        opacity: 0;
         line-height: 1.75;
-        opacity: 0;
         padding-left: 1rem;
         .list {
           font-family: 'Antonio';
