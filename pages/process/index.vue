@@ -69,7 +69,7 @@
       <img class="bg-content" src="https://images.unsplash.com/photo-1426543881949-cbd9a76740a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mzd8fGJhY2tncm91bmQlMjBwZW9wbGV8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60">
       <div class="filter-black"></div> 
       <span class="desc">LET'S BE BROS</span>
-      <div class="button">
+      <div class="button" @click="$router.push('/contact')">
         <span>HIRE US</span>
       </div>   
     </div>
@@ -77,7 +77,7 @@
       <img class="bg-content" src="https://images.unsplash.com/photo-1496602910407-bacda74a0fe4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="">
       <div class="filter"></div>
       <span class="desc">WE'VE GOT YOUR SIX</span>
-      <div class="button">
+      <div class="button" @click="$router.push('/work')">
         <span>SEE OUR WORK</span>
       </div>
     </div>
@@ -491,6 +491,9 @@
       align-items: center;
       justify-content: center;
     }
+    &:hover{
+      background: #b48645;
+    }
     }
   }
   .right{
@@ -538,6 +541,9 @@
       font-weight: 900;
       align-items: center;
       justify-content: center;
+    }
+    &:hover{
+      background: #282829;
     }
       }
   }

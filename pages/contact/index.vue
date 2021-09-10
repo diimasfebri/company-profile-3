@@ -1,121 +1,126 @@
 <template>
-    <div class="container">
-        <div class="slide-one">
-            <img class="bg-content" src="https://images.unsplash.com/uploads/1412273646059cc129bb5/eae0a1da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-            <div class="desc-container">
-                <span class="desc">LET'S BE BROS</span>
-                <span class="desc-1">TELL US MORE</span>
-            </div>
-        </div>
-        <div class="slide-two">
-            <span class="desc">WHAT SERVICES DO YOU NEED?</span>
-            <div class="button-list">
-                <div class="button">
-                    <div class="circle"></div>
-                    <span class="txt">I NEED A FREASH LOOK (Our design team is ready!)</span>
-                </div>
-                <div class="button-1">
-                    <div class="circle"></div>
-                    <span class="txt">MY DESIGN ARE READY TO GO (Upload assets below)</span>
-                </div>
-            </div>
-            <div class="button-list-sec">
-                <span class="desc">DESIGN SERVICES</span>
-                <div class="desc-container">
-                    <div class="button">
-                        <div class="circle">
-                          <div class="bg"></div>
-                        </div>
-                        <span class="txt">ILLUSTRATION</span>
-                    </div>
-                    <div class="button">
-                        <div class="circle">
-                          <div class="bg"></div>
-                        </div>
-                        <span class="txt">PACKAGE AND LABEL DESIGN</span>
-                    </div>
-                    <div class="button">
-                        <div class="circle">
-                            <div class="bg"></div>
-                        </div>
-                        <span class="txt">LOGO/BRANDING</span>
-                    </div>
-                </div>
-            </div>
-            <div class="product">
-            <span class="desc">CATEGORIES</span>
-            <div class="card-list">
-                <div class="card">
-                <img src="https://images.prismic.io/andersonbrothers/89d584b8-3691-4255-80d4-b8ebcd5b1350_John-Anderson-President.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
-                <span class="name"> TEES </span>
-                <div class="button"></div>
-                </div>
-                <div class="card">
-                <img src="https://images.prismic.io/andersonbrothers/83eae39b-48fb-4e72-a27e-edf48fbd5425_Mike-Anderson-Creative-Director.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
-                <span class="name"> FLEECE </span>
-                <div class="button"></div>
-                </div>
-                <div class="card">
-                <img src="https://images.prismic.io/andersonbrothers/29830ffb-eb83-48d0-9830-d53bf63574d5_Aaron-Ashton-Sales-%26-Marketing.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
-                <span class="name"> FLANNELS </span>
-                <div class="button"></div>
-                </div>
-                </div>  
-            <div class="card-list two">
-                <div class="card">
-                <img src="https://images.prismic.io/andersonbrothers/6eb97008-65a2-427b-ab41-a835617f3abb_AfterlightImage+22.JPG?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
-                <span class="name"> OUTERWEAR/JACKET </span>
-                <div class="button"></div>
-                </div>
-                <div class="card">
-                <img src="https://images.prismic.io/andersonbrothers/bd632467-16f3-429a-abdc-a342cf41c708_Debbi-Wong-Accounting-Manager.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
-                <span class="name"> HEADWEAR </span>
-                <div class="button"></div>
-                </div>
-                <div class="card">
-                <img src="https://images.prismic.io/andersonbrothers/2117d343-7156-4e6f-9002-090ea6342e42_Kenny-Novak-Graphic-Design.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
-                <span class="name"> GLASSWEAR/GROWLERS </span>
-                <div class="button"></div>
-                </div>
-                </div>  
-            <div class="card-list test">
-                <div class="card">
-                <img src="https://images.prismic.io/andersonbrothers/4ecfbc98-ced8-40ae-8082-ea5c65e06ba8_Madison-Bailey-Production-Manager.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
-                <span class="name"> ACCESSORIES </span>
-                <div class="button"></div>
-                </div>
-                <div class="card">
-                <img src="https://images.prismic.io/andersonbrothers/e600c588-2fed-4de6-933a-68406fc2d409_Tempest-Orman-Accounting-Asst.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
-                <span class="name"> PROMOTIONAL </span>
-                <div class="button"></div>
-                </div>
-                </div>   
-            </div>
-
-        </div>
-        <div class="slide-three">
-            <span class= "desc">LETS WORK TOGETHER</span>
-            <div class="form">
-                <input type="text" name="" required placeholder="First Name" >
-                <input type="text" name="" required placeholder="Last Name" >
-                <input type="text" name="" required placeholder="Company" >
-                <input type="email" name="" required placeholder="Email" >
-                <input type="text" name="" required placeholder="Phone" >
-                <div class="upload-container">
-                    <span class="upload">Upload Brand Assets And Logo</span>
-                    <div class="button">
-                        <span class="unggah">UPLOAD</span>
-                    </div>
-                </div>
-                <div class="buttongede">
-                    <span class="kumpul">SUBMIT!</span>
-                </div>
-                <span class= "desc-2">PULL THE TRIGGER</span>
-            </div>
-                </div>
-            </div>
+<div class="container">
+    <div class="slide-one">
+        <img class="bg-content" src="https://images.unsplash.com/uploads/1412273646059cc129bb5/eae0a1da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+        <div class="desc-container">
+            <span class="desc">LET'S BE BROS</span>
+            <span class="desc-1">TELL US MORE</span>
         </div>
     </div>
+    <div class="slide-two">
+        <span class="desc">WHAT SERVICES DO YOU NEED?</span>
+        <div class="button-list">
+            <div class="button">
+                <div class="circle"></div>
+                <span class="txt">I NEED A FREASH LOOK (Our design team is ready!)</span>
+            </div>
+            <div class="button-1">
+                <div class="circle"></div>
+                <span class="txt">MY DESIGN ARE READY TO GO (Upload assets below)</span>
+            </div>
+        </div>
+        <div class="button-list-sec">
+            <span class="desc">DESIGN SERVICES</span>
+            <div class="desc-container">
+                <div class="button">
+                    <div class="circle">
+                        <div class="bg"></div>
+                    </div>
+                    <span class="txt">ILLUSTRATION</span>
+                </div>
+                <div class="button">
+                    <div class="circle">
+                        <div class="bg"></div>
+                    </div>
+                    <span class="txt">PACKAGE AND LABEL DESIGN</span>
+                </div>
+                <div class="button">
+                    <div class="circle">
+                        <div class="bg"></div>
+                    </div>
+                    <span class="txt">LOGO/BRANDING</span>
+                </div>
+            </div>
+        </div>
+        <div class="product">
+        <span class="desc">CATEGORIES</span>
+        <div class="card-list">
+            <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/89d584b8-3691-4255-80d4-b8ebcd5b1350_John-Anderson-President.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
+            <span class="name"> TEES </span>
+            <div class="button"></div>
+            </div>
+            <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/83eae39b-48fb-4e72-a27e-edf48fbd5425_Mike-Anderson-Creative-Director.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
+            <span class="name"> FLEECE </span>
+            <div class="button"></div>
+            </div>
+            <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/29830ffb-eb83-48d0-9830-d53bf63574d5_Aaron-Ashton-Sales-%26-Marketing.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
+            <span class="name"> FLANNELS </span>
+            <div class="button"></div>
+            </div>
+            </div>  
+        <div class="card-list two">
+            <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/6eb97008-65a2-427b-ab41-a835617f3abb_AfterlightImage+22.JPG?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
+            <span class="name"> OUTERWEAR/JACKET </span>
+            <div class="button"></div>
+            </div>
+            <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/bd632467-16f3-429a-abdc-a342cf41c708_Debbi-Wong-Accounting-Manager.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
+            <span class="name"> HEADWEAR </span>
+            <div class="button"></div>
+            </div>
+            <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/2117d343-7156-4e6f-9002-090ea6342e42_Kenny-Novak-Graphic-Design.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
+            <span class="name"> GLASSWEAR/GROWLERS </span>
+            <div class="button"></div>
+            </div>
+            </div>  
+        <div class="card-list test">
+            <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/4ecfbc98-ced8-40ae-8082-ea5c65e06ba8_Madison-Bailey-Production-Manager.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
+            <span class="name"> ACCESSORIES </span>
+            <div class="button"></div>
+            </div>
+            <div class="card">
+            <img src="https://images.prismic.io/andersonbrothers/e600c588-2fed-4de6-933a-68406fc2d409_Tempest-Orman-Accounting-Asst.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
+            <span class="name"> PROMOTIONAL </span>
+            <div class="button"></div>
+            </div>
+            </div>   
+        </div>
+
+    </div>
+    <div class="slide-three">
+        <span class= "desc">LETS WORK TOGETHER</span>
+        <div class="form">
+            <input type="text" name="" required placeholder="First Name" >
+            <input type="text" name="" required placeholder="Last Name" >
+            <input type="text" name="" required placeholder="Company" >
+            <input type="email" name="" required placeholder="Email" >
+            <input type="text" name="" required placeholder="Phone" >
+            <div class="upload-container">
+                <span class="upload">Upload Brand Assets And Logo</span>
+                <div class="button">
+                    <span class="unggah">UPLOAD</span>
+                </div>
+            </div>
+            <div class="buttongede">
+                <span class="kumpul">SUBMIT!</span>
+            </div>
+            <span class= "desc-2">PULL THE TRIGGER</span>
+        </div>
+    </div>
+    <div class="slide-four">
+        <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+        <img src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+        <img src="https://images.prismic.io/andersonbrothers/3f50020a-7a98-4a7b-8b23-7c635ed406f8_logos-row-3.png?auto=compress,format">
+        <img src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+    </div>
+</div>
+      
 </template>
 
 
@@ -498,6 +503,26 @@
             font-weight: 900; 
             font-weight: bold; 
      }
+  }
+  .slide-four{
+      position: relative;
+      display: flex;
+      padding: 2rem 0;
+      width: 100vw;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background:#282829 ;
+      img{
+          position: relative;
+          display: flex;
+          height: 6rem;
+          animation: marquee 10s linear infinite;
+    @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+    }
+      }
   }
   }
 

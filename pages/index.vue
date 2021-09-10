@@ -8,7 +8,7 @@
       <span>D*MN GOOD APPAREL</span>
     </div>  
     <div class="button">
-      <span class="desc">VIEW OR WORK</span>
+      <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
     </div>
   </div>
   </div>
@@ -16,8 +16,8 @@
     <img class="bg-content" src="https://images.unsplash.com/32/9FybtVFNSEOxogGzIvHJ_IMG_2226.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" >
     <div class="filter-black"></div>
   <div class="button-container">
-    <div class="button">
-      <span class="desc">OUR WORK</span>
+    <div class="button" @click="$router.push('/work')">
+      <span class="desc" >OUR WORK</span>
     </div>
   </div>
   </div>
@@ -80,8 +80,8 @@
           </div>
         </div>
       </div>
-      <div class="button-start">
-        <span class="txt">GET STARTED</span>
+      <div class="button-start" @click="$router.push('/contact')">
+        <span class="txt" >GET STARTED</span>
       </div>
     </div>
   </div>
@@ -106,7 +106,6 @@
       <span class="subtitle">From conception to production, our promise is to help grow your brand through custom design and premium apparel.</span>
     </div>
   </div>
-
   <div class="marquee">
     <div class="track">
       <div class="content">&nbsp;ANDERSON BROTHER WE HAVE A PHD IN CUSTOM APPAREAL
@@ -180,6 +179,9 @@
           font-size: 0.8rem;
           font-weight: 900;
         }
+        &:hover{
+          background: #b48645;
+        }
       }
     }
  }
@@ -224,6 +226,9 @@
       font-weight: 900;
       color: white;
       }
+      &:hover{
+          background: #b48645;
+        }
    }
  }
  }
@@ -391,6 +396,9 @@
         font-size: 0.8rem;
         font-weight: 900;
       }
+      &:hover{
+          background: #b48645;
+        }
     }
   }
  }
@@ -460,12 +468,11 @@
       font-size: 144px;
       font-weight: bolder;
       color: #282829
-      
+     }
+    @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
     }
-  @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-  }
 
 }
  }

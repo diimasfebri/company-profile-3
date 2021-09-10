@@ -140,7 +140,7 @@
             <img src="https://images.prismic.io/andersonbrothers/36aef18f-d5e1-4c56-bf08-a10f7de29606_duke.png?auto=compress,format&w=553&h=372&fit=crop&q=85&f=center" alt="">
             <span class="name">The DUKE</span>
             <span class="role"> Mascot</span>
-            <div class="button">
+            <div class="button" @click="$router.push('/services/all')">
               <span class="desc">VIEW SERVICES</span>
             </div>
           </div>
@@ -148,10 +148,6 @@
     </div>
   </div> 
 </div>
-    
-    
-    
-    
 </template>
 
 <style lang="scss" scoped>
@@ -523,6 +519,9 @@
         font-size: 0.8rem;
         font-weight: 900;
         color: white;
+      }
+      &:hover{
+        background: #282829;
       }
     }
   }

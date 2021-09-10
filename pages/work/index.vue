@@ -28,7 +28,7 @@
               apparel that has catapulted their retail sales
             </span>
             <div class="button">
-              <span class="desc">HIRE US</span>
+              <span class="desc" @click="$router.push('/contact')">HIRE US</span>
             </div>
           </div>
         </div>
@@ -77,8 +77,8 @@
             <div class="desc-container">
               <span class="desc"> OUR PROCESS </span>
               <span class="desc-1"> We've been at it for a long time and proven process makes sure that you get awesomeness fast! </span> 
-              <div class="button">
-                <span class="desc-2">LEARN MORE</span>
+              <div class="button" @click="$router.push('/process')">
+                <span class="desc-2" >LEARN MORE</span>
               </div>
             </div>
           </div>
@@ -234,6 +234,9 @@
                 font-size: 0.8rem;
                 font-weight: 900;
                 color: white;
+              }
+              &:hover{
+                background: #282829;
               }
             }
         }
@@ -438,6 +441,9 @@
             font-weight: 900;
             color: white;
           }
+          &:hover{
+                background: #282829;
+              }
         }
     
     }
