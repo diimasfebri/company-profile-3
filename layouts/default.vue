@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" >
     <div class="top">
       <div class="left">
         <div class="dragdown">
@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <nuxt />
+    <nuxt  />
     <div class="bottom">
       <div class="top-section">
         <div class="left">
@@ -386,6 +386,6 @@ body {
   margin: 0;
   padding: 0;
   font-size: 24px;
-  overflow-x: hidden;
+    overflow: hidden;
 }
 </style> 
