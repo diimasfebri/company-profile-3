@@ -182,6 +182,7 @@
         font-family: 'Quicksand';
         font-size: 0.7rem;
         color: black;
+        width: 70%;
     }
  }
  }
@@ -212,7 +213,7 @@
   height: 100%;
   padding: 5rem 2rem;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
    span.desc{
         font-family: Antonio;
@@ -240,17 +241,19 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   .img-container{
-      position: absolute;
-      width: 100%;
+      position: relative;
+      width: 50%;
       height: 100%;
       align-items: flex-start;
       display: flex;
       justify-content: flex-start ;
       img.bg-content{
          position: relative;
-         width: 50vw;
+         width: 100%;
          height: 100vh;
          object-fit: cover;
       } 
@@ -260,10 +263,9 @@
   display: flex;
   width: 40%;
   height: 100%;
-  margin-left: 27rem;
-  padding: 5rem 2rem;
+  transform: translateX(2rem);
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
    span.desc{
         font-family: Antonio;
@@ -313,7 +315,7 @@
   height: 100%;
   padding: 5rem 2rem;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: flex-start;
    span.desc{
         font-family: Antonio;
@@ -336,57 +338,54 @@
     }
 }
  }
- .slide-six{
+.slide-six{
   position: relative;
   width: 100vw;
-  height: 140vh;
+  height: 110vh;
   display: flex;
   justify-content: center;
   align-items: center;
   .desc-container{
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 3rem;
-        align-items: center;
-        
-        
-        span.desc{
-          color: black;
-          font-family: 'Antonio';
-          font-size: 3rem;
-          font-weight: 900;
-          margin-bottom: 1.5rem;
-        }
-        span.desc-1{
-        text-align: center;
-        font-family: 'Quicksand';
-        font-size: 0.7rem;
-        color: black;
-        width: 60%;   
-        margin-bottom: 2rem;
-        }
-        img{
-          position: relative;
-          display: flex;
-          width: 45rem;
-          height: 18rem;
-          object-fit: cover;
-        }
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    span.desc{
+      color: black;
+      font-family: 'Antonio';
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+    }
+    span.desc-1{
+    text-align: center;
+    font-family: 'Quicksand';
+    font-size: 0.7rem;
+    color: black;
+    width: 60%;   
+    margin-bottom: 2rem;
+    }
+    img{
+      position: relative;
+      display: flex;
+      width: 45rem;
+      height: 18rem;
+      object-fit: cover;
+    }
   }
  
  }
- .slide-seven{
+.slide-seven{
   position: relative;
   width: 100vw;
   height: 120vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   background: #f0eee3;
   img{
     width: 23rem;
@@ -401,7 +400,7 @@
     height: 100%;
     padding: 5rem 2rem;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
       span.desc{
           color: #b48645;
@@ -437,7 +436,7 @@
           transform: translateX(4rem);
       }
     }
-  }
+ }
 .slide-eight{
   position: relative;
   width: 100vw;
