@@ -1,5 +1,5 @@
 <template>
-<div class="body-container"> 
+<div class="body-container" @scroll="scrollHandler" > 
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
     <div class="filter-black"></div>
@@ -13,8 +13,7 @@
   </div>
   </div>
   <div class="slide-two">
-    <img class="bg-content" src="https://images.unsplash.com/32/9FybtVFNSEOxogGzIvHJ_IMG_2226.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80" >
-    <div class="filter-black"></div>
+    <img class="bg-content" src="https://images.prismic.io/andersonbrothers/c48c2615-02be-44f4-8aae-2f5ba88b7061_work-logos.jpg?auto=compress,format&w=1652&h=678&fit=crop&q=85&f=center" >
   <div class="button-container">
     <div class="button" @click="$router.push('/work')">
       <span class="desc" >OUR WORK</span>
@@ -48,8 +47,8 @@
   <div class="slide-four">
     <div class="content-container">
       <span class="desc"> WE KEEP IT SIMPLE </span>
-      <div class="step-list">
-        <div class="step one">
+      <div  class="step-list target">
+        <div  class="step one">
           <div class="img">
             <img src="https://images.unsplash.com/photo-1621607505833-616916c46a25?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cG9tYWRlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="">
             <span>1</span>
@@ -59,7 +58,7 @@
             <span class="subtitle"> Our design team will elevate your brand by using your company logos, brand assets and color palletes</span>
           </div>
         </div>
-        <div class="step two">
+        <div ref="stepDua" class="step two">
           <div class="img">
             <img src="https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1049&q=80" alt="">
             <span>2</span>
@@ -69,7 +68,7 @@
             <span class="subtitle"> Collaborate with our world-class design, production and merchandising teams to create lifestyle driven apparel with timeless design.</span>
           </div>
         </div>
-        <div class="step three">
+        <div ref="stepTiga" class="step three">
           <div class="img">
             <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=564&q=80" alt="">
             <span>3</span>
@@ -83,7 +82,12 @@
       <div class="button-start" @click="$router.push('/contact')">
         <span class="txt" >GET STARTED</span>
       </div>
+      <div class="item-container">
+        <span class="title">TESTIMONIALS</span>
+        <span class="subtitle">I love working with ABDS. I really value their design process and the friendship we've developed over the years. It's more than
+          a business transaction. It's a way to mutually propel our businesses and I've enjoyed the journey so far!</span>
     </div>
+  </div>
   </div>
   <div class="slide-five">
     <svg>
@@ -106,6 +110,21 @@
       <span class="subtitle">From conception to production, our promise is to help grow your brand through custom design and premium apparel.</span>
     </div>
   </div>
+<<<<<<< HEAD
+=======
+  <div class="slide-six">
+    <div class="item-container">
+    <span class="title">TEAMWORK</span>
+    <span class="subtitle">We believe company culture and teamwork thrive in a fun and creative environment. Work with us and get to know our team!</span>
+      <div class="button">
+        <span class="item">ABOUT US</span>
+      </div>
+    <div class="img-item">
+      <img src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format?w=897&h=585&fit=fill&q=85&f=center"/>
+    </div>
+  </div>
+</div>
+>>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
   <div class="marquee">
     <div class="track">
       <div class="content">&nbsp;ANDERSON BROTHER WE HAVE A PHD IN CUSTOM APPAREAL
@@ -114,17 +133,57 @@
   </div>
 </div>
 </template>
+ 
+ <script>
+ import gsap from 'gsap'
+
+  export default {
+    data() {
+      return {
+        scrollTargets: [],
+      }
+    },
+    mounted() {
+      const targets = document.querySelectorAll('.target')
+      this.scrollTargets = [...targets].map((a) => ({
+        distance: a.getBoundingClientRect().top - window.innerHeight,
+        el: a,
+      }))
+      this.scrollTargets.sort((a, b) => a.distance - b.distance)
+    },
+    methods: {
+    scrollHandler(e) {
+      const top = e.target.scrollTop
+      if (this.scrollTargets.length && top >= this.scrollTargets[0].distance) {
+        // play anim
+        gsap.to(this.scrollTargets[0].el.children, {
+          opacity: 1,
+          duration: 2,
+          stagger: 0.5
+        })
+        this.scrollTargets.splice(0, 1)
+      }
+      console.log('test')
+    },
+   },
+  }
+ </script>
+
+
 
 <style lang="scss" scoped>
 .body-container{
   position: relative;
   width: 100vw;
-  min-height: 100vh;
-  min-height: calc((var(--vh, 1vh) * 100));
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow-y: auto;
+  > * {
+    flex-shrink: 0;
+  }
 .slide-one{
    position: relative;
    width: 100vw;
@@ -190,17 +249,23 @@
    width: 100vw;
    height: 100vh;
    display: flex;
+   justify-content: center;
+   align-items: center ;
     img.bg-content{
       position: absolute;
-      width: 100vw;
       height: 100vh;
+      text-align: center;
+      animation: cssmarquee 4s linear infinite alternate;
     }
-    .filter-black{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(#000, 0.6);;
+    @keyframes cssmarquee {
+    0% {
+      transform: translateX(-5%);
     }
+    100% {
+      transform: translateX(5%);
+    }
+  }
+    
  .button-container{
   position: relative;
   display: flex;
@@ -300,7 +365,6 @@
  .slide-four{
   position: relative;
   width: 100vw;
-  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -330,6 +394,7 @@
         position: relative;
         display: flex;
         width: 33%;
+        opacity: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -364,15 +429,15 @@
          justify-content: flex-start;
          align-items: flex-start;
           span.title{
-            font-family: 'Quicksand';
-            font-size: 22px;
+            font-family: 'Antonio';
+            font-size: 30px;
             color: #282829;
             font-weight: 700;
             margin-top: 2rem;
           }
           span.subtitle{
-            font-family: 'Quicksand';
-            font-size: 16px;
+            font-family: 'Antonio';
+            font-size: 20px;
             color: #282829;
             font-weight: 400;
             margin-top: 0.5rem;
@@ -399,6 +464,34 @@
       &:hover{
           background: #b48645;
         }
+    }
+    .item-container{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding: 5rem 4rem;
+      margin-top: 2rem;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      transform: translateY(-3rem);
+      span.title{
+          font-family: 'Antonio';
+          font-size: 25px;
+          color: #282829;
+          font-weight: bolder;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+      }
+      span.subtitle{
+         font-family: 'Antonio';
+         font-size: 45px;
+         color: #282829;
+         font-weight: 400;
+         margin-top: 2rem;
+         margin-bottom: 6rem;
+      }
     }
   }
  }
@@ -451,7 +544,72 @@
     }
   } 
  }
- .marquee{
+ .slide-six{
+   .item-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    span.title{
+      font-family: 'Antonio';
+      font-size: 1rem;
+      color: #282829;
+      font-weight: bolder;
+      margin-top: 15rem;
+      margin-left: 4rem;
+    }
+    span.subtitle{
+      font-family: 'Quicksand';
+      font-size: 1rem;
+      width: 30%;
+      margin-top: 2rem;
+      color: #282829;
+      margin-left: 4rem;
+    }
+  .img-item{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 34rem;
+    transform: translateY(-23rem);
+    img{
+       position: relative;
+       display: flex;
+       width: 35rem;
+       height: 25rem;
+    }
+}
+  .button{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 10rem;
+    height: 1.5rem;
+    background: #b48645;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-4rem);
+    margin-left: 4rem;
+    margin-top: 6rem;
+    span.item{
+       position: relative;
+       display: flex;
+       font-family: Antonio;
+       font-size: 0.8rem;
+       font-weight: 900;
+      color: white;
+    }
+}
+}
+ }
+  .marquee{
   position: relative;
   width: 100vw;
   max-width: 100%;
@@ -473,8 +631,15 @@
     from { transform: translateX(0); }
     to { transform: translateX(-100%); }
     }
+<<<<<<< HEAD
 
+=======
+  @keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+  }
+>>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
 }
- }
+}
 }
 </style>

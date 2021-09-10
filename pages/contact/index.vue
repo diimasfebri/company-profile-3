@@ -6,7 +6,11 @@
             <span class="desc">LET'S BE BROS</span>
             <span class="desc-1">TELL US MORE</span>
         </div>
+<<<<<<< HEAD
     </div>
+=======
+      </div>
+>>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
     <div class="slide-two">
         <span class="desc">WHAT SERVICES DO YOU NEED?</span>
         <div class="button-list">
@@ -92,7 +96,11 @@
             </div>   
         </div>
 
+<<<<<<< HEAD
     </div>
+=======
+      </div>
+>>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
     <div class="slide-three">
         <span class= "desc">LETS WORK TOGETHER</span>
         <div class="form">
@@ -112,7 +120,11 @@
             </div>
             <span class= "desc-2">PULL THE TRIGGER</span>
         </div>
+      </div>
+    <div class="slide-four">
+
     </div>
+<<<<<<< HEAD
     <div class="slide-four">
         <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
         <img src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
@@ -121,6 +133,9 @@
     </div>
 </div>
       
+=======
+</div>
+>>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
 </template>
 
 
@@ -134,7 +149,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-
   .slide-one{
     position: relative;
     width: 100vw;
@@ -168,7 +182,7 @@
         margin-top: 1rem;
     }
     }
-  }
+    }
   .slide-two{
     position: relative;
     width: 100vw;
@@ -190,8 +204,8 @@
     margin-top: 2rem;
     width: 80%;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
      .button{
          position: relative;
          display: flex;
@@ -405,7 +419,7 @@
      
      }
     }
-  }
+    }
   .slide-three{
     position: relative;
     display: flex;
@@ -503,6 +517,7 @@
             font-weight: 900; 
             font-weight: bold; 
      }
+<<<<<<< HEAD
   }
   .slide-four{
       position: relative;
@@ -524,6 +539,14 @@
     }
       }
   }
+=======
+    }
+  .slide-four{
+      position: relative;
+      display: flex;
+      width: 100vw;
+    }
+>>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
   }
 
 </style>

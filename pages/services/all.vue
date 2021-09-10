@@ -103,9 +103,15 @@
            font-weight: 400;
            margin-bottom: 0.5rem;
            line-height: 1.5;
+        &:hover{
+            background: #b48645;
+            span.role-3{
+              color: #f4f4f4
+            }
       }
     }
  }
+}
  .slide-two{
    position: relative;
    width: 100vw;
