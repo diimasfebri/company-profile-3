@@ -130,6 +130,10 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow-y: auto;
+   > * {
+    flex-shrink: 0;
+  }
   .slide-one{
     position: relative;
     width: 100vw;

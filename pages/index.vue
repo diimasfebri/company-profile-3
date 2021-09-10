@@ -82,11 +82,18 @@
       <div class="button-start" @click="$router.push('/contact')">
         <span class="txt" >GET STARTED</span>
       </div>
-      <div class="item-container">
-        <span class="title">TESTIMONIALS</span>
-        <span class="subtitle">I love working with ABDS. I really value their design process and the friendship we've developed over the years. It's more than
-          a business transaction. It's a way to mutually propel our businesses and I've enjoyed the journey so far!</span>
-    </div>
+      <div class="testi-container">
+          <span class="txt">TESTIMONIALS</span>
+          <div class="subtxt-container">
+          <span class="desc-2">"</span>
+          <span class="desc-1">The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel.</span>
+          <div class="auth">
+            <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
+            <span class="desc-3">"</span>
+          </div>
+            </div>
+
+        </div>
   </div>
   </div>
   <div class="slide-five">
@@ -111,16 +118,16 @@
     </div>
   </div>
   <div class="slide-six">
-    <div class="item-container">
-    <span class="title">TEAMWORK</span>
-    <span class="subtitle">We believe company culture and teamwork thrive in a fun and creative environment. Work with us and get to know our team!</span>
-      <div class="button">
-        <span class="item">ABOUT US</span>
+    <div class="content-container">
+        <img src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format?w=897&h=585&fit=fill&q=85&f=center" alt="">
+      <div class="desc-container">
+        <span class="desc"> TEAMWORK </span>
+        <span class="desc-1"> We believe company culture and teamwork thrive in a fun and creative environment. Work with us and get to know our team!</span> 
+        <div class="button" @click="$router.push('/about')">
+          <span class="desc-2" >ABOUT US</span>
+        </div>
       </div>
-    <div class="img-item">
-      <img src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format?w=897&h=585&fit=fill&q=85&f=center"/>
     </div>
-  </div>
 </div>
   <div class="marquee">
     <div class="track">
@@ -162,7 +169,7 @@
       }
       console.log('test')
     },
-   },
+    },
   }
  </script>
 
@@ -462,33 +469,62 @@
           background: #b48645;
         }
     }
-    .item-container{
+    .testi-container {
       position: relative;
       display: flex;
       width: 100%;
-      height: 100%;
-      padding: 5rem 4rem;
-      margin-top: 2rem;
+      margin: 7rem 0;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
-      transform: translateY(-3rem);
-      span.title{
-          font-family: 'Antonio';
-          font-size: 25px;
-          color: #282829;
-          font-weight: bolder;
-          margin-top: 2rem;
-          margin-bottom: 2rem;
+      span.txt{
+        color: #282829;
+        font-size: 1.2rem;
+        font-family: 'Antonio';
+        font-weight: 900;
       }
-      span.subtitle{
-         font-family: 'Antonio';
-         font-size: 45px;
-         color: #282829;
-         font-weight: 400;
-         margin-top: 2rem;
-         margin-bottom: 6rem;
+      .subtxt-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+          span.desc-2{
+              color: #b48645;
+              font-family: 'Antonio';
+              font-size: 3rem;
+              font-weight: 900;
+          }
+          span.desc-1{
+              font-family: 'Antonio';
+              color: #282829;
+              font-size: 2.5rem;
+              font-weight: 900;
+              transform: translateY(-1rem);
+          }
+          .auth{
+            position: relative;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+            span.desc-2{
+                font-family: Antonio;
+                color: #b48645;
+                font-size: 1rem;
+                font-weight: 900;
+                transform: translateX(-3rem);
+              }
+          }
+          span.desc-3{
+              color: #b48645;
+              font-family: Antonio;
+              font-size: 3rem;
+              font-weight: 900;
+          }
       }
+
     }
   }
  }
@@ -542,71 +578,74 @@
   } 
  }
  .slide-six{
-   .item-container{
-    position: relative;
-    width: 100%;
+   position: relative;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    span.title{
-      font-family: 'Antonio';
-      font-size: 1rem;
-      color: #282829;
-      font-weight: bolder;
-      margin-top: 15rem;
-      margin-left: 4rem;
-    }
-    span.subtitle{
-      font-family: 'Quicksand';
-      font-size: 1rem;
-      width: 30%;
-      margin-top: 2rem;
-      color: #282829;
-      margin-left: 4rem;
-    }
-  .img-item{
-    position: relative;
-    display: flex;
-    width: 80%;
-    height: 100%;
-    flex-direction: row;
-    justify-content: flex-start;
     align-items: center;
-    margin-left: 34rem;
-    transform: translateY(-23rem);
-    img{
+    .content-container{
+     position: relative;
+     display: flex;
+     width: 80%;
+     height: 100%;
+     flex-direction: row;
+     justify-content: flex-start;
+     align-items: center;
+     img{
        position: relative;
        display: flex;
        width: 35rem;
-       height: 25rem;
+       height: 22rem;
+      }
+    .desc-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        margin-left: 7rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        span.desc{
+          font-family: 'Antonio';
+          color:black;
+          font-size: 25px;
+          margin-bottom: 1.5rem;
+        }
+        span.desc-1{
+          font-family: 'Quicksand';
+          color:black;
+          font-size: 18px;
+        }
+        .button {
+          cursor: pointer;
+          position: relative;
+          display: flex;
+          width: 19rem;
+          height: 1.5rem;
+          background: #b48645;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 2rem;
+          span.desc-2 {
+            position: relative;
+            display: flex;
+            font-family: Antonio;
+            font-size: 0.8rem;
+            font-weight: 900;
+            color: white;
+          }
+          &:hover{
+                background: #282829;
+              }
+        }
+    
     }
-}
-  .button{
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    width: 10rem;
-    height: 1.5rem;
-    background: #b48645;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transform: translateY(-4rem);
-    margin-left: 4rem;
-    margin-top: 6rem;
-    span.item{
-       position: relative;
-       display: flex;
-       font-family: Antonio;
-       font-size: 0.8rem;
-       font-weight: 900;
-      color: white;
     }
-}
-}
  }
-  .marquee{
+ .marquee{
   position: relative;
   width: 100vw;
   max-width: 100%;
@@ -622,17 +661,18 @@
       font-family: 'Antonio';
       font-size: 144px;
       font-weight: bolder;
-      color: #282829
+      color: #282829;
+     
      }
     @keyframes marquee {
     from { transform: translateX(0); }
     to { transform: translateX(-100%); }
     }
-  @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-  }
-}
-}
+    @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+    }
+    } 
+ }
 }
 </style>
