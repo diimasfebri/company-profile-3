@@ -35,8 +35,8 @@
       </div>
       </div>
     <div class="slide-three">
-
-      </div>
+      
+    </div>
     <div class="slide-four">
       <img
         class="bg-content"

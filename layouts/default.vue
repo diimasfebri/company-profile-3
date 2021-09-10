@@ -10,17 +10,17 @@
           <div class="list">ACCESSORIES</div>
         </div>
         <span  class="button">SERVICES</span>
-        <span class="button">OUR WORK</span>
-        <span class="button">OUR PROCESS</span>
-        <span class="button">ABOUT US</span>
+        <span class="button" @click="$router.push('/work')">OUR WORK</span>
+        <span class="button" @click="$router.push('/process')">OUR PROCESS</span>
+        <span class="button" @click="$router.push('/about')">ABOUT US</span>
       </div>
       <div class="center">
-        <div class="image">
+        <div class="image" @click="$router.push('/')">
           <img src="/suavecito.png" alt="" />
         </div>
       </div>
       <div class="right">
-        <div class="button">
+        <div class="button" @click="$router.push('/contact')">
           <span class="button-hire"> HIRE US</span>
         </div>
       </div>
@@ -388,4 +388,4 @@ body {
   font-size: 24px;
   overflow-x: hidden;
 }
-</style>
+</style> 
