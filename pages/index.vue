@@ -110,8 +110,6 @@
       <span class="subtitle">From conception to production, our promise is to help grow your brand through custom design and premium apparel.</span>
     </div>
   </div>
-<<<<<<< HEAD
-=======
   <div class="slide-six">
     <div class="item-container">
     <span class="title">TEAMWORK</span>
@@ -124,7 +122,6 @@
     </div>
   </div>
 </div>
->>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
   <div class="marquee">
     <div class="track">
       <div class="content">&nbsp;ANDERSON BROTHER WE HAVE A PHD IN CUSTOM APPAREAL
@@ -631,14 +628,10 @@
     from { transform: translateX(0); }
     to { transform: translateX(-100%); }
     }
-<<<<<<< HEAD
-
-=======
   @keyframes marquee {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
   }
->>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
 }
 }
 }

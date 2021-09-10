@@ -6,11 +6,7 @@
             <span class="desc">LET'S BE BROS</span>
             <span class="desc-1">TELL US MORE</span>
         </div>
-<<<<<<< HEAD
-    </div>
-=======
       </div>
->>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
     <div class="slide-two">
         <span class="desc">WHAT SERVICES DO YOU NEED?</span>
         <div class="button-list">
@@ -96,11 +92,7 @@
             </div>   
         </div>
 
-<<<<<<< HEAD
-    </div>
-=======
       </div>
->>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
     <div class="slide-three">
         <span class= "desc">LETS WORK TOGETHER</span>
         <div class="form">
@@ -124,18 +116,7 @@
     <div class="slide-four">
 
     </div>
-<<<<<<< HEAD
-    <div class="slide-four">
-        <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
-        <img src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
-        <img src="https://images.prismic.io/andersonbrothers/3f50020a-7a98-4a7b-8b23-7c635ed406f8_logos-row-3.png?auto=compress,format">
-        <img src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
-    </div>
 </div>
-      
-=======
-</div>
->>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
 </template>
 
 
@@ -517,36 +498,12 @@
             font-weight: 900; 
             font-weight: bold; 
      }
-<<<<<<< HEAD
-  }
-  .slide-four{
-      position: relative;
-      display: flex;
-      padding: 2rem 0;
-      width: 100vw;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: center;
-      background:#282829 ;
-      img{
-          position: relative;
-          display: flex;
-          height: 6rem;
-          animation: marquee 10s linear infinite;
-    @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
-    }
-      }
-  }
-=======
     }
   .slide-four{
       position: relative;
       display: flex;
       width: 100vw;
     }
->>>>>>> db73d07faba644882b596f7c82bebe667c7fe4f9
   }
 
 </style>
