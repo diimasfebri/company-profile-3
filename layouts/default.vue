@@ -3,11 +3,12 @@
     <div class="top">
       <div class="left">
         <div ref="drop" class="dropdown">
-          <div class="list">CUSTOM DESIGN</div>
-          <div class="list">SCREEN PRINTING</div>
-          <div class="list">HEADWEAR</div>
-          <div class="list">CUT & SAW</div>
-          <div class="list">ACCESSORIES</div>
+          <div class="list" @click="$router.push('/services/all')" >ALL</div>
+          <div class="list" @click="$router.push('/services/customdesign')" >CUSTOM DESIGN</div>
+          <div class="list" @click="$router.push('/services/screenprinting')">SCREEN PRINTING</div>
+          <div class="list" @click="$router.push('/services/headwer')">HEADWEAR</div>
+          <div class="list" @click="$router.push('/services/cut&sew')">CUT & SAW</div>
+          <div class="list" @click="$router.push('/services/accessories')">ACCESSORIES</div>
         </div>
         <span class="button"  @click="openDropdown" >SERVICES</span>
         <span class="button"  @click="$router.push('/work')">OUR WORK</span>
