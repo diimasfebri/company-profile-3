@@ -83,7 +83,12 @@
       <div class="button-start">
         <span class="txt">GET STARTED</span>
       </div>
+      <div class="item-container">
+        <span class="title">TESTIMONIALS</span>
+        <span class="subtitle">I love working with ABDS. I really value their design process and the friendship we've developed over the years. It's more than
+          a business transaction. It's a way to mutually propel our businesses and I've enjoyed the journey so far!</span>
     </div>
+  </div>
   </div>
   <div class="slide-five">
     <svg>
@@ -106,7 +111,18 @@
       <span class="subtitle">From conception to production, our promise is to help grow your brand through custom design and premium apparel.</span>
     </div>
   </div>
-
+  <div class="slide-six">
+    <div class="item-container">
+    <span class="title">TEAMWORK</span>
+    <span class="subtitle">We believe company culture and teamwork thrive in a fun and creative environment. Work with us and get to know our team!</span>
+      <div class="button">
+        <span class="item">ABOUT US</span>
+      </div>
+    <div class="img-item">
+      <img src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format?w=897&h=585&fit=fill&q=85&f=center"/>
+    </div>
+  </div>
+</div>
   <div class="marquee">
     <div class="track">
       <div class="content">&nbsp;ANDERSON BROTHER WE HAVE A PHD IN CUSTOM APPAREAL
@@ -295,7 +311,6 @@
  .slide-four{
   position: relative;
   width: 100vw;
-  height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -359,15 +374,15 @@
          justify-content: flex-start;
          align-items: flex-start;
           span.title{
-            font-family: 'Quicksand';
-            font-size: 22px;
+            font-family: 'Antonio';
+            font-size: 30px;
             color: #282829;
             font-weight: 700;
             margin-top: 2rem;
           }
           span.subtitle{
-            font-family: 'Quicksand';
-            font-size: 16px;
+            font-family: 'Antonio';
+            font-size: 20px;
             color: #282829;
             font-weight: 400;
             margin-top: 0.5rem;
@@ -390,6 +405,34 @@
         color: white;
         font-size: 0.8rem;
         font-weight: 900;
+      }
+    }
+    .item-container{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      padding: 5rem 4rem;
+      margin-top: 2rem;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      transform: translateY(-3rem);
+      span.title{
+          font-family: 'Antonio';
+          font-size: 25px;
+          color: #282829;
+          font-weight: bolder;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+      }
+      span.subtitle{
+         font-family: 'Antonio';
+         font-size: 45px;
+         color: #282829;
+         font-weight: 400;
+         margin-top: 2rem;
+         margin-bottom: 6rem;
       }
     }
   }
@@ -443,7 +486,72 @@
     }
   } 
  }
- .marquee{
+ .slide-six{
+   .item-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    span.title{
+      font-family: 'Antonio';
+      font-size: 1rem;
+      color: #282829;
+      font-weight: bolder;
+      margin-top: 15rem;
+      margin-left: 4rem;
+    }
+    span.subtitle{
+      font-family: 'Quicksand';
+      font-size: 1rem;
+      width: 30%;
+      margin-top: 2rem;
+      color: #282829;
+      margin-left: 4rem;
+    }
+  .img-item{
+    position: relative;
+    display: flex;
+    width: 80%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 34rem;
+    transform: translateY(-23rem);
+    img{
+       position: relative;
+       display: flex;
+       width: 35rem;
+       height: 25rem;
+    }
+}
+  .button{
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    width: 10rem;
+    height: 1.5rem;
+    background: #b48645;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-4rem);
+    margin-left: 4rem;
+    margin-top: 6rem;
+    span.item{
+       position: relative;
+       display: flex;
+       font-family: Antonio;
+       font-size: 0.8rem;
+       font-weight: 900;
+      color: white;
+    }
+}
+}
+ }
+  .marquee{
   position: relative;
   width: 100vw;
   max-width: 100%;
@@ -466,8 +574,7 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
   }
-
 }
- }
+}
 }
 </style>
