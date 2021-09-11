@@ -10,11 +10,11 @@
     <div class="slide-two">
         <span class="desc">WHAT SERVICES DO YOU NEED?</span>
         <div class="button-list">
-            <div class="button">
+            <div class="button active">
                 <div class="circle"></div>
                 <span class="txt">I NEED A FREASH LOOK (Our design team is ready!)</span>
             </div>
-            <div class="button-1">
+            <div class="button active">
                 <div class="circle"></div>
                 <span class="txt">MY DESIGN ARE READY TO GO (Upload assets below)</span>
             </div>
@@ -190,10 +190,10 @@
     position: relative;
     display: flex;
     margin-top: 2rem;
-    width: 80%;
+    width: 60%;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: space-between;
      .button{
          position: relative;
          display: flex;
@@ -203,56 +203,31 @@
          flex-direction: row;
          justify-content: flex-start;
          align-items: center;
-         
-        .circle{
-          position: relative;
-          display: flex;
-          width: 1.5rem;
-          height: 1.5rem;
-          border: 5px solid black;
-          border-radius: 100%;
-          margin: 0 0.5rem;
-        }
-        span.txt{
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-family: Quicksand;
-            color: black;
-            font-size: 0.7rem;
-            border: black;
-        }
+            .circle{
+            position: relative;
+            display: flex;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 5px solid black;
+            border-radius: 100%;
+            margin: 0 0.5rem;
+            }
+            span.txt{
+                justify-content: flex-start;
+                align-items: flex-start;
+                font-family: Quicksand;
+                color: black;
+                font-size: 0.7rem;
+                border: black;
+            }
      }
     
-     .button-1{
-         position: relative;
-         display: flex;
-         width: 22rem;
-         height: 2.5rem;
-         margin-left: 1rem;
-         border: 5px solid black;
-         flex-direction: row;
-         justify-content: flex-start;
-         align-items: center;
-     .circle{
-          position: relative;
-          display: flex;
-          width: 1.5rem;
-          height: 1.5rem;
-          border: 5px solid black;
-          border-radius: 100%;
-          margin: 0 0.5rem;
+     &.active{
+        .button{
+          border: 5px solid #b48645;
+       
         }
-        span.txt{
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-family: Quicksand;
-            color: black;
-            font-size: 0.7rem;
-            border: black;
-        }
-    }
-
-  
+     }   
     }
     .button-list-sec{
     position: relative;
@@ -507,7 +482,25 @@
      }
     }
   .slide-four{
-    position: relative;       display: flex;       padding: 2rem 0;       width: 100vw;       flex-direction: column;       justify-content: flex-start;       align-items: center;       background:#282829 ;       img{           position: relative;           display: flex;           height: 6rem;           animation: marquee 10s linear infinite;     @keyframes marquee {     from { transform: translateX(0); }     to { transform: translateX(-100%); }     }       }   }
+   position: relative;
+      display: flex;
+      padding: 2rem 0;
+      width: 100vw;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background:#282829 ;
+      img{
+          position: relative;
+          display: flex;
+          height: 6rem;
+          animation: marquee 10s linear infinite;
+    @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+    }
+      }
+  }
   }
 
 </style>

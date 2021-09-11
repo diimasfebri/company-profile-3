@@ -91,9 +91,9 @@
             <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
             <span class="desc-3">"</span>
           </div>
-            </div>
-
+          </div>
         </div>
+        
   </div>
     </div>
   <div class="slide-five">
@@ -129,11 +129,11 @@
       </div>
     </div>
     </div>
-  <div class="marquee">
-    <div class="track">
-      <div class="content">&nbsp;ANDERSON BROTHER WE HAVE A PHD IN CUSTOM APPAREAL
-         QUALITY GOODS</div>
-    </div>
+    <div class="marquee">
+      <div class="track">
+        <div class="content">&nbsp;ANDERSON BROTHER --- WE HAVE A PHD IN CUSTOM APPAREAL ---
+          QUALITY GOODS</div>
+      </div>
     </div>
   </div>
 </template>
@@ -646,7 +646,7 @@
     }
     }
  }
- .marquee{
+  .marquee{
   position: relative;
   width: 100vw;
   max-width: 100%;
@@ -662,18 +662,16 @@
       font-family: 'Antonio';
       font-size: 144px;
       font-weight: bolder;
-      color: #282829;
-     
-     }
-    @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
+      color: #282829
+      
     }
-    @keyframes marquee {
-    from { transform: translateX(0); }
-    to { transform: translateX(-50%); }
-    }
-    } 
- }
+  @keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+  }
+
 }
+  }
+ }
+
 </style>

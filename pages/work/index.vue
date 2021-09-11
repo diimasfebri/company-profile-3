@@ -83,12 +83,12 @@
             </div>
           </div>
       </div>
-      <div class="marquee">
-    <div class="track">
-      <div class="content">&nbsp;ANDERSON BROTHER WE HAVE A PHD IN CUSTOM APPAREAL
-         QUALITY GOODS</div>
+    <div class="marquee">
+      <div class="track">
+        <div class="content">&nbsp;ANDERSON BROTHER --- WE HAVE A PHD IN CUSTOM APPAREAL ---
+          QUALITY GOODS</div>
+      </div>
     </div>
-  </div>
   </div>
 
     
