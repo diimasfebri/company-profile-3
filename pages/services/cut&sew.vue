@@ -222,7 +222,7 @@
           margin-left: 1rem;
           margin-bottom: 3rem;
           }
-          }
+      }
  } 
 }
 </style>
