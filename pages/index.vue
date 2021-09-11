@@ -93,10 +93,28 @@
             <span class="desc-2">BRANDON RICHARDS - CEO ALESMITH BREWING</span>
             <span class="desc-3">"</span>
           </div>
+            </div>
+      </div>
+      <div class="testi-container dua">
+          <span class="txt">TESTIMONIALS</span>
+          <div class="subtxt-container">
+          <span class="desc-2">"</span>
+          <span class="desc-1">I love working with ADBS. I really value their design process and the friendship we've developed over the years.
+            It's more than a business transaction. It's a way to mutually propel our business and i've enjoyed the journey so far!
+          </span>
+          <div class="auth">
+            <span class="desc-2">GREG LONGO - SIERRA NEVADA BREWING CO.</span>
+            <span class="desc-3">"</span>
           </div>
-        </div>   
-  </div>
+            </div>
+      </div>
+      <div class="button-switch">
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
+      </div>
     </div>
+   
+  </div>
   <div class="slide-five">
     <svg>
 	<defs>
@@ -130,18 +148,17 @@
       </div>
     </div>
     </div>
-    <div class="marquee">
+  <div class="marquee">
       <div class="track">
         <div class="content">&nbsp;ANDERSON BROTHER --- WE HAVE A PHD IN CUSTOM APPAREAL ---
           QUALITY GOODS</div>
       </div>
     </div>
-  </div>
+</div>
 </template>
  
  <script>
  import gsap from 'gsap'
-
   export default {
     data() {
       return {
@@ -359,7 +376,6 @@
           font-size: 4rem;
           color: white;
         }
-
         &.btm{
           border-bottom: 1px solid rgba(128, 128, 122, 1);
         }
@@ -475,7 +491,7 @@
       position: relative;
       display: flex;
       width: 100%;
-      margin-top: 7rem;
+      margin-top: 9rem;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -526,7 +542,6 @@
               font-weight: 900;
           }
       }
-
       &.dua{
         position: absolute;
         opacity: 0;
@@ -536,6 +551,7 @@
     .button-switch{
       position: relative;
       display: flex;
+      margin-bottom: 9rem;
       width: 100%;
       align-items: flex-start;
       justify-content: flex-start;
@@ -701,9 +717,7 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
   }
-
 }
   }
  }
-
 </style>

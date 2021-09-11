@@ -3,15 +3,14 @@
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1547907647-2061eca5a0bf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=686&q=80">
   <div class="massage-button">
-      <v-icon class="icon">mdi-account</v-icon>
-      <span class="text">Member</span>
+      <img src="icons8-ok.svg" alt="">
       <span class="desc">Submission Received</span>
   </div>
   <div class="desc-container">
     <span class="desc-1"> WELCOME TO THE BROSHIP </span>
     <span class="desc-2"> Got your submission, love your style. We'll follow up shortly with next steps, thanks for your interest in Anderson Brothers Design & Supply!</span>
     </div>  
-    <div class="button-container">
+    <div class="button-container" @click="$router.push('/')">
     <span class="desc-3">BACK TO HOME</span>
     </div>
   </div>
@@ -46,18 +45,26 @@
         position: relative;
         display: flex;
         width: 12rem;
-        height: 3rem;
+        height: 5rem;
         background: transparent;
         border: 2px solid #b48645;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        img{
+          width: 1.5rem;
+          height: 1.5rem;
+          border-radius: 100%;
+          background: #b48645;
+          color: #b48645;
+        }
         span.desc{
         position: relative;
         display: flex;
-        font-family: Antonio;
+        margin-top: 0.5rem;
+        font-family: 'Quicksand';
         font-size: 0.8rem;
-        font-weight: 900;
+        font-weight: 500;
         color: white;
         }
     }
@@ -83,7 +90,8 @@
         font-family: 'Quicksand';
         font-size: 20px;
         width: 50%;
-        font-weight: 900;
+        margin-top: 1rem;
+        font-weight: 400;
         text-align: center;
     }
     }
