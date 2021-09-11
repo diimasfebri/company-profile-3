@@ -86,14 +86,32 @@
           <span class="txt">TESTIMONIALS</span>
           <div class="subtxt-container">
           <span class="desc-2">"</span>
-          <span class="desc-1">The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel.</span>
+          <span class="desc-1">For over 10+ years I have been trusting the team at Anderson Brothers to deliver great quality
+            shirts with awesome creativity and thought. I keep coming back for the cuatomer service and experience.
+          </span>
           <div class="auth">
-            <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
+            <span class="desc-2">BRANDON RICHARDS - CEO ALESMITH BREWING</span>
             <span class="desc-3">"</span>
           </div>
             </div>
-
-        </div>
+      </div>
+      <div class="testi-container dua">
+          <span class="txt">TESTIMONIALS</span>
+          <div class="subtxt-container">
+          <span class="desc-2">"</span>
+          <span class="desc-1">I love working with ADBS. I really value their design process and the friendship we've developed over the years.
+            It's more than a business transaction. It's a way to mutually propel our business and i've enjoyed the journey so far!
+          </span>
+          <div class="auth">
+            <span class="desc-2">GREG LONGO - SIERRA NEVADA BREWING CO.</span>
+            <span class="desc-3">"</span>
+          </div>
+            </div>
+      </div>
+      <div class="button-switch">
+        <div class="circle-1 active"></div>
+        <div class="circle-2 active"></div>
+      </div>
   </div>
     </div>
   <div class="slide-five">
@@ -474,7 +492,7 @@
       position: relative;
       display: flex;
       width: 100%;
-      margin: 7rem 0;
+      margin-top: 7rem;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -526,6 +544,37 @@
           }
       }
 
+      &.dua{
+        position: absolute;
+        opacity: 0;
+      }
+    }
+    
+    .button-switch{
+      position: relative;
+      display: flex;
+      width: 100%;
+      align-items: flex-start;
+      justify-content: flex-start;
+      .circle-1{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 100%;
+        background: #282829;
+        margin-right: 1rem;
+        &.active{
+          background: #b48645
+        }
+      }
+      .circle-2{
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 100%;
+        background: #282829;
+         &.active{
+          background: #b48645
+        }
+      }
     }
   }
  }
