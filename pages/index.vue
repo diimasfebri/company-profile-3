@@ -93,31 +93,8 @@
             <span class="desc-2">BRANDON RICHARDS - CEO ALESMITH BREWING</span>
             <span class="desc-3">"</span>
           </div>
-<<<<<<< HEAD
           </div>
-        </div>
-        
-=======
-            </div>
-      </div>
-      <div class="testi-container dua">
-          <span class="txt">TESTIMONIALS</span>
-          <div class="subtxt-container">
-          <span class="desc-2">"</span>
-          <span class="desc-1">I love working with ADBS. I really value their design process and the friendship we've developed over the years.
-            It's more than a business transaction. It's a way to mutually propel our business and i've enjoyed the journey so far!
-          </span>
-          <div class="auth">
-            <span class="desc-2">GREG LONGO - SIERRA NEVADA BREWING CO.</span>
-            <span class="desc-3">"</span>
-          </div>
-            </div>
-      </div>
-      <div class="button-switch">
-        <div class="circle-1 active"></div>
-        <div class="circle-2 active"></div>
-      </div>
->>>>>>> 567784f84b533211dad24c7229ed219d77d7cdc2
+        </div>   
   </div>
     </div>
   <div class="slide-five">
