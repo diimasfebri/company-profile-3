@@ -507,7 +507,25 @@
      }
     }
   .slide-four{
-    position: relative;       display: flex;       padding: 2rem 0;       width: 100vw;       flex-direction: column;       justify-content: flex-start;       align-items: center;       background:#282829 ;       img{           position: relative;           display: flex;           height: 6rem;           animation: marquee 10s linear infinite;     @keyframes marquee {     from { transform: translateX(0); }     to { transform: translateX(-100%); }     }       }   }
+    position: relative;       
+    display: flex;       
+    padding: 2rem 0;       
+    width: 100vw;       
+    flex-direction: column;       
+    justify-content: flex-start;       
+    align-items: center;       
+    background:#282829 ;       
+    img{           
+        position: relative;           
+        display: flex;           
+        height: 6rem;           
+        animation: marquee 10s linear infinite;     
+        @keyframes marquee {     
+            from { transform: translateX(0); }     
+            to { transform: translateX(-100%); }     
+            }       
+            }  
+    }
   }
 
 </style>

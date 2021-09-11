@@ -6,16 +6,20 @@
     <span class="desc-2"> Our goal is to help grow your brand through custom design and premium apparel. We offer quick turnaround times and affordable pricing. We are a full package design agency and production house in Seal Beach, California.</span>
     </div>
   <div class="item-container">
-    <span class="desc-3">CUSTOM DESIGN</span>
-    <span class="desc-3">SCREEN PRINTING</span>
-    <span class="desc-3">HEADWER</span>
-    <span class="desc-3">CUT & SEW</span>
-    <span class="desc-3">ACCESSORIES</span>
+    <span class="desc-3" @click="$router.push('/services/customdesign')">CUSTOM DESIGN</span>
+    <span class="desc-3" @click="$router.push('/services/screenprinting')">SCREEN PRINTING </span>
+    <span class="desc-3" @click="$router.push('/services/headwer')">HEADWER</span>
+    <span class="desc-3" @click="$router.push('/services/cut&sew')">CUT & SEW</span>
+    <span class="desc-3" @click="$router.push('/services/accessories')">ACCESSORIES</span>
   </div>  
   </div>
   <div class="slide-two">
     <div class="desc-container">
         <span class="desc">YOU ARE IN GOOD HANDS</span>
+        <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+        <img src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+        <img src="https://images.prismic.io/andersonbrothers/3f50020a-7a98-4a7b-8b23-7c635ed406f8_logos-row-3.png?auto=compress,format">
+        <img src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
       </div>  
   </div>
     <div class="slide-three">
@@ -24,7 +28,7 @@
             <div class="desc-container">
               <span class="desc"> WE'LL BE YOUR WINGMAN </span>
               <span class="desc-1"> Have ideas, we can help, need ideas we have those too. If you want merch that will make someone say "daaaamn" we've got you! </span> 
-              <div class="button">
+              <div class="button" @click="$router.push('/contact')">
                 <span class="desc-2">HIRE US</span>
               </div>
             </div>
@@ -119,7 +123,7 @@
    justify-content: flex-start;
    display: flex;
    flex-direction: column;
-   background-color: #fff;
+   background-color: #282829;
     .desc-container{
         position: relative;
         display: flex;
@@ -130,10 +134,22 @@
         align-items: flex-start;
         span.desc{
             font-family: Antonio;
-            color: black;
+            color: white;
             font-size: 1rem;
             font-weight: 900;
           }
+        img{           
+        position: relative;           
+        display: flex;           
+        height: 6rem;   
+        color: black;        
+        animation: marquee 10s linear infinite;     
+        @keyframes marquee {     
+            from { transform: translateX(0); }     
+            to { transform: translateX(-100%); }     
+            }     
+            
+    }
           }
     }
  

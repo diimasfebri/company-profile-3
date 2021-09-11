@@ -1,39 +1,49 @@
 <template>
 <div class="body-container"> 
   <div class="slide-one">
-    <img class="bg-content" src="https://images.unsplash.com/photo-1441984536979-3513fd89f0d0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80">
+    <img class="bg-content" src="https://images.unsplash.com/photo-1441984261150-55796ff52afc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=839&q=80">
   <div class="desc-container">
     <span class="desc-1"> KICK-A** SCREEN PRINTING </span>
     </div>  
   </div>
   <div class="slide-two">
     <div class="img-container">
-        <img class="bg-content" src="https://images.prismic.io/andersonbrothers/71d80649-f78b-4cdc-b3c6-678afe98802d_download+%2814%29.jpeg?auto=compress,format&w=1080&h=1080&fit=crop&q=85&f=center">
+        <img class="bg-content" src="https://images.prismic.io/andersonbrothers/635650b4-df28-4171-9d5d-6534d5d81a1a_73475344_101021104658431_7650227357011818624_n.jpeg?auto=compress,format&w=750&h=676&fit=crop&q=85&f=center">
+        <div class="desc-container">
+            <span class="desc">WHEN YOU WORK WITH US, YOU WORK WITH THE BEST</span>
+            <span class="desc-1">The folks we help aren’t just customers to us – these are brands we believe in, brands we wear and support. That’s why we’ve built a world-class design team to help bring your vision to life. Our designers and in-house illustrators dive deep into your logo design, color palette and messaging in order to get to the heart of your brand.  When it comes to the design work, we keep it simple. After our design team dives into your brand, you’ll work collaboratively with us to create your collection. We’ll talk about your story, maybe share a laugh or two, and really get to know who you, and your brand, are.</span>
+          </div>  
      </div>
-    <div class="desc-container">
-        <span class="desc">DAMN GOOD DESIGNS</span>
-        <span class="desc-1">At Anderson Brothers, we use only the top-quality inks and print processes to create and design your collection. Our custom screen printing designs are built to withstand the test of time. Not sure how to place or size your logo? Leave it to us! We’re experts in print placement and size, taking extra care to ensure your logos and brand assets come out looking damn good each and every time.
-        And if you have custom pantone colors, we can easily match them. Whether you need tee shirts, tank tops, hoodies or sweaters, our screen printing services can help bring your brand to life.</span>
-      </div>  
     <div class="img-list">
-      <img src="https://images.prismic.io/andersonbrothers/6347a499-571f-4afe-a4f5-4f055cb85aa0_download+%2815%29.jpeg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center">
-      <img src="https://images.prismic.io/andersonbrothers/0f0f10ba-e275-495d-a7c6-3bf4beb8a17e_download+%2812%29.jpeg?auto=compress,format&rect=320,0,760,1080&w=760&h=1080&w=397&h=544&fit=crop&q=85&f=center">
+      <img class="satu" src="https://images.prismic.io/andersonbrothers/360ec377-867c-4e9a-b71c-c6d6beefbb35_107941959_145001300536455_2962723900008999164_n.jpeg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center">
+      <img class="dua" src="https://images.prismic.io/andersonbrothers/332e50f3-2b70-4a3e-8353-ccc28c04cdd4_118614890_167168778236020_7885514944768749926_n.jpeg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center">
     </div>  
   </div>
   <div class="slide-three">
     <div class="img-container">
-        <img class="bg-content" src="https://images.prismic.io/andersonbrothers/cc73c7e2-d922-4926-847b-71d6c248d964_download+%2818%29.jpeg?auto=compress,format&w=804&h=864&fit=crop&q=85">
+        <img class="bg-content" src="https://images.prismic.io/andersonbrothers/dcfbd144-86c3-4647-b105-43578b51fb33_102430783_654207478466623_1722211818841452464_n.jpeg?auto=compress,format&w=804&h=864&fit=crop&q=85">
      </div>
   <div class="desc-container">
-    <span class="desc-1">"The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel."</span>
+        <span class="desc">"</span>
+    <span class="desc-1">The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel.</span>
+    <div class="auth">
+      <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
+      <span class="desc-3">"</span>
   </div>
   </div>
+</div>
   <div class="slide-four">
     <div class="img-container">
-     <img src="https://images.prismic.io/andersonbrothers/39f69a3b-04b4-4f96-b632-ed48cca543f2_download+%287%29.jpeg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center"> 
-     <img src="https://images.prismic.io/andersonbrothers/a91bff8b-97b4-4942-9c23-5b3477965812_download+%285%29.jpeg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center">
+     <img class= "satu" src="https://images.prismic.io/andersonbrothers/fd403d4c-0d78-40b0-80fc-0e6a832b0504_95345101_247856789928069_326199525772961341_n.jpeg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center"> 
+     <img class="dua" src="https://images.prismic.io/andersonbrothers/de141eaa-34b2-4fa7-acdf-dbecfc832620_87594854_220057132472320_3590531815329565696_n.jpeg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center">
     </div>
   </div>
+    <div class="marquee">
+    <div class="track">
+      <div class="content">&nbsp;ANDERSON BROTHER WE HAVE A PHD IN CUSTOM APPAREAL
+         QUALITY GOODS</div>
+    </div>
+    </div>
 </div>
 </template>
 
@@ -53,7 +63,6 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
    img.bg-content{
       position: absolute;
       width: 100vw;
@@ -66,8 +75,7 @@
         height: 100%;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
-        margin-left:  8rem;
+        align-items: center;
         margin-top: 2rem;
         line-height: 1.5;
         span.desc{
@@ -79,79 +87,104 @@
         span.desc-1{
           color: white;
           font-family: 'Antonio';
-          font-size: 3rem;
+          font-size: 4rem;
           font-weight: 900;
         }
+      .button{
+        position: relative;
+        display: flex;
+        width: 11rem;
+        height: 1.5rem;
+        background: white;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.5rem;
+        span{
+          color: black;
+          font-family: Antonio;
+          font-size: 0.8rem;
+          font-weight: 900;
+        }
+      }
     }
  }
  .slide-two{
    position: relative;
    width: 100vw;
+ 
    justify-content: flex-start;
    display: flex;
    flex-direction: column;
+   align-items: center;
    background-color: #f4f4f4;
    .img-container{
-      position: absolute;
-      width: 40%;
-      height: 40%;
+      position: relative;
+      width: 90%;
+      height: 100%;
+      margin: 3rem 0;
       display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
+      flex-direction: row;
+      align-items: space-between;
+      justify-content: space-between;
+      
     img.bg-content{
-      position: absolute;
-      margin-top: 4rem;
-      margin-bottom: 2rem;
-      margin-left: 4rem;
-      width: 40vw;
+      position: relative;
+      width: 30rem;
+      height: 32rem;
+      object-fit: cover;
+
     }
-   }
     .desc-container{
         position: relative;
         display: flex;
-        width: 30%;
-        margin-left: 30rem;
-        padding: 5rem 2rem;
+        width: 50%;
+        height: 32rem;
+        margin-left: 4rem;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         span.desc{
             font-family: Antonio;
             color: black;
-            font-size: 20px;
+            font-size: 2rem;
             font-weight: 900;
-            transform: translateY(4rem);
+            
           }
         span.desc-1{
+          margin-top: 2rem;
                 font-family: Quicksand;
                 color: black;
-                font-size: 15px;
-                transform: translateY(5rem);
+                font-size: 1rem;
+                line-height: 1.5rem;
             }
           }
-        .img-list{
-          position: relative;
-          display: flex;
-          flex-direction: row;
-          width: 68%;
-          margin-top: 15rem;
-          justify-content: flex-start;
-          align-items: flex-start;
-          margin-left: 1rem;
-          margin-bottom: 2rem;
-          img{
-          position: relative;
-          display: flex;
-          width: 68%;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: flex-start;
-          margin-left: 1rem;
-          margin-bottom: 3rem;
-          }
-        }
+   }
+    .img-list{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+      img.satu{
+      position: relative;
+      display: flex;
+      width: 75%;
+      margin-right: 1rem;
+      height: 24rem  ;
+      object-fit: cover;
+      }
+      img.dua{
+      position: relative;
+      display: flex;
+      height: 24rem ;
+      width: 25%;
+      object-fit: cover;
+      
+      }
     }
- 
+ }
 .slide-three{
   position: relative;
   width: 100vw;
@@ -160,69 +193,126 @@
   flex-direction: row;
   background: #f4f4f4;
   .img-container{
-      position: absolute;
-      width: 100%;
+      position: relative;
+      width: 50%;
       height: 100%;
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       justify-content: flex-start;
       img.bg-content{
          position: relative;
-         width: 23rem;
-         height: 24rem;
-         margin-left:4.2rem;
-         margin-top: 3rem;
+         width: 32.5rem;
+         height: 35rem;
+         margin-left: 2rem;
          object-fit: cover;
       }
   }
-    .desc-container{
-      position: relative;
-      display: flex;
-      width: 40%;
-      height: 100%;
-      margin-left: 30rem;
-      padding: 5rem 2rem;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-    span.desc-1{
-        font-family: Antonio;
-        color: black;
-        font-size: 1.5rem;
-        font-weight: bold;
-        transform: translateY(3rem);
+        .desc-container{
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+      span.desc{
+          color: #b48645;
+          font-family: 'Antonio';
+          font-size: 3rem;
+          font-weight: 900;
+      }
+      span.desc-1{
+          font-family: Antonio;
+          color: black;
+          font-size: 3rem;
+          font-weight: 900;
+          transform: translateY(-1rem);
+      }
+      .auth{
+        position: relative;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        span.desc-2{
+            font-family: Antonio;
+            color: #b48645;
+            font-size: 0.7rem;
+            font-weight: 900;
+          }
+      }
+      span.desc-3{
+          color: #b48645;
+          font-family: Antonio;
+          font-size: 3rem;
+          font-weight: 900;
+          transform: translateX(4rem);
+      }
     }
-   }
-  }
+ }
 .slide-four{
    position: relative;
    width: 100vw;
    justify-content: flex-start;
    display: flex;
    flex-direction: column;
+   align-items: center;
    background-color: #f4f4f4;
-.img-container{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin-top: 15rem;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-    transform: translateY(-13rem);
-         img{
-          position: relative;
-          display: flex;
-          width: 80%;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: flex-start;
-          margin-left: 1rem;
-          margin-bottom: 3rem;
-          }
-          }
+ .img-container{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 90%;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 0;
+
+      img.satu{
+      position: relative;
+      display: flex;
+      width: 25%;
+      margin-right: 1rem;
+      height: 24rem  ;
+      object-fit: cover;
+      }
+      img.dua{
+      position: relative;
+      display: flex;
+      height: 24rem ;
+      width: 75%;
+      object-fit: cover;
+      
+      }
+    }
  } 
+ .marquee{
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  height: 200px;
+  overflow-x: hidden;
+  background: #F0EEE3;
+  .track{
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 10s linear infinite;
+    .content{
+      font-family: 'Antonio';
+      font-size: 144px;
+      font-weight: bolder;
+      color: #282829;
+     
+     }
+    @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+    }
+    @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+    }
+    } 
+ }
 }
 </style>

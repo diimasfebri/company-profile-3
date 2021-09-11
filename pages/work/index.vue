@@ -1,10 +1,12 @@
 <template>
   <div class="body-container">
     <div class="slide-one">
-      <img
-        class="bg-content"
-        src="https://images.unsplash.com/photo-1514483127413-f72f273478c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-      />
+      <div class="bg">
+        <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+        <img class="gen" src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+        <img src="https://images.prismic.io/andersonbrothers/3f50020a-7a98-4a7b-8b23-7c635ed406f8_logos-row-3.png?auto=compress,format">
+        <img class="gen" src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+      </div>
       <div class="desc-container">
         <div class="desc">
           <span>OUR WORK</span>
@@ -109,10 +111,37 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    img.bg-content {
+    background: black;
+    justify-content: center;
+    align-items : center;
+    .bg {
       position: absolute;
       width: 100vw;
       height: 100vh;
+      justify-content: center;
+      align-items : center;
+      margin-top: 8rem;
+      img{
+         position: relative;           
+        display: flex;           
+        height: 6rem;           
+        animation: marquee 10s ease-in infinite;     
+        @keyframes marquee {     
+            from { transform: translateX(-100%); }     
+            to { transform: translateX(100%); }     
+            }       
+      
+      &.gen{
+         position: relative;           
+        display: flex;           
+        height: 6rem;           
+        animation: marquee 10s linear infinite;     
+          @keyframes marquee {     
+            from { transform: translateX(-100%); }     
+            to { transform: translateX(0); }     
+            }  
+      }
+      }
     }
     .desc-container {
       position: relative;
@@ -122,6 +151,8 @@
       flex-direction: row;
       justify-content: center;
       align-items: flex-start;
+      z-index: 2000;
+      
       .desc {
         position: relative;
         width: 100%;

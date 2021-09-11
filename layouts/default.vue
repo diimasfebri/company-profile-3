@@ -7,7 +7,7 @@
           <div class="list" @click="$router.push('/services/customdesign')" >CUSTOM DESIGN</div>
           <div class="list" @click="$router.push('/services/screenprinting')">SCREEN PRINTING</div>
           <div class="list" @click="$router.push('/services/headwer')">HEADWEAR</div>
-          <div class="list" @click="$router.push('/services/cut&sew')">CUT & SAW</div>
+          <div class="list" @click="$router.push('/services/cutsew')">CUT & SAW</div>
           <div class="list" @click="$router.push('/services/accessories')">ACCESSORIES</div>
         </div>
         <span class="button"  @click="openDropdown" >SERVICES</span>

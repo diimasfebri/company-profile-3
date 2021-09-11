@@ -378,7 +378,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    opacity: 0;
+
   span.desc-1{
         font-family: Antonio;
         color: black;

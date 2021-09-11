@@ -3,7 +3,7 @@
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1441984261150-55796ff52afc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=839&q=80">
   <div class="desc-container">
-    <span class="desc-1"> CUSTOM DESIGN </span>
+    <span class="desc-1"> CUT & SEW </span>
     </div>  
   </div>
   <div class="slide-two">
