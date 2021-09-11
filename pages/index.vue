@@ -93,11 +93,6 @@
             <span class="desc-2">BRANDON RICHARDS - CEO ALESMITH BREWING</span>
             <span class="desc-3">"</span>
           </div>
-<<<<<<< HEAD
-          </div>
-        </div>
-        
-=======
             </div>
       </div>
       <div class="testi-container dua">
@@ -114,12 +109,12 @@
             </div>
       </div>
       <div class="button-switch">
-        <div class="circle-1 active"></div>
-        <div class="circle-2 active"></div>
+        <div class="circle-1"></div>
+        <div class="circle-2"></div>
       </div>
->>>>>>> 567784f84b533211dad24c7229ed219d77d7cdc2
-  </div>
     </div>
+   
+  </div>
   <div class="slide-five">
     <svg>
 	<defs>
@@ -153,18 +148,17 @@
       </div>
     </div>
     </div>
-    <div class="marquee">
+  <div class="marquee">
       <div class="track">
         <div class="content">&nbsp;ANDERSON BROTHER --- WE HAVE A PHD IN CUSTOM APPAREAL ---
           QUALITY GOODS</div>
       </div>
     </div>
-  </div>
+</div>
 </template>
  
  <script>
  import gsap from 'gsap'
-
   export default {
     data() {
       return {
@@ -382,7 +376,6 @@
           font-size: 4rem;
           color: white;
         }
-
         &.btm{
           border-bottom: 1px solid rgba(128, 128, 122, 1);
         }
@@ -498,7 +491,7 @@
       position: relative;
       display: flex;
       width: 100%;
-      margin-top: 7rem;
+      margin-top: 9rem;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -549,7 +542,6 @@
               font-weight: 900;
           }
       }
-
       &.dua{
         position: absolute;
         opacity: 0;
@@ -559,6 +551,7 @@
     .button-switch{
       position: relative;
       display: flex;
+      margin-bottom: 9rem;
       width: 100%;
       align-items: flex-start;
       justify-content: flex-start;
@@ -724,9 +717,7 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
   }
-
 }
   }
  }
-
 </style>
