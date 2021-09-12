@@ -1,17 +1,18 @@
 <template>
 <div class="body-container"> 
   <div class="slide-one">
-  <div class="desc-container">
-    <span class="desc-1"> D*MN GOOD QUALITY </span>
-    <span class="desc-2"> Our goal is to help grow your brand through custom design and premium apparel. We offer quick turnaround times and affordable pricing. We are a full package design agency and production house in Seal Beach, California.</span>
-    </div>
-  <div class="item-container">
-    <span class="desc-3" @click="$router.push('/services/customdesign')">CUSTOM DESIGN</span>
-    <span class="desc-3" @click="$router.push('/services/screenprinting')">SCREEN PRINTING </span>
-    <span class="desc-3" @click="$router.push('/services/headwer')">HEADWER</span>
-    <span class="desc-3" @click="$router.push('/services/cut&sew')">CUT & SEW</span>
-    <span class="desc-3" @click="$router.push('/services/accessories')">ACCESSORIES</span>
-  </div>  
+    <div class="desc-container">
+      <span class="desc-1"> D*MN GOOD QUALITY </span>
+      <span class="desc-2"> Our goal is to help grow your brand through custom design and premium apparel. We offer quick turnaround times and affordable pricing. We are a full package design agency and production house in Seal Beach, California.</span>
+      </div>
+    <div class="item-container">
+      <span class="desc-3" @click="$router.push('/services/customdesign')">CUSTOM DESIGN</span>
+      <span class="desc-3" @click="$router.push('/services/screenprinting')">SCREEN PRINTING </span>
+      <span class="desc-3" @click="$router.push('/services/headwer')">HEADWER</span>
+      <span class="desc-3" @click="$router.push('/services/cut&sew')">CUT & SEW</span>
+      <span class="desc-3" @click="$router.push('/services/accessories')">ACCESSORIES</span>
+      </div>
+
   </div>
   <div class="slide-two">
     <div class="desc-container">
@@ -37,6 +38,12 @@
 </div>
 </template>
 
+
+<script>
+export default {
+  
+}
+</script>
 <style lang="scss" scoped>
 .body-container{
   position: relative;

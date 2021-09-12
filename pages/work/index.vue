@@ -120,14 +120,14 @@
       height: 100vh;
       justify-content: center;
       align-items : center;
-      margin-top: 8rem;
+      margin-top: 9rem;
       img{
          position: relative;           
         display: flex;           
         height: 6rem;           
-        animation: marquee 10s ease-in infinite;     
-        @keyframes marquee {     
-            from { transform: translateX(-100%); }     
+        animation: marquee1 10s linear infinite;     
+        @keyframes marquee1 {     
+            from { transform: translateX(-10%); }     
             to { transform: translateX(100%); }     
             }       
       
@@ -135,10 +135,10 @@
          position: relative;           
         display: flex;           
         height: 6rem;           
-        animation: marquee 10s linear infinite;     
-          @keyframes marquee {     
+        animation: marquee2 10s linear infinite;     
+          @keyframes marquee2 {     
             from { transform: translateX(-100%); }     
-            to { transform: translateX(0); }     
+            to { transform: translateX(100%); }     
             }  
       }
       }
@@ -168,22 +168,6 @@
           color: white;
           font-family: Antonio;
           font-size: 6.5rem;
-          font-weight: 900;
-        }
-      }
-      .button {
-        position: relative;
-        display: flex;
-        width: 11rem;
-        height: 1.5rem;
-        background: white;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0.5rem;
-        span {
-          color: black;
-          font-family: Antonio;
-          font-size: 0.8rem;
           font-weight: 900;
         }
       }

@@ -10,7 +10,7 @@
     <div class="slide-two">
         <span class="desc">WHAT SERVICES DO YOU NEED?</span>
         <div class="button-list">
-            <div class="button active">
+            <div class="button"  >
                 <div class="circle"></div>
                 <span class="txt">I NEED A FREASH LOOK (Our design team is ready!)</span>
             </div>
@@ -122,7 +122,16 @@
 </div>
 </template>
 
-
+<script>
+export default {
+ data(){
+    return{
+      buttonSelected: false,
+        
+    }
+}
+}
+</script>
 <style lang="scss" scoped>
 .container{
   position: relative;
@@ -220,14 +229,14 @@
                 font-size: 0.7rem;
                 border: black;
             }
+            &:active{
+                .button{
+                border: 5px solid #b48645;
+            
+                }
+            }   
      }
     
-     &.active{
-        .button{
-          border: 5px solid #b48645;
-       
-        }
-     }   
     }
     .button-list-sec{
     position: relative;
@@ -476,9 +485,11 @@
             text-align: center;
             font-family: 'Antonio';
             color: black;
-            font-size: 4.5rem;
+            font-size: 6rem;
             font-weight: 900; 
             font-weight: bold; 
+            margin-bottom: 2rem;
+
      }
     }
   .slide-four{
