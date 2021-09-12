@@ -107,7 +107,7 @@
                     <span class="unggah">UPLOAD</span>
                 </div>
             </div>
-            <div class="buttongede">
+            <div class="buttongede" @click="$router.push('/confirmed')">
                 <span class="kumpul">SUBMIT!</span>
             </div>
             <span class= "desc-2">PULL THE TRIGGER</span>

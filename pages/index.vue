@@ -1,19 +1,45 @@
 <template>
-  <div class="body-container" @scroll="scrollHandler">
-    <div class="slide-one">
-      <div class="layer">
-        <img
-          class="bg-content"
-          src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-        />
-        <div class="filter-black"></div>
-        <div class="desc-container">
-          <div class="desc">
-            <span>D*MN GOOD APPAREL</span>
-          </div>
-          <div class="button">
-            <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
-          </div>
+<div class="body-container" @scroll="scrollHandler"> 
+  <div class="slide-one">
+    <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+    <div class="filter-black"></div>
+  <div class="desc-container">
+    <div class="desc">
+      <span>D*MN GOOD APPAREL</span>
+    </div>  
+    <div class="button">
+      <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
+    </div>
+  </div>
+    </div>
+  <div class="slide-two">
+    <img class="bg-content" src="https://images.prismic.io/andersonbrothers/c48c2615-02be-44f4-8aae-2f5ba88b7061_work-logos.jpg?auto=compress,format&w=1652&h=678&fit=crop&q=85&f=center" >
+  <div class="button-container">
+    <div class="button" @click="$router.push('/work')">
+      <span class="desc" >OUR WORK</span>
+    </div>
+  </div>
+    </div>
+  <div class="slide-three">
+    <img class="bg-content" src="https://images.unsplash.com/photo-1515768678138-4ba95ba6ec96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80">
+    <div class="filter-black"></div>
+    <div class="desc-container">
+      <span class="desc">OUR SERVICES</span>
+      <div class="menu-list">
+        <div class="menu-item" @click="$router.push('/services/customdesign')">
+          <span class="txt">CUSTOM DESIGN</span>
+        </div>
+        <div class="menu-item" @click="$router.push('/services/screenprinting')">
+          <span class="txt">SCREEN PRINTING</span>
+        </div>
+        <div class="menu-item" @click="$router.push('/services/headwer')">
+          <span class="txt">HEADWEAR</span>
+        </div>
+        <div class="menu-item" @click="$router.push('/services/cutsew')">
+          <span class="txt">CUT & SAW</span>
+        </div>
+        <div class="menu-item btm" @click="$router.push('/services/accessories')">
+          <span class="txt">ACCESSORIES</span>
         </div>
       </div>
       <div class="layer">
