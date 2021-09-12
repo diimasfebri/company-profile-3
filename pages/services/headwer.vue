@@ -1,41 +1,41 @@
 <template>
 <div class="body-container"> 
   <div class="slide-one">
-    <img class="bg-content" src="https://images.unsplash.com/photo-1441984261150-55796ff52afc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=839&q=80">
+    <img class="bg-content" src="https://images.unsplash.com/photo-1518481774046-f7384edaf3fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
   <div class="desc-container">
     <span class="desc-1"> HEADWEAR </span>
     </div>  
   </div>
   <div class="slide-two">
     <div class="img-container">
-        <img class="bg-content" src="https://images.prismic.io/andersonbrothers/635650b4-df28-4171-9d5d-6534d5d81a1a_73475344_101021104658431_7650227357011818624_n.jpeg?auto=compress,format&w=750&h=676&fit=crop&q=85&f=center">
+        <img class="bg-content" src="https://images.prismic.io/andersonbrothers/f6cf6007-b0a0-4880-a18e-25a9483b74a9_download+%281%29.jpeg?auto=compress,format&w=1080&h=1080&fit=crop&q=85&f=center">
         <div class="desc-container">
-            <span class="desc">WHEN YOU WORK WITH US, YOU WORK WITH THE BEST</span>
-            <span class="desc-1">The folks we help aren’t just customers to us – these are brands we believe in, brands we wear and support. That’s why we’ve built a world-class design team to help bring your vision to life. Our designers and in-house illustrators dive deep into your logo design, color palette and messaging in order to get to the heart of your brand.  When it comes to the design work, we keep it simple. After our design team dives into your brand, you’ll work collaboratively with us to create your collection. We’ll talk about your story, maybe share a laugh or two, and really get to know who you, and your brand, are.</span>
+            <span class="desc">YOU’VE NEVER HAT IT SO GOOD</span>
+            <span class="desc-1">Give customers and employees alike the chance to rep your brand with customized headwear. From baseball hats to beanies, we only use the top-quality headwear to create your designs. Customize your cap with woven and embroidered patches or take advantage of our clean embroidery techniques. When it comes to trendy styles and fits, we’re way ahead of the curve. With styles to suit everyone, and every climate, our customized headwear is just as easy to personalize is it is fun to wear. </span>
           </div>  
      </div>
     <div class="img-list">
-      <img class="satu" src="https://images.prismic.io/andersonbrothers/360ec377-867c-4e9a-b71c-c6d6beefbb35_107941959_145001300536455_2962723900008999164_n.jpeg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center">
-      <img class="dua" src="https://images.prismic.io/andersonbrothers/332e50f3-2b70-4a3e-8353-ccc28c04cdd4_118614890_167168778236020_7885514944768749926_n.jpeg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center">
+      <img class="satu" src="https://images.prismic.io/andersonbrothers/f1199f5b-9b76-4c73-a433-a30312b91251_download+%283%29.jpeg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center">
+      <img class="dua" src="https://images.prismic.io/andersonbrothers/71f5e469-2595-45a8-8c33-8ac1c15b4e1b_download+%282%29.jpeg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center">
     </div>  
   </div>
   <div class="slide-three">
     <div class="img-container">
-        <img class="bg-content" src="https://images.prismic.io/andersonbrothers/dcfbd144-86c3-4647-b105-43578b51fb33_102430783_654207478466623_1722211818841452464_n.jpeg?auto=compress,format&w=804&h=864&fit=crop&q=85">
+        <img class="bg-content" src="https://images.prismic.io/andersonbrothers/190dc38a-90f6-4c10-97a2-2aa34acd71bd_download+%284%29.jpeg?auto=compress,format&w=804&h=864&fit=crop&q=85">
      </div>
   <div class="desc-container">
         <span class="desc">"</span>
-    <span class="desc-1">The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel.</span>
+    <span class="desc-1">“Working with ABDS has been a game changer for us at Brouwerij West. From their years of experience in the industry, to the exceptional quality of their designs and products, Anderson Brothers Design and Supply have made it incredibly easy to have a world-class merchandise program here at the brewery.”</span>
     <div class="auth">
-      <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
+      <span class="desc-2">VITO TRAUTZ - BROUWERIJ WEST</span>
       <span class="desc-3">"</span>
   </div>
   </div>
 </div>
   <div class="slide-four">
     <div class="img-container">
-     <img class= "satu" src="https://images.prismic.io/andersonbrothers/fd403d4c-0d78-40b0-80fc-0e6a832b0504_95345101_247856789928069_326199525772961341_n.jpeg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center"> 
-     <img class="dua" src="https://images.prismic.io/andersonbrothers/de141eaa-34b2-4fa7-acdf-dbecfc832620_87594854_220057132472320_3590531815329565696_n.jpeg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center">
+     <img class= "satu" src="https://images.prismic.io/andersonbrothers/73147fd3-83ad-48c0-8304-0ee83906a44f_download+%285%29.jpeg?auto=compress,format&w=397&h=544&fit=crop&q=85&f=center"> 
+     <img class="dua" src="https://images.prismic.io/andersonbrothers/5fd85de0-ff5d-45e0-862f-d0114984715c_download+%289%29.jpeg?auto=compress,format&w=968&h=544&fit=crop&q=85&f=center">
     </div>
   </div>
     <div class="marquee">
@@ -111,7 +111,6 @@
  .slide-two{
    position: relative;
    width: 100vw;
- 
    justify-content: flex-start;
    display: flex;
    flex-direction: column;
@@ -142,7 +141,7 @@
         margin-left: 4rem;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         span.desc{
             font-family: Antonio;
             color: black;
@@ -207,7 +206,7 @@
          object-fit: cover;
       }
   }
-        .desc-container{
+    .desc-container{
     position: relative;
     display: flex;
     width: 50%;
@@ -224,7 +223,8 @@
       span.desc-1{
           font-family: Antonio;
           color: black;
-          font-size: 3rem;
+          font-size: 2.3rem;
+          width: 80%;
           font-weight: 900;
           transform: translateY(-1rem);
       }
