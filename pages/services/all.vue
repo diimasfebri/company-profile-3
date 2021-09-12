@@ -5,13 +5,16 @@
     <span class="desc-1"> D*MN GOOD QUALITY </span>
     <span class="desc-2"> Our goal is to help grow your brand through custom design and premium apparel. We offer quick turnaround times and affordable pricing. We are a full package design agency and production house in Seal Beach, California.</span>
     </div>
+  <div class="bg-container">
+    <img src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
+  </div>
   <div class="item-container">
     <span class="desc-3" @click="$router.push('/services/customdesign')">CUSTOM DESIGN</span>
     <span class="desc-3" @click="$router.push('/services/screenprinting')">SCREEN PRINTING </span>
     <span class="desc-3" @click="$router.push('/services/headwer')">HEADWER</span>
     <span class="desc-3" @click="$router.push('/services/cut&sew')">CUT & SEW</span>
     <span class="desc-3" @click="$router.push('/services/accessories')">ACCESSORIES</span>
-  </div>  
+  </div> 
   </div>
   <div class="slide-two">
     <div class="desc-container">
@@ -50,10 +53,10 @@
 .slide-one{
   position: relative;
   width: 100vw;
-  height: 200vh;
+  height: 250vh;
   display: flex;
   background: black;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
    img.bg-content{
@@ -65,12 +68,11 @@
         position: relative;
         display: flex;
         width: 100%;
-        height: 100%;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
-        margin-left:  8rem;
-        margin-top: 2rem;
+        margin-left:  9rem;
+        margin-top: 10rem;
         span.desc-1{
             font-family: 'Antonio';
             color: white;
@@ -83,7 +85,7 @@
           color: white;
           font-family: 'Quicksand';
           font-size: 15px;
-          width: 35%;
+          width: 25%;
           flex-direction: column;
           font-weight: 500;
         }
@@ -93,27 +95,45 @@
         display: flex;
         width: 100%;
         height: 100%;
+        transform: translateY(-3rem);
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: flex-start;
         margin-left: 9rem;
-        margin-top: 2rem;
-        transform: translateY(-4cm);
+        margin-top: 6rem;
         font-weight: bold;
         span.desc-3{
            font-family: 'Antonio';
            color: white;
-           font-size: 100px;
-           font-weight: 400;
+           font-size: 130px;
+           font-weight: 900;
+           margin-top: 2rem;
            margin-bottom: 0.5rem;
-           line-height: 1.5;
+           line-height: 1;
         &:hover{
-            background: #b48645;
+            color: #b48645;
             span.role-3{
               color: #f4f4f4
             }
       }
     }
+ }
+ .bg-container{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      transform: translateY(-44rem);
+      margin-left: 7rem;
+      img{
+        position: absolute;
+        width: 32rem;
+        height: 38rem;
+        object-fit: cover;
+      }
  }
 }
  .slide-two{

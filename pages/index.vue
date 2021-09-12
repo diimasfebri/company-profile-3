@@ -26,19 +26,19 @@
     <div class="desc-container">
       <span class="desc">OUR SERVICES</span>
       <div class="menu-list">
-        <div class="menu-item">
+        <div class="menu-item" @click="$router.push('/services/customdesign')">
           <span class="txt">CUSTOM DESIGN</span>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" @click="$router.push('/services/screenprinting')">
           <span class="txt">SCREEN PRINTING</span>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" @click="$router.push('/services/headwer')">
           <span class="txt">HEADWEAR</span>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" @click="$router.push('/services/cutsew')">
           <span class="txt">CUT & SAW</span>
         </div>
-        <div class="menu-item btm">
+        <div class="menu-item btm" @click="$router.push('/services/accessories')">
           <span class="txt">ACCESSORIES</span>
         </div>
       </div>
