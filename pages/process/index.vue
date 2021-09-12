@@ -46,12 +46,17 @@
    </div> 
   </div>
   <div class="slide-six">
-    <div class="desc-container">
+   <div class="desc-container">
       <span class="desc">WE'RE HERE FOR YOU</span>
       <span class="desc-1">From providing imagery to use on your social channels to giving advice on how to merchandise your apparel, we’re here to support you.</span>
       <img src="/CP.png" alt="">
-    </div>
-
+      <div class="button-hire">
+          <div class="img-container">
+            <img class="flash" src="/flash.png" >
+          </div>
+        <span>HIRE US</span>
+      </div>
+    </div> 
   </div>
   <div class="slide-seven">
     <img src="https://images.prismic.io/andersonbrothers/9f71cd88-4950-4a20-875a-f909777cfeaa_226077030_340112087762285_3510021914681768504_n.jpeg?auto=compress,format&w=804&h=864&fit=crop&q=85" alt="">
@@ -151,7 +156,7 @@
       }
     }
  }
- .slide-two{
+.slide-two{
    position: relative;
    width: 100vw;
    height: 60vh;
@@ -374,6 +379,51 @@
       width: 45rem;
       height: 18rem;
       object-fit: cover;
+    }
+    .button-hire{
+      position: absolute;
+      display: flex;
+      width: 9.27rem;
+      height: 8.95rem;
+      background: #282829;
+      margin-top: 17.3rem;
+      margin-left: 17.2rem;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
+      .img-container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 2rem;
+          img.flash{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+         span{
+              position: relative;
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              font-family: quicksand;
+              font-size: 1rem;
+              color: #b48645;
+              margin-top: 0.7rem;
+            }
+             &:hover{
+                background: #b48645;
+                span{
+                  color: #f0eee3;
+                }
+              }
     }
   }
  

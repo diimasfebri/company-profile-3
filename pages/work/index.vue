@@ -37,13 +37,39 @@
       </div>
       </div>
     <div class="slide-three">
-      
-    </div>
+      <div class="left">
+        <div class="top">
+          <img class= "pict" src="https://images.prismic.io/andersonbrothers/fd026fdf-4dbd-44b8-95ad-c288df1236c2_220678617_680120279716175_5527426254914584402_n.jpeg?auto=compress,format&w=412&h=686&fit=crop&q=85&f=center" >
+          <img class= "pict" src="https://images.prismic.io/andersonbrothers/ac51835f-d8df-482e-8726-91274018ec90_166183935_1016058135588163_248407578556661165_n.jpeg?auto=compress,format&w=412&h=686&fit=crop&q=85&f=center">
+        </div>
+        <div class="bottom">
+           <img class= "pict" src="https://images.prismic.io/andersonbrothers/48e5a008-9149-408a-a411-9457f262a473_224406382_571304557373199_8946891537710241114_n.jpeg?auto=compress,format&w=824&h=465&fit=crop&q=85&f=center">
+        </div>
+        </div>
+      <div class="right">
+        <div class="top">
+            <div class="atasnya">
+              <img class= "pict" src="https://images.prismic.io/andersonbrothers/c5360da1-f8fc-4235-8a4f-450613a94f74_202450195_2997799573842387_7282938149153906413_n.jpeg?auto=compress,format&w=285&h=285&fit=crop&q=85&f=center">
+              <img class= "pict" src="https://images.prismic.io/andersonbrothers/9f71cd88-4950-4a20-875a-f909777cfeaa_226077030_340112087762285_3510021914681768504_n.jpeg?auto=compress,format&w=285&h=285&fit=crop&q=85&f=center">
+            </div>
+            <div class="bawahnya">
+              <div class="button-hire"  @click="$router.push('/contact')">
+                <div class="img-container">
+                  <img class="flash" src="/flash.png" >
+                </div>
+                <span>HIRE US</span>
+              </div>
+              <img class= "pict" src="https://images.prismic.io/andersonbrothers/091a3106-89cd-454e-bed2-294b38a34b96_199082882_383977176391268_6895895184855190739_n.jpeg?auto=compress,format&w=285&h=285&fit=crop&q=85&f=center">
+            </div>
+          </div>
+          <div class="bottom">
+            <img class= "pict" src="https://images.prismic.io/andersonbrothers/cebf9bb2-9298-446b-8438-1ccf5937f69d_176816812_323171969155603_5010382876218676736_n.jpeg?auto=compress,format&w=572&h=572&fit=crop&q=85&f=center">
+          </div>
+        </div>   
+      </div>    
     <div class="slide-four">
-      <img
-        class="bg-content"
-        src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-      />
+      <img class="bg-content"
+        src="https://images.unsplash.com/photo-1517816743773-6e0fd518b4a6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"/>
       <div class="desc-container">
         <span>SCROLL TO SEE MORE COOL SH*T -- ></span>
       </div>
@@ -91,9 +117,13 @@
           QUALITY GOODS</div>
       </div>
     </div>
+ 
+  
+  
+  
+  
+  
   </div>
-
-    
 </template>
 
 <style lang="scss" scoped>
@@ -284,7 +314,147 @@
     position: relative;
     display: flex;
     width: 100vw;
-    height: 100vh;
+    height: 140vh;
+    padding : 6rem;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    .left{
+      position: relative;
+      display: flex;
+      width: 55%;
+      height: 80%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .top{
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: flex-start;
+        img.pict{
+          object-fit: cover;
+          height: 34rem;
+          width: 100%;
+        }
+      }
+      .bottom{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: center;
+        img.pict{
+          object-fit: cover;
+          height: 19.4rem;
+          width: 100%;
+
+        }
+      }
+    }
+    .right{
+      position: relative;
+      display: flex;
+      width: 45%;
+      transform: translateX(-2rem);
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      .top{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 50%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: flex-start;
+        .atasnya{
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          height: 50%;
+          width: 100%;
+          justify-content: flex-start;
+          align-content: flex-start;
+          object-fit: cover;
+        }
+        .bawahnya{
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          height: 50%;
+          width: 100%;
+          justify-content: flex-start;
+          align-content: flex-start;
+          object-fit: cover;
+          .button-hire{
+            position: relative;
+            display: flex;
+            height: 13.3rem;
+            width: 13.3rem;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            background: #f0eee3;
+            .img-container{
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 100%;
+              height: 2rem;
+              img.flash{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 2rem;
+                height: 2rem;
+              }
+            }
+            span{
+              position: relative;
+              display: flex;
+              width: 100%;
+              justify-content: center;
+              font-family: quicksand;
+              font-size: 1rem;
+              color: #b48645;
+
+            }
+             &:hover{
+                background: #b48645;
+                span{
+                  color: white;
+                }
+              }
+          }
+            
+          
+          img.pict{
+            object-fit: cover;
+            height: 13.3rem;
+            width: 13.3rem;
+          }
+        }
+      }
+      .bottom{
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 50%;
+        img.pict{
+          width: 640px;
+          height: 26.7rem;
+        }
+      }
+    }
   }
   .slide-four {
     position: relative;
@@ -335,7 +505,7 @@
           }
         }
      }        
-    }
+  }
   .slide-five{
     position: relative;
     width: 100vw;
@@ -513,5 +683,4 @@
 }
   }
 }
-
 </style>
