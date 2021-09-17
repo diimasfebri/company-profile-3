@@ -16,14 +16,14 @@
 
         </div>
       <div :style="`transform: translateX(-${layerIndex * 100}%)`" class="layer">
-        <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+        <img class="bg-content" src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
         <div class="filter-black"></div>
         <div class="desc-container">
           <div class="desc">
-          <span>D*MN GOOD APPAREL</span>
+          <span>FALL FLANNEL ARE HERE</span>
         </div>  
         <div class="button">
-          <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
+          <span class="desc" @click="$router.push('/work')">VIEW OUR PROCESS</span>
         </div>
       </div>
 
@@ -258,7 +258,6 @@ export default {
     }))
     this.scrollTargets.sort((a, b) => a.distance - b.distance)
   },
-
   methods: {
     scrollHandler(e) {
       const top = e.target.scrollTop
@@ -290,7 +289,8 @@ export default {
       this.layerIndex = this.layerIndex === 1 ? 1 : this.layerIndex + 1
       
     }
-  },
+    },
+   
   },
 }
 </script>
@@ -444,7 +444,6 @@ export default {
         transform: translateX(5%);
       }
     }
-
     .button-container {
       position: relative;
       display: flex;
@@ -485,6 +484,7 @@ export default {
       position: absolute;
       width: 100vw;
       height: 120vh;
+      transition: transform .2s;
     }
     .filter-black {
       position: absolute;
@@ -521,6 +521,7 @@ export default {
           display: flex;
           flex-direction: row;
           width: 60vw;
+          transition: trans ;
           border-top: 1px solid rgba(128, 128, 122, 1);
           margin-bottom: 0.5rem;
           span.txt {
@@ -542,6 +543,9 @@ export default {
             }
           &.btm {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
+          }
+          &:hover{
+
           }
         }
       }
@@ -716,7 +720,6 @@ export default {
           }
         }
       }
-
       .button-switch {
         position: relative;
         display: flex;
@@ -754,7 +757,6 @@ export default {
     box-sizing: border-box;
     justify-content: center;
     align-items: flex-end;
-
     svg {
       width: 100vw;
       height: 0;

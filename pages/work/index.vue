@@ -2,10 +2,30 @@
   <div class="body-container">
     <div class="slide-one">
       <div class="bg">
-        <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
-        <img class="gen" src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
-        <img src="https://images.prismic.io/andersonbrothers/3f50020a-7a98-4a7b-8b23-7c635ed406f8_logos-row-3.png?auto=compress,format">
-        <img class="gen" src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+        <div class="line" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+        </div>
+        <div class="line x" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+        </div>
+        <div class="line" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/30940b70-234d-4557-8554-5bc4355e6742_abds_logos_row3b.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/30940b70-234d-4557-8554-5bc4355e6742_abds_logos_row3b.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/30940b70-234d-4557-8554-5bc4355e6742_abds_logos_row3b.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/30940b70-234d-4557-8554-5bc4355e6742_abds_logos_row3b.png?auto=compress,format">
+        </div>
+        <div class="line x" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+        </div>  
       </div>
       <div class="desc-container">
         <div class="desc">
@@ -117,12 +137,7 @@
           QUALITY GOODS</div>
       </div>
     </div>
- 
-  
-  
-  
-  
-  
+
   </div>
 </template>
 
@@ -145,36 +160,37 @@
     justify-content: center;
     align-items : center;
     .bg {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      justify-content: center;
-      align-items : center;
-      margin-top: 9rem;
-      img{
-         position: relative;           
-        display: flex;           
-        height: 6rem;           
-        animation: marquee1 10s linear infinite;     
-        @keyframes marquee1 {     
-            from { transform: translateX(-10%); }     
-            to { transform: translateX(100%); }     
-            }       
-      
-      &.gen{
-         position: relative;           
-        display: flex;           
-        height: 6rem;           
-        animation: marquee2 10s linear infinite;     
-          @keyframes marquee2 {     
-            from { transform: translateX(-100%); }     
-            to { transform: translateX(100%); }     
-            }  
-      }
+      position: relative;
+      overflow: hidden;
+      --offset: 20vw;
+      --move-initial: calc(-25% + var(--offset));
+      --move-final: calc(-50% + var(--offset));
+      .line{
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 20s linear infinite;
+        animation-play-state: running;
+        img{
+          height: 6rem;
+          padding: 1rem 2px;
+        }
+        @keyframes marquee {
+        0% {
+            transform: translate3d(var(--move-initial), 0, 0);
+        }
+        100% {
+            transform: translate3d(var(--move-final), 0, 0);
+        }
+        } 
+        &.x{
+        animation-direction: reverse;
+        }       
       }
     }
     .desc-container {
-      position: relative;
+      position: absolute;
       display: flex;
       width: 100%;
       height: 100%;
@@ -182,7 +198,6 @@
       justify-content: center;
       align-items: flex-start;
       z-index: 2000;
-      
       .desc {
         position: relative;
         width: 100%;
@@ -336,7 +351,6 @@
           object-fit: cover;
           height: 19.4rem;
           width: 100%;
-
         }
       }
     }
@@ -410,7 +424,6 @@
               font-family: quicksand;
               font-size: 1rem;
               color: #b48645;
-
             }
              &:hover{
                 background: #b48645;
@@ -483,7 +496,6 @@
           height: 28rem;
           width: 19rem;
           object-fit: cover;
-
           &.one{
             margin-left: 2rem;
           }
@@ -568,7 +580,6 @@
               font-weight: 900;
           }
       }
-
     }
    
   }
@@ -663,7 +674,6 @@
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
   }
-
 }
   }
 }
