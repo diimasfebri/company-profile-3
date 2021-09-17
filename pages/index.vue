@@ -100,6 +100,7 @@
         </div>
       </div>
       </div>
+    </div>
     <div class="slide-four">
       <div class="content-container">
         <span class="desc"> WE KEEP IT SIMPLE </span>
@@ -268,7 +269,7 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
 </template>
  
  <script>
