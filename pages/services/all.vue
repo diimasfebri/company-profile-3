@@ -4,11 +4,11 @@
   <div class="desc-container">
     <span class="desc-1"> D*MN GOOD QUALITY </span>
     <span class="desc-2"> Our goal is to help grow your brand through custom design and premium apparel. We offer quick turnaround times and affordable pricing. We are a full package design agency and production house in Seal Beach, California.</span>
-    </div>
-  <div class="bg-container">
-    <img src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
   </div>
   <div class="item-container">
+    <div class="bg-container">
+      <img class="produk" src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
+    </div>
     <span class="desc-3 one" @click="$router.push('/services/customdesign')">CUSTOM DESIGN</span>
     <span class="desc-3 two" @click="$router.push('/services/screenprinting')">SCREEN PRINTING </span>
     <span class="desc-3 three" @click="$router.push('/services/headwer')">HEADWER</span>
@@ -81,7 +81,7 @@ export default {
 .slide-one{
   position: relative;
   width: 100vw;
-  height: 250vh;
+  height: 180vh;
   display: flex;
   background: black;
   justify-content: flex-start;
@@ -118,23 +118,6 @@ export default {
           font-weight: 500;
         }
       }
-    .bg-container{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      transform: translateY(-44rem);
-      margin-left: 7rem;
-      img{
-        position: absolute;
-        width: 32rem;
-        height: 38rem;
-        object-fit: cover;
-      }
-    }
     .item-container{
         position: relative;
         display: flex;
@@ -147,18 +130,47 @@ export default {
         margin-left: 9rem;
         margin-top: 6rem;
         font-weight: bold;
+        .bg-container{
+          position: absolute;
+          width: 100%;
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+          transform: translateY(-8rem);
+          margin-left: 8rem;
+          img{
+            position: absolute;
+            width: 32rem;
+            height: 38rem;
+            object-fit: cover;
+          }
+        }
         span.desc-3{
            font-family: 'Antonio';
            color: white;
+           cursor: pointer;
            font-size: 130px;
            font-weight: 900;
            margin-top: 2rem;
            margin-bottom: 0.5rem;
            line-height: 1;
-        &:hover{
-          color: #b48645;
-      }
-    }
+           z-index: 200;
+          &:hover{
+            color: #b48645;
+          }
+        }
+        &.one{
+          &:hover{
+            .bg-container{
+              img.produk{
+                width: 20rem;
+                height: 25rem;
+              }
+            }
+          }
+        }
   }
   
  

@@ -314,8 +314,8 @@ export default {
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     .layer-container{
       position: relative;
       display: flex;
@@ -372,6 +372,7 @@ export default {
             position: relative;
             display: flex;
             width: 11rem;
+            cursor: pointer;
             height: 1.5rem;
             background: white;
             justify-content: center;
@@ -384,7 +385,8 @@ export default {
               font-weight: 900;
             }
             &:hover {
-              background: #b48645;
+  
+                background: #b48645;
             }
         }
       }
@@ -393,9 +395,8 @@ export default {
     .button-switch {
       position: absolute;
       display: flex;
-      width: 100%;
       height: 100%;
-      margin-left: 10rem;
+      margin-left: 8rem;
       align-items: flex-end;
       justify-content: flex-start;
       z-index: 24;
