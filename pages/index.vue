@@ -370,6 +370,7 @@ export default {
           }
           .button {
             position: relative;
+            cursor: pointer;
             display: flex;
             width: 11rem;
             height: 1.5rem;
@@ -534,6 +535,11 @@ export default {
             color: white;
             line-height: 1;
           }
+          &:hover{
+            span.txt{
+              color: #b48645;
+            }
+            }
           &.btm {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
           }
