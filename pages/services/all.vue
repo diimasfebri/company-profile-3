@@ -9,11 +9,11 @@
     <img src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
   </div>
   <div class="item-container">
-    <span class="desc-3" @click="$router.push('/services/customdesign')">CUSTOM DESIGN</span>
-    <span class="desc-3" @click="$router.push('/services/screenprinting')">SCREEN PRINTING </span>
-    <span class="desc-3" @click="$router.push('/services/headwer')">HEADWER</span>
-    <span class="desc-3" @click="$router.push('/services/cut&sew')">CUT & SEW</span>
-    <span class="desc-3" @click="$router.push('/services/accessories')">ACCESSORIES</span>
+    <span class="desc-3 one" @click="$router.push('/services/customdesign')">CUSTOM DESIGN</span>
+    <span class="desc-3 two" @click="$router.push('/services/screenprinting')">SCREEN PRINTING </span>
+    <span class="desc-3 three" @click="$router.push('/services/headwer')">HEADWER</span>
+    <span class="desc-3 four" @click="$router.push('/services/cut&sew')">CUT & SEW</span>
+    <span class="desc-3 five" @click="$router.push('/services/accessories')">ACCESSORIES</span>
   </div> 
   </div>
   <div class="slide-two">
@@ -24,8 +24,8 @@
         <img src="https://images.prismic.io/andersonbrothers/3f50020a-7a98-4a7b-8b23-7c635ed406f8_logos-row-3.png?auto=compress,format">
         <img src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
       </div>  
-  </div>
-    <div class="slide-three">
+    </div>
+  <div class="slide-three">
           <div class="content-container">
            <img src="https://images.prismic.io/andersonbrothers/9d6609bf-e0f6-42e1-b363-8129d9f422a0_192141485_293521482489208_6621258632138134305_n.jpeg?auto=compress,format&w=750&h=741&fit=crop&q=85&f=center" alt="">
             <div class="desc-container">
@@ -95,8 +95,25 @@ export default {
           flex-direction: column;
           font-weight: 500;
         }
-        }
-        .item-container{
+      }
+    .bg-container{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      transform: translateY(-44rem);
+      margin-left: 7rem;
+      img{
+        position: absolute;
+        width: 32rem;
+        height: 38rem;
+        object-fit: cover;
+      }
+    }
+    .item-container{
         position: relative;
         display: flex;
         width: 100%;
@@ -117,30 +134,12 @@ export default {
            margin-bottom: 0.5rem;
            line-height: 1;
         &:hover{
-            color: #b48645;
-            span.role-3{
-              color: #f4f4f4
-            }
+          color: #b48645;
       }
     }
- }
- .bg-container{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-end;
-      transform: translateY(-44rem);
-      margin-left: 7rem;
-      img{
-        position: absolute;
-        width: 32rem;
-        height: 38rem;
-        object-fit: cover;
-      }
- }
+  }
+  
+ 
 }
  .slide-two{
    position: relative;

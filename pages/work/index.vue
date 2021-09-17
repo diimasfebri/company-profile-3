@@ -131,10 +131,40 @@
             </div>
           </div>
       </div>
-    <div class="marquee">
+    <div class="iklan">
       <div class="track">
-        <div class="content">&nbsp;ANDERSON BROTHER --- WE HAVE A PHD IN CUSTOM APPAREAL ---
-          QUALITY GOODS</div>
+        <div class="line">
+          <span class="txt" aria-hidden="true">ANDERSON BROTHER</span>
+          <div class="button-hire" aria-hidden="true"> </div>
+          <span class="txt" aria-hidden="true">QUALITY GOODS</span>
+          <div class="button-hire" aria-hidden="true"></div>
+          <span class="txt" aria-hidden="true">WE HAVE A PHD IN CUSTOM APPAREL</span>
+          <div class="button-hire" aria-hidden="true"></div>
+        </div>
+        <div class="line">
+         <span class="txt" aria-hidden="true">ANDERSON BROTHER</span>
+          <div class="button-hire" aria-hidden="true"> </div>
+          <span class="txt" aria-hidden="true">QUALITY GOODS</span>
+          <div class="button-hire" aria-hidden="true"></div>
+          <span class="txt" aria-hidden="true">WE HAVE A PHD IN CUSTOM APPAREL</span>
+          <div class="button-hire" aria-hidden="true"></div>
+        </div>
+        <div class="line">
+          <span class="txt" aria-hidden="true">ANDERSON BROTHER</span>
+          <div class="button-hire" aria-hidden="true"> </div>
+          <span class="txt" aria-hidden="true">QUALITY GOODS</span>
+          <div class="button-hire" aria-hidden="true"></div>
+          <span class="txt" aria-hidden="true">WE HAVE A PHD IN CUSTOM APPAREL</span>
+          <div class="button-hire" aria-hidden="true"></div>
+        </div>
+        <div class="line">
+             <span class="txt" aria-hidden="true">ANDERSON BROTHER</span>
+          <div class="button-hire" aria-hidden="true"> </div>
+          <span class="txt" aria-hidden="true">QUALITY GOODS</span>
+          <div class="button-hire" aria-hidden="true"></div>
+          <span class="txt" aria-hidden="true">WE HAVE A PHD IN CUSTOM APPAREL</span>
+          <div class="button-hire" aria-hidden="true"></div>
+        </div>
       </div>
     </div>
 
@@ -179,13 +209,13 @@
         @keyframes marquee {
         0% {
             transform: translate3d(var(--move-initial), 0, 0);
-        }
+         }
         100% {
             transform: translate3d(var(--move-final), 0, 0);
-        }
+          }
         } 
         &.x{
-        animation-direction: reverse;
+          animation-direction: reverse;
         }       
       }
     }
@@ -651,30 +681,45 @@
     }
     }
   }
-  .marquee{
+  .iklan{
   position: relative;
-  width: 100vw;
-  max-width: 100%;
   height: 200px;
   overflow-x: hidden;
   background: #F0EEE3;
   .track{
-    position: absolute;
-    white-space: nowrap;
-    will-change: transform;
-    animation: marquee 10s linear infinite;
-    .content{
-      font-family: 'Antonio';
-      font-size: 144px;
-      font-weight: bolder;
-      color: #282829
-      
-    }
-  @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+    position: relative;
+    overflow: hidden;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    .line{
+      width: fit-content;
+      display: flex;
+      position: relative;
+      transform: translate3d(var(--move-initial), 0, 0);
+      animation: marquee 10s linear infinite;
+      animation-play-state: running;
+      span.txt{
+        font-family: 'Antonio';
+        font-size: 7.5rem;
+        font-weight: bolder;
+        color: #282829;
+      }
+      .button-hire{
+        width:18rem;
+        height: 100%;
+        border: 2px solid black;
+      }
+      @keyframes marquee {
+      0% {
+          transform: translate3d(var(--move-initial), 0, 0);
+        }
+      100% {
+          transform: translate3d(var(--move-final), 0, 0);
+        }
+      } 
+    } 
   }
-}
   }
 }
 </style>
