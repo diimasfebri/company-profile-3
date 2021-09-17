@@ -378,14 +378,14 @@ export default {
             justify-content: center;
             align-items: center;
             margin-top: 0.5rem;
-            span {
+            span.desc {
               color: black;
               font-family: Antonio;
               font-size: 0.8rem;
               font-weight: 900;
             }
-            &:hover {
-              background: #b48645;
+              &:hover {
+              background:#b48645;
             }
         }
       }
