@@ -9,12 +9,23 @@
     <span class="desc-3 one" @click="$router.push('/services/customdesign')">
       CUSTOM DESIGN 
       <img class="produk" src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
-
     </span>
-    <span class="desc-3 two" @click="$router.push('/services/screenprinting')">SCREEN PRINTING </span>
-    <span class="desc-3 three" @click="$router.push('/services/headwer')">HEADWER</span>
-    <span class="desc-3 four" @click="$router.push('/services/cut&sew')">CUT & SEW</span>
-    <span class="desc-3 five" @click="$router.push('/services/accessories')">ACCESSORIES</span>
+    <span class="desc-3 two" @click="$router.push('/services/screenprinting')">
+    SCREEN PRINTING 
+    <img class="produk" src="https://images.unsplash.com/photo-1501829385782-9841539fa6bf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"> 
+    </span>
+    <span class="desc-3 three" @click="$router.push('/services/headwer')">
+    HEADWER
+    <img class="produk" src="https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"> 
+    </span>
+    <span class="desc-3 four" @click="$router.push('/services/cut&sew')">
+    CUT & SEW
+    <img class="produk" src="https://images.unsplash.com/photo-1527786356703-4b100091cd2c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"> 
+    </span>
+    <span class="desc-3 five" @click="$router.push('/services/accessories')">
+    ACCESSORIES
+    <img class="produk" src="https://images.unsplash.com/photo-1522775417749-29284fb89f43?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"> 
+    </span>
   </div> 
   </div>
   <div class="slide-two">
@@ -143,11 +154,85 @@ export default {
           &.one{
               img.produk{
               position: absolute;
+              display: flex;
               width: 38rem;
               height: 44rem;
               object-fit: cover;
               opacity: 0;
               transform: translateY(-8.2rem);
+              z-index: 2;
+              
+            } 
+            &:hover{
+              img.produk{
+              opacity: 1;
+              transition: 2s opacity;
+              }
+            }
+          }
+          &.two{
+              img.produk{
+              position: absolute;
+              width: 38rem;
+              height: 44rem;
+              object-fit: cover;
+              opacity: 0;
+              transform: translateY(-8.2rem);
+              z-index: 3;
+              
+            } 
+            &:hover{
+              img.produk{
+              opacity: 1;
+              transition: 2s opacity;
+              }
+            }
+          }
+          &.three{
+              img.produk{
+              position: absolute;
+              width: 38rem;
+              height: 44rem;
+              object-fit: cover;
+              opacity: 0;
+              transform: translateY(-8.2rem);
+              z-index: 4;
+              
+            } 
+            &:hover{
+              img.produk{
+              opacity: 1;
+              transition: 2s opacity;
+              }
+            }
+          }
+          &.four{
+              img.produk{
+              position: absolute;
+              width: 38rem;
+              height: 44rem;
+              object-fit: cover;
+              opacity: 0;
+              transform: translateY(-8.2rem);
+              z-index: 5;
+              
+            } 
+            &:hover{
+              img.produk{
+              opacity: 1;
+              transition: 2s opacity;
+              }
+            }
+          }
+          &.five{
+              img.produk{
+              position: absolute;
+              width: 38rem;
+              height: 44rem;
+              object-fit: cover;
+              opacity: 0;
+              transform: translateY(-8.2rem);
+              z-index: 5;
               
             } 
             &:hover{
