@@ -157,6 +157,7 @@ export default {
               }
             }
           }
+          
         }
   }
   
@@ -165,16 +166,15 @@ export default {
  .slide-two{
    position: relative;
    width: 100vw;
-   height: 120vh;
+   height: 100vh;
    justify-content: flex-start;
    display: flex;
+   padding: 4rem 0 2rem 0;
    flex-direction: column;
    background-color: #282829;
     .desc-container{
         position: relative;
         display: flex;
-        width: 30%;
-        padding: 3.5rem 4rem;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -183,6 +183,7 @@ export default {
             color: white;
             font-size: 1rem;
             font-weight: 900;
+            margin-left: 4rem;
           }
         .bg {
         position: relative;
