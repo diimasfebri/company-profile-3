@@ -290,7 +290,8 @@ export default {
       this.layerIndex = this.layerIndex === 1 ? 1 : this.layerIndex + 1
       
     }
-  },
+    },
+   
   },
 }
 </script>
@@ -484,6 +485,7 @@ export default {
       position: absolute;
       width: 100vw;
       height: 120vh;
+      transition: transform .2s;
     }
     .filter-black {
       position: absolute;
@@ -520,6 +522,7 @@ export default {
           display: flex;
           flex-direction: row;
           width: 60vw;
+          transition: trans ;
           border-top: 1px solid rgba(128, 128, 122, 1);
           margin-bottom: 0.5rem;
           span.txt {
@@ -536,6 +539,9 @@ export default {
           }
           &.btm {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
+          }
+          &:hover{
+
           }
         }
       }

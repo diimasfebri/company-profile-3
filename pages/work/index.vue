@@ -2,10 +2,14 @@
   <div class="body-container">
     <div class="slide-one">
       <div class="bg">
-        <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
-        <img class="gen" src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
-        <img src="https://images.prismic.io/andersonbrothers/3f50020a-7a98-4a7b-8b23-7c635ed406f8_logos-row-3.png?auto=compress,format">
-        <img class="gen" src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+        <div class="line-one" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+        </div>
+        
+
       </div>
       <div class="desc-container">
         <div class="desc">
@@ -117,12 +121,7 @@
           QUALITY GOODS</div>
       </div>
     </div>
- 
-  
-  
-  
-  
-  
+
   </div>
 </template>
 
@@ -145,32 +144,31 @@
     justify-content: center;
     align-items : center;
     .bg {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-      justify-content: center;
-      align-items : center;
-      margin-top: 9rem;
-      img{
-         position: relative;           
-        display: flex;           
-        height: 6rem;           
-        animation: marquee1 10s linear infinite;     
-        @keyframes marquee1 {     
-            from { transform: translateX(-10%); }     
-            to { transform: translateX(100%); }     
-            }       
-      
-      &.gen{
-         position: relative;           
-        display: flex;           
-        height: 6rem;           
-        animation: marquee2 10s linear infinite;     
-          @keyframes marquee2 {     
-            from { transform: translateX(-100%); }     
-            to { transform: translateX(100%); }     
-            }  
-      }
+      position: relative;
+      overflow: hidden;
+      --offset: 20vw;
+      --move-initial: calc(-25% + var(--offset));
+      --move-final: calc(-50% + var(--offset));
+      .line-one{
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 10s linear infinite;
+        animation-play-state: running;
+        img{
+          height: 2rem;
+          padding: 0 2vw;
+        }
+       @keyframes marquee {
+        0% {
+            transform: translate3d(var(--move-initial), 0, 0);
+        }
+
+        100% {
+            transform: translate3d(var(--move-final), 0, 0);
+        }
+        }        
       }
     }
     .desc-container {
