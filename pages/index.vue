@@ -48,19 +48,22 @@
     <div class="desc-container">
       <span class="desc">OUR SERVICES</span>
       <div class="menu-list">
-        <div class="menu-item" @click="$router.push('/services/customdesign')">
-          <span class="txt">CUSTOM DESIGN</span>
+        <div class="menu-item one" @click="$router.push('/services/customdesign')">
+          <span class="txt">
+            CUSTOM DESIGN
+            <img class="produk" src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
+          </span>
         </div>
-        <div class="menu-item" @click="$router.push('/services/screenprinting')">
+        <div class="menu-item two" @click="$router.push('/services/screenprinting')">
           <span class="txt">SCREEN PRINTING</span>
         </div>
-        <div class="menu-item" @click="$router.push('/services/headwer')">
+        <div class="menu-item three" @click="$router.push('/services/headwer')">
           <span class="txt">HEADWEAR</span>
         </div>
-        <div class="menu-item" @click="$router.push('/services/cutsew')">
+        <div class="menu-item four" @click="$router.push('/services/cutsew')">
           <span class="txt">CUT & SAW</span>
         </div>
-        <div class="menu-item btm" @click="$router.push('/services/accessories')">
+        <div class="menu-item five" @click="$router.push('/services/accessories')">
           <span class="txt">ACCESSORIES</span>
         </div>
       </div>
@@ -487,7 +490,6 @@ export default {
       position: absolute;
       width: 100vw;
       height: 120vh;
-      transition: transform .2s;
     }
     .filter-black {
       position: absolute;
@@ -522,9 +524,9 @@ export default {
         .menu-item {
           position: relative;
           display: flex;
+          cursor: pointer;
           flex-direction: row;
           width: 60vw;
-          transition: trans ;
           border-top: 1px solid rgba(128, 128, 122, 1);
           margin-bottom: 0.5rem;
           span.txt {
@@ -538,18 +540,33 @@ export default {
             font-weight: 900;
             color: white;
             line-height: 1;
+            img.produk{
+              position: absolute;
+              display: flex;
+              width: 100vw;
+              height: 120vh;
+              object-fit: cover;
+              opacity: 1;
+              transform: translateX(-4rem);
+            }
           }
-          &:hover{
-            span.txt{
-              color: #b48645;
+          &.one{
+            &:hover{
+                span.txt{
+                 color:#b48645;
+                 img.produk{
+                  opacity: 1;
+                  transition: 2s opacity;
+                 }
+                }
+              
             }
-            }
-          &.btm {
+          }
+       
+          &.five {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
           }
-          &:hover{
-
-          }
+        
         }
       }
     }
