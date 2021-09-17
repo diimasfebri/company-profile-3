@@ -15,7 +15,7 @@
     <img class="produk" src="https://images.unsplash.com/photo-1501829385782-9841539fa6bf?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"> 
     </span>
     <span class="desc-3 three" @click="$router.push('/services/headwer')">
-    HEADWER
+    HEADWEAR
     <img class="produk" src="https://images.unsplash.com/photo-1497942304796-b8bc2cc898f3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"> 
     </span>
     <span class="desc-3 four" @click="$router.push('/services/cut&sew')">
@@ -133,7 +133,6 @@ export default {
     .item-container{
         position: relative;
         display: flex;
-        width: 100%;
         transform: translateY(-3rem);
         flex-direction: column;
         justify-content: flex-start;
@@ -150,97 +149,76 @@ export default {
            margin-top: 2rem;
            margin-bottom: 0.5rem;
            line-height: 1;
-           z-index: 20;
+           z-index: 200;
+           justify-content: flex-start;
+           align-items: flex-start;
+            img.produk{
+            position: absolute;
+            display: flex;
+            pointer-events: none;
+            width: 38rem;
+            height: 44rem;
+            object-fit: cover;
+            opacity: 0;
+            transform: translateY(-8.2rem);
+            margin-left: 30rem;
+          } 
           &.one{
-              img.produk{
-              position: absolute;
-              display: flex;
-              width: 38rem;
-              height: 44rem;
-              object-fit: cover;
-              opacity: 0;
-              transform: translateY(-8.2rem);
-              z-index: 2;
-              
-            } 
             &:hover{
-              img.produk{
-              opacity: 1;
-              transition: 2s opacity;
-              }
-            }
+             color:#b48645;
+               img.produk{
+               opacity: 1;
+               transition: 2s opacity;
+               }
+             }
           }
           &.two{
-              img.produk{
-              position: absolute;
-              width: 38rem;
-              height: 44rem;
-              object-fit: cover;
-              opacity: 0;
-              transform: translateY(-8.2rem);
-              z-index: 3;
-              
-            } 
-            &:hover{
-              img.produk{
-              opacity: 1;
-              transition: 2s opacity;
-              }
+           img.produk{
+             transform: translateY(-16rem);
             }
+            &:hover{
+             color:#b48645;
+               img.produk{
+               opacity: 1;
+               transition: 2s opacity;
+               }
+             }
           }
           &.three{
-              img.produk{
-              position: absolute;
-              width: 38rem;
-              height: 44rem;
-              object-fit: cover;
-              opacity: 0;
-              transform: translateY(-8.2rem);
-              z-index: 4;
-              
-            } 
-            &:hover{
-              img.produk{
-              opacity: 1;
-              transition: 2s opacity;
-              }
+            img.produk{
+             transform: translateY(-24rem);
             }
+            &:hover{
+             color:#b48645;
+               img.produk{
+               opacity: 1;
+               transition: 2s opacity;
+               }
+             }
           }
           &.four{
-              img.produk{
-              position: absolute;
-              width: 38rem;
-              height: 44rem;
-              object-fit: cover;
-              opacity: 0;
-              transform: translateY(-8.2rem);
-              z-index: 5;
-              
-            } 
-            &:hover{
-              img.produk{
-              opacity: 1;
-              transition: 2s opacity;
-              }
+             img.produk{
+             transform: translateY(-32rem);
             }
+            &:hover{
+             color:#b48645;
+               img.produk{
+               opacity: 1;
+               transition: 2s opacity;
+               }
+             }
           }
           &.five{
-              img.produk{
-              position: absolute;
-              width: 38rem;
-              height: 44rem;
-              object-fit: cover;
-              opacity: 0;
-              transform: translateY(-8.2rem);
-              z-index: 5;
-              
-            } 
-            &:hover{
-              img.produk{
-              opacity: 1;
-              transition: 2s opacity;
-              }
+             img.produk{
+             transform: translateY(-40rem);
             }
+            &:hover{
+             color:#b48645;
+               img.produk{
+               opacity: 1;
+               transition: 2s opacity;
+               }
+             }
           }
           
         }
@@ -374,6 +352,5 @@ export default {
     }
     }
   }
-
 }
 </style>
