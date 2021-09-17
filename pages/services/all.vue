@@ -19,10 +19,32 @@
   <div class="slide-two">
     <div class="desc-container">
         <span class="desc">YOU ARE IN GOOD HANDS</span>
-        <img src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
-        <img src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
-        <img src="https://images.prismic.io/andersonbrothers/3f50020a-7a98-4a7b-8b23-7c635ed406f8_logos-row-3.png?auto=compress,format">
-        <img src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+        <div class="bg">
+        <div class="line" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/18c63e8b-da67-4e14-a575-73a6a68ceef5_logos-row-1.png?auto=compress,format">
+        </div>
+        <div class="line x" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/c75ffffc-ec43-4da8-9b3a-f6f31a16c508_logos-row-2.png?auto=compress,format">
+        </div>
+        <div class="line" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/30940b70-234d-4557-8554-5bc4355e6742_abds_logos_row3b.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/30940b70-234d-4557-8554-5bc4355e6742_abds_logos_row3b.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/30940b70-234d-4557-8554-5bc4355e6742_abds_logos_row3b.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/30940b70-234d-4557-8554-5bc4355e6742_abds_logos_row3b.png?auto=compress,format">
+        </div>
+        <div class="line x" aria-hidden="true">
+          <img  src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+          <img  src="https://images.prismic.io/andersonbrothers/3fc617ce-03d0-4221-bca4-7fc328d3f9cc_logos-row-4.png?auto=compress,format">
+        </div>  
+      </div>
       </div>  
   </div>
     <div class="slide-three">
@@ -145,7 +167,7 @@ export default {
  .slide-two{
    position: relative;
    width: 100vw;
-   height: 100vh;
+   height: 120vh;
    justify-content: flex-start;
    display: flex;
    flex-direction: column;
@@ -164,17 +186,35 @@ export default {
             font-size: 1rem;
             font-weight: 900;
           }
-        img{           
-        position: relative;           
-        display: flex;           
-        height: 6rem;   
-        color: black;        
-        animation: marquee 10s linear infinite;     
-        @keyframes marquee {     
-            from { transform: translateX(0); }     
-            to { transform: translateX(-100%); }     
-            }     
-            
+        .bg {
+        position: relative;
+        overflow: hidden;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+      .line{
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 20s linear infinite;
+        animation-play-state: running;
+        img{
+          height: 6rem;
+          padding: 1rem 2px;
+        }
+        @keyframes marquee {
+        0% {
+            transform: translate3d(var(--move-initial), 0, 0);
+        }
+        100% {
+            transform: translate3d(var(--move-final), 0, 0);
+        }
+        } 
+        &.x{
+        animation-direction: reverse;
+        }       
+      }
     }
           }
     }
