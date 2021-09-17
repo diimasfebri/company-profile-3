@@ -170,7 +170,7 @@ export default {
               }
             }
           }
-          &.two{
+          &.two{ 
               img.produk{
               position: absolute;
               width: 38rem;
