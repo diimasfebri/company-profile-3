@@ -1,25 +1,47 @@
 <template>
 <div class="body-container" @scroll="scrollHandler"> 
   <div class="slide-one">
-    <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-    <div class="filter-black"></div>
-  <div class="desc-container">
-    <div class="desc">
-      <span>D*MN GOOD APPAREL</span>
-    </div>  
-    <div class="button">
-      <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
+    <div class="layer-container">
+      <div :style="`transform: translateX(-${layerIndex * 100}%)`" class="layer">
+        <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+        <div class="filter-black"></div>
+        <div class="desc-container">
+          <div class="desc">
+          <span>D*MN GOOD APPAREL</span>
+        </div>  
+        <div class="button">
+          <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
+        </div>
+      </div>
+
+        </div>
+      <div :style="`transform: translateX(-${layerIndex * 100}%)`" class="layer">
+        <img class="bg-content" src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
+        <div class="filter-black"></div>
+        <div class="desc-container">
+          <div class="desc">
+          <span>FALL FLANNEL ARE HERE</span>
+        </div>  
+        <div class="button">
+          <span class="desc" @click="$router.push('/work')">VIEW OUR PROCESS</span>
+        </div>
+      </div>
+
+        </div>
+    </div>
+    <div class="button-switch">
+      <div class="circle-1" @click="layerHandler('prev')"></div>
+      <div class="circle-2" @click="layerHandler('next')"></div>
     </div>
   </div>
-    </div>
   <div class="slide-two">
     <img class="bg-content" src="https://images.prismic.io/andersonbrothers/c48c2615-02be-44f4-8aae-2f5ba88b7061_work-logos.jpg?auto=compress,format&w=1652&h=678&fit=crop&q=85&f=center" >
-  <div class="button-container">
-    <div class="button" @click="$router.push('/work')">
-      <span class="desc" >OUR WORK</span>
+    <div class="button-container">
+      <div class="button" @click="$router.push('/work')">
+        <span class="desc" >OUR WORK</span>
+      </div>
     </div>
   </div>
-    </div>
   <div class="slide-three">
     <img class="bg-content" src="https://images.unsplash.com/photo-1515768678138-4ba95ba6ec96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80">
     <div class="filter-black"></div>
@@ -42,67 +64,12 @@
           <span class="txt">ACCESSORIES</span>
         </div>
       </div>
-      <div class="layer">
-         <img
-          class="bg-content"
-          src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-        />
-        <div class="filter-black"></div>
-        <div class="desc-container">
-          <div class="desc">
-            <span>D*MN GOOD APPAREL</span>
-          </div>
-          <div class="button">
-            <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
-          </div>
-        </div>
+   
       </div>
-      <div class="button-switch">
-        <div class="circle-1"  @click="slideHandler('prev')"></div>
-        <div class="circle-2"  @click="slideHandler('next')"></div>
-      </div>
-      </div>
-    <div class="slide-two">
-      <img
-        class="bg-content"
-        src="https://images.prismic.io/andersonbrothers/c48c2615-02be-44f4-8aae-2f5ba88b7061_work-logos.jpg?auto=compress,format&w=1652&h=678&fit=crop&q=85&f=center"
-      />
-      <div class="button-container">
-        <div class="button" @click="$router.push('/work')">
-          <span class="desc">OUR WORK</span>
-        </div>
-      </div>
-      </div>
-    <div class="slide-three">
-      <img
-        class="bg-content"
-        src="https://images.unsplash.com/photo-1515768678138-4ba95ba6ec96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80"
-      />
-      <div class="filter-black"></div>
-      <div class="desc-container">
-        <span class="desc">OUR SERVICES</span>
-        <div class="menu-list">
-          <div class="menu-item">
-            <span class="txt">CUSTOM DESIGN</span>
-          </div>
-          <div class="menu-item">
-            <span class="txt">SCREEN PRINTING</span>
-          </div>
-          <div class="menu-item">
-            <span class="txt">HEADWEAR</span>
-          </div>
-          <div class="menu-item">
-            <span class="txt">CUT & SAW</span>
-          </div>
-          <div class="menu-item btm">
-            <span class="txt">ACCESSORIES</span>
-          </div>
-        </div>
-      </div>
-      </div>
+ 
     </div>
-    <div class="slide-four">
-      <div class="content-container">
+  <div class="slide-four">
+    <div class="content-container">
         <span class="desc"> WE KEEP IT SIMPLE </span>
         <div class="step-list target">
           <div class="step one">
@@ -201,9 +168,9 @@
           <div class="circle-1" @click="slideHandler('prev')"></div>
           <div class="circle-2" @click="slideHandler('next')"></div>
         </div>
-      </div>
-      </div>
-    <div class="slide-five">
+    </div>
+    </div>
+  <div class="slide-five">
       <svg>
         <defs>
           <clipPath
@@ -242,8 +209,8 @@
           through custom design and premium apparel.</span
         >
       </div>
-      </div>
-    <div class="slide-six">
+    </div>
+  <div class="slide-six">
       <div class="content-container">
         <img
           src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format?w=897&h=585&fit=fill&q=85&f=center"
@@ -260,8 +227,8 @@
           </div>
         </div>
       </div>
-      </div>
-    <div class="marquee">
+    </div>
+  <div class="marquee">
       <div class="track">
         <div class="content">
           &nbsp;ANDERSON BROTHER --- WE HAVE A PHD IN CUSTOM APPAREAL ---
@@ -279,7 +246,8 @@ export default {
     return {
       scrollTargets: [],
       activeIndex: 0,
-      menuIndex: 0
+      menuIndex: 0,
+      layerIndex: 0
     }
   },
   mounted() {
@@ -290,7 +258,6 @@ export default {
     }))
     this.scrollTargets.sort((a, b) => a.distance - b.distance)
   },
-
   methods: {
     scrollHandler(e) {
       const top = e.target.scrollTop
@@ -314,6 +281,15 @@ export default {
         
       }
     },
+    layerHandler(direction) {
+    if (direction === 'prev'){
+      this.layerIndex = this.layerIndex === 0 ? 0 : this.layerIndex - 1 
+    }
+    else{
+      this.layerIndex = this.layerIndex === 1 ? 1 : this.layerIndex + 1
+      
+    }
+  },
   },
 }
 </script>
@@ -337,68 +313,82 @@ export default {
     width: 100vw;
     height: 100vh;
     display: flex;
-    .layer{
-       position: relative;
-        display: flex;
-        width: 100%;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        overflow: hidden;
-      img.bg-content {
-        position: absolute;
-        width: 100vw;
-        height: 100vh;
-        object-fit: cover;
-      }
-      .filter-black {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(#000, 0.6);
-      }
-      .desc-container {
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        .desc {
+    justify-content: center;
+    align-items: center;
+    .layer-container{
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100vh;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      .layer{
           position: relative;
+          display: flex;
           width: 100%;
-          display: flex;
-          justify-content: center;
+          height: 100vh;
+          flex-direction: row;
+          justify-content: flex-start;
           align-items: center;
-          span {
-            color: white;
-            font-family: Antonio;
-            font-size: 3rem;
-            font-weight: 900;
-          }
+           transition: 0.5s transform cubic-bezier(0.645, 0.045, 0.355, 1);
+          flex-shrink: 0;
+        img.bg-content {
+          position: absolute;
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
         }
-        .button {
+        .filter-black {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: rgba(#000, 0.6);
+        }
+        .desc-container {
           position: relative;
           display: flex;
-          width: 11rem;
-          height: 1.5rem;
-          background: white;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-          margin-top: 0.5rem;
-          span {
-            color: black;
-            font-family: Antonio;
-            font-size: 0.8rem;
-            font-weight: 900;
+          .desc {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+              color: white;
+              font-family: Antonio;
+              font-size: 3rem;
+              font-weight: 900;
+            }
           }
-          &:hover {
-            background: #b48645;
-          }
+          .button {
+            position: relative;
+            display: flex;
+            width: 11rem;
+            height: 1.5rem;
+            background: white;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.5rem;
+            span {
+              color: black;
+              font-family: Antonio;
+              font-size: 0.8rem;
+              font-weight: 900;
+            }
+            &:hover {
+              background: #b48645;
+            }
+        }
       }
+      }       
     }
-    } 
     .button-switch {
       position: absolute;
       display: flex;
@@ -407,6 +397,7 @@ export default {
       margin-left: 10rem;
       align-items: flex-end;
       justify-content: flex-start;
+      z-index: 24;
       .circle-1 {
         width: 0.5rem;
         height: 0.5rem;
@@ -451,7 +442,6 @@ export default {
         transform: translateX(5%);
       }
     }
-
     .button-container {
       position: relative;
       display: flex;
@@ -718,7 +708,6 @@ export default {
           }
         }
       }
-
       .button-switch {
         position: relative;
         display: flex;
@@ -756,7 +745,6 @@ export default {
     box-sizing: border-box;
     justify-content: center;
     align-items: flex-end;
-
     svg {
       width: 100vw;
       height: 0;

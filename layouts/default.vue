@@ -418,7 +418,8 @@ export default {
       flex-direction: row;
       align-items: flex-start;
       display: flex;
-      width: 80%;
+      margin-top: 2rem;
+      width: 88%;
       height: 100%;
       justify-content:space-between;
       position: relative;
@@ -428,21 +429,21 @@ export default {
       display: flex-start;
       justify-content: flex-start;
       position: relative;
-      img{
-        width: 6.5rem;
-        height: 5.5rem;
-      }
+        img{
+          width: 5rem;
+          height: 4rem;
+        }
       }
       .item-container{
         display: flex;
         position: relative;
         flex-direction: row;
-        width: 15rem;
+        width: 8rem;
         justify-content: space-between;
         align-items: space-between;
         .circle{
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 100%;
         flex-direction: row;
         justify-content: center;
@@ -453,8 +454,8 @@ export default {
           align-items: center;
           margin-top: 0.5rem;
           margin-left: 0.5rem;
-          width: 2rem;
-          height: 2rem;
+          width: 1rem;
+          height: 1rem;
         }
         
         &.active{
@@ -462,8 +463,8 @@ export default {
         }
       }
         .circle-2{
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 100%;
         flex-direction: row;
         justify-content: center;
@@ -474,16 +475,16 @@ export default {
           align-items: center;
           margin-top: 0.5rem;
           margin-left: 0.5rem;
-          width: 2rem;
-          height: 2rem;
+          width: 1rem;
+          height: 1rem;
         }
          &.active{
           background: #b48645
         }
         }
         .circle-3{
-        width: 3rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         border-radius: 100%;
         flex-direction: row;
         justify-content: center;
@@ -494,8 +495,8 @@ export default {
           align-items: center;
           margin-top: 0.5rem;
           margin-left: 0.5rem;
-          width: 2rem;
-          height: 2rem;
+          width: 1rem;
+          height: 1rem;
           object-fit: cover;
         }
          &.active{
