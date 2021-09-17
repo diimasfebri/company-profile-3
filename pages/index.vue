@@ -370,6 +370,7 @@ export default {
           }
           .button {
             position: relative;
+            cursor: pointer;
             display: flex;
             width: 11rem;
             cursor: pointer;
@@ -378,15 +379,17 @@ export default {
             justify-content: center;
             align-items: center;
             margin-top: 0.5rem;
-            span {
+            span.desc {
               color: black;
               font-family: Antonio;
               font-size: 0.8rem;
               font-weight: 900;
             }
             &:hover {
-  
                 background: #b48645;
+                span.desc{
+                  color: white;
+                }
             }
         }
       }
@@ -536,6 +539,11 @@ export default {
             color: white;
             line-height: 1;
           }
+          &:hover{
+            span.txt{
+              color: #b48645;
+            }
+            }
           &.btm {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
           }

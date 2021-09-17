@@ -26,13 +26,12 @@
         </div>
       </div>
     </div>
-    <nuxt  />
+    <nuxt/>
     <div class="bottom">
       <div class="top-section">
         <div class="left">
           <span class="address"
-            >Jl. Ketintang Baru IV No.17, Surabaya, Jawa Timur</span
-          >
+            >Jl. Ketintang Baru IV No.17, Surabaya, Jawa Timur</span>
           <span class="number">+62 857-3378-4892</span>
           <div class="email-container">
             <span class="email">Email : </span>
@@ -55,21 +54,21 @@
       <div class="bottom-section">
         <div class="left">
           <span class="desc">SITE</span>
-          <span class="button" @click="$router.push('/about')">About Us</span>
-          <span class="button" @click="$router.push('/work')">Our Work</span>
-          <span class="button" @click="$router.push('/process')">Our Process</span>
+          <span class="button one" @click="$router.push('/about')">About Us</span>
+          <span class="button two" @click="$router.push('/work')">Our Work</span>
+          <span class="button three" @click="$router.push('/process')">Our Process</span>
         </div>
         <div class="right">
           <span class="desc">SERVICES</span>
-          <span class="button" @click="$router.push('/services/customdesign')">Custom Design</span>
-          <span class="button" @click="$router.push('/services/screenprinting')">Screen Printing</span>
-          <span class="button" @click="$router.push('/services/headwer')">Headwear</span>
-          <span class="button" @click="$router.push('/services/cutsew')">Cut & Sew</span>
-          <span class="button" @click="$router.push('/services/accessories')">Accessories</span>
+          <span class="button four" @click="$router.push('/services/customdesign')">Custom Design</span>
+          <span class="button five" @click="$router.push('/services/screenprinting')">Screen Printing</span>
+          <span class="button six" @click="$router.push('/services/headwer')">Headwear</span>
+          <span class="button seven" @click="$router.push('/services/cutsew')">Cut & Sew</span>
+          <span class="button eight" @click="$router.push('/services/accessories')">Accessories</span>
         </div>
       </div>
       <div class="social-media">
-        <div class="img-container">
+        <div class="img-container" @click="$router.push('/')">
           <img src="/suavecito.png" alt="" />
         </div>
         <div class="item-container">
@@ -172,7 +171,7 @@ export default {
         width: auto;
         
         &:hover{
-          border-bottom: 2px solid #b48645;
+          color: #b48645;
         }
       }
     }
@@ -386,6 +385,23 @@ export default {
           font-size: 19px;
           line-height: 2;
           color: #b48645;
+        &.one{
+          &:hover{
+            color: white;
+          }
+        }
+        &.two{
+          &:hover{
+            color: white;
+          }
+        }
+        &.three{
+          &:hover{
+            color: white;
+          }
+        }
+
+
         }
       }
       .right {
@@ -411,6 +427,31 @@ export default {
           font-size: 19px;
           line-height: 2;
           color: #b48645;
+        &.four{
+          &:hover{
+            color: white;
+          }
+        }
+        &.five{
+          &:hover{
+            color: white;
+          }
+        }
+        &.six{
+          &:hover{
+            color: white;
+          }
+        }
+        &.seven{
+          &:hover{
+            color: white;
+          }
+        }
+        &.eight{
+          &:hover{
+            color: white;
+          }
+        }
         }
       }
     }
@@ -457,9 +498,11 @@ export default {
           width: 1rem;
           height: 1rem;
         }
-        
-        &.active{
-          background: #b48645
+        &:hover{
+          background: #b48645;
+          img.test{
+            border-radius: 100%;
+          }
         }
       }
         .circle-2{
@@ -478,8 +521,11 @@ export default {
           width: 1rem;
           height: 1rem;
         }
-         &.active{
-          background: #b48645
+        &:hover{
+          background: #b48645;
+          img.test{
+            border-radius: 100%;
+          }
         }
         }
         .circle-3{
@@ -499,8 +545,11 @@ export default {
           height: 1rem;
           object-fit: cover;
         }
-         &.active{
-          background: #b48645
+         &:hover{
+          background: #b48645;
+          img.test{
+            border-radius: 100%;
+          }
         }
         }
       }
