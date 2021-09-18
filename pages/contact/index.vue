@@ -155,6 +155,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
 .container{
   position: relative;
   width: 100vw;
@@ -165,6 +166,7 @@ export default {
   justify-content: flex-start;
   align-items: flex-start;
   overflow-y: auto;
+  overflow: hidden;
    > * {
     flex-shrink: 0;
   }
