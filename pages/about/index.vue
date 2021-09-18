@@ -189,12 +189,16 @@
 .body-container{
   position: relative;
   width: 100vw;
-  min-height: 100vh;
-  min-height: calc((var(--vh, 1vh) * 100));
+  height: 100vh;
+  height: calc((var(--vh, 1vh) * 100));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+    overflow-y: auto;
+  > * {
+    flex-shrink: 0;
+  }
 
  
 .slide-one{
@@ -387,7 +391,7 @@
     }
   .card-list{
     position: relative;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -395,6 +399,7 @@
       .card{
         position: relative;
         display: flex;
+        margin: 2rem;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
