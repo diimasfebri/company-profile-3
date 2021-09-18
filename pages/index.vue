@@ -50,7 +50,7 @@
       <div class="menu-list">
         <div class="menu-item one" @click="$router.push('/services/customdesign')">
           <span class="txt">
-            CUSTOM DESIGN
+             CUSTOM DESIGN
             <img class="produk" src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
           </span>
         </div>
@@ -516,8 +516,8 @@ export default {
       .menu-list {
         position: relative;
         display: flex;
-        width: 100%;
-        height: 100vw;
+        width: 100vw;
+        height: 100vh;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -540,13 +540,15 @@ export default {
             font-weight: 900;
             color: white;
             line-height: 1;
+            z-index: 200;
             img.produk{
               position: absolute;
               display: flex;
               width: 100vw;
               height: 120vh;
               object-fit: cover;
-              opacity: 1;
+              opacity: 0;
+              z-index: 199;
               transform: translateX(-4rem);
             }
           }
@@ -556,7 +558,8 @@ export default {
                  color:#b48645;
                  img.produk{
                   opacity: 1;
-                  transition: 2s opacity;
+                  transition: 1s opacity;
+                  transform: translateY(5rem);
                  }
                 }
               
