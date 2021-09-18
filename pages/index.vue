@@ -502,7 +502,8 @@ export default {
       display: flex;
       width: 100%;
       height: 100%;
-      padding: 5rem 4rem;
+      padding: 5rem 4rem 5rem 0;
+      margin-left: 4rem;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -540,13 +541,16 @@ export default {
             font-weight: 900;
             color: white;
             line-height: 1;
+            justify-content: flex-start;
+            align-items: center;
             img.produk{
               position: absolute;
               display: flex;
               width: 100vw;
               height: 120vh;
               object-fit: cover;
-              opacity: 1;
+              opacity: 0;
+              margin-top: 25.59rem;
               transform: translateX(-4rem);
             }
           }
@@ -565,6 +569,16 @@ export default {
        
           &.five {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
+               &:hover{
+                span.txt{
+                 color:#b48645;
+                 img.produk{
+                  opacity: 1;
+                  transition: 2s opacity;
+                 }
+                }
+              
+            }
           }
         
         }
