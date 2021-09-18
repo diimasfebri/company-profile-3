@@ -375,6 +375,7 @@ export default {
           width: 100%;
           color: white;
           font-weight: 400;
+          cursor: pointer;
           padding-bottom: 1rem;
           font-size: 19px;
           justify-content: flex-start;
@@ -417,6 +418,7 @@ export default {
           width: 100%;
           color: white;
           font-weight: 400;
+          cursor: pointer;
           padding-bottom: 1rem;
           font-size: 19px;
           justify-content: flex-start;
@@ -464,6 +466,7 @@ export default {
       height: 100%;
       justify-content:space-between;
       position: relative;
+      cursor: pointer;
       .img-container{
       flex-direction: column;
       align-items: flex-start;
