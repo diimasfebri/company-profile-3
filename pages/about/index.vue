@@ -48,9 +48,9 @@
   </div>
   </div>
   <div class="slide-four">
-    <div class="desc-container target">
+    <div class="desc-container ">
       <span class="desc-1">THE TEAM</span>
-      <div class="card-list">
+      <div class="card-list target">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/89d584b8-3691-4255-80d4-b8ebcd5b1350_John-Anderson-President.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> John </span>
@@ -67,7 +67,7 @@
           <span class="role"> Marketing </span>
         </div>
       </div>  
-      <div class="card-list ">
+      <div class="card-list target">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/6eb97008-65a2-427b-ab41-a835617f3abb_AfterlightImage+22.JPG?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> Esmeralda </span>
@@ -84,7 +84,7 @@
           <span class="role"> Graphic Designer </span>
         </div>
       </div>  
-       <div class="card-list ">
+       <div class="card-list target">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/4ecfbc98-ced8-40ae-8082-ea5c65e06ba8_Madison-Bailey-Production-Manager.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> Madison </span>
@@ -101,7 +101,7 @@
           <span class="role"> Production Assistant </span>
         </div>
       </div> 
-      <div class="card-list ">
+      <div class="card-list target">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/bffdf4de-2a14-43b1-b47b-4ad306efc9d2_Alex-Coleman-Logistics-Manager-.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> Alex </span>
@@ -118,7 +118,7 @@
           <span class="role"> Retail Merchandiser </span>
         </div>
       </div>
-       <div class="card-list ">
+       <div class="card-list target">
         <div class="card">
           <img src="https://images.prismic.io/andersonbrothers/1eb15567-0d64-4d42-a3cb-8bd6d08fdf1f_AfterlightImage+23.JPG?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center" alt="">
           <span class="name"> Ashley </span>
@@ -175,7 +175,8 @@
         gsap.to(this.scrollTargets[0].el.children, {
           opacity: 1,
           duration: 2,
-          stagger: 0.5
+          stagger: 0.3,
+          y:0,
         })
         this.scrollTargets.splice(0, 1)
       }
@@ -403,6 +404,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+          opacity: 0;
+        transform: translateY(5rem);
         img{
           position: relative;
           display: flex;
@@ -438,6 +441,8 @@
           margin-left: 1rem;
           cursor: pointer;
           transform: translateY(-1.89rem);
+          opacity: 0;
+          transform: translateY(5rem);
           span.name-1{
             font-family: 'Antonio';
             font-size: 45px;
