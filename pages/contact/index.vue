@@ -165,6 +165,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow: hidden;
   overflow-y: auto;
   overflow: hidden;
    > * {

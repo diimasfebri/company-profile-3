@@ -518,7 +518,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 100%;
+        overflow-y: visible;
         height: 100%;
         img.product{
           position: relative;

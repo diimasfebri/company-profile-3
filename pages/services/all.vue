@@ -96,7 +96,7 @@ export default {
   width: 100vw;
   height: 180vh;
   display: flex;
-  background: black;
+  background: #282829;
   justify-content: flex-start;
   flex-direction: column;
   align-items: flex-start;
@@ -165,12 +165,12 @@ export default {
             margin-left: 30rem;
           } 
           &.one{
+            img.produk{
+            opacity: 1;
+            transition: 2s opacity;
+            }
             &:hover{
              color:#b48645;
-               img.produk{
-               opacity: 1;
-               transition: 2s opacity;
-               }
              }
           }
           &.two{
