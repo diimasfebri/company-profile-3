@@ -55,16 +55,28 @@
           </span>
         </div>
         <div class="menu-item two" @click="$router.push('/services/screenprinting')">
-          <span class="txt">SCREEN PRINTING</span>
+          <span class="txt">
+            SCREEN PRINTING
+            <img class= "produk" src="https://images.unsplash.com/photo-1576248533223-e3fa93eecbcc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9ub2tyb218ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+            </span>
         </div>
         <div class="menu-item three" @click="$router.push('/services/headwer')">
-          <span class="txt">HEADWEAR</span>
+          <span class="txt">
+            HEADWEAR
+            <img class= "produk" src="https://media.istockphoto.com/photos/beauty-of-ballet-picture-id1253731461?b=1&k=20&m=1253731461&s=170667a&w=0&h=P71yNb2OJEZdc0AO8HAolrlA6fDfFm1sDJEmOMoUqIM=" alt="">
+            </span>
         </div>
         <div class="menu-item four" @click="$router.push('/services/cutsew')">
-          <span class="txt">CUT & SAW</span>
+          <span class="txt">
+            CUT & SAW
+            <img class= "produk" src="https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+            </span>
         </div>
         <div class="menu-item five" @click="$router.push('/services/accessories')">
-          <span class="txt">ACCESSORIES</span>
+          <span class="txt">
+            ACCESSORIES
+            <img class= "produk" src="https://images.unsplash.com/photo-1549281899-f75600a24107?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="">
+            </span>
         </div>
       </div>
    
@@ -308,6 +320,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow: hidden;
   overflow-y: auto;
   > * {
     flex-shrink: 0;
@@ -560,13 +573,50 @@ export default {
                  color:#b48645;
                  img.produk{
                   opacity: 1;
+                  margin-bottom: 12rem;
                   transition: 2s opacity;
                  }
                 }
               
             }
           }
-       
+          &.two{
+            &:hover{
+                span.txt{
+                 color:#b48645;
+                 img.produk{
+                  opacity: 1;
+                  transform: translateY(-5rem);
+                  transition: 2s opacity;
+                 }
+                }
+              
+            }
+          }
+          &.three{
+            &:hover{
+                span.txt{
+                 color:#b48645;
+                 img.produk{
+                  opacity: 1;
+                  transition: 2s opacity;
+                 }
+                }
+              
+            }
+          }
+          &.four{
+            &:hover{
+                span.txt{
+                 color:#b48645;
+                 img.produk{
+                  opacity: 1;
+                  transition: 2s opacity;
+                 }
+                }
+              
+            }
+          }
           &.five {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
                &:hover{
