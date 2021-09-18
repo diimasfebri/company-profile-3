@@ -111,7 +111,6 @@
  .slide-two{
    position: relative;
    width: 100vw;
- 
    justify-content: flex-start;
    display: flex;
    flex-direction: column;
@@ -126,7 +125,6 @@
       flex-direction: row;
       align-items: space-between;
       justify-content: space-between;
-      
     img.bg-content{
       position: relative;
       width: 30rem;
