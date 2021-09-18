@@ -50,7 +50,7 @@
       <div class="menu-list">
         <div class="menu-item one" @click="$router.push('/services/customdesign')">
           <span class="txt">
-             CUSTOM DESIGN
+            CUSTOM DESIGN
             <img class="produk" src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
           </span>
         </div>
@@ -502,7 +502,8 @@ export default {
       display: flex;
       width: 100%;
       height: 100%;
-      padding: 5rem 4rem;
+      padding: 5rem 4rem 5rem 0;
+      margin-left: 4rem;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -516,8 +517,8 @@ export default {
       .menu-list {
         position: relative;
         display: flex;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100vw;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
@@ -540,7 +541,8 @@ export default {
             font-weight: 900;
             color: white;
             line-height: 1;
-            z-index: 200;
+            justify-content: flex-start;
+            align-items: center;
             img.produk{
               position: absolute;
               display: flex;
@@ -548,7 +550,7 @@ export default {
               height: 120vh;
               object-fit: cover;
               opacity: 0;
-              z-index: 199;
+              margin-top: 25.59rem;
               transform: translateX(-4rem);
             }
           }
@@ -558,8 +560,7 @@ export default {
                  color:#b48645;
                  img.produk{
                   opacity: 1;
-                  transition: 1s opacity;
-                  transform: translateY(5rem);
+                  transition: 2s opacity;
                  }
                 }
               
@@ -568,6 +569,16 @@ export default {
        
           &.five {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
+               &:hover{
+                span.txt{
+                 color:#b48645;
+                 img.produk{
+                  opacity: 1;
+                  transition: 2s opacity;
+                 }
+                }
+              
+            }
           }
         
         }

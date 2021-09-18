@@ -124,7 +124,7 @@
           <span class="name"> Ashley </span>
           <span class="role"> Retail Merchaniser </span>
         </div>
-        <div class="card button">
+        <div class="card button" @click="$router.push('/contact')">
           <span class="name-1"> WE'RE GROWING </span>
           <span class="role-1"> JOIN THE FAMILY</span>
         </div>
@@ -431,6 +431,7 @@
           width: 330px;
           height: 370px;
           margin-left: 1rem;
+          cursor: pointer;
           transform: translateY(-1.89rem);
           span.name-1{
             font-family: 'Antonio';
