@@ -92,6 +92,7 @@ import gsap from 'gsap'
 
 
 export default {
+  
   methods: {
     openDropdown(){
       const {
