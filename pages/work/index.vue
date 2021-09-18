@@ -519,7 +519,7 @@ export default {
           img.pict{
             object-fit: cover;
             height: 13.3rem;
-            width: 13.3rem;
+            width: 12.3rem;
           }
         }
       }
@@ -529,8 +529,8 @@ export default {
         width: 100%;
         height: 50%;
         img.pict{
-          width: 640px;
-          height: 26.7rem;
+          width: 617px;
+          height: 27.8rem;
         }
       }
     }

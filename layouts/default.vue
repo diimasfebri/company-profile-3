@@ -42,7 +42,7 @@
           <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
         <div class="signup-container">
          <input type="email" name="" required placeholder="Your Email" >
-         <div class="button">
+         <div class="button" @click="$router.push('/work')">
           <span class="submit"> SUBMIT</span>
          </div>
         </div>
@@ -319,7 +319,7 @@ export default {
             position: relative;
             display: flex;
             width: 30%; 
-            height: 100%; 
+            height: 115%; 
             margin-top: 0.5rem;
             margin-left: 0.5rem;
             background: #f0EEE3;
@@ -331,6 +331,12 @@ export default {
               color: #282829;
               font-weight: 900;
             }
+              &:hover{
+                background-color: #b48645;
+                span.submit{
+                  color: white;
+                }
+              }
           }
            }
       }
