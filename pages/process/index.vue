@@ -1,5 +1,5 @@
 <template>
-<div class="body-container"> 
+<div class="body-container" @scroll="scrollHand"> 
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1502239608882-93b729c6af43?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
   <div class="desc-container">
@@ -19,8 +19,8 @@
     <div class="img-container">
         <img class="bg-content" src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80">
      </div>
-  <div class="desc-container">
-    <span class="desc">01</span>
+  <div class="desc-container ">
+    <span class="desc target">01</span>
     <span class="desc-1">SHARE YOUR LOGO AND BRAND ASSETS</span>
     <span class="desc-2">Our design team will elevate your brand by using your company logos, brand assets and color palette.</span>
     </div>
@@ -29,8 +29,8 @@
       <div class="img-container">
           <img class= "bg-content" src="https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
     </div>
-    <div class="desc-container">
-        <span class="desc">02</span>
+    <div class="desc-container ">
+        <span class="desc target">02</span>
         <span class="desc-1">WE'LL DESIGN YOU A CUSTOM CATALOG</span>
         <span class="desc-2">Collaborate with our world-class design, production and merchandising teams to create lifestyle driven apparel with timeless design.</span>
     </div>
@@ -40,7 +40,7 @@
     <img class="bg-content" src="https://images.unsplash.com/photo-1530543787849-128d94430c6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
     </div>
   <div class="desc-container">
-    <span class="desc">03</span>
+    <span class="desc target">03</span>
     <span class="desc-1">ORDER AND RECEIVE DAMN GOOD APPAREL</span>
     <span class="desc-2">We’ll produce and ship your brand new collection in as quickly as 21 days with the highest quality printing, garments and material.</span>
    </div> 
@@ -90,16 +90,59 @@
 </div>
 </template>
 
+<script>
+import gsap from 'gsap'
+export default {
+  data(){
+    return{
+      scrollTargett: [],
+    }
+  },
+  mounted() {
+    const targets = document.querySelectorAll('.target')
+    this.scrollTargett = [...targets].map((a) => ({
+      distance: a.getBoundingClientRect().top - window.innerHeight,
+      el: a,
+    }))
+    this.scrollTargett.sort((a, b) => a.distance - b.distance)
+  },
+  methods: {
+    scrollHand(e) {
+      const top = e.target.scrollTop
+      if (this.scrollTargett.length && top >= this.scrollTargett[0].distance) {
+        // play anim
+        gsap.to(this.scrollTargett[0].el, {
+          opacity: 1,
+          duration: 1,
+          y:0,
+        })
+        this.scrollTargett.splice(0, 1)
+      }
+      console.log('test')
+    },
+
+   
+  },
+
+
+}
+</script>
+
+
 <style lang="scss" scoped>
 .body-container{
   position: relative;
   width: 100vw;
-  min-height: 100vh;
-  min-height: calc((var(--vh, 1vh) * 100));
+  height: 100vh;
+  height: calc((var(--vh, 1vh) * 100));
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+   overflow-y: auto;
+  > * {
+    flex-shrink: 0;
+  }
 .slide-one{
   position: relative;
   width: 100vw;
@@ -225,6 +268,8 @@
         color:#b48645;
         font-size: 6rem;
         font-weight: 900;
+        opacity: 0;
+        transform: translateY(2rem);
         }
     span.desc-1{
         font-family: Antonio;
@@ -277,6 +322,8 @@
         color:#b48645;
         font-size: 6rem;
         font-weight: 900;
+         opacity: 0;
+        transform: translateY(2rem);
         }
     span.desc-1{
         font-family: Antonio;
@@ -327,6 +374,8 @@
         color:#b48645;
         font-size: 6rem;
         font-weight: 900;
+         opacity: 0;
+        transform: translateY(2rem);
         }
     span.desc-1{
         font-family: Antonio;

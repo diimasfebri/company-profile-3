@@ -51,20 +51,31 @@
         <div class="menu-item one" @click="$router.push('/services/customdesign')">
           <span class="txt">
             CUSTOM DESIGN
-            <img class="produk" src="https://images.unsplash.com/photo-1629299342291-98995bcca891?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=333&q=80"> 
           </span>
         </div>
         <div class="menu-item two" @click="$router.push('/services/screenprinting')">
-          <span class="txt">SCREEN PRINTING</span>
+          <span class="txt">
+            SCREEN PRINTING
+            <!-- <img class= "produk" src="https://images.unsplash.com/photo-1576248533223-e3fa93eecbcc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9ub2tyb218ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt=""> -->
+            </span>
         </div>
         <div class="menu-item three" @click="$router.push('/services/headwer')">
-          <span class="txt">HEADWEAR</span>
+          <span class="txt">
+            HEADWEAR
+            <!-- <img class= "produk" src="https://media.istockphoto.com/photos/beauty-of-ballet-picture-id1253731461?b=1&k=20&m=1253731461&s=170667a&w=0&h=P71yNb2OJEZdc0AO8HAolrlA6fDfFm1sDJEmOMoUqIM=" alt=""> -->
+            </span>
         </div>
         <div class="menu-item four" @click="$router.push('/services/cutsew')">
-          <span class="txt">CUT & SAW</span>
+          <span class="txt">
+            CUT & SAW
+            <!-- <img class= "produk" src="https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt=""> -->
+            </span>
         </div>
         <div class="menu-item five" @click="$router.push('/services/accessories')">
-          <span class="txt">ACCESSORIES</span>
+          <span class="txt">
+            ACCESSORIES
+            <!-- <img class= "produk" src="https://images.unsplash.com/photo-1549281899-f75600a24107?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt=""> -->
+            </span>
         </div>
       </div>
    
@@ -270,6 +281,7 @@ export default {
           opacity: 1,
           duration: 2,
           stagger: 0.5,
+          y: 0,
         })
         this.scrollTargets.splice(0, 1)
       }
@@ -308,6 +320,7 @@ export default {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  overflow: hidden;
   overflow-y: auto;
   > * {
     flex-shrink: 0;
@@ -543,18 +556,30 @@ export default {
             line-height: 1;
             justify-content: flex-start;
             align-items: center;
-            img.produk{
-              position: absolute;
-              display: flex;
-              width: 100vw;
-              height: 120vh;
-              object-fit: cover;
-              opacity: 0;
-              margin-top: 25.59rem;
-              transform: translateX(-4rem);
-            }
           }
           &.one{
+            &:hover{
+                span.txt{
+                 color:#b48645;
+
+                }
+              
+            }
+          }
+          &.two{
+            &:hover{
+                span.txt{
+                 color:#b48645;
+                 img.produk{
+                  opacity: 1;
+                  transform: translateY(-5rem);
+                  transition: 2s opacity;
+                 }
+                }
+              
+            }
+          }
+          &.three{
             &:hover{
                 span.txt{
                  color:#b48645;
@@ -566,7 +591,18 @@ export default {
               
             }
           }
-       
+          &.four{
+            &:hover{
+                span.txt{
+                 color:#b48645;
+                 img.produk{
+                  opacity: 1;
+                  transition: 2s opacity;
+                 }
+                }
+              
+            }
+          }
           &.five {
             border-bottom: 1px solid rgba(128, 128, 122, 1);
                &:hover{
@@ -617,6 +653,7 @@ export default {
           position: relative;
           display: flex;
           width: 33%;
+          transform: translateY(5rem);
           opacity: 0;
           flex-direction: column;
           justify-content: center;
