@@ -1,89 +1,88 @@
 <template>
-<div class="body-container" @scroll="scrollHandler"> 
-  <div class="slide-one">
-    <div class="layer-container">
-      <div :style="`transform: translateX(-${layerIndex * 100}%)`" class="layer">
-        <img class="bg-content" src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-        <div class="filter-black"></div>
-        <div class="desc-container">
-          <div class="desc">
-          <span>D*MN GOOD APPAREL</span>
-        </div>  
-        <div class="button">
-          <span class="desc" @click="$router.push('/work')">VIEW OR WORK</span>
+  <div class="body-container" @scroll="scrollHandler">
+    <div class="slide-one">
+      <div class="layer-container">
+        <div
+          :style="`transform: translateX(-${layerIndex * 100}%)`"
+          class="layer"
+        >
+          <img
+            class="bg-content"
+            src="https://images.unsplash.com/photo-1479888230021-c24f136d849f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+          />
+          <div class="filter-black"></div>
+          <div class="desc-container">
+            <div class="desc">
+              <span>D*MN GOOD APPAREL</span>
+            </div>
+            <div class="button">
+              <span class="desc" @click="$router.push('/work')"
+                >VIEW OR WORK</span
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          :style="`transform: translateX(-${layerIndex * 100}%)`"
+          class="layer"
+        >
+          <img
+            class="bg-content"
+            src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+          />
+          <div class="filter-black"></div>
+          <div class="desc-container">
+            <div class="desc">
+              <span>FALL FLANNEL ARE HERE</span>
+            </div>
+            <div class="button">
+              <span class="desc" @click="$router.push('/work')"
+                >VIEW OUR PROCESS</span
+              >
+            </div>
+          </div>
         </div>
       </div>
-
-        </div>
-      <div :style="`transform: translateX(-${layerIndex * 100}%)`" class="layer">
-        <img class="bg-content" src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
-        <div class="filter-black"></div>
-        <div class="desc-container">
-          <div class="desc">
-          <span>FALL FLANNEL ARE HERE</span>
-        </div>  
-        <div class="button">
-          <span class="desc" @click="$router.push('/work')">VIEW OUR PROCESS</span>
-        </div>
+      <div class="button-switch">
+        <div class="circle-1" @click="layerHandler('prev')"></div>
+        <div class="circle-2" @click="layerHandler('next')"></div>
       </div>
-
-        </div>
     </div>
-    <div class="button-switch">
-      <div class="circle-1" @click="layerHandler('prev')"></div>
-      <div class="circle-2" @click="layerHandler('next')"></div>
-    </div>
-  </div>
-  <div class="slide-two">
-    <img class="bg-content" src="https://images.prismic.io/andersonbrothers/c48c2615-02be-44f4-8aae-2f5ba88b7061_work-logos.jpg?auto=compress,format&w=1652&h=678&fit=crop&q=85&f=center" >
-    <div class="button-container">
-      <div class="button" @click="$router.push('/work')">
-        <span class="desc" >OUR WORK</span>
-      </div>
-    </div>
-  </div>
-  <div class="slide-three">
-    <img class="bg-content" src="https://images.unsplash.com/photo-1515768678138-4ba95ba6ec96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1958&q=80">
-    <div class="filter-black"></div>
-    <div class="desc-container">
-      <span class="desc">OUR SERVICES</span>
-      <div class="menu-list">
-        <div class="menu-item one" @click="$router.push('/services/customdesign')">
-          <span class="txt">
-            CUSTOM DESIGN
-          </span>
-        </div>
-        <div class="menu-item two" @click="$router.push('/services/screenprinting')">
-          <span class="txt">
-            SCREEN PRINTING
-            <!-- <img class= "produk" src="https://images.unsplash.com/photo-1576248533223-e3fa93eecbcc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9ub2tyb218ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt=""> -->
-            </span>
-        </div>
-        <div class="menu-item three" @click="$router.push('/services/headwer')">
-          <span class="txt">
-            HEADWEAR
-            <!-- <img class= "produk" src="https://media.istockphoto.com/photos/beauty-of-ballet-picture-id1253731461?b=1&k=20&m=1253731461&s=170667a&w=0&h=P71yNb2OJEZdc0AO8HAolrlA6fDfFm1sDJEmOMoUqIM=" alt=""> -->
-            </span>
-        </div>
-        <div class="menu-item four" @click="$router.push('/services/cutsew')">
-          <span class="txt">
-            CUT & SAW
-            <!-- <img class= "produk" src="https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt=""> -->
-            </span>
-        </div>
-        <div class="menu-item five" @click="$router.push('/services/accessories')">
-          <span class="txt">
-            ACCESSORIES
-            <!-- <img class= "produk" src="https://images.unsplash.com/photo-1549281899-f75600a24107?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt=""> -->
-            </span>
+    <div class="slide-two">
+      <img
+        class="bg-content"
+        src="https://images.prismic.io/andersonbrothers/c48c2615-02be-44f4-8aae-2f5ba88b7061_work-logos.jpg?auto=compress,format&w=1652&h=678&fit=crop&q=85&f=center"
+      />
+      <div class="button-container">
+        <div class="button" @click="$router.push('/work')">
+          <span class="desc">OUR WORK</span>
         </div>
       </div>
-   
-      </div>
- 
     </div>
-  <div class="slide-four">
-    <div class="content-container">
+    <div class="slide-three">
+      <div class="desc-container">
+        <span class="desc">OUR SERVICES</span>
+        <div
+          v-for="(menu, i) in menuSource"
+          :key="i"
+          class="img-container"
+        >
+          <div ref="openedImg" class="image-list">
+            <img :src="menu.imageUrl" alt="" />
+          </div>
+        </div>
+        <div v-for="(menu, i) in menuSource" :key="`-${i}`" class="menu-list" @mouseenter="activeImg = i">
+          <div
+            class="menu-item"
+            @click="$router.push(menu.url)"
+          >
+            <span class="txt">{{ menu.txt }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slide-four">
+      <div class="content-container">
         <span class="desc"> WE KEEP IT SIMPLE </span>
         <div class="step-list target">
           <div class="step one">
@@ -141,7 +140,10 @@
           <span class="txt">GET STARTED</span>
         </div>
         <div class="testimonial">
-          <div :style="`transform: translateX(-${activeIndex * 100}%)`" class="testi-container">
+          <div
+            :style="`transform: translateX(-${activeIndex * 100}%)`"
+            class="testi-container"
+          >
             <span class="txt">TESTIMONIALS</span>
             <div class="subtxt-container">
               <span class="desc-2">"</span>
@@ -159,7 +161,10 @@
               </div>
             </div>
           </div>
-          <div :style="`transform: translateX(-${activeIndex * 100}%)`" class="testi-container">
+          <div
+            :style="`transform: translateX(-${activeIndex * 100}%)`"
+            class="testi-container"
+          >
             <span class="txt">TESTIMONIALS</span>
             <div class="subtxt-container">
               <span class="desc-2">"</span>
@@ -182,9 +187,9 @@
           <div class="circle-1" @click="slideHandler('prev')"></div>
           <div class="circle-2" @click="slideHandler('next')"></div>
         </div>
+      </div>
     </div>
-    </div>
-  <div class="slide-five">
+    <div class="slide-five">
       <svg>
         <defs>
           <clipPath
@@ -224,7 +229,7 @@
         >
       </div>
     </div>
-  <div class="slide-six">
+    <div class="slide-six">
       <div class="content-container">
         <img
           src="https://images.prismic.io/andersonbrothers/28d63aa2-103e-42c6-ba0f-d9fd6a5fe367_teamwork.jpg?auto=compress,format?w=897&h=585&fit=fill&q=85&f=center"
@@ -242,55 +247,59 @@
         </div>
       </div>
     </div>
-  <div class="marquee">
-      <div class="track" aria-hidden="true" >
-        <div class="content">&nbsp;
-          <span>ANDERSON BROTHER </span> 
-            <div class="button-hire"  @click="$router.push('/contact')">
-              <div class="img-container">
-                <img class="flash" src="/flash.png" >
-              </div>
-              <span>LETS GO</span>
-            </div>   
-          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
-          <span> QUALITY GOODS </span> 
+    <div class="marquee">
+      <div class="track" aria-hidden="true">
+        <div class="content">
+          &nbsp;
+          <span>ANDERSON BROTHER </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span>
+          <span> QUALITY GOODS </span>
         </div>
-        <div class="content">&nbsp;
-          <span>ANDERSON BROTHER </span> 
-            <div class="button-hire"  @click="$router.push('/contact')">
-              <div class="img-container">
-                <img class="flash" src="/flash.png" >
-              </div>
-              <span>LETS GO</span>
-            </div>   
-          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
-          <span> QUALITY GOODS </span> 
+        <div class="content">
+          &nbsp;
+          <span>ANDERSON BROTHER </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span>
+          <span> QUALITY GOODS </span>
         </div>
-        <div class="content">&nbsp;
-          <span>ANDERSON BROTHER </span> 
-            <div class="button-hire"  @click="$router.push('/contact')">
-              <div class="img-container">
-                <img class="flash" src="/flash.png" >
-              </div>
-              <span>LETS GO</span>
-            </div>   
-          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
-          <span> QUALITY GOODS </span> 
+        <div class="content">
+          &nbsp;
+          <span>ANDERSON BROTHER </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span>
+          <span> QUALITY GOODS </span>
         </div>
-        <div class="content">&nbsp;
-          <span>ANDERSON BROTHER </span> 
-            <div class="button-hire"  @click="$router.push('/contact')">
-              <div class="img-container">
-                <img class="flash" src="/flash.png" >
-              </div>
-              <span>LETS GO</span>
-            </div>   
-          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
-          <span> QUALITY GOODS </span> 
+        <div class="content">
+          &nbsp;
+          <span>ANDERSON BROTHER </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span>
+          <span> QUALITY GOODS </span>
         </div>
       </div>
     </div>
-</div>
+  </div>
 </template>
  
  <script>
@@ -302,9 +311,57 @@ export default {
       activeIndex: 0,
       menuIndex: 0,
       layerIndex: 0,
-      scrollTop: 0
+      scrollTop: 0,
+      activeImg: 0,
+      zIndexCounter: 0,
+      menuSource: [
+        {
+          txt: 'CUSTOM DESIGN',
+          imageUrl: 'https://wallpapercave.com/wp/wp7351224.jpg',
+          url: '/services/customdesign',
+        },
+        {
+          txt: 'SCREEN PAINTING',
+          imageUrl: 'https://wallpaperaccess.com/full/1209683.jpg',
+          url: '/services/screenpainting',
+        },
+        {
+          txt: 'HEADWEAR',
+          imageUrl: 'https://wallpapercave.com/wp/wp7351224.jpg',
+          url: '/services/headwer',
+        },
+        {
+          txt: 'CUT & SAW',
+          imageUrl:
+            'https://p4.wallpaperbetter.com/wallpaper/583/790/442/vintage-cityscape-city-monochrome-wallpaper-preview.jpg',
+          url: '/services/cutsew',
+        },
+        {
+          txt: 'ACCESSORIES',
+          imageUrl:
+            'https://www.wallpapertip.com/wmimgs/221-2210855_vintage-wallpaper-nyc-times-square-oldies-black-white.jpg',
+          url: '/services/accessories',
+        },
+      ],
     }
   },
+
+  watch: {
+    activeImg(val) {
+      const el = this.$refs.openedImg[val]
+      gsap.to(el, {
+        zIndex: this.zIndexCounter++,
+        duration: 0
+      })
+      gsap.from(el, {
+        y: '100%'
+      })
+      gsap.from(el.children, {
+        y: '-100%'
+      })
+    },
+  },
+
   mounted() {
     const targets = document.querySelectorAll('.target')
     this.scrollTargets = [...targets].map((a) => ({
@@ -336,24 +393,19 @@ export default {
       console.log('test')
     },
     slideHandler(direction) {
-      if (direction === 'prev'){
-        this.activeIndex = this.activeIndex === 0 ? 0 : this.activeIndex - 1 
-      }
-      else{
+      if (direction === 'prev') {
+        this.activeIndex = this.activeIndex === 0 ? 0 : this.activeIndex - 1
+      } else {
         this.activeIndex = this.activeIndex === 1 ? 1 : this.activeIndex + 1
-        
       }
     },
     layerHandler(direction) {
-    if (direction === 'prev'){
-      this.layerIndex = this.layerIndex === 0 ? 0 : this.layerIndex - 1 
-    }
-    else{
-      this.layerIndex = this.layerIndex === 1 ? 1 : this.layerIndex + 1
-      
-    }
+      if (direction === 'prev') {
+        this.layerIndex = this.layerIndex === 0 ? 0 : this.layerIndex - 1
+      } else {
+        this.layerIndex = this.layerIndex === 1 ? 1 : this.layerIndex + 1
+      }
     },
-   
   },
 }
 </script>
@@ -380,7 +432,7 @@ export default {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    .layer-container{
+    .layer-container {
       position: relative;
       display: flex;
       width: 100%;
@@ -389,16 +441,16 @@ export default {
       justify-content: flex-start;
       align-items: center;
       overflow: hidden;
-      .layer{
-          position: relative;
-          display: flex;
-          width: 100%;
-          height: 100vh;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-           transition: 0.5s transform cubic-bezier(0.645, 0.045, 0.355, 1);
-          flex-shrink: 0;
+      .layer {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        transition: 0.5s transform cubic-bezier(0.645, 0.045, 0.355, 1);
+        flex-shrink: 0;
         img.bg-content {
           position: absolute;
           width: 100vw;
@@ -450,14 +502,14 @@ export default {
               font-weight: 900;
             }
             &:hover {
-                background: #b48645;
-                span.desc{
-                  color: white;
-                }
+              background: #b48645;
+              span.desc {
+                color: white;
+              }
             }
+          }
         }
       }
-      }       
     }
     .button-switch {
       position: absolute;
@@ -547,24 +599,13 @@ export default {
     width: 100vw;
     height: 120vh;
     display: flex;
-    img.bg-content {
-      position: absolute;
-      width: 100vw;
-      height: 120vh;
-    }
-    .filter-black {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: rgba(#000, 0.6);
-    }
+
     .desc-container {
       position: relative;
       display: flex;
       width: 100%;
       height: 100%;
-      padding: 5rem 4rem 5rem 0;
-      margin-left: 4rem;
+      padding: 5rem 4rem  ;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -573,9 +614,32 @@ export default {
         color: white;
         font-size: 1.2rem;
         font-weight: 900;
-        transform: translateY(-2rem);
+        z-index: 20;
+      }
+      .img-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-list {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
       }
       .menu-list {
+        z-index: 100000000;
         position: relative;
         display: flex;
         width: 100%;
@@ -588,10 +652,11 @@ export default {
           display: flex;
           cursor: pointer;
           flex-direction: row;
-          width: 60vw;
+          width: 60%;
           border-top: 1px solid rgba(128, 128, 122, 1);
           margin-bottom: 0.5rem;
           span.txt {
+            pointer-events: none;
             position: relative;
             display: flex;
             width: 100%;
@@ -605,66 +670,11 @@ export default {
             justify-content: flex-start;
             align-items: center;
           }
-          &.one{
-            &:hover{
-                span.txt{
-                 color:#b48645;
-
-                }
-              
+          &:hover {
+            span.txt {
+              color: #b48645;
             }
           }
-          &.two{
-            &:hover{
-                span.txt{
-                 color:#b48645;
-                 img.produk{
-                  opacity: 1;
-                  transform: translateY(-5rem);
-                  transition: 2s opacity;
-                 }
-                }
-              
-            }
-          }
-          &.three{
-            &:hover{
-                span.txt{
-                 color:#b48645;
-                 img.produk{
-                  opacity: 1;
-                  transition: 2s opacity;
-                 }
-                }
-              
-            }
-          }
-          &.four{
-            &:hover{
-                span.txt{
-                 color:#b48645;
-                 img.produk{
-                  opacity: 1;
-                  transition: 2s opacity;
-                 }
-                }
-              
-            }
-          }
-          &.five {
-            border-bottom: 1px solid rgba(128, 128, 122, 1);
-               &:hover{
-                span.txt{
-                 color:#b48645;
-                 img.produk{
-                  opacity: 1;
-                  transition: 2s opacity;
-                 }
-                }
-              
-            }
-          }
-        
         }
       }
     }
@@ -673,6 +683,7 @@ export default {
     position: relative;
     width: 100vw;
     display: flex;
+    margin-top: 10rem;
     justify-content: center;
     align-items: center;
     .content-container {
@@ -983,139 +994,174 @@ export default {
       }
     }
   }
-  .marquee{
+  .marquee {
     position: relative;
     overflow: hidden;
     height: 8rem;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
-  .track{
+    .track {
       width: fit-content;
       display: flex;
       position: relative;
       transform: translate3d(var(--move-initial), 0, 0);
       animation: marquee 20s linear infinite;
       animation-play-state: running;
-    .content{
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
-      height: 100%;
-       box-sizing: border-box;
-      span{
-        font-family: 'Antonio';
-        font-size: 144px;
-        font-weight: bolder;
-        color: #282829;
-      }
-      .button-hire{
+      .content {
         position: relative;
         display: flex;
-        height: 8rem;
-        width: 8rem;
-        padding: 0 2rem;
-        justify-content: center;
-        align-content: center;
-        flex-direction: column;
-        background: white;
-        .img-container{
+        flex-direction: row;
+        justify-content: flex-start;
+        height: 100%;
+        box-sizing: border-box;
+        span {
+          font-family: 'Antonio';
+          font-size: 144px;
+          font-weight: bolder;
+          color: #282829;
+        }
+        .button-hire {
           position: relative;
           display: flex;
+          height: 8rem;
+          width: 8rem;
+          padding: 0 2rem;
           justify-content: center;
-          align-items: center;
-          height: 2rem;
-          width: 5rem;
-
-          img.flash{
+          align-content: center;
+          flex-direction: column;
+          background: white;
+          .img-container {
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
-            text-align: center;
-            width: 1rem;
-            height: 1rem;
+            height: 2rem;
+            width: 5rem;
+
+            img.flash {
+              position: relative;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              width: 1rem;
+              height: 1rem;
+            }
           }
-        }
-        span{
-          position: relative;
-          display: flex;
-          width: 100%;
-          justify-content: center;
-          align-content: center;
-          font-family: quicksand;
-          font-size: 20px;
-          color: #b48645;
-        }
-          &:hover{
+          span {
+            position: relative;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-content: center;
+            font-family: quicksand;
+            font-size: 20px;
+            color: #b48645;
+          }
+          &:hover {
             background: #b48645;
-            span{
+            span {
               color: white;
             }
           }
+        }
       }
-     }
       @keyframes marquee {
-              0% {
-                  transform: translate3d(var(--move-initial), 0, 0);
-              }
-              100% {
-                  transform: translate3d(var(--move-final), 0, 0);
-                }
-      } 
- 
-    } 
-    &:hover{
-      .track{
-      animation-play-state: paused;
+        0% {
+          transform: translate3d(var(--move-initial), 0, 0);
+        }
+        100% {
+          transform: translate3d(var(--move-final), 0, 0);
+        }
       }
     }
- }
+    &:hover {
+      .track {
+        animation-play-state: paused;
+      }
+    }
+  }
   @media screen and (max-width: 1024px) {
-    
-    .slide-one{
+    .slide-one {
       height: 65vh;
       width: 100vw;
-      .layer-container{
+      .layer-container {
         width: 100%;
         height: 100%;
-        .layer{
+        .layer {
           height: 100%;
           width: 100%;
-          .desc-container{
+          .desc-container {
             height: 100%;
             width: 100%;
-            .desc{
-              span{
+            .desc {
+              span {
                 text-align: center;
                 font-size: 40px;
               }
             }
           }
-         
         }
       }
-      .button-switch{
+      .button-switch {
         margin: 0;
         margin-left: 1rem;
       }
     }
-    .slide-two{
+    .slide-two {
       height: 20%;
       overflow-y: hidden;
-      img.bg-content{
+      img.bg-content {
         height: 100%;
         overflow-y: hidden;
       }
       @keyframes cssmarquee {
-      0% {
-        transform: translateX(-2.5%);
-      }
-      100% {
-        transform: translateX(2.5%);
+        0% {
+          transform: translateX(-2.5%);
+        }
+        100% {
+          transform: translateX(2.5%);
+        }
       }
     }
+    .slide-three {
+      height: 65%;
+      width: 100%;
+      img.bg-content {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .filter-black {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .desc-container {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 2rem 0.8rem;
+        overflow: hidden;
+        span.desc {
+          font-size: 1rem;
+          transform: translateY(0);
+        }
+        .menu-list {
+          height: 100%;
+          width: 100%;
+          .menu-item {
+            width: 100%;
+            margin: 0;
+            span.txt {
+              align-items: flex-start;
+              font-size: 1rem;
+              line-height: 0;
+            }
+          }
+        }
+      }
     }
   }
 }
