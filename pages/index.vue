@@ -1072,5 +1072,37 @@ export default {
       }
     }
  }
+  @media screen and (max-width: 1024px) {
+    .slide-one{
+      height: 65vh;
+      width: 100vw;
+      .layer-container{
+        width: 100%;
+        height: 100%;
+        .layer{
+          height: 100%;
+          width: 100%;
+          .desc-container{
+            height: 100%;
+            width: 100%;
+            .desc{
+              span{
+                text-align: center;
+                font-size: 40px;
+              }
+            }
+          }
+         
+        }
+      }
+      .button-switch{
+        margin: 0;
+        margin-left: 1rem;
+      }
+    }
+    .slide-two{
+      height: 20%;
+    }
+  }
 }
 </style>
