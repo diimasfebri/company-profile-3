@@ -88,7 +88,6 @@
 </template>
 
 <script>
-// import gsap from 'gsap'  
 
 
 export default {
@@ -97,23 +96,7 @@ export default {
       openDropdown: false, 
     }
   },
-  // methods: {
-  //   openDropdown(){
-  //     const {
-  //       $refs: {
-  //        drop,
-  //       }
-  //     } = this
-  //      const tl = gsap.timeline({
-  //       onComplete() {
-  //         tl.to(drop, {
-  //           display: 'flex',
-  //           duration: 0
-  //         })
-  //       }
-  //     })
-  //   }
-  // }
+
 }
 </script>
 
