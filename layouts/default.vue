@@ -2,7 +2,7 @@
   <div class="container" >
     <div class="top">
       <div class="left">
-        <div ref="drop" class="dropdown">
+        <div v-if="openDropdown" ref="drop" class="dropdown">
           <div class="list" @click="$router.push('/services/all')" >ALL</div>
           <div class="list" @click="$router.push('/services/customdesign')" >CUSTOM DESIGN</div>
           <div class="list" @click="$router.push('/services/screenprinting')">SCREEN PRINTING</div>
@@ -10,7 +10,7 @@
           <div class="list" @click="$router.push('/services/cutsew')">CUT & SAW</div>
           <div class="list" @click="$router.push('/services/accessories')">ACCESSORIES</div>
         </div>
-        <span class="button"  @click="openDropdown" >SERVICES</span>
+        <span class="button"  @click="openDropdown = !openDropdown" >SERVICES</span>
         <span class="button"  @click="$router.push('/work')">OUR WORK</span>
         <span class="button"  @click="$router.push('/process')">OUR PROCESS</span>
         <span class="button"  @click="$router.push('/about')">ABOUT US</span>
@@ -42,7 +42,7 @@
           <span class="desc">SIGN UP FOR OUR NEWSLETTER</span>
         <div class="signup-container">
          <input type="email" name="" required placeholder="Your Email" >
-         <div class="button" @click="$router.push('/work')">
+         <div class="button">
           <span class="submit"> SUBMIT</span>
          </div>
         </div>
@@ -88,27 +88,12 @@
 </template>
 
 <script>
-import gsap from 'gsap'
-
-
 export default {
-  methods: {
-    openDropdown(){
-      const {
-        $refs: {
-         drop,
-        }
-      } = this
-       const tl = gsap.timeline({
-        onComplete() {
-          tl.to(drop, {
-            display: 'flex',
-            duration: 0
-          })
-        }
-      })
+  data(){
+    return{
+      openDropdown: false, 
     }
-  }
+  },
 }
 </script>
 
@@ -147,7 +132,7 @@ export default {
         top: 2.5rem;
         left: 0.5rem;
         background: #f0eee3;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
@@ -318,7 +303,7 @@ export default {
             position: relative;
             display: flex;
             width: 30%; 
-            height: 115%; 
+            height: 100%; 
             margin-top: 0.5rem;
             margin-left: 0.5rem;
             background: #f0EEE3;
@@ -330,12 +315,6 @@ export default {
               color: #282829;
               font-weight: 900;
             }
-              &:hover{
-                background-color: #b48645;
-                span.submit{
-                  color: white;
-                }
-              }
           }
            }
       }
@@ -380,7 +359,6 @@ export default {
           width: 100%;
           color: white;
           font-weight: 400;
-          cursor: pointer;
           padding-bottom: 1rem;
           font-size: 19px;
           justify-content: flex-start;
@@ -406,8 +384,6 @@ export default {
             color: white;
           }
         }
-
-
         }
       }
       .right {
@@ -423,7 +399,6 @@ export default {
           width: 100%;
           color: white;
           font-weight: 400;
-          cursor: pointer;
           padding-bottom: 1rem;
           font-size: 19px;
           justify-content: flex-start;
@@ -471,7 +446,6 @@ export default {
       height: 100%;
       justify-content:space-between;
       position: relative;
-      cursor: pointer;
       .img-container{
       flex-direction: column;
       align-items: flex-start;
@@ -564,7 +538,6 @@ export default {
       }
     }
   }
-
 </style>
 
 <style lang="scss">
