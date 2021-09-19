@@ -264,90 +264,96 @@ export default {
     
     }
     .button-list-sec{
-    position: relative;
-    display: flex;
-    margin-top: 2rem;
-    width: 80%;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    span.desc{
-        text-align: center;
-        font-family: Antonio;
-        color: black;
-        font-size: 1rem;
-        font-weight: bold; 
-    }
-    .desc-container{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-     .button{
-         position: relative;
-         display: flex;
-         width: 13rem;
-         height: 2.5rem;
-         border: 5px solid black;
-         flex-direction: row;
-         justify-content: flex-start;
-         align-items: center;
-         margin: 0 0.5rem;
-         margin-top: 1rem;
-        .circle{
+      position: relative;
+      display: flex;
+      margin-top: 2rem;
+      width: 80%;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      span.desc{
+          text-align: center;
+          font-family: Antonio;
+          color: black;
+          font-size: 1rem;
+          font-weight: bold; 
+      }
+      .desc-container{
           position: relative;
           display: flex;
-          width: 2.5rem;
-          height: 2.8rem;
-          border-right: 5px solid black;
-          margin-right: 1rem;
-          justify-content: center;
+          flex-direction: row;
+          justify-content: flex-start;
           align-items: center;
-          .bg{
-            width: 100%;
-            height: 90%;
-            background: #f0eee3;
-          }
-        }
-        span.txt{
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-family: Quicksand;
-            color: black;
-            font-size: 0.7rem;
-            border: black;
-        }
-     }
-    
-     .button-1{
-         position: relative;
-         display: flex;
-         width: 22rem;
-         height: 2.5rem;
-         margin-left: 1rem;
-         border: 5px solid black;
-         flex-direction: row;
-         justify-content: flex-start;
-         align-items: center;
-     .circle{
+      .button{
           position: relative;
           display: flex;
-          width: 1.5rem;
-          height: 1.5rem;
+          width: 13rem;
+          height: 2.5rem;
           border: 5px solid black;
-          border-radius: 100%;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
           margin: 0 0.5rem;
-        }
-        span.txt{
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-family: Quicksand;
-            color: black;
-            font-size: 0.7rem;
-            border: black;
-        }
-    }
+          margin-top: 1rem;
+          .circle{
+            position: relative;
+            display: flex;
+            width: 2.5rem;
+            height: 2.8rem;
+            border-right: 5px solid black;
+            margin-right: 1rem;
+            justify-content: center;
+            align-items: center;
+            .bg{
+              width: 100%;
+              height: 90%;
+              background: #f0eee3;
+            }
+          }
+          span.txt{
+              justify-content: flex-start;
+              align-items: flex-start;
+              font-family: Quicksand;
+              color: black;
+              font-size: 0.7rem;
+              border: black;
+          }
+          &.active{
+            border: 5px solid #b48645;
+            .circle{
+              border-right: 5px solid #b48645;
+            }
+          }
+      }
+      
+      .button-1{
+          position: relative;
+          display: flex;
+          width: 22rem;
+          height: 2.5rem;
+          margin-left: 1rem;
+          border: 5px solid black;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+      .circle{
+            position: relative;
+            display: flex;
+            width: 1.5rem;
+            height: 1.5rem;
+            border: 5px solid black;
+            border-radius: 100%;
+            margin: 0 0.5rem;
+          }
+          span.txt{
+              justify-content: flex-start;
+              align-items: flex-start;
+              font-family: Quicksand;
+              color: black;
+              font-size: 0.7rem;
+              border: black;
+          }
+      }
     }
   
     }
