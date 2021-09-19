@@ -15,8 +15,7 @@
       <div class="button-list">
         <div class="button"         
           :class="buttonSelected === 1 ? 'active' : ''"
-          @click="buttonSelected = 1"
-        >
+          @click="buttonSelected = 1">
           <div class="circle">
             <div class="circle-mini"></div>
           </div>
@@ -47,14 +46,16 @@
             </div>
             <span class="txt">ILLUSTRATION</span>
           </div>
-          <div class="button"  >
+          <div class="button"  :class="ThirdSelected === true ? 'active' : ''"
+          @click="ThirdSelected = !ThirdSelected">
             <div class="circle">
               <div class="bg"></div>
               <img src="flash.png" alt="">
             </div>
             <span class="txt">PACKAGE AND LABEL DESIGN</span>
           </div>
-          <div class="button">
+          <div class="button" :class="FourthSelected === true ? 'active' : ''"
+          @click="FourthSelected = !FourthSelected">
             <div class="circle">
               <div class="bg"></div>
               <img src="flash.png" alt="">
@@ -273,6 +274,10 @@ export default {
     return {
       buttonSelected: 0,
       SecondSelected: false,
+<<<<<<< HEAD
+      ThirdSelected: false,
+      FourthSelected: false,
+=======
       oneSelected: false,
       twoSelected: false,
       threeSelected: false,
@@ -281,6 +286,7 @@ export default {
       sixSelected: false,
       sevenSelected: false,
       eightSelected: false,
+>>>>>>> 6db35086619ebbf6d5cfa7112d0d7109384d547b
     }
   },
 }
