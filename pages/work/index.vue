@@ -106,17 +106,49 @@
         src="https://images.unsplash.com/photo-1496293455970-f8581aae0e3b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80"
         />
         <div class="filter-black"></div>
-        <div class="desc-container">
-          <span class="txt">TESTIMONIALS</span>
-          <div class="subtxt-container">
-          <span class="desc">"</span>
-          <span class="desc-1">The Anderson Brothers are the best at what they do. I trust them with all of my businesses for amazing design and custom apparel.</span>
-          <div class="auth">
-            <span class="desc-2">MARCUS LEMONIS - THE PROFIT, CNBC</span>
-            <span class="desc-3">"</span>
-          </div>
+        <div class="content-container">
+          <div class="testimonial">
+            <div :style="`transform: translateX(-${activeIndex * 100}%)`" class="testi-container">
+              <span class="txt">TESTIMONIALS</span>
+              <div class="subtxt-container">
+                <span class="desc-2">"</span>
+                <span class="desc-1"
+                  >For over 10+ years I have been trusting the team at Anderson
+                  Brothers to deliver great quality shirts with awesome creativity
+                  and thought. I keep coming back for the cuatomer service and
+                  experience.
+                </span>
+                <div class="auth">
+                  <span class="desc-2"
+                    >BRANDON RICHARDS - CEO ALESMITH BREWING</span
+                  >
+                  <span class="desc-3">"</span>
+                </div>
+              </div>
             </div>
-
+            <div :style="`transform: translateX(-${activeIndex * 100}%)`" class="testi-container">
+              <span class="txt">TESTIMONIALS</span>
+              <div class="subtxt-container">
+                <span class="desc-2">"</span>
+                <span class="desc-1"
+                  >I love working with ADBS. I really value their design process
+                  and the friendship we've developed over the years. It's more
+                  than a business transaction. It's a way to mutually propel our
+                  business and i've enjoyed the journey so far!
+                </span>
+                <div class="auth">
+                  <span class="desc-2"
+                    >GREG LONGO - SIERRA NEVADA BREWING CO.</span
+                  >
+                  <span class="desc-3">"</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-switch">
+            <div class="circle-1" @click="slideHandler('prev')"></div>
+            <div class="circle-2" @click="slideHandler('next')"></div>
+          </div>
         </div>
       </div>
     <div class="slide-six">
@@ -171,6 +203,25 @@
   </div>
 </template>
 
+<script>
+export default {
+  data() {
+    return {
+      activeIndex: 0,
+}
+  },
+   methods: {
+       slideHandler(direction) {
+      if (direction === 'prev'){
+        this.activeIndex = this.activeIndex === 0 ? 0 : this.activeIndex - 1 
+      }
+      else{
+        this.activeIndex = this.activeIndex === 1 ? 1 : this.activeIndex + 1
+      }
+    },
+   }
+}
+</script>
 <style lang="scss" scoped>
 .body-container {
   position: relative;
@@ -468,7 +519,7 @@
           img.pict{
             object-fit: cover;
             height: 13.3rem;
-            width: 13.3rem;
+            width: 12.3rem;
           }
         }
       }
@@ -478,8 +529,8 @@
         width: 100%;
         height: 50%;
         img.pict{
-          width: 640px;
-          height: 26.7rem;
+          width: 617px;
+          height: 27.8rem;
         }
       }
     }
@@ -536,10 +587,8 @@
   .slide-five{
     position: relative;
     width: 100vw;
-    height: 85vh;
     display: flex;
-    flex-direction: column;;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     img.bg-content {
       position: absolute;
@@ -553,66 +602,109 @@
       height: 100%;
       background: rgba(#000, 0.6);
     }
-    .desc-container {
+    .content-container{
       position: relative;
       display: flex;
       width: 85%;
       height: 100%;
-      padding: 7rem 0;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: flex-start;
-      span.txt{
-        color: white;
-        font-size: 1.2rem;
-        font-family: 'Antonio';
-        font-weight: 900;
-      }
-      .subtxt-container{
-        position: relative;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        margin-top: 1rem;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-          span.desc{
-              color: #b48645;
-              font-family: 'Antonio';
-              font-size: 3rem;
-              font-weight: 900;
-          }
-          span.desc-1{
-              font-family: 'Antonio';
-              color: white;
-              font-size: 2.5rem;
-              font-weight: 900;
-              transform: translateY(-1rem);
-          }
-          .auth{
-            position: relative;
-            display: flex;
-            width: 100%;
-            justify-content: flex-end;
-            align-items: center;
-            span.desc-2{
-                font-family: Antonio;
-                color: #b48645;
-                font-size: 1rem;
-                font-weight: 900;
-                transform: translateX(-3rem);
-              }
-          }
-          span.desc-3{
-              color: #b48645;
-              font-family: Antonio;
-              font-size: 3rem;
-              font-weight: 900;
-          }
-      }
+      align-items: center;
+      .testimonial {
+         position: relative;
+         display: flex;
+         width: 100%;
+         flex-direction: row;
+         justify-content: flex-start;
+         align-items: center;
+         overflow: hidden;
+         .testi-container {
+           position: relative;
+           display: flex;
+           width: 100%;
+           margin-top: 9rem;
+           flex-direction: column;
+           justify-content: flex-start;
+           align-items: flex-start;
+           transition: 0.5s transform cubic-bezier(0.645, 0.045, 0.355, 1);
+           flex-shrink: 0;
+           span.txt {
+             color:white;
+             font-size: 1.2rem;
+             font-family: 'Antonio';
+             font-weight: 900;
+           }
+           .subtxt-container {
+             position: relative;
+             display: flex;
+             width: 100%;
+             flex-direction: column;
+             justify-content: flex-start;
+             align-items: flex-start;
+             span.desc-2 {
+               color: #b48645;
+               font-family: 'Antonio';
+               font-size: 3rem;
+               font-weight: 900;
+             }
+             span.desc-1 {
+               font-family: 'Antonio';
+               color: white;
+               font-size: 1.9rem;
+               font-weight: 900;
+               transform: translateY(-1rem);
+             }
+             .auth {
+               position: relative;
+               display: flex;
+               width: 100%;
+               justify-content: flex-end;
+               align-items: center;
+               span.desc-2 {
+                 font-family: Antonio;
+                 color: #b48645;
+                 font-size: 1rem;
+                 font-weight: 900;
+                 transform: translateX(-3rem);
+               }
+             }
+             span.desc-3 {
+               color: #b48645;
+               font-family: Antonio;
+               font-size: 3rem;
+               font-weight: 900;
+             }
+           }
+         }
+       }
+      .button-switch {
+         position: relative;
+         display: flex;
+         margin-bottom: 9rem;
+         width: 100%;
+         align-items: flex-start;
+         justify-content: flex-start;
+         .circle-1 {
+           width: 0.5rem;
+           height: 0.5rem;
+           border-radius: 100%;
+           background: #b48645;
+           margin-right: 1rem;
+           &.active {
+             background: #b48645;
+           }
+         }
+         .circle-2 {
+           width: 0.5rem;
+           height: 0.5rem;
+           border-radius: 100%;
+           background: #b48645;
+           &.active {
+             background: #b48645;
+           }
+         }
+       }
     }
-   
   }
   .slide-six{
     position: relative;

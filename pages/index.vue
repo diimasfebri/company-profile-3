@@ -301,7 +301,8 @@ export default {
       scrollTargets: [],
       activeIndex: 0,
       menuIndex: 0,
-      layerIndex: 0
+      layerIndex: 0,
+      scrollTop: 0
     }
   },
   mounted() {
@@ -314,7 +315,13 @@ export default {
   },
   methods: {
     scrollHandler(e) {
+      console.log(e)
       const top = e.target.scrollTop
+      // if (top > this.scrollTop) {
+      //   // this.$emit('scrollTop', )
+      // } else {
+
+      // }
       if (this.scrollTargets.length && top >= this.scrollTargets[0].distance) {
         // play anim
         gsap.to(this.scrollTargets[0].el.children, {
@@ -325,6 +332,7 @@ export default {
         })
         this.scrollTargets.splice(0, 1)
       }
+      this.scrollTop = top
       console.log('test')
     },
     slideHandler(direction) {

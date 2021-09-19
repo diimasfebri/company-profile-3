@@ -2,7 +2,7 @@
   <div class="container" >
     <div class="top">
       <div class="left">
-        <div ref="drop" class="dropdown">
+        <div v-if="openDropdown" ref="drop" class="dropdown" @click="openDropdown = false">
           <div class="list" @click="$router.push('/services/all')" >ALL</div>
           <div class="list" @click="$router.push('/services/customdesign')" >CUSTOM DESIGN</div>
           <div class="list" @click="$router.push('/services/screenprinting')">SCREEN PRINTING</div>
@@ -10,7 +10,7 @@
           <div class="list" @click="$router.push('/services/cutsew')">CUT & SAW</div>
           <div class="list" @click="$router.push('/services/accessories')">ACCESSORIES</div>
         </div>
-        <span class="button"  @click="openDropdown" >SERVICES</span>
+        <span class="button"  @click="openDropdown = !openDropdown" >SERVICES</span>
         <span class="button"  @click="$router.push('/work')">OUR WORK</span>
         <span class="button"  @click="$router.push('/process')">OUR PROCESS</span>
         <span class="button"  @click="$router.push('/about')">ABOUT US</span>
@@ -88,28 +88,15 @@
 </template>
 
 <script>
-import gsap from 'gsap'
 
 
 export default {
-  methods: {
-    openDropdown(){
-      const {
-        $refs: {
-         drop,
-        }
-      } = this
-       const tl = gsap.timeline({
-        onComplete() {
-          tl.to(drop, {
-            display: 'flex',
-            duration: 0
-          })
-        }
-      })
-
+  data(){
+    return{
+      openDropdown: false, 
     }
-  }
+  },
+
 }
 </script>
 
@@ -148,7 +135,7 @@ export default {
         top: 2.5rem;
         left: 0.5rem;
         background: #f0eee3;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;

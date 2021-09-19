@@ -75,11 +75,7 @@
 </template>
 
 
-<script>
-export default {
-  
-}
-</script>
+
 <style lang="scss" scoped>
 .body-container{
   position: relative;
