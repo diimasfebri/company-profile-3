@@ -38,7 +38,7 @@
         <div class="desc-container">
           <div class="button"
           :class="SecondSelected === true ? 'active' : ''"
-          @click="SecondSelected = !SecondSelected">
+          @click="SecondSelected = !SecondSelected ">
           >
             <div class="circle">
               <div class="bg"></div>
@@ -68,7 +68,9 @@
               alt=""
             />
             <span class="name"> TEES </span>
-            <div class="button"></div>
+            <div class="button" 
+            :class="oneSelected === true ? 'active' : ''"
+            @click="oneSelected = !oneSelected ">  </div>
           </div>
           <div class="card">
             <img
@@ -76,7 +78,9 @@
               alt=""
             />
             <span class="name"> FLEECE </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="twoSelected === true ? 'active' : ''"
+            @click="twoSelected = !twoSelected ">  </div>
           </div>
           <div class="card">
             <img
@@ -84,7 +88,9 @@
               alt=""
             />
             <span class="name"> FLANNELS </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="threeSelected === true ? 'active' : ''"
+            @click="threeSelected = !threeSelected "> </div>
           </div>
         </div>
         <div class="card-list two">
@@ -94,7 +100,9 @@
               alt=""
             />
             <span class="name"> OUTERWEAR/JACKET </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="fourSelected === true ? 'active' : ''"
+            @click="fourSelected = !fourSelected "> </div>
           </div>
           <div class="card">
             <img
@@ -102,7 +110,9 @@
               alt=""
             />
             <span class="name"> HEADWEAR </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="fiveSelected === true ? 'active' : ''"
+            @click="fiveSelected = !fiveSelected "> </div>
           </div>
           <div class="card">
             <img
@@ -110,7 +120,9 @@
               alt=""
             />
             <span class="name"> GLASSWEAR/GROWLERS </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="sixSelected === true ? 'active' : ''"
+            @click="sixSelected = !sixSelected "> </div>
           </div>
         </div>
         <div class="card-list test">
@@ -120,7 +132,9 @@
               alt=""
             />
             <span class="name"> ACCESSORIES </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="sevenSelected === true ? 'active' : ''"
+            @click="sevenSelected = !sevenSelected "> </div>
           </div>
           <div class="card">
             <img
@@ -128,7 +142,9 @@
               alt=""
             />
             <span class="name"> PROMOTIONAL </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="eightSelected === true ? 'active' : ''"
+            @click="eightSelected = !eightSelected "> </div>
           </div>
         </div>
       </div>
@@ -222,6 +238,14 @@ export default {
     return {
       buttonSelected: 0,
       SecondSelected: false,
+      oneSelected: false,
+      twoSelected: false,
+      threeSelected: false,
+      fourSelected: false,
+      fiveSelected: false,
+      sixSelected: false,
+      sevenSelected: false,
+      eightSelected: false,
     }
   },
 }
@@ -495,6 +519,9 @@ export default {
             width: 2rem;
             border: 4px solid black;
             background: white;
+          }
+          .active{
+             background:  #b48645;
           }
         }
       }
