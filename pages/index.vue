@@ -29,8 +29,8 @@
 
         </div>
     </div>
-    <div class="button-switch">
-      <div class="circle-1" @click="layerHandler('prev')"></div>
+    <div class="button-switch" >
+      <div class="circle-1"  @click="layerHandler('prev') "></div>
       <div class="circle-2" @click="layerHandler('next')"></div>
     </div>
   </div>
@@ -253,7 +253,42 @@
               <span>LETS GO</span>
             </div>   
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
           <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+        </div>
+       <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
         <div class="content">&nbsp;
           <span>ANDERSON BROTHER </span> 
@@ -264,7 +299,19 @@
               <span>LETS GO</span>
             </div>   
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
           <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
         <div class="content">&nbsp;
           <span>ANDERSON BROTHER </span> 
@@ -275,18 +322,19 @@
               <span>LETS GO</span>
             </div>   
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
-          <span> QUALITY GOODS </span> 
-        </div>
-        <div class="content">&nbsp;
-          <span>ANDERSON BROTHER </span> 
-            <div class="button-hire"  @click="$router.push('/contact')">
+           <div class="button-hire"  @click="$router.push('/contact')">
               <div class="img-container">
                 <img class="flash" src="/flash.png" >
               </div>
               <span>LETS GO</span>
             </div>   
-          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
           <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
       </div>
     </div>
@@ -298,6 +346,7 @@ import gsap from 'gsap'
 export default {
   data() {
     return {
+      buttonSelected: 0,
       scrollTargets: [],
       activeIndex: 0,
       menuIndex: 0,
@@ -987,6 +1036,7 @@ export default {
     position: relative;
     overflow: hidden;
     height: 8rem;
+    width: 100vw;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
@@ -1001,20 +1051,23 @@ export default {
       position: relative;
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: flex-start;
       height: 100%;
        box-sizing: border-box;
       span{
         font-family: 'Antonio';
         font-size: 144px;
+        white-space: nowrap;
         font-weight: bolder;
         color: #282829;
       }
       .button-hire{
         position: relative;
         display: flex;
+        cursor: pointer;
         height: 8rem;
-        width: 8rem;
+        width: 4rem;
         padding: 0 2rem;
         justify-content: center;
         align-content: center;
@@ -1026,16 +1079,15 @@ export default {
           justify-content: center;
           align-items: center;
           height: 2rem;
-          width: 5rem;
-
+         
           img.flash{
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 1rem;
-            height: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
           }
         }
         span{

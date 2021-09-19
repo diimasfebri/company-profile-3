@@ -408,8 +408,9 @@
       .button-hire{
         position: relative;
         display: flex;
+        cursor: pointer;
         height: 8rem;
-        width: 8rem;
+        width: 4rem;
         padding: 0 2rem;
         justify-content: center;
         align-content: center;
@@ -421,15 +422,15 @@
           justify-content: center;
           align-items: center;
           height: 2rem;
-          width: 5rem;
+         
           img.flash{
             position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            width: 1rem;
-            height: 1rem;
+            width: 1.5rem;
+            height: 1.5rem;
           }
         }
         span{

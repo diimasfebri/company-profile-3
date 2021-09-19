@@ -15,8 +15,7 @@
       <div class="button-list">
         <div class="button"         
           :class="buttonSelected === 1 ? 'active' : ''"
-          @click="buttonSelected = 1"
-        >
+          @click="buttonSelected = 1">
           <div class="circle">
             <div class="circle-mini"></div>
           </div>
