@@ -2,7 +2,7 @@
   <div class="container" >
     <div class="top">
       <div class="left">
-        <div v-if="openDropdown" ref="drop" class="dropdown" @click="openDropdown = false">
+        <div v-if="openDropdown" ref="drop" class="dropdown">
           <div class="list" @click="$router.push('/services/all')" >ALL</div>
           <div class="list" @click="$router.push('/services/customdesign')" >CUSTOM DESIGN</div>
           <div class="list" @click="$router.push('/services/screenprinting')">SCREEN PRINTING</div>
