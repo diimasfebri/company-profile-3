@@ -49,7 +49,42 @@
               <span>LETS GO</span>
             </div>   
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
           <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+        </div>
+       <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
         <div class="content">&nbsp;
           <span>ANDERSON BROTHER </span> 
@@ -60,7 +95,19 @@
               <span>LETS GO</span>
             </div>   
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
           <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
         <div class="content">&nbsp;
           <span>ANDERSON BROTHER </span> 
@@ -71,18 +118,19 @@
               <span>LETS GO</span>
             </div>   
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
-          <span> QUALITY GOODS </span> 
-        </div>
-        <div class="content">&nbsp;
-          <span>ANDERSON BROTHER </span> 
-            <div class="button-hire"  @click="$router.push('/contact')">
+           <div class="button-hire"  @click="$router.push('/contact')">
               <div class="img-container">
                 <img class="flash" src="/flash.png" >
               </div>
               <span>LETS GO</span>
             </div>   
-          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
           <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
       </div>
     </div>
@@ -327,10 +375,11 @@
       }
     }
  } 
- .marquee{
+.marquee{
     position: relative;
     overflow: hidden;
     height: 8rem;
+    width: 100vw;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
@@ -345,12 +394,14 @@
       position: relative;
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: flex-start;
       height: 100%;
        box-sizing: border-box;
       span{
         font-family: 'Antonio';
         font-size: 144px;
+        white-space: nowrap;
         font-weight: bolder;
         color: #282829;
       }
@@ -371,7 +422,6 @@
           align-items: center;
           height: 2rem;
           width: 5rem;
-
           img.flash{
             position: relative;
             display: flex;

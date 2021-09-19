@@ -238,7 +238,7 @@ export default {
     width: 100vw;
     height: 100vh;
     display: flex;
-    background: black;
+    background: #282829;
     justify-content: center;
     align-items : center;
     .bg {
