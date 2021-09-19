@@ -74,8 +74,9 @@
             <div class="button" 
             :class="oneSelected === true ? 'active' : ''"
             @click="oneSelected = !oneSelected "> 
-              <div class="bg"></div>
-              <img src="flash.png" alt="">       
+             <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div>     
             </div>
           </div>
           <div class="card">
@@ -509,30 +510,33 @@ export default {
         width: 2rem;
         border: 4px solid black;
         background: white;
-        img {
-          position: relative;
+        .kotak{
+          width: 100%;
+          height: 100%;
+          position: absolute;
           display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          margin-left: 0.5rem;
-        }
-        .bg {
+          align-items: center;
+          background:#b48645;
+            opacity: 0;
+          justify-content: center;
+          img {
             position: absolute;
-            width: 100%;
-            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 1rem;
+            height: 1rem;
           }
+         
+        }
       &.active{
-          background:  #b48645;
-          .circle{
-            border-right: 4px solid #b48645;
-            img{
+          border: 4px solid #b48645;
+          .kotak{
               opacity: 1;
             }
-            .bg{
-              background:  #b48645;
-            }
-          }
+            
+          
       }
       }
     }
