@@ -39,21 +39,25 @@
           <div class="button"
           :class="SecondSelected === true ? 'active' : ''"
           @click="SecondSelected = !SecondSelected">
-          >
+          
             <div class="circle">
               <div class="bg"></div>
+              <img src="flash.png" alt="">
+
             </div>
             <span class="txt">ILLUSTRATION</span>
           </div>
-          <div class="button">
+          <div class="button"  >
             <div class="circle">
               <div class="bg"></div>
+              <img src="flash.png" alt="">
             </div>
             <span class="txt">PACKAGE AND LABEL DESIGN</span>
           </div>
           <div class="button">
             <div class="circle">
               <div class="bg"></div>
+              <img src="flash.png" alt="">
             </div>
             <span class="txt">LOGO/BRANDING</span>
           </div>
@@ -387,10 +391,20 @@ export default {
             margin-right: 1rem;
             justify-content: center;
             align-items: center;
+            img{
+              position: relative;
+              display: flex;
+              z-index: 200;
+              width: 1rem;
+              height: 1rem;
+              align-items: center;
+              justify-content: center;
+              opacity: 0; 
+            }
             .bg {
+              position: absolute;
               width: 100%;
               height: 90%;
-              background: #f0eee3;
             }
           }
           span.txt {
@@ -401,39 +415,26 @@ export default {
             font-size: 0.7rem;
             border: black;
           }
+        
+
           &.active{
-            background: red;
+              border: 5px solid #b48645;
+              .circle{
+                border-right: 5px solid #b48645;
+
+                img{
+                  opacity: 1;
+                }
+                .bg{
+                  background: #b48645 ;
+                }
+              }
+
+
           }
         }
 
-        .button-1 {
-          position: relative;
-          display: flex;
-          width: 22rem;
-          height: 2.5rem;
-          margin-left: 1rem;
-          border: 5px solid black;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          .circle {
-            position: relative;
-            display: flex;
-            width: 1.5rem;
-            height: 1.5rem;
-            border: 5px solid black;
-            border-radius: 100%;
-            margin: 0 0.5rem;
-          }
-          span.txt {
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-family: Quicksand;
-            color: black;
-            font-size: 0.7rem;
-            border: black;
-          }
-        }
+        
       }
     }
     .product {
