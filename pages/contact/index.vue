@@ -47,14 +47,16 @@
             </div>
             <span class="txt">ILLUSTRATION</span>
           </div>
-          <div class="button"  >
+          <div class="button"  :class="ThirdSelected === true ? 'active' : ''"
+          @click="ThirdSelected = !ThirdSelected">
             <div class="circle">
               <div class="bg"></div>
               <img src="flash.png" alt="">
             </div>
             <span class="txt">PACKAGE AND LABEL DESIGN</span>
           </div>
-          <div class="button">
+          <div class="button" :class="FourthSelected === true ? 'active' : ''"
+          @click="FourthSelected = !FourthSelected">
             <div class="circle">
               <div class="bg"></div>
               <img src="flash.png" alt="">
@@ -226,6 +228,8 @@ export default {
     return {
       buttonSelected: 0,
       SecondSelected: false,
+      ThirdSelected: false,
+      FourthSelected: false,
     }
   },
 }
