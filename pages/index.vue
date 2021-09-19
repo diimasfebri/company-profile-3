@@ -243,10 +243,50 @@
       </div>
     </div>
   <div class="marquee">
-      <div class="track">
-        <div class="content">
-          &nbsp;ANDERSON BROTHER --- WE HAVE A PHD IN CUSTOM APPAREAL ---
-          QUALITY GOODS --- WE HAVE A PHD IN CUSTOM APPAREAL --- QUALITY GOODS
+      <div class="track" aria-hidden="true" >
+        <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+          <span> QUALITY GOODS </span> 
+        </div>
+        <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+          <span> QUALITY GOODS </span> 
+        </div>
+        <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+          <span> QUALITY GOODS </span> 
+        </div>
+        <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+          <span> QUALITY GOODS </span> 
         </div>
       </div>
     </div>
@@ -943,33 +983,94 @@ export default {
       }
     }
   }
-  .marquee {
+  .marquee{
     position: relative;
-    width: 100vw;
-    max-width: 100%;
-    height: 200px;
-    overflow-x: hidden;
-    background: #f0eee3;
-    .track {
-      position: absolute;
-      white-space: nowrap;
-      will-change: transform;
-      animation: marquee 10s linear infinite;
-      .content {
+    overflow: hidden;
+    height: 8rem;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+  .track{
+      width: fit-content;
+      display: flex;
+      position: relative;
+      transform: translate3d(var(--move-initial), 0, 0);
+      animation: marquee 20s linear infinite;
+      animation-play-state: running;
+    .content{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 100%;
+       box-sizing: border-box;
+      span{
         font-family: 'Antonio';
         font-size: 144px;
         font-weight: bolder;
         color: #282829;
       }
+      .button-hire{
+        position: relative;
+        display: flex;
+        height: 8rem;
+        width: 8rem;
+        padding: 0 2rem;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        background: white;
+        .img-container{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 2rem;
+          width: 5rem;
+
+          img.flash{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 1rem;
+            height: 1rem;
+          }
+        }
+        span{
+          position: relative;
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-content: center;
+          font-family: quicksand;
+          font-size: 20px;
+          color: #b48645;
+        }
+          &:hover{
+            background: #b48645;
+            span{
+              color: white;
+            }
+          }
+      }
+     }
       @keyframes marquee {
-        from {
-          transform: translateX(0);
-        }
-        to {
-          transform: translateX(-100%);
-        }
+              0% {
+                  transform: translate3d(var(--move-initial), 0, 0);
+              }
+              100% {
+                  transform: translate3d(var(--move-final), 0, 0);
+                }
+      } 
+ 
+    } 
+    &:hover{
+      .track{
+      animation-play-state: paused;
       }
     }
-  }
+ }
 }
 </style>

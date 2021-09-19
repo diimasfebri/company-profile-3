@@ -483,7 +483,7 @@ export default {
   height: 120vh;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background: #f0eee3;
   img{

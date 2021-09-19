@@ -21,7 +21,7 @@
             <div class="circle-mini"></div>
           </div>
           <span class="txt">I NEED A FREASH LOOK (Our design team is ready!)</span>
-        </div>
+       </div>
         <div class="button" 
           :class="buttonSelected === 2 ? 'active' : ''"
           @click="buttonSelected = 2">
@@ -38,22 +38,26 @@
         <div class="desc-container">
           <div class="button"
           :class="SecondSelected === true ? 'active' : ''"
-          @click="SecondSelected = !SecondSelected ">
-          >
+          @click="SecondSelected = !SecondSelected">
+          
             <div class="circle">
               <div class="bg"></div>
+              <img src="flash.png" alt="">
+
             </div>
             <span class="txt">ILLUSTRATION</span>
           </div>
-          <div class="button">
+          <div class="button"  >
             <div class="circle">
               <div class="bg"></div>
+              <img src="flash.png" alt="">
             </div>
             <span class="txt">PACKAGE AND LABEL DESIGN</span>
           </div>
           <div class="button">
             <div class="circle">
               <div class="bg"></div>
+              <img src="flash.png" alt="">
             </div>
             <span class="txt">LOGO/BRANDING</span>
           </div>
@@ -63,14 +67,16 @@
         <span class="desc">CATEGORIES</span>
         <div class="card-list">
           <div class="card">
-            <img
-              src="https://images.prismic.io/andersonbrothers/89d584b8-3691-4255-80d4-b8ebcd5b1350_John-Anderson-President.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center"
+            <img src="https://images.prismic.io/andersonbrothers/89d584b8-3691-4255-80d4-b8ebcd5b1350_John-Anderson-President.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center"
               alt=""
             />
             <span class="name"> TEES </span>
             <div class="button" 
             :class="oneSelected === true ? 'active' : ''"
-            @click="oneSelected = !oneSelected ">  </div>
+            @click="oneSelected = !oneSelected "> 
+              <div class="bg"></div>
+              <img src="flash.png" alt="">       
+            </div>
           </div>
           <div class="card">
             <img
@@ -398,25 +404,35 @@ export default {
           height: 2.5rem;
           border: 5px solid black;
           flex-direction: row;
-          justify-content: flex-start;
+          justify-content: center;
           align-items: center;
           margin: 0 0.5rem;
           margin-top: 1rem;
-          .circle {
+          .circle{
             position: relative;
             display: flex;
             width: 2.5rem;
             height: 2.8rem;
-            border-right: 5px solid black;
+            border-right: 4px solid black;
             margin-right: 1rem;
             justify-content: center;
             align-items: center;
+            img{
+              position: relative;
+              display: flex;
+              z-index: 200;
+              width: 1rem;
+              height: 1rem;
+              align-items: center;
+              justify-content: center;
+              opacity: 0; 
+            }
             .bg {
+              position: absolute;
               width: 100%;
               height: 90%;
-              background: #f0eee3;
             }
-          }
+         }
           span.txt {
             justify-content: flex-start;
             align-items: flex-start;
@@ -426,105 +442,101 @@ export default {
             border: black;
           }
           &.active{
-            background: red;
-          }
-        }
+              border: 5px solid #b48645;
+              .circle{
+                border-right: 5px solid #b48645;
 
-        .button-1 {
-          position: relative;
-          display: flex;
-          width: 22rem;
-          height: 2.5rem;
-          margin-left: 1rem;
-          border: 5px solid black;
-          flex-direction: row;
-          justify-content: flex-start;
-          align-items: center;
-          .circle {
-            position: relative;
-            display: flex;
-            width: 1.5rem;
-            height: 1.5rem;
-            border: 5px solid black;
-            border-radius: 100%;
-            margin: 0 0.5rem;
-          }
-          span.txt {
-            justify-content: flex-start;
-            align-items: flex-start;
-            font-family: Quicksand;
-            color: black;
-            font-size: 0.7rem;
-            border: black;
+                img{
+                  opacity: 1;
+                }
+                .bg{
+                  background: #b48645 ;
+                }
+              }
           }
         }
-      }
-    }
+        
+      
+        }   
+    } 
     .product {
+  position: relative;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 80%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  span.desc {
+    text-align: center;
+    font-family: Antonio;
+    color: black;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    font-weight: 900;
+  }
+  .card-list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .card {
       position: relative;
       display: flex;
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-      width: 80%;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
-      span.desc {
-        text-align: center;
-        font-family: Antonio;
-        color: black;
-        font-size: 1rem;
-        margin: 1.5rem 0;
-        font-weight: 900;
-      }
-      .card-list {
+      align-items: flex-start;
+      span.name {
         position: relative;
-        width: 100%;
+        font-family: 'Quicksand';
+        font-size: 0.7rem;
+        font-weight: 600;
+        margin-left: 4rem;
+        justify-content: flex-start;
+        align-items: flex-start;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        .card {
+        transform: translateY(-3rem);
+      }
+      .button {
+        position: relative;
+        display: flex;
+        transform: translateY(-4.8rem);
+        height: 2rem;
+        margin-left: 1.5rem;
+        width: 2rem;
+        border: 4px solid black;
+        background: white;
+        img {
           position: relative;
           display: flex;
-
           flex-direction: column;
           justify-content: flex-start;
           align-items: flex-start;
-          img {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin-left: 0.5rem;
-          }
-          span.name {
-            position: relative;
-            font-family: 'Quicksand';
-            font-size: 0.7rem;
-            font-weight: 600;
-            margin-left: 4rem;
-            justify-content: flex-start;
-            align-items: flex-start;
-            display: flex;
-            transform: translateY(-3rem);
-          }
-          .button {
-            position: relative;
-            display: flex;
-            transform: translateY(-4.8rem);
-            height: 2rem;
-            margin-left: 1.5rem;
-            width: 2rem;
-            border: 4px solid black;
-            background: white;
-          }
-          .active{
-             background:  #b48645;
-          }
+          margin-left: 0.5rem;
         }
+        .bg {
+            position: absolute;
+            width: 100%;
+            height: 90%;
+          }
+      &.active{
+          background:  #b48645;
+          .circle{
+            border-right: 4px solid #b48645;
+            img{
+              opacity: 1;
+            }
+            .bg{
+              background:  #b48645;
+            }
+          }
       }
+      }
+    }
+  }
     }
   }
   .slide-three {
@@ -665,4 +677,5 @@ export default {
     }
   }
 }
+
 </style>
