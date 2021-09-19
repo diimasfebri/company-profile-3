@@ -1073,6 +1073,7 @@ export default {
     }
  }
   @media screen and (max-width: 1024px) {
+    
     .slide-one{
       height: 65vh;
       width: 100vw;
@@ -1102,6 +1103,19 @@ export default {
     }
     .slide-two{
       height: 20%;
+      overflow-y: hidden;
+      img.bg-content{
+        height: 100%;
+        overflow-y: hidden;
+      }
+      @keyframes cssmarquee {
+      0% {
+        transform: translateX(-2.5%);
+      }
+      100% {
+        transform: translateX(2.5%);
+      }
+    }
     }
   }
 }
