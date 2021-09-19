@@ -88,15 +88,12 @@
 </template>
 
 <script>
-
-
 export default {
   data(){
     return{
       openDropdown: false, 
     }
   },
-
 }
 </script>
 
@@ -387,8 +384,6 @@ export default {
             color: white;
           }
         }
-
-
         }
       }
       .right {
@@ -548,7 +543,6 @@ export default {
       }
     }
   }
-
 </style>
 
 <style lang="scss">

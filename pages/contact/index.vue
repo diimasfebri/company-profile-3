@@ -20,7 +20,7 @@
             <div class="circle-mini"></div>
           </div>
           <span class="txt">I NEED A FREASH LOOK (Our design team is ready!)</span>
-        </div>
+       </div>
         <div class="button" 
           :class="buttonSelected === 2 ? 'active' : ''"
           @click="buttonSelected = 2">
@@ -68,12 +68,17 @@
         <span class="desc">CATEGORIES</span>
         <div class="card-list">
           <div class="card">
-            <img
-              src="https://images.prismic.io/andersonbrothers/89d584b8-3691-4255-80d4-b8ebcd5b1350_John-Anderson-President.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center"
+            <img src="https://images.prismic.io/andersonbrothers/89d584b8-3691-4255-80d4-b8ebcd5b1350_John-Anderson-President.jpg?auto=compress,format&w=330&h=370&fit=crop&q=85&f=center"
               alt=""
             />
             <span class="name"> TEES </span>
-            <div class="button"></div>
+            <div class="button" 
+            :class="oneSelected === true ? 'active' : ''"
+            @click="oneSelected = !oneSelected "> 
+             <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div>     
+            </div>
           </div>
           <div class="card">
             <img
@@ -81,7 +86,9 @@
               alt=""
             />
             <span class="name"> FLEECE </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="twoSelected === true ? 'active' : ''"
+            @click="twoSelected = !twoSelected ">  </div>
           </div>
           <div class="card">
             <img
@@ -89,7 +96,9 @@
               alt=""
             />
             <span class="name"> FLANNELS </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="threeSelected === true ? 'active' : ''"
+            @click="threeSelected = !threeSelected "> </div>
           </div>
         </div>
         <div class="card-list two">
@@ -99,7 +108,9 @@
               alt=""
             />
             <span class="name"> OUTERWEAR/JACKET </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="fourSelected === true ? 'active' : ''"
+            @click="fourSelected = !fourSelected "> </div>
           </div>
           <div class="card">
             <img
@@ -107,7 +118,9 @@
               alt=""
             />
             <span class="name"> HEADWEAR </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="fiveSelected === true ? 'active' : ''"
+            @click="fiveSelected = !fiveSelected "> </div>
           </div>
           <div class="card">
             <img
@@ -115,7 +128,9 @@
               alt=""
             />
             <span class="name"> GLASSWEAR/GROWLERS </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="sixSelected === true ? 'active' : ''"
+            @click="sixSelected = !sixSelected "> </div>
           </div>
         </div>
         <div class="card-list test">
@@ -125,7 +140,9 @@
               alt=""
             />
             <span class="name"> ACCESSORIES </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="sevenSelected === true ? 'active' : ''"
+            @click="sevenSelected = !sevenSelected "> </div>
           </div>
           <div class="card">
             <img
@@ -133,7 +150,9 @@
               alt=""
             />
             <span class="name"> PROMOTIONAL </span>
-            <div class="button"></div>
+            <div class="button"
+            :class="eightSelected === true ? 'active' : ''"
+            @click="eightSelected = !eightSelected "> </div>
           </div>
         </div>
       </div>
@@ -227,8 +246,19 @@ export default {
     return {
       buttonSelected: 0,
       SecondSelected: false,
+<<<<<<< HEAD
       ThirdSelected: false,
       FourthSelected: false,
+=======
+      oneSelected: false,
+      twoSelected: false,
+      threeSelected: false,
+      fourSelected: false,
+      fiveSelected: false,
+      sixSelected: false,
+      sevenSelected: false,
+      eightSelected: false,
+>>>>>>> 6db35086619ebbf6d5cfa7112d0d7109384d547b
     }
   },
 }
@@ -381,16 +411,16 @@ export default {
           height: 2.5rem;
           border: 5px solid black;
           flex-direction: row;
-          justify-content: flex-start;
+          justify-content: center;
           align-items: center;
           margin: 0 0.5rem;
           margin-top: 1rem;
-          .circle {
+          .circle{
             position: relative;
             display: flex;
             width: 2.5rem;
             height: 2.8rem;
-            border-right: 5px solid black;
+            border-right: 4px solid black;
             margin-right: 1rem;
             justify-content: center;
             align-items: center;
@@ -409,7 +439,7 @@ export default {
               width: 100%;
               height: 90%;
             }
-          }
+         }
           span.txt {
             justify-content: flex-start;
             align-items: flex-start;
@@ -418,8 +448,6 @@ export default {
             font-size: 0.7rem;
             border: black;
           }
-        
-
           &.active{
               border: 5px solid #b48645;
               .circle{
@@ -432,76 +460,93 @@ export default {
                   background: #b48645 ;
                 }
               }
-
-
           }
         }
-
         
-      }
-    }
+      
+        }   
+    } 
     .product {
+  position: relative;
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 80%;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  span.desc {
+    text-align: center;
+    font-family: Antonio;
+    color: black;
+    font-size: 1rem;
+    margin: 1.5rem 0;
+    font-weight: 900;
+  }
+  .card-list {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .card {
       position: relative;
       display: flex;
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-      width: 80%;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: center;
-      span.desc {
-        text-align: center;
-        font-family: Antonio;
-        color: black;
-        font-size: 1rem;
-        margin: 1.5rem 0;
-        font-weight: 900;
-      }
-      .card-list {
+      align-items: flex-start;
+      span.name {
         position: relative;
-        width: 100%;
+        font-family: 'Quicksand';
+        font-size: 0.7rem;
+        font-weight: 600;
+        margin-left: 4rem;
+        justify-content: flex-start;
+        align-items: flex-start;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        .card {
-          position: relative;
+        transform: translateY(-3rem);
+      }
+      .button {
+        position: relative;
+        display: flex;
+        transform: translateY(-4.8rem);
+        height: 2rem;
+        margin-left: 1.5rem;
+        width: 2rem;
+        border: 4px solid black;
+        background: white;
+        .kotak{
+          width: 100%;
+          height: 100%;
+          position: absolute;
           display: flex;
-
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
+          align-items: center;
+          background:#b48645;
+            opacity: 0;
+          justify-content: center;
           img {
-            position: relative;
+            position: absolute;
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
-            margin-left: 0.5rem;
+            width: 1rem;
+            height: 1rem;
           }
-          span.name {
-            position: relative;
-            font-family: 'Quicksand';
-            font-size: 0.7rem;
-            font-weight: 600;
-            margin-left: 4rem;
-            justify-content: flex-start;
-            align-items: flex-start;
-            display: flex;
-            transform: translateY(-3rem);
-          }
-          .button {
-            position: relative;
-            display: flex;
-            transform: translateY(-4.8rem);
-            height: 2rem;
-            margin-left: 1.5rem;
-            width: 2rem;
-            border: 4px solid black;
-            background: white;
-          }
+         
         }
+      &.active{
+          border: 4px solid #b48645;
+          .kotak{
+              opacity: 1;
+            }
+            
+          
       }
+      }
+    }
+  }
     }
   }
   .slide-three {
