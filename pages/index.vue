@@ -62,20 +62,18 @@
     <div class="slide-three">
       <div class="desc-container">
         <span class="desc">OUR SERVICES</span>
-        <div
-          v-for="(menu, i) in menuSource"
-          :key="i"
-          class="img-container"
-        >
+        <div v-for="(menu, i) in menuSource" :key="i" class="img-container">
           <div ref="openedImg" class="image-list">
             <img :src="menu.imageUrl" alt="" />
           </div>
         </div>
-        <div v-for="(menu, i) in menuSource" :key="`-${i}`" class="menu-list" @mouseenter="activeImg = i">
-          <div
-            class="menu-item"
-            @click="$router.push(menu.url)"
-          >
+        <div
+          v-for="(menu, i) in menuSource"
+          :key="`-${i}`"
+          class="menu-list"
+          @mouseenter="activeImg = i"
+        >
+          <div class="menu-item" @click="$router.push(menu.url)">
             <span class="txt">{{ menu.txt }}</span>
           </div>
         </div>
@@ -259,7 +257,19 @@
             <span>LETS GO</span>
           </div>
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
           <span> QUALITY GOODS </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
         </div>
         <div class="content">
           &nbsp;
@@ -271,7 +281,19 @@
             <span>LETS GO</span>
           </div>
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
           <span> QUALITY GOODS </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
         </div>
         <div class="content">
           &nbsp;
@@ -283,7 +305,19 @@
             <span>LETS GO</span>
           </div>
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
           <span> QUALITY GOODS </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
         </div>
         <div class="content">
           &nbsp;
@@ -295,7 +329,19 @@
             <span>LETS GO</span>
           </div>
           <span>WE HAVE A PHD IN CUSTOM APPAREAL </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
           <span> QUALITY GOODS </span>
+          <div class="button-hire" @click="$router.push('/contact')">
+            <div class="img-container">
+              <img class="flash" src="/flash.png" />
+            </div>
+            <span>LETS GO</span>
+          </div>
         </div>
       </div>
     </div>
@@ -307,6 +353,7 @@ import gsap from 'gsap'
 export default {
   data() {
     return {
+      buttonSelected: 0,
       scrollTargets: [],
       activeIndex: 0,
       menuIndex: 0,
@@ -351,13 +398,13 @@ export default {
       const el = this.$refs.openedImg[val]
       gsap.to(el, {
         zIndex: this.zIndexCounter++,
-        duration: 0
+        duration: 0,
       })
       gsap.from(el, {
-        y: '100%'
+        y: '100%',
       })
       gsap.from(el.children, {
-        y: '-100%'
+        y: '-100%',
       })
     },
   },
@@ -605,7 +652,7 @@ export default {
       display: flex;
       width: 100%;
       height: 100%;
-      padding: 5rem 4rem  ;
+      padding: 5rem 4rem;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -998,6 +1045,7 @@ export default {
     position: relative;
     overflow: hidden;
     height: 8rem;
+    width: 100vw;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
@@ -1012,20 +1060,23 @@ export default {
         position: relative;
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: flex-start;
         height: 100%;
         box-sizing: border-box;
         span {
           font-family: 'Antonio';
           font-size: 144px;
+          white-space: nowrap;
           font-weight: bolder;
           color: #282829;
         }
         .button-hire {
           position: relative;
           display: flex;
+          cursor: pointer;
           height: 8rem;
-          width: 8rem;
+          width: 4rem;
           padding: 0 2rem;
           justify-content: center;
           align-content: center;
@@ -1037,7 +1088,6 @@ export default {
             justify-content: center;
             align-items: center;
             height: 2rem;
-            width: 5rem;
 
             img.flash {
               position: relative;
@@ -1045,8 +1095,8 @@ export default {
               justify-content: center;
               align-items: center;
               text-align: center;
-              width: 1rem;
-              height: 1rem;
+              width: 1.5rem;
+              height: 1.5rem;
             }
           }
           span {
@@ -1079,88 +1129,6 @@ export default {
     &:hover {
       .track {
         animation-play-state: paused;
-      }
-    }
-  }
-  @media screen and (max-width: 1024px) {
-    .slide-one {
-      height: 65vh;
-      width: 100vw;
-      .layer-container {
-        width: 100%;
-        height: 100%;
-        .layer {
-          height: 100%;
-          width: 100%;
-          .desc-container {
-            height: 100%;
-            width: 100%;
-            .desc {
-              span {
-                text-align: center;
-                font-size: 40px;
-              }
-            }
-          }
-        }
-      }
-      .button-switch {
-        margin: 0;
-        margin-left: 1rem;
-      }
-    }
-    .slide-two {
-      height: 20%;
-      overflow-y: hidden;
-      img.bg-content {
-        height: 100%;
-        overflow-y: hidden;
-      }
-      @keyframes cssmarquee {
-        0% {
-          transform: translateX(-2.5%);
-        }
-        100% {
-          transform: translateX(2.5%);
-        }
-      }
-    }
-    .slide-three {
-      height: 65%;
-      width: 100%;
-      img.bg-content {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-      .filter-black {
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-      }
-      .desc-container {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 2rem 0.8rem;
-        overflow: hidden;
-        span.desc {
-          font-size: 1rem;
-          transform: translateY(0);
-        }
-        .menu-list {
-          height: 100%;
-          width: 100%;
-          .menu-item {
-            width: 100%;
-            margin: 0;
-            span.txt {
-              align-items: flex-start;
-              font-size: 1rem;
-              line-height: 0;
-            }
-          }
-        }
       }
     }
   }

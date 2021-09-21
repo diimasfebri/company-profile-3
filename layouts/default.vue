@@ -115,13 +115,13 @@
               src="data:image/png;base64,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"
             />
           </div>
-          <div class="circle-2">
-            <img
+          <div class="circle">
+            <img class="test"
               src="https://www.citypng.com/public/uploads/preview/-11595327237ulqckjabpb.png"
             />
           </div>
-          <div class="circle-3">
-            <img
+          <div class="circle ig">
+            <img class="test"
               src="https://img.flaticon.com/icons/png/512/1384/1384031.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
             />
           </div>
@@ -409,6 +409,7 @@ export default {
           align-items: flex-start;
         }
         span.button {
+          cursor: pointer;
           font-weight: 400;
           font-size: 19px;
           line-height: 2;
@@ -449,6 +450,7 @@ export default {
           align-items: flex-start;
         }
         span.button {
+          cursor: pointer;
           font-weight: 400;
           font-size: 19px;
           line-height: 2;
@@ -509,6 +511,7 @@ export default {
         justify-content: space-between;
         align-items: space-between;
         .circle {
+          cursor: pointer;
           width: 2rem;
           height: 2rem;
           border-radius: 100%;
@@ -523,61 +526,22 @@ export default {
             margin-left: 0.5rem;
             width: 1rem;
             height: 1rem;
-          }
-          &:hover {
-            background: #b48645;
-            img.test {
-              border-radius: 100%;
-            }
-          }
-        }
-        .circle-2 {
-          width: 2rem;
-          height: 2rem;
-          border-radius: 100%;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          background: #f0eee3;
-          img {
-            justify-content: center;
-            align-items: center;
-            margin-top: 0.5rem;
-            margin-left: 0.5rem;
-            width: 1rem;
-            height: 1rem;
-          }
-          &:hover {
-            background: #b48645;
-            img.test {
-              border-radius: 100%;
-            }
-          }
-        }
-        .circle-3 {
-          width: 2rem;
-          height: 2rem;
-          border-radius: 100%;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          background: #f0eee3;
-          img {
-            justify-content: center;
-            align-items: center;
-            margin-top: 0.5rem;
-            margin-left: 0.5rem;
-            width: 1rem;
-            height: 1rem;
             object-fit: cover;
           }
+        
           &:hover {
             background: #b48645;
             img.test {
               border-radius: 100%;
             }
+            &.ig {
+            img.test{
+              border-radius: 30%;
+            }
+          }
           }
         }
+     
       }
     }
   }

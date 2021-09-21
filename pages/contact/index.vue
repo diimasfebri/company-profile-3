@@ -15,8 +15,7 @@
       <div class="button-list">
         <div class="button"         
           :class="buttonSelected === 1 ? 'active' : ''"
-          @click="buttonSelected = 1"
-        >
+          @click="buttonSelected = 1">
           <div class="circle">
             <div class="circle-mini"></div>
           </div>
@@ -47,14 +46,16 @@
             </div>
             <span class="txt">ILLUSTRATION</span>
           </div>
-          <div class="button"  >
+          <div class="button"  :class="ThirdSelected === true ? 'active' : ''"
+          @click="ThirdSelected = !ThirdSelected">
             <div class="circle">
               <div class="bg"></div>
               <img src="flash.png" alt="">
             </div>
             <span class="txt">PACKAGE AND LABEL DESIGN</span>
           </div>
-          <div class="button">
+          <div class="button" :class="FourthSelected === true ? 'active' : ''"
+          @click="FourthSelected = !FourthSelected">
             <div class="circle">
               <div class="bg"></div>
               <img src="flash.png" alt="">
@@ -87,7 +88,11 @@
             <span class="name"> FLEECE </span>
             <div class="button"
             :class="twoSelected === true ? 'active' : ''"
-            @click="twoSelected = !twoSelected ">  </div>
+            @click="twoSelected = !twoSelected ">
+              <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div>  
+             </div>
           </div>
           <div class="card">
             <img
@@ -97,7 +102,11 @@
             <span class="name"> FLANNELS </span>
             <div class="button"
             :class="threeSelected === true ? 'active' : ''"
-            @click="threeSelected = !threeSelected "> </div>
+            @click="threeSelected = !threeSelected ">
+            <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div>  
+            </div>
           </div>
         </div>
         <div class="card-list two">
@@ -109,7 +118,11 @@
             <span class="name"> OUTERWEAR/JACKET </span>
             <div class="button"
             :class="fourSelected === true ? 'active' : ''"
-            @click="fourSelected = !fourSelected "> </div>
+            @click="fourSelected = !fourSelected ">
+            <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div> 
+             </div>
           </div>
           <div class="card">
             <img
@@ -119,7 +132,11 @@
             <span class="name"> HEADWEAR </span>
             <div class="button"
             :class="fiveSelected === true ? 'active' : ''"
-            @click="fiveSelected = !fiveSelected "> </div>
+            @click="fiveSelected = !fiveSelected "> 
+            <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div> 
+            </div>
           </div>
           <div class="card">
             <img
@@ -129,7 +146,11 @@
             <span class="name"> GLASSWEAR/GROWLERS </span>
             <div class="button"
             :class="sixSelected === true ? 'active' : ''"
-            @click="sixSelected = !sixSelected "> </div>
+            @click="sixSelected = !sixSelected ">
+            <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div>  
+            </div>
           </div>
         </div>
         <div class="card-list test">
@@ -141,7 +162,11 @@
             <span class="name"> ACCESSORIES </span>
             <div class="button"
             :class="sevenSelected === true ? 'active' : ''"
-            @click="sevenSelected = !sevenSelected "> </div>
+            @click="sevenSelected = !sevenSelected "> 
+            <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div> 
+            </div>
           </div>
           <div class="card">
             <img
@@ -151,7 +176,11 @@
             <span class="name"> PROMOTIONAL </span>
             <div class="button"
             :class="eightSelected === true ? 'active' : ''"
-            @click="eightSelected = !eightSelected "> </div>
+            @click="eightSelected = !eightSelected "> 
+            <div class="kotak">
+              <img src="flash.png" alt="">  
+              </div> 
+            </div>
           </div>
         </div>
       </div>
@@ -245,6 +274,8 @@ export default {
     return {
       buttonSelected: 0,
       SecondSelected: false,
+      ThirdSelected: false,
+      FourthSelected: false,
       oneSelected: false,
       twoSelected: false,
       threeSelected: false,
@@ -517,7 +548,7 @@ export default {
           display: flex;
           align-items: center;
           background:#b48645;
-            opacity: 0;
+          opacity: 0;
           justify-content: center;
           img {
             position: absolute;

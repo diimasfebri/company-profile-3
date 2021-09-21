@@ -163,39 +163,99 @@
             </div>
           </div>
       </div>
-    <div class="iklan">
-      <div class="track">
-        <div class="line">
-          <span class="txt" aria-hidden="true">ANDERSON BROTHER</span>
-          <div class="button-hire" aria-hidden="true"> </div>
-          <span class="txt" aria-hidden="true">QUALITY GOODS</span>
-          <div class="button-hire" aria-hidden="true"></div>
-          <span class="txt" aria-hidden="true">WE HAVE A PHD IN CUSTOM APPAREL</span>
-          <div class="button-hire" aria-hidden="true"></div>
+    <div class="marquee">
+      <div class="track" aria-hidden="true" >
+        <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
-        <div class="line">
-         <span class="txt" aria-hidden="true">ANDERSON BROTHER</span>
-          <div class="button-hire" aria-hidden="true"> </div>
-          <span class="txt" aria-hidden="true">QUALITY GOODS</span>
-          <div class="button-hire" aria-hidden="true"></div>
-          <span class="txt" aria-hidden="true">WE HAVE A PHD IN CUSTOM APPAREL</span>
-          <div class="button-hire" aria-hidden="true"></div>
+       <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
-        <div class="line">
-          <span class="txt" aria-hidden="true">ANDERSON BROTHER</span>
-          <div class="button-hire" aria-hidden="true"> </div>
-          <span class="txt" aria-hidden="true">QUALITY GOODS</span>
-          <div class="button-hire" aria-hidden="true"></div>
-          <span class="txt" aria-hidden="true">WE HAVE A PHD IN CUSTOM APPAREL</span>
-          <div class="button-hire" aria-hidden="true"></div>
+        <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
-        <div class="line">
-             <span class="txt" aria-hidden="true">ANDERSON BROTHER</span>
-          <div class="button-hire" aria-hidden="true"> </div>
-          <span class="txt" aria-hidden="true">QUALITY GOODS</span>
-          <div class="button-hire" aria-hidden="true"></div>
-          <span class="txt" aria-hidden="true">WE HAVE A PHD IN CUSTOM APPAREL</span>
-          <div class="button-hire" aria-hidden="true"></div>
+        <div class="content">&nbsp;
+          <span>ANDERSON BROTHER </span> 
+            <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span>WE HAVE A PHD IN CUSTOM APPAREAL </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
+          <span> QUALITY GOODS </span> 
+           <div class="button-hire"  @click="$router.push('/contact')">
+              <div class="img-container">
+                <img class="flash" src="/flash.png" >
+              </div>
+              <span>LETS GO</span>
+            </div>   
         </div>
       </div>
     </div>
@@ -774,45 +834,97 @@ export default {
     }
     }
   }
-  .iklan{
-  position: relative;
-  height: 200px;
-  overflow-x: hidden;
-  background: #F0EEE3;
-  .track{
+  .marquee{
     position: relative;
     overflow: hidden;
+    height: 8rem;
+    width: 100vw;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
-    .line{
+  .track{
       width: fit-content;
       display: flex;
       position: relative;
       transform: translate3d(var(--move-initial), 0, 0);
-      animation: marquee 10s linear infinite;
+      animation: marquee 20s linear infinite;
       animation-play-state: running;
-      span.txt{
+    .content{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100%;
+       box-sizing: border-box;
+      span{
         font-family: 'Antonio';
-        font-size: 7.5rem;
+        font-size: 144px;
+        white-space: nowrap;
         font-weight: bolder;
         color: #282829;
       }
       .button-hire{
-        width:18rem;
-        height: 100%;
-        border: 2px solid black;
+        position: relative;
+        display: flex;
+        cursor: pointer;
+        height: 8rem;
+        width: 4rem;
+        padding: 0 2rem;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        background: white;
+        .img-container{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 2rem;
+         
+          img.flash{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 1.5rem;
+            height: 1.5rem;
+          }
+        }
+        span{
+          position: relative;
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-content: center;
+          font-family: quicksand;
+          font-size: 20px;
+          color: #b48645;
+        }
+          &:hover{
+            background: #b48645;
+            span{
+              color: white;
+            }
+          }
       }
+     }
       @keyframes marquee {
-      0% {
-          transform: translate3d(var(--move-initial), 0, 0);
-        }
-      100% {
-          transform: translate3d(var(--move-final), 0, 0);
-        }
+              0% {
+                  transform: translate3d(var(--move-initial), 0, 0);
+              }
+              100% {
+                  transform: translate3d(var(--move-final), 0, 0);
+                }
       } 
+ 
     } 
-  }
-  }
+    &:hover{
+      .track{
+      animation-play-state: paused;
+      }
+    }
+ }
 }
 </style>
