@@ -188,37 +188,39 @@
       </div>
     </div>
     <div class="slide-five">
-      <svg>
-        <defs>
-          <clipPath
-            id="clip-00"
-            clipPathUnits="objectBoundingBox"
-            transform="scale(0.0005208333333333333, 0.000925925925925926)"
-          >
-            <path
-              d="m 341.4087,58.040727 0,951.927273 -112.60986,0 -66.8335,-432.74767 0,432.74767 -107.42188,0 0,-951.927273 107.42188,0 72.02149,428.631863 0,-428.631863 107.42187,0 z"
-            />
-            <path
-              d="m 614.54102,58.040727 73.54737,951.927273 -131.53077,0 -6.40869,-171.09997 -46.08154,0 -7.6294,171.09997 -133.05664,0 65.30762,-951.927273 185.85205,0 z M 546.48682,670.11996 Q 536.72119,508.42756 526.95557,270.88672 507.42432,543.7059 502.54151,670.11996 l 43.94531,0 z"
-            />
-            <path
-              d="m 934.6704,58.040727 0,190.503053 -76.29394,0 0,761.42422 -128.47902,0 0,-761.42422 -75.98874,0 0,-190.503053 280.7617,0 z"
-            />
-            <path
-              d="m 1256.0205,58.040727 0,636.186103 q 0,108.18692 -3.6621,152.28484 -3.6621,43.50995 -21.6675,89.95977 -18.0054,45.86185 -47.6074,69.96876 -29.2969,23.5188 -69.2749,23.5188 -44.2505,0 -78.125,-28.2226 -33.8745,-28.2227 -50.65919,-73.49656 -16.78469,-45.27388 -19.83647,-95.25154 -3.0517,-50.56562 -3.0517,-211.67004 l 0,-563.277533 128.47906,0 0,713.798453 q 0,62.32507 3.3568,79.96425 3.6622,17.05119 14.3433,17.05119 12.207,0 15.564,-18.81512 3.6621,-19.40309 3.6621,-90.54774 l 0,-701.451033 128.479,0 z"
-            />
-            <path
-              d="m 1305.7642,58.040727 90.9424,0 q 90.9423,0 122.9858,13.523364 32.3486,13.523365 52.4902,69.380729 20.4468,55.26941 20.4468,176.97969 0,111.12678 -14.3433,149.34498 -14.3432,38.21821 -56.4575,45.86185 38.147,18.22714 51.2696,48.80171 13.1225,30.57455 16.1743,56.44534 3.3569,25.28282 3.3569,140.5254 l 0,251.06421 -119.3237,0 0,-316.32915 q 0,-76.43641 -6.4087,-94.66354 -6.1035,-18.22715 -32.6538,-18.22715 l 0,429.21984 -128.479,0 0,-951.927273 z m 128.479,162.868343 0,211.67006 q 21.6674,0 30.2123,-11.17148 8.8502,-11.75945 8.8502,-74.67248 l 0,-52.32955 q 0,-45.27388 -8.545,-59.38521 -8.2397,-14.11134 -30.5175,-14.11134 z"
-            />
-            <path
-              d="m 1642.6782,58.040727 214.2334,0 0,190.503053 -85.7544,0 0,180.50751 80.2613,0 0,181.09549 -80.2613,0 0,209.31816 94.2994,0 0,190.50306 -222.7784,0 0,-951.927273 z"
-            />
-          </clipPath>
-        </defs>
-      </svg>
-      <video loop autoplay muted playsinline>
-        <source src="/suave.mp4" type="video/mp4" />
-      </video>
+      <div class="video-about">
+        <svg>
+          <defs>
+            <clipPath
+              id="clip-00"
+              clipPathUnits="objectBoundingBox"
+              transform="scale(0.0005208333333333333, 0.000925925925925926)"
+            >
+              <path
+                d="m 341.4087,58.040727 0,951.927273 -112.60986,0 -66.8335,-432.74767 0,432.74767 -107.42188,0 0,-951.927273 107.42188,0 72.02149,428.631863 0,-428.631863 107.42187,0 z"
+              />
+              <path
+                d="m 614.54102,58.040727 73.54737,951.927273 -131.53077,0 -6.40869,-171.09997 -46.08154,0 -7.6294,171.09997 -133.05664,0 65.30762,-951.927273 185.85205,0 z M 546.48682,670.11996 Q 536.72119,508.42756 526.95557,270.88672 507.42432,543.7059 502.54151,670.11996 l 43.94531,0 z"
+              />
+              <path
+                d="m 934.6704,58.040727 0,190.503053 -76.29394,0 0,761.42422 -128.47902,0 0,-761.42422 -75.98874,0 0,-190.503053 280.7617,0 z"
+              />
+              <path
+                d="m 1256.0205,58.040727 0,636.186103 q 0,108.18692 -3.6621,152.28484 -3.6621,43.50995 -21.6675,89.95977 -18.0054,45.86185 -47.6074,69.96876 -29.2969,23.5188 -69.2749,23.5188 -44.2505,0 -78.125,-28.2226 -33.8745,-28.2227 -50.65919,-73.49656 -16.78469,-45.27388 -19.83647,-95.25154 -3.0517,-50.56562 -3.0517,-211.67004 l 0,-563.277533 128.47906,0 0,713.798453 q 0,62.32507 3.3568,79.96425 3.6622,17.05119 14.3433,17.05119 12.207,0 15.564,-18.81512 3.6621,-19.40309 3.6621,-90.54774 l 0,-701.451033 128.479,0 z"
+              />
+              <path
+                d="m 1305.7642,58.040727 90.9424,0 q 90.9423,0 122.9858,13.523364 32.3486,13.523365 52.4902,69.380729 20.4468,55.26941 20.4468,176.97969 0,111.12678 -14.3433,149.34498 -14.3432,38.21821 -56.4575,45.86185 38.147,18.22714 51.2696,48.80171 13.1225,30.57455 16.1743,56.44534 3.3569,25.28282 3.3569,140.5254 l 0,251.06421 -119.3237,0 0,-316.32915 q 0,-76.43641 -6.4087,-94.66354 -6.1035,-18.22715 -32.6538,-18.22715 l 0,429.21984 -128.479,0 0,-951.927273 z m 128.479,162.868343 0,211.67006 q 21.6674,0 30.2123,-11.17148 8.8502,-11.75945 8.8502,-74.67248 l 0,-52.32955 q 0,-45.27388 -8.545,-59.38521 -8.2397,-14.11134 -30.5175,-14.11134 z"
+              />
+              <path
+                d="m 1642.6782,58.040727 214.2334,0 0,190.503053 -85.7544,0 0,180.50751 80.2613,0 0,181.09549 -80.2613,0 0,209.31816 94.2994,0 0,190.50306 -222.7784,0 0,-951.927273 z"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+        <video loop autoplay muted playsinline>
+          <source src="/suave.mp4" type="video/mp4" />
+        </video>
+      </div>
       <div class="desc">
         <span class="title"> OUR VISION</span>
         <span class="subtitle"
@@ -364,7 +366,7 @@ export default {
       menuSource: [
         {
           txt: 'CUSTOM DESIGN',
-          imageUrl: 'https://wallpapercave.com/wp/wp7351224.jpg',
+          imageUrl: 'https://images.unsplash.com/photo-1518016491499-75f85ea4c86d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1175&q=80',
           url: '/services/customdesign',
         },
         {
@@ -380,13 +382,13 @@ export default {
         {
           txt: 'CUT & SAW',
           imageUrl:
-            'https://p4.wallpaperbetter.com/wallpaper/583/790/442/vintage-cityscape-city-monochrome-wallpaper-preview.jpg',
+            'https://images.unsplash.com/photo-1589906190175-2b867c751f50?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80',
           url: '/services/cutsew',
         },
         {
           txt: 'ACCESSORIES',
           imageUrl:
-            'https://www.wallpapertip.com/wmimgs/221-2210855_vintage-wallpaper-nyc-times-square-oldies-black-white.jpg',
+            'https://images.unsplash.com/photo-1543121170-856f92d04651?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1251&q=80',
           url: '/services/accessories',
         },
       ],
@@ -661,7 +663,8 @@ export default {
         color: white;
         font-size: 1.2rem;
         font-weight: 900;
-        z-index: 20;
+        z-index: 20000;
+        margin-bottom: 2rem;
       }
       .img-container {
         position: absolute;
@@ -930,24 +933,34 @@ export default {
     position: relative;
     display: flex;
     width: 100vw;
+    background: #f0eee3;
     height: 130vh;
     box-sizing: border-box;
-    justify-content: center;
-    align-items: flex-end;
-    svg {
-      width: 100vw;
-      height: 0;
+    justify-content: flex-end;
+    align-items: center;
+    .video-about{
       position: absolute;
-    }
-    video {
-      position: absolute;
-      left: 0px;
-      top: 0px;
       width: 100vw;
       height: 100vh;
-      object-fit: cover;
-      clip-path: url(#clip-00);
-      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      svg {
+        width: 100%;
+        height: 0;
+        position: absolute;
+      }
+      video {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        clip-path: url(#clip-00);
+        overflow: hidden;
+      }
+
     }
     .desc {
       position: relative;
@@ -978,6 +991,7 @@ export default {
     position: relative;
     width: 100vw;
     height: 100vh;
+    background: #f0eee3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1129,6 +1143,210 @@ export default {
     &:hover {
       .track {
         animation-play-state: paused;
+      }
+    }
+  }
+    @media screen and (max-width: 1024px) {
+    .slide-one {
+      height: 62vh;
+      width: 100vw;
+      .layer-container {
+        width: 100%;
+        height: 100%;
+        .layer {
+          height: 100%;
+          width: 100%;
+          .desc-container {
+            height: 100%;
+            width: 100%;
+            .desc {
+              span {
+                text-align: center;
+                font-size: 40px;
+              }
+            }
+          }
+        }
+      }
+      .button-switch {
+        margin: 0;
+        margin-left: 1rem;
+      }
+    }
+    .slide-two {
+      height: 25%;
+      overflow-y: hidden;
+      img.bg-content {
+        height: 100%;
+        overflow-y: hidden;
+      }
+      @keyframes cssmarquee {
+        0% {
+          transform: translateX(-2.5%);
+        }
+        100% {
+          transform: translateX(2.5%);
+        }
+      }
+    }
+    .slide-three {
+      height: 65%;
+      width: 100%;
+      .desc-container {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 2rem 0.8rem;
+        overflow: hidden;
+        span.desc {
+          font-size: 0.7rem;
+          font-weight: 900;
+          transform: translateY(0);
+        }
+        .menu-list {
+          height: 100%;
+          width: 100%;
+          .menu-item {
+            width: 100%;
+            margin-bottom: 0.5rem;
+            span.txt {
+              align-items: flex-start;
+              font-size: 2rem;
+              font-weight: 900;
+              line-height: 0;
+            }
+          }
+        }
+      }
+    }
+    .slide-four{
+      width: 100%;
+      margin: 0;
+      .content-container{
+        .step-list{
+          width: 100%;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          .step{
+            width: 100%;
+            .img{
+              width: 340px;
+              height: 223px;
+              span{
+                font-size: 75px;
+              }
+            }
+            .txt-container{
+              width: 100%;
+              margin-bottom: 4rem;
+              span.title{
+                font-size: 1rem;
+                letter-spacing: 2px;
+                font-weight: 900;
+              }
+              span.subtitle{
+                font-size: 16px;
+                letter-spacing: 1.5px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .button-start{
+          margin-top: 0;
+          margin-bottom: 3rem ;
+        }
+        .testimonial{
+          width: 100%;
+          .testi-container{
+            margin-top: 2rem;
+            align-items: center;
+            span.txt{
+              font-size: 1.1rem;
+            }
+            .subtxt-container{
+              span.desc-1{
+                font-size: 28px;
+              }
+              .auth{
+                span.desc-2{
+                  transform: translateX(0);
+                  font-size: 20px;
+                }
+                span.desc-3{
+                  transform: translateY(-2.5rem);
+                }
+              }
+            }
+          }
+        }
+        .button-switch{
+          margin: 1.5rem 0 4rem 0;
+        }
+      }
+    }
+    .slide-five{
+      width: 100%;
+      height: 110vh;
+      .video-about{
+        top: 1rem;
+        width:100%;
+        height:60vh;
+      }
+      .desc{
+        width: 100%;
+        margin: 0;
+        transform: translateY(10rem);
+        span.subtitle{
+          width:100%;
+        }
+      }
+    }
+    .slide-six{
+      width: 100%;
+      height: 80vh;
+      .content-container{
+        width:100%;
+        flex-direction: column;
+        img{
+          width: 335px;
+          height: 218px;
+        }
+        .desc-container{
+          width: 100%;
+          margin: 0;
+          justify-content: flex-start;
+          align-items: center;
+          span.desc{
+            margin: 1.75rem 0;
+            font-weight: 900;
+          }
+          span.desc-1{
+            text-align: center;
+            width: 80%;
+          }
+          .button{
+            width: 10rem;
+          }
+        }
+      }
+    }
+    .marquee{
+      height: 4.5rem;
+      .track{
+        .content{
+          span{
+            font-size: 3rem;
+          }
+          .button-hire{
+            height: 4.5rem;
+            width: 2.5rem;
+            span{
+              transform: translateY(-0.3rem);
+            }
+          }
+        }
       }
     }
   }
