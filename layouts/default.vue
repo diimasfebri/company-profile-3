@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <div class="top">
+    <div ref="header" class="top">
       <div class="left">
         <div v-if="openDropdown" ref="drop" class="dropdown">
           <div class="list" @click="$router.push('/services/all')">ALL</div>
@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <nuxt />
+    <nuxt key="" />
     <div class="bottom">
       <div class="top-section">
         <div class="left">
@@ -116,12 +116,14 @@
             />
           </div>
           <div class="circle">
-            <img class="test"
+            <img
+              class="test"
               src="https://www.citypng.com/public/uploads/preview/-11595327237ulqckjabpb.png"
             />
           </div>
           <div class="circle ig">
-            <img class="test"
+            <img
+              class="test"
               src="https://img.flaticon.com/icons/png/512/1384/1384031.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF"
             />
           </div>
@@ -132,11 +134,37 @@
 </template>
 
 <script>
+import gsap from 'gsap'
 export default {
   data() {
     return {
       openDropdown: false,
     }
+  },
+
+  mounted() {
+    this.$root.$on('scroll-top', this.top)
+    this.$root.$on('scroll-down', this.down)
+  },
+
+  methods: {
+    // scroll keatas layout muncul
+    top() {
+      // play anim
+      gsap.to(this.$refs.header, {
+        opacity: 0,
+        pointerEvents: 'none' 
+      })
+      console.log('tis')
+    },
+    // scroll kebawah layout topper menghilang
+    down() {
+      gsap.to(this.$refs.header, {
+        opacity: 1,
+        pointerEvents: 'auto' 
+      })
+      console.log('tes')
+    },
   },
 }
 </script>
@@ -528,20 +556,19 @@ export default {
             height: 1rem;
             object-fit: cover;
           }
-        
+
           &:hover {
             background: #b48645;
             img.test {
               border-radius: 100%;
             }
             &.ig {
-            img.test{
-              border-radius: 30%;
+              img.test {
+                border-radius: 30%;
+              }
             }
           }
-          }
         }
-     
       }
     }
   }

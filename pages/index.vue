@@ -423,11 +423,11 @@ export default {
     scrollHandler(e) {
       console.log(e)
       const top = e.target.scrollTop
-      // if (top > this.scrollTop) {
-      //   // this.$emit('scrollTop', )
-      // } else {
-
-      // }
+      if (top > this.scrollTop) {
+        this.$root.$emit('scroll-top')
+      } else {
+        this.$root.$emit('scroll-down')
+      }
       if (this.scrollTargets.length && top >= this.scrollTargets[0].distance) {
         // play anim
         gsap.to(this.scrollTargets[0].el.children, {
