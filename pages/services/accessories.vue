@@ -147,7 +147,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-.slide-one{
+ .slide-one{
   position: relative;
   width: 100vw;
   height: 100vh;
@@ -273,7 +273,7 @@
       }
     }
  }
-.slide-three{
+ .slide-three{
   position: relative;
   width: 100vw;
   height: 120vh;
@@ -339,7 +339,7 @@
       }
     }
  }
-.slide-four{
+ .slide-four{
    position: relative;
    width: 100vw;
    justify-content: flex-start;
@@ -466,5 +466,164 @@
       }
     }
  }
+ @media screen and (max-width: 1024px) {
+    .slide-one {
+      height: 48vh;
+      width: 100%;
+      img.bg-content{
+        object-fit: cover;
+      }
+      .desc-container {
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        span.desc-1{
+         font-size: 68px;
+         transform: translateY(-2rem);
+        }
+      }
+    }
+    .slide-two {
+      height: 100%;
+      flex-direction: column;
+      .img-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin: 0;
+        img.bg-content{
+          width: 14rem;
+          height: 18.5rem;
+       }
+       .desc-container{
+         justify-content: flex-start;
+         align-items: flex-start;
+         margin: 0;
+         span.desc{
+           font-size: 25px;
+
+         }
+       }
+      }
+      }
+  
+
+    
+    .slide-three {
+      height: 65%;
+      width: 100%;
+      .desc-container {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 2rem 0.8rem;
+        overflow: hidden;
+        span.desc {
+          font-size: 0.7rem;
+          font-weight: 900;
+          transform: translateY(0);
+        }
+        .menu-list {
+          height: 100%;
+          width: 100%;
+          .menu-item {
+            width: 100%;
+            margin-bottom: 0.5rem;
+            span.txt {
+              align-items: flex-start;
+              font-size: 2rem;
+              font-weight: 900;
+              line-height: 0;
+            }
+          }
+        }
+      }
+    }
+    .slide-four{
+      width: 100%;
+      margin: 0;
+      .content-container{
+        .step-list{
+          width: 100%;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          .step{
+            width: 100%;
+            .img{
+              width: 340px;
+              height: 223px;
+              span{
+                font-size: 75px;
+              }
+            }
+            .txt-container{
+              width: 100%;
+              margin-bottom: 4rem;
+              span.title{
+                font-size: 1rem;
+                letter-spacing: 2px;
+                font-weight: 900;
+              }
+              span.subtitle{
+                font-size: 16px;
+                letter-spacing: 1.5px;
+                font-weight: 300;
+              }
+            }
+          }
+        }
+        .button-start{
+          margin-top: 0;
+          margin-bottom: 3rem ;
+        }
+        .testimonial{
+          width: 100%;
+          .testi-container{
+            margin-top: 2rem;
+            align-items: center;
+            span.txt{
+              font-size: 1.1rem;
+            }
+            .subtxt-container{
+              span.desc-1{
+                font-size: 28px;
+              }
+              .auth{
+                span.desc-2{
+                  transform: translateX(0);
+                  font-size: 20px;
+                }
+                span.desc-3{
+                  transform: translateY(-2.5rem);
+                }
+              }
+            }
+          }
+        }
+        .button-switch{
+          margin: 1.5rem 0 4rem 0;
+        }
+      }
+    }
+    .marquee{
+      height: 4.5rem;
+      .track{
+        .content{
+          span{
+            font-size: 3rem;
+          }
+          .button-hire{
+            height: 4.5rem;
+            width: 2.5rem;
+            span{
+              transform: translateY(-0.3rem);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 </style>
