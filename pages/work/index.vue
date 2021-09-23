@@ -926,5 +926,10 @@ export default {
       }
     }
  }
+   @media screen and (max-width: 1024px) {
+     .slide-one{
+       width: 100%;
+     }
+  }
 }
 </style>
