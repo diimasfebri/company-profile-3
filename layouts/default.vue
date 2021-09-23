@@ -38,9 +38,11 @@
         <div class="button" @click="$router.push('/contact')">
           <span class="button-hire"> HIRE US</span>
         </div>
+        <!-- <div class="button-menu">          
+        </div> -->
       </div>
     </div>
-    <nuxt key="" />
+    <nuxt />
     <div class="bottom">
       <div class="top-section">
         <div class="left">
@@ -574,7 +576,30 @@ export default {
   }
   @media screen and (max-width: 1024px) {
     .top {
-      opacity: 0;
+      .left{
+        opacity: 0;
+      }
+      .center{
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        .image{
+          img{
+            object-fit: cover;
+            width: 4rem;
+            height: 4rem;
+            margin-left: 0.8rem;
+          }
+        }
+      }
+      .right{
+        width: 100%;
+        align-items: flex-end;
+        margin: 0;
+      }
+    }
+    .bottom{
+      width: 100%;
     }
   }
 }
