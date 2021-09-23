@@ -279,7 +279,7 @@
   height: 120vh;
   display: flex;
   flex-direction: row;
-  background: #f4f4f4;
+  background: #f0eee3;
   .img-container{
       position: relative;
       width: 50%;
@@ -341,7 +341,7 @@
  }
  .slide-four{
    position: relative;
-   width: 100vw;
+   width: 100%;
    justify-content: flex-start;
    display: flex;
    flex-direction: column;
@@ -490,120 +490,91 @@
       .img-container{
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
         margin: 0;
         img.bg-content{
           width: 14rem;
           height: 18.5rem;
+          transform: translateY(22rem);
        }
        .desc-container{
+         width: 100%;
          justify-content: flex-start;
          align-items: flex-start;
          margin: 0;
+        transform: translateY(-14rem);
          span.desc{
            font-size: 25px;
-
+           line-height: 0;
+         }
+         span.desc-1{
+           line-height: 1.3rem;
+           font-size: 18px;
          }
        }
       }
-      }
-  
+      .img-list{
+        transform: translateY(-11rem);
+        
+        img.satu{
 
-    
-    .slide-three {
-      height: 65%;
-      width: 100%;
-      .desc-container {
-        height: 100%;
-        width: 100%;
-        margin: 0;
-        padding: 2rem 0.8rem;
-        overflow: hidden;
-        span.desc {
-          font-size: 0.7rem;
-          font-weight: 900;
-          transform: translateY(0);
+          width: 10rem;
+          height: 5rem;
         }
-        .menu-list {
-          height: 100%;
+        img.dua{
+          width: 3rem;
+          height: 5rem;
+        }
+      }
+    }
+    .slide-three {
+      width: 100%;
+      flex-direction: column;
+        .img-container{
           width: 100%;
-          .menu-item {
-            width: 100%;
-            margin-bottom: 0.5rem;
-            span.txt {
-              align-items: flex-start;
-              font-size: 2rem;
-              font-weight: 900;
-              line-height: 0;
-            }
+          justify-content: flex-start;
+          align-items: center;
+          transform: translateY(26rem);
+          img.bg-content{
+            height: 15rem;
+            width: 15rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
           }
+        }
+      .desc-container{
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 1rem;
+        transform: translateY(-22rem);
+        span.desc-1{
+         font-size: 1.2rem;
+        }
+        .auth{
+          justify-content: center;
+          transform: translateY(-1rem);
+        }
+        span.desc-3{
+          transform: translateX(0);
         }
       }
     }
     .slide-four{
-      width: 100%;
-      margin: 0;
-      .content-container{
-        .step-list{
-          width: 100%;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
-          .step{
-            width: 100%;
-            .img{
-              width: 340px;
-              height: 223px;
-              span{
-                font-size: 75px;
-              }
-            }
-            .txt-container{
-              width: 100%;
-              margin-bottom: 4rem;
-              span.title{
-                font-size: 1rem;
-                letter-spacing: 2px;
-                font-weight: 900;
-              }
-              span.subtitle{
-                font-size: 16px;
-                letter-spacing: 1.5px;
-                font-weight: 300;
-              }
-            }
-          }
+      padding-bottom: 2.5rem;
+      .img-container{
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-left: 2rem;
+        transform: translateY(1rem);
+        img.satu{
+          width: 5rem;
+          height: 5rem;
         }
-        .button-start{
-          margin-top: 0;
-          margin-bottom: 3rem ;
-        }
-        .testimonial{
-          width: 100%;
-          .testi-container{
-            margin-top: 2rem;
-            align-items: center;
-            span.txt{
-              font-size: 1.1rem;
-            }
-            .subtxt-container{
-              span.desc-1{
-                font-size: 28px;
-              }
-              .auth{
-                span.desc-2{
-                  transform: translateX(0);
-                  font-size: 20px;
-                }
-                span.desc-3{
-                  transform: translateY(-2.5rem);
-                }
-              }
-            }
-          }
-        }
-        .button-switch{
-          margin: 1.5rem 0 4rem 0;
+        img.dua{
+          width: 8rem;
+          height: 5rem;
         }
       }
     }
