@@ -1146,10 +1146,12 @@ export default {
       }
     }
   }
+
+
     @media screen and (max-width: 1024px) {
     .slide-one {
       height: 62vh;
-      width: 100vw;
+      width: 100%;
       .layer-container {
         width: 100%;
         height: 100%;
