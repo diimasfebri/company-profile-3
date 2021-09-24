@@ -721,7 +721,7 @@ export default {
     }
     .slide-four{
       width: 100%;
-      height: 150vh;
+      height: 120vh;
       flex-direction: row;
      .desc-container{
         justify-content: flex-start;
@@ -752,7 +752,7 @@ export default {
     }
     .slide-five{
       width: 100%;
-      height: 150vh;
+      height: 120vh;
       flex-direction: row;
      .desc-container{
         justify-content: flex-start;
@@ -772,11 +772,59 @@ export default {
         align-items: flex-start;
         flex-direction: row;
         img.bg-content{
-          margin-top: 18rem;
+          margin-top: 20rem;
           height: 562px;
           width: 380px; 
           
         }
+      }
+    }
+    .slide-six{
+      position: relative;
+      align-items: center;
+      width: 100%;
+      .desc-container{
+        margin-top: 6rem;
+        span.desc{
+          text-align: center;
+        }
+        span.desc-1{
+
+        }
+        img{
+          position: absolute;
+          justify-content: center;
+        }
+        .button-hire{
+          .img-container{
+            img.flash{
+
+            }
+          }
+        }
+      }
+    }
+    .slide-seven{
+      .desc-container{
+        span.desc{
+          
+        }
+        span.desc-1{
+
+        }
+        .auth{
+          span.desc-2{
+
+          }
+        }
+        span.desc-3{
+
+        }
+
+      }
+      img{
+        width: 100%;
+        height: 335px;
       }
     }
   }
