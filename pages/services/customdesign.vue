@@ -502,8 +502,6 @@
         animation-play-state: paused;
       }
     }
-<<<<<<< HEAD
-=======
  }
  @media screen and (max-width: 1024px) {
     .slide-one {
@@ -634,7 +632,6 @@
         }
       }
     }
->>>>>>> 2cbe5b183d9e5746ee17cf88894a4c5a014db224
   }
 }
 </style>
