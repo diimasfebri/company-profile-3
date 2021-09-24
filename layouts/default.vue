@@ -39,7 +39,7 @@
           <span class="button-hire"> HIRE US</span>
         </div>
         <div class="button-menu">  
-
+          .menu 
         </div>
       </div>
     </div>
@@ -602,13 +602,71 @@ export default {
     .bottom{
       width: 100%;
       .top-section{
-        width: 100%;
+        width: 90%;
         margin: 0;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
         .left{
           width: 100%;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          transform: translateY(12rem);
+          span{
+            text-align: center;
+          }
+        }
+        .right{
+          width: 100%;
+          transform: translateY(-1rem);
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-start;
+          .signup-container{
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 1rem;
+            height: 5rem;
+            input{
+              margin : 0;
+              height: 2rem;
+            }
+            .button{
+              margin-top: 1rem;
+              height: 1rem;
+            }
+          }
+        }
+      }
+      .center-section{
+        margin: 3rem 0;
+        width: 90%;
+        transform: translateY(5rem);
+        span.desc{
+          font-size: 3rem;
+          line-height: 1;
+        }
+      }
+      .bottom-section{
+        width: 90%;
+        margin-top: 4rem;
+        .left{
+          width: 100%;
+          margin-left: 1rem;
+        }
+        .right{
+          width: 100%;
+        }
+      }
+      .social-media{
+        width: 90%;
+        .img-container{
+          transform: translateX(-0.5rem);
+        }
+        .item-container{
+          transform: translateY(0.8rem);
         }
       }
     }
