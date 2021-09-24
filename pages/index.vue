@@ -965,10 +965,11 @@ export default {
     .desc {
       position: relative;
       width: 100%;
+      height: 100%;
       display: flex;
       margin: 4rem 0;
       flex-direction: column;
-      justify-content: flex-start;
+      justify-content: flex-end;
       align-items: center;
       span.title {
         font-family: 'Antonio';
