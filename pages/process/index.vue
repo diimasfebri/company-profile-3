@@ -646,5 +646,71 @@ export default {
       }
   }
   }
+  @media screen and (max-width: 1024px) {
+    .slide-one{
+      width: 100%;
+      height: 100vh;
+      img.bg-content{
+        width: 100%;
+      }
+      .desc-container{
+        width: 100%;
+        margin-left: 1rem;
+        height: 90vh;
+        span.desc{
+          
+        }
+        span.desc-1{
+          
+        }
+        span.desc-2{
+
+        }
+      }
+    }
+    .slide-two{
+      height: 120vh;
+      width: 100%;
+      img.bg-content{
+        width: 100%;
+        height: 100vh;
+      }
+      .button-container{
+        margin-top: 3rem;
+        margin-left: 1rem;
+        span.desc{
+
+        }
+        span.desc-1{
+          width: 100%;
+        }
+      }
+    }
+    .slide-three{
+      width: 100%;
+      .img-container{
+        img.bg-content{
+
+        }
+      }
+      .desc-container{
+        span.desc{
+
+        }
+        span.desc-1{
+
+        }
+        span.desc-2{
+
+        }
+      }
+    }
+    .slide-four{
+      width: 100%;
+      .img-container{
+        
+      }
+    }
+  }
 }
 </style>

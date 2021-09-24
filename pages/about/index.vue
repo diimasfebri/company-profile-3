@@ -609,28 +609,160 @@
  @media screen and (max-width: 1024px) {
    .slide-one {
       width: 100%;
-      height: 110vh;
+      height: 40vh;
       .video-about{
         top: 1rem;
         width: 100%;
-        height: 60vh;
+        height: 40vh;
+      }
+      .desc {
+        opacity: 0;
+        justify-content: flex-start;
+        span.title {
+          align-items: center;
+          width:100%;
+        }
       }
    }
    .slide-two{
      height: 120vh;
      width: 100%;
-     flex-direction: row;
+     flex-direction: column;
      justify-content: flex-start;
+     .desc-container{
+       width: 100%;
+       flex-direction: column;
+       padding: 0;
+       margin-left: 1rem;
+       margin-top: 1.5rem;
+       span.desc{
+         text-align: left;
+         padding: 0;
+         font-size: 68px;
+         width: 100%;
+       }
+       .title-container{
+         margin-top: 3rem;
+         margin-left: 1rem;
+         width: 100%;
+         flex-direction: column;
+         span.desc-1{
+           text-align: left;
+           margin: 0;
+           font-size: 24px;
+         }
+         span.desc-2{
+           width: 95%;
+         }
+       }
+     }
+     .img-container{
+       width: 100%;
+       margin-left: 1rem;
+       .img-one{
+         width: 4rem;
+         height: 5rem;
+       }
+       .img-two{
+         width: 8rem;
+         height: 5rem;
+       }
+     }
    }
    .slide-three{
-
+     height: 125vh;
+     width: 100%;
+     background: #f0eee3;
+     flex-direction: column;
+     padding-bottom: 3.5rem;
+     .img-container{
+       width: 100%;
+       img.bg-content{
+         height: 375px;
+         width: 375px;
+       }
+     }
+     .desc-container{
+       width: 100%;
+       justify-content: flex-start;
+       margin: 0;
+       span.desc-1{
+         margin-left: 0.5rem;
+         margin-top: 1rem;
+         width: 100%;
+       }
+       span.desc-2{
+         margin-left: 0.5rem;
+         width: 95%;
+       }
+     }
    }
    .slide-four{
+    width: 100%;
+    .desc-container{
+      span.desc-1{
+
+      }
+    .card-list{
+      width: 100%;
+      flex-direction: column;
+      .card{
+
+        img{
+
+        }
+      span.name{
+
+      }
+      span.role{
+
+      }
+      &.button{
+        margin-left: 2rem;
+        span.name-1{
+
+        }
+      }
+      }
+    }
+    }
 
    }
    .slide-five{
+     width: 100%;
+     background:#f0eee3;
+     .desc-container{
+       width: 100%;
+       span.desc-1{
+         width: 90%;
+         height: 15rem;
+         font-size: 3rem;
+         margin-bottom: 0;
+         text-align: center;
+       }
+     }
+     .card-item{
+       transform: translateY(-1.2rem);
+       .card{
+         img{
+           width: 335px;
+           height: 225px;
+         }
+         span.name{
+           margin-top: 1.7rem;
+           margin-left: 1rem;
+         }
+         span.role{
 
+         }
+         .button {
+           span.desc{
+
+           }
+         }
+       }
+     }
    }
- }
+   }
 }
 </style>

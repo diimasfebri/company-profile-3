@@ -407,7 +407,6 @@ export default {
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        
         .item{
           position: relative;
           flex-direction: column;
@@ -929,6 +928,43 @@ export default {
    @media screen and (max-width: 1024px) {
      .slide-one{
        width: 100%;
+       height: 60vh;
+       .bg{
+         .line{
+           img{
+
+           }
+
+         }
+       }
+       .desc-container {
+         .desc{
+           span{
+
+           }
+         }
+       }
+     }
+     .slide-two{
+       width: 100%;
+       height: 150vh;
+       img.bg-content{
+         width: 6rem;
+         height: 5rem;
+       }
+       .content-container{
+         span.desc{
+
+         }
+         .center-img {
+           img{
+
+           }
+         }
+         .bottom{
+
+         }
+       }
      }
   }
 }
