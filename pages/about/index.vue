@@ -575,5 +575,31 @@
   }
 }
  } 
+ @media screen and (max-width: 1024px) {
+   .slide-one {
+      width: 100%;
+      height: 110vh;
+      .video-about{
+        top: 1rem;
+        width: 100%;
+        height: 60vh;
+      }
+   }
+   .slide-two{
+     height: 120vh;
+     width: 100%;
+     flex-direction: row;
+     justify-content: flex-start;
+   }
+   .slide-three{
+
+   }
+   .slide-four{
+
+   }
+   .slide-five{
+
+   }
+ }
 }
 </style>
