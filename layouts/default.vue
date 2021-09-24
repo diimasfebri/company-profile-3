@@ -38,8 +38,9 @@
         <div class="button" @click="$router.push('/contact')">
           <span class="button-hire"> HIRE US</span>
         </div>
-        <!-- <div class="button-menu">          
-        </div> -->
+        <div class="button-menu">  
+
+        </div>
       </div>
     </div>
     <nuxt />
@@ -600,6 +601,16 @@ export default {
     }
     .bottom{
       width: 100%;
+      .top-section{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        .left{
+          width: 100%;
+        }
+      }
     }
   }
 }
