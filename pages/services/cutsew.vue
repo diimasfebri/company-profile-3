@@ -536,13 +536,13 @@
     .slide-three {
       overflow: hidden;
       width: 100%;
-      width: 70vh;
+      height: 60vh;
       flex-direction: column;
         .img-container{
           width: 100%;
           justify-content: flex-start;
           align-items: center;
-          transform: translateY(19rem);
+          transform: translateY(-1rem);
           img.bg-content{
             height: 15rem;
             width: 15rem;
@@ -556,7 +556,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 1rem;
-        transform: translateY(-40rem);
+        transform: translateY(-30rem);
         span.desc-1{
          font-size: 1.2rem;
         }
@@ -572,14 +572,14 @@
     .slide-four{
       overflow: hidden;
       padding-bottom: 2.5rem;
-      height: 2vh;
+      height: 1vh;
       .img-container{
         justify-content: flex-start;
         align-items: center;
         width: 100%;
         height: 20%;
         margin-left: 2rem;
-        transform: translateY(-19rem);
+        transform: translateY(-7rem);
         img.satu{
           width: 5rem;
           height: 5rem;
@@ -608,6 +608,6 @@
         }
       }
     }
-  }
+ }
 }
 </style>
