@@ -688,27 +688,95 @@ export default {
     }
     .slide-three{
       width: 100%;
+      height: 100vh;
+      flex-direction: row;
+        .desc-container{
+          justify-content: flex-start;
+          width: 100%;
+          height: 100vh;
+          transform: translateY(-10rem);
+          span.desc-target{
+  
+          }
+          span.desc-1{
+            width: 100%;
+          }
+          span.desc-2{
+            width: 100%;
+          }
+        }
       .img-container{
+        width: 100%;
+        height: 100%;
+        align-items: flex-start;
+        flex-direction: row;
         img.bg-content{
-
-        }
-      }
-      .desc-container{
-        span.desc{
-
-        }
-        span.desc-1{
-
-        }
-        span.desc-2{
-
+          margin-top: 10rem;
+          height: 562px;
+          width: 100%;
+          
+          
         }
       }
     }
     .slide-four{
       width: 100%;
+      height: 150vh;
+      flex-direction: row;
+     .desc-container{
+        justify-content: flex-start;
+        width: 100%;
+        margin-top: 0.5rem;
+        transform: translateX(-5rem);
+          span.desc-target{
+          width: 100%;
+          margin-top: 0.5rem;
+          }
+          span.desc-1{
+            width: 100%;
+          }
+          span.desc-2{
+            width: 100%;
+          }
+        }
       .img-container{
-        
+        align-items: flex-start;
+        flex-direction: row;
+        img.bg-content{
+          margin-top: 18rem;
+          height: 562px;
+          width: 380px; 
+          
+        }
+      }
+    }
+    .slide-five{
+      width: 100%;
+      height: 150vh;
+      flex-direction: row;
+     .desc-container{
+        justify-content: flex-start;
+        width: 100%;
+          span.desc-target{
+          width: 100%;
+          margin-top: 0.5rem;
+          }
+          span.desc-1{
+            width: 100%;
+          }
+          span.desc-2{
+            width: 100%;
+          }
+        }
+      .img-container{
+        align-items: flex-start;
+        flex-direction: row;
+        img.bg-content{
+          margin-top: 18rem;
+          height: 562px;
+          width: 380px; 
+          
+        }
       }
     }
   }
