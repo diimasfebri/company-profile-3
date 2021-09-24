@@ -1,4 +1,4 @@
-<template>
+template>
 <div class="body-container"> 
   <div class="slide-one">
     <img class="bg-content" src="https://images.unsplash.com/photo-1523199455310-87b16c0eed11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
@@ -221,7 +221,6 @@
       width: 30rem;
       height: 32rem;
       object-fit: cover;
-
     }
     .desc-container{
         position: relative;
@@ -274,14 +273,13 @@
       }
     }
  }
- .slide-three{
+.slide-three{
   position: relative;
   width: 100vw;
   height: 120vh;
   display: flex;
   flex-direction: row;
   background: #f4f4f4;
-  transform: translateY(-14rem);
   .img-container{
       position: relative;
       width: 50%;
@@ -290,7 +288,6 @@
       align-items: center;
       justify-content: flex-start;
       img.bg-content{
-        transform: translateY(-13rem);
          position: relative;
          width: 32.5rem;
          height: 35rem;
@@ -298,10 +295,11 @@
          object-fit: cover;
       }
   }
-  .desc-container{
+    .desc-container{
     position: relative;
     display: flex;
     width: 50%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -468,8 +466,7 @@
  }
  @media screen and (max-width: 1024px) {
     .slide-one {
-      overflow: hidden;
-      height: 55vh;
+      height: 48vh;
       width: 100%;
       img.bg-content{
         object-fit: cover;
@@ -480,16 +477,13 @@
         justify-content: center;
         align-items: center;
         span.desc-1{
-         text-align: center;
-         line-height: 3rem;
          font-size: 68px;
          transform: translateY(-2rem);
         }
       }
     }
     .slide-two {
-      overflow: hidden;
-      width: 100%;
+      height: 100%;
       flex-direction: column;
       .img-container{
         flex-direction: column;
@@ -499,19 +493,17 @@
         img.bg-content{
           width: 14rem;
           height: 18.5rem;
-          transform: translateY(30rem);
+          transform: translateY(22rem);
        }
        .desc-container{
          width: 100%;
          justify-content: flex-start;
          align-items: flex-start;
          margin: 0;
-         transform: translateY(-14rem);
-         
+        transform: translateY(-14rem);
          span.desc{
            font-size: 25px;
-           line-height: 1;
-           
+           line-height: 0;
          }
          span.desc-1{
            line-height: 1.3rem;
@@ -520,10 +512,9 @@
        }
       }
       .img-list{
-        transform: translateY(-3rem);
+        transform: translateY(-11rem);
         
         img.satu{
-
           width: 10rem;
           height: 5rem;
         }
@@ -534,7 +525,6 @@
       }
     }
     .slide-three {
-      overflow: hidden;
       width: 100%;
       height: 60vh;
       flex-direction: column;
@@ -552,7 +542,6 @@
         }
       .desc-container{
         width: 100%;
-        height: 0;
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 1rem;
@@ -570,14 +559,12 @@
       }
     }
     .slide-four{
-      overflow: hidden;
       padding-bottom: 2.5rem;
       height: 1vh;
       .img-container{
         justify-content: flex-start;
         align-items: center;
         width: 100%;
-        height: 20%;
         margin-left: 2rem;
         transform: translateY(-7rem);
         img.satu{
@@ -591,7 +578,6 @@
       }
     }
     .marquee{
-      overflow: hidden;
       height: 4.5rem;
       .track{
         .content{

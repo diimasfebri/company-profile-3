@@ -21,12 +21,9 @@
           </div>
         </div>
         <span class="button" @click="openDropdown = !openDropdown"
-          >SERVICES</span
-        >
+          >SERVICES</span>
         <span class="button" @click="$router.push('/work')">OUR WORK</span>
-        <span class="button" @click="$router.push('/process')"
-          >OUR PROCESS</span
-        >
+        <span class="button" @click="$router.push('/process')">OUR PROCESS</span>
         <span class="button" @click="$router.push('/about')">ABOUT US</span>
       </div>
       <div class="center">
@@ -38,8 +35,8 @@
         <div class="button" @click="$router.push('/contact')">
           <span class="button-hire"> HIRE US</span>
         </div>
-        <div class="button-menu">  
-          .menu 
+        <div class="button-menu">
+          <img src="menu.png" alt="">
         </div>
       </div>
     </div>
@@ -255,8 +252,8 @@ export default {
       width: 6rem;
       height: 100%;
       right: 0;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: flex-end;
       align-items: center;
       margin-right: 4rem;
       .button {
@@ -281,6 +278,29 @@ export default {
         }
         &:hover {
           background: #16191a;
+        }
+      }
+      .button-menu{
+        opacity: 0;
+        display: none;
+        position: relative;
+        width: 2rem;
+        height: 2rem;
+        background: transparent;
+        border-radius: 100%;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 0.6rem;
+          height: 0.6rem;
+        }
+      }
+      .menu-list{
+        position: fixed;
+        display: flex;
+        opacity: 0;
+        span.button{
+          opacity: 0;
         }
       }
     }
@@ -577,6 +597,7 @@ export default {
   }
   @media screen and (max-width: 1024px) {
     .top {
+      margin-top: 1rem;
       .left{
         opacity: 0;
       }
@@ -595,8 +616,26 @@ export default {
       }
       .right{
         width: 100%;
+        transform: translateY(-1rem);
         align-items: flex-end;
         margin: 0;
+        .button{
+          margin-right: 0.5rem;
+        }
+        .button-menu{
+          cursor: pointer;
+          opacity: 1;
+          display: flex;
+          margin-right: 0.8rem;
+          transform: translateY(0.2rem);
+        }
+        .menu-list{
+          position: absolute;
+          opacity: 1;
+          width: 100%;
+          height: 120vh;
+          background: #f0eee3;
+        }
       }
     }
     .bottom{

@@ -226,6 +226,7 @@
 .slide-one{
    position: relative;
       width: 100%;
+      height: 100vh;
       display: flex;
       margin: 4rem 0;
       flex-direction: column;
