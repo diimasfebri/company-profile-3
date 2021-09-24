@@ -469,7 +469,7 @@
  }
  @media screen and (max-width: 1024px) {
     .slide-one {
-      height: 48vh;
+      height: 50vh;
       width: 100%;
       img.bg-content{
         object-fit: cover;
@@ -496,7 +496,8 @@
         img.bg-content{
           width: 14rem;
           height: 18.5rem;
-          transform: translateY(22rem);
+          transform: translateY(27rem);
+          
        }
        .desc-container{
          width: 100%;
@@ -515,7 +516,7 @@
        }
       }
       .img-list{
-        transform: translateY(-11rem);
+        transform: translateY(-5.5rem);
         
         img.satu{
 
@@ -548,7 +549,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 1rem;
-        transform: translateY(-22rem);
+        transform: translateY(-20rem);
         span.desc-1{
          font-size: 1.2rem;
         }

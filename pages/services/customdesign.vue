@@ -505,7 +505,7 @@
  }
  @media screen and (max-width: 1024px) {
     .slide-one {
-      height: 48vh;
+      height: 55vh;
       width: 100%;
       img.bg-content{
         object-fit: cover;
@@ -516,13 +516,15 @@
         justify-content: center;
         align-items: center;
         span.desc-1{
+         text-align: center;
+         line-height: 3rem;
          font-size: 68px;
          transform: translateY(-2rem);
         }
       }
     }
     .slide-two {
-      height: 100%;
+      width: 100%;
       flex-direction: column;
       .img-container{
         flex-direction: column;
@@ -532,17 +534,19 @@
         img.bg-content{
           width: 14rem;
           height: 18.5rem;
-          transform: translateY(22rem);
+          transform: translateY(30rem);
        }
        .desc-container{
          width: 100%;
          justify-content: flex-start;
          align-items: flex-start;
          margin: 0;
-        transform: translateY(-14rem);
+         transform: translateY(-14rem);
+         
          span.desc{
            font-size: 25px;
-           line-height: 0;
+           line-height: 1;
+           
          }
          span.desc-1{
            line-height: 1.3rem;
@@ -551,7 +555,7 @@
        }
       }
       .img-list{
-        transform: translateY(-11rem);
+        transform: translateY(-3rem);
         
         img.satu{
 
@@ -571,7 +575,7 @@
           width: 100%;
           justify-content: flex-start;
           align-items: center;
-          transform: translateY(26rem);
+          transform: translateY(5rem);
           img.bg-content{
             height: 15rem;
             width: 15rem;
@@ -581,10 +585,11 @@
         }
       .desc-container{
         width: 100%;
+        height: 0;
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 1rem;
-        transform: translateY(-22rem);
+        transform: translateY(-40rem);
         span.desc-1{
          font-size: 1.2rem;
         }
@@ -599,12 +604,13 @@
     }
     .slide-four{
       padding-bottom: 2.5rem;
+      height: 2vh;
       .img-container{
         justify-content: flex-start;
         align-items: center;
         width: 100%;
         margin-left: 2rem;
-        transform: translateY(1rem);
+        transform: translateY(-7rem);
         img.satu{
           width: 5rem;
           height: 5rem;

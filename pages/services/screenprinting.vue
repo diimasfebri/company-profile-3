@@ -470,7 +470,7 @@
  }
  @media screen and (max-width: 1024px) {
     .slide-one {
-      height: 48vh;
+      height: 65vh;
       width: 100%;
       img.bg-content{
         object-fit: cover;
@@ -480,6 +480,8 @@
         height: 100%;
         justify-content: center;
         align-items: center;
+        text-align: center;
+        line-height: 3rem;
         span.desc-1{
          font-size: 68px;
          transform: translateY(-2rem);
@@ -497,7 +499,7 @@
         img.bg-content{
           width: 14rem;
           height: 18.5rem;
-          transform: translateY(22rem);
+          transform: translateY(30rem);
        }
        .desc-container{
          width: 100%;
@@ -516,7 +518,7 @@
        }
       }
       .img-list{
-        transform: translateY(-11rem);
+        transform: translateY(-2rem);
         
         img.satu{
 
@@ -536,7 +538,7 @@
           width: 100%;
           justify-content: flex-start;
           align-items: center;
-          transform: translateY(26rem);
+          transform: translateY(15rem);
           img.bg-content{
             height: 15rem;
             width: 15rem;
@@ -549,7 +551,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         margin-left: 1rem;
-        transform: translateY(-22rem);
+        transform: translateY(-20rem);
         span.desc-1{
          font-size: 1.2rem;
         }
@@ -564,12 +566,13 @@
     }
     .slide-four{
       padding-bottom: 2.5rem;
+      height: 1vh;
       .img-container{
         justify-content: flex-start;
         align-items: center;
         width: 100%;
         margin-left: 2rem;
-        transform: translateY(1rem);
+        transform: translateY(-6rem);
         img.satu{
           width: 5rem;
           height: 5rem;
