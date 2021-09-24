@@ -308,6 +308,7 @@
         object-fit: cover;
       }
     }
+<<<<<<< HEAD
   }
   .slide-three {
     position: relative;
@@ -317,6 +318,17 @@
     flex-direction: row;
     background: #f4f4f4;
     .img-container {
+=======
+ }
+ .slide-three{
+  position: relative;
+  width: 100vw;
+  height: 120vh;
+  display: flex;
+  flex-direction: row;
+  background: #f0eee3;
+  .img-container{
+>>>>>>> 2cbe5b183d9e5746ee17cf88894a4c5a014db224
       position: relative;
       width: 50%;
       height: 100%;
@@ -374,6 +386,7 @@
         transform: translateX(4rem);
       }
     }
+<<<<<<< HEAD
   }
   .slide-four {
     position: relative;
@@ -384,6 +397,18 @@
     align-items: center;
     background-color: #f4f4f4;
     .img-container {
+=======
+ }
+ .slide-four{
+   position: relative;
+   width: 100%;
+   justify-content: flex-start;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   background-color: #f4f4f4;
+ .img-container{
+>>>>>>> 2cbe5b183d9e5746ee17cf88894a4c5a014db224
       position: relative;
       display: flex;
       flex-direction: row;
@@ -524,11 +549,12 @@
       .img-container {
         flex-direction: column;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: flex-start;
         margin: 0;
         img.bg-content {
           width: 14rem;
           height: 18.5rem;
+<<<<<<< HEAD
         }
         .desc-container {
           justify-content: flex-start;
@@ -554,32 +580,56 @@
           font-size: 0.7rem;
           font-weight: 900;
           transform: translateY(0);
+=======
+          transform: translateY(22rem);
+       }
+       .desc-container{
+         width: 100%;
+         justify-content: flex-start;
+         align-items: flex-start;
+         margin: 0;
+        transform: translateY(-14rem);
+         span.desc{
+           font-size: 25px;
+           line-height: 0;
+         }
+         span.desc-1{
+           line-height: 1.3rem;
+           font-size: 18px;
+         }
+       }
+      }
+      .img-list{
+        transform: translateY(-11rem);
+        
+        img.satu{
+
+          width: 10rem;
+          height: 5rem;
+>>>>>>> 2cbe5b183d9e5746ee17cf88894a4c5a014db224
         }
-        .menu-list {
-          height: 100%;
-          width: 100%;
-          .menu-item {
-            width: 100%;
-            margin-bottom: 0.5rem;
-            span.txt {
-              align-items: flex-start;
-              font-size: 2rem;
-              font-weight: 900;
-              line-height: 0;
-            }
-          }
+        img.dua{
+          width: 3rem;
+          height: 5rem;
         }
       }
     }
+<<<<<<< HEAD
     .slide-four {
       width: 100%;
       margin: 0;
       .content-container {
         .step-list {
+=======
+    .slide-three {
+      width: 100%;
+      flex-direction: column;
+        .img-container{
+>>>>>>> 2cbe5b183d9e5746ee17cf88894a4c5a014db224
           width: 100%;
-          flex-direction: column;
           justify-content: flex-start;
           align-items: center;
+<<<<<<< HEAD
           .step {
             width: 100%;
             .img {
@@ -635,6 +685,49 @@
         }
         .button-switch {
           margin: 1.5rem 0 4rem 0;
+=======
+          transform: translateY(26rem);
+          img.bg-content{
+            height: 15rem;
+            width: 15rem;
+            margin-left: 1rem;
+            margin-right: 1rem;
+          }
+        }
+      .desc-container{
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 1rem;
+        transform: translateY(-22rem);
+        span.desc-1{
+         font-size: 1.2rem;
+        }
+        .auth{
+          justify-content: center;
+          transform: translateY(-1rem);
+        }
+        span.desc-3{
+          transform: translateX(0);
+        }
+      }
+    }
+    .slide-four{
+      padding-bottom: 2.5rem;
+      .img-container{
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-left: 2rem;
+        transform: translateY(1rem);
+        img.satu{
+          width: 5rem;
+          height: 5rem;
+        }
+        img.dua{
+          width: 8rem;
+          height: 5rem;
+>>>>>>> 2cbe5b183d9e5746ee17cf88894a4c5a014db224
         }
       }
     }
