@@ -27,7 +27,7 @@
     <img class="produk" src="https://images.unsplash.com/photo-1522775417749-29284fb89f43?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dmludGFnZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"> 
     </span>
   </div> 
-  </div>
+    </div>
   <div class="slide-two">
     <div class="desc-container">
         <span class="desc">YOU ARE IN GOOD HANDS</span>
@@ -70,7 +70,7 @@
               </div>
             </div>
           </div>
-      </div>
+    </div>
 </div>
 </template>
 
@@ -87,7 +87,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   overflow: hidden;
-.slide-one{
+ .slide-one{
   position: relative;
   width: 100vw;
   height: 180vh;
@@ -217,7 +217,7 @@
   }
   
  
-}
+  }
  .slide-two{
    position: relative;
    width: 100vw;
@@ -271,9 +271,8 @@
       }
     }
           }
-    }
- 
-.slide-three{
+  }
+ .slide-three{
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -344,7 +343,7 @@
     }
     }
   }
-   @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1024px) {
     .slide-one {
       height: 120vh;
       width: 100%;
@@ -383,15 +382,17 @@
                 img.produk{
                   opacity: 1;
                   margin: 0;
-                  width: 4rem;
-                  height: 6rem;
+                  width: 100%;
+                  height: 100%;
+                  margin: 0;
+                  left: 0;
                 }
                 &.two{
                   img.produk{
-                    opacity: 1;
+                    opacity: 1
                   }
                 }
-                &.one,.three,.four,.five {
+                &.one, &.three, &.four, &.five {
                   img.produk{
                     opacity: 0;
                     display: none;
@@ -470,6 +471,6 @@
        }
      }
    }
- }        
+  }        
 }
 </style>
