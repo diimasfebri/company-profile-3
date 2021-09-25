@@ -385,7 +385,7 @@
   }
   @media screen and (max-width: 1024px) {
     .slide-one {
-      height: 120vh;
+      height: 100vh;
       width: 100%;
       align-items: center;
       padding: 5rem 2rem 3rem 0;
@@ -420,12 +420,7 @@
                 line-height: 0;
                 margin-bottom: 0.2rem;
                 img.produk{
-                  opacity: 1;
-                  margin: 0;
-                  width: 100%;
-                  height: 100%;
-                  margin: 0;
-                  left: 0;
+                  
                 }
                 &.two{
                   img.produk{
@@ -443,7 +438,7 @@
       
   }
  .slide-two{
-   height: 55vh;
+   height: 50vh;
    width: 100%;
    align-items: center;
    padding: 0;
