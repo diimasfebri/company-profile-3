@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container"  @scroll="scrollHandler">
     <div class="slide-one">
       <img
         class="bg-content"
@@ -743,7 +743,144 @@ export default {
       }
     }
   }
+ @media screen and (max-width: 1024px) {
+   .slide-one{
+     position: relative;
+     width: 100%;
+     img.bg.content{
+      width: 100%;
+      height: 30vh;
+      object-fit: cover;
+     }
+     .desc-container{
+       width: 100%;
+       transform: translateY(-8rem);
+       span.desc{
+         font-size: 2rem;
+       }
+       span.desc-1{
+         font-size: 1rem;
+       }
+     }
+   }
+   .slide-two{
+     width: 100%;
+     flex-direction: column;
+     span.desc{
 
+     }
+     .button-list{
+       position: relative;
+       flex-direction: column;
+       align-items: center;
+       .button{
+         width:335px;
+         height: 100px;
+         margin-bottom: 1rem;
+       .circle{
+         position: relative;
+         align-items: center;
+         .circle-mini{
+
+         }
+       }
+       }
+       span.txt{
+
+       }
+     }
+     .button-list-sec{
+       width: 100%;
+       position: relative;
+       flex-direction: column;
+       align-items: center;
+       span.desc{
+         text-align: center;
+         font-size: 1rem;
+       }
+       .desc-container{
+         flex-direction: column;
+         .button {
+           justify-content: flex-start;
+           align-items: center;
+           position: relative;
+           .circle{
+             position: relative;
+             flex-direction: column;
+             img{
+               flex-direction: column;
+             }
+             .bg{
+               flex-direction: column;
+             }
+           }
+           span.txt {
+             
+           }
+         }
+       }
+     }
+     .product{
+       span.desc{
+
+       }
+       .card-list{
+         flex-direction: column;
+         .card{
+           flex-direction: column;
+         }
+       }
+     }
+   }
+   .slide-three{
+     span.desc{
+
+     }
+     .form{
+       flex-direction: column;
+       input {
+         width: 90%;
+         height: 45px;
+       }
+     }
+     .upload-container{
+       width: 90%;
+       height: 45px;
+       justify-content: center;
+       span.upload{
+         text-align: center;
+       }
+       .button{
+         margin-left: 0.5rem;
+         span.unggah{
+         }
+       }
+     }
+     .buttongede{
+       width: 90%;
+       height: 80px;
+       span.kumpul{
+
+       }
+     }
+     span.desc-2{
+       width: 100%;
+       font-size: 2rem;
+     }
+   }
+   .slide-four{
+     position: relative;
+     width: 100%;
+     .bg{
+       .line{
+         img {
+           height: 4rem;
+           padding: 0;
+         }
+       }
+     }
+   }
+ }
 }
 
 </style>

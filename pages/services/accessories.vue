@@ -1,5 +1,5 @@
 <template>
-  <div class="body-container">
+  <div class="body-container"  @scroll="scrollHandler">
     <div class="slide-one">
       <img
         class="bg-content"

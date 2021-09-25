@@ -19,7 +19,7 @@
     <div class="img-container">
         <img class="bg-content" src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80">
      </div>
-  <div class="desc-container ">
+    <div class="desc-container " @scroll="scrollHand">
     <span class="desc target">01</span>
     <span class="desc-1">SHARE YOUR LOGO AND BRAND ASSETS</span>
     <span class="desc-2">Our design team will elevate your brand by using your company logos, brand assets and color palette.</span>
@@ -29,7 +29,7 @@
       <div class="img-container">
           <img class= "bg-content" src="https://images.unsplash.com/photo-1504309092620-4d0ec726efa4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
     </div>
-    <div class="desc-container ">
+    <div class="desc-container " @scroll="scrollHand">
         <span class="desc target">02</span>
         <span class="desc-1">WE'LL DESIGN YOU A CUSTOM CATALOG</span>
         <span class="desc-2">Collaborate with our world-class design, production and merchandising teams to create lifestyle driven apparel with timeless design.</span>
@@ -39,14 +39,14 @@
     <div class="img-container">
     <img class="bg-content" src="https://images.unsplash.com/photo-1530543787849-128d94430c6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
     </div>
-  <div class="desc-container">
+    <div class="desc-container" @scroll="scrollHand">
     <span class="desc target">03</span>
     <span class="desc-1">ORDER AND RECEIVE DAMN GOOD APPAREL</span>
     <span class="desc-2">We’ll produce and ship your brand new collection in as quickly as 21 days with the highest quality printing, garments and material.</span>
    </div> 
   </div>
   <div class="slide-six">
-   <div class="desc-container">
+   <div class="desc-container" @scroll="scrollHand">
       <span class="desc">WE'RE HERE FOR YOU</span>
       <span class="desc-1">From providing imagery to use on your social channels to giving advice on how to merchandise your apparel, we’re here to support you.</span>
       <img src="/CP.png" alt="">
@@ -126,6 +126,19 @@ export default {
         this.scrollTargets.splice(0, 1)
       }
       this.scrollTop = top
+    },
+    scrollHand(e) {
+      const top = e.target.scrollTop
+      if (this.scrollTargett.length && top >= this.scrollTargett[0].distance) {
+        // play anim
+        gsap.to(this.scrollTargett[0].el, {
+          opacity: 1,
+          duration: 1,
+          y:0,
+        })
+        this.scrollTargett.splice(0, 1)
+      }
+      console.log('test')
     },
     },
 }
@@ -676,6 +689,7 @@ export default {
       }
     }
     .slide-two{
+      
       height: 60vh;
       width: 100%;
       img.bg-content{
@@ -696,6 +710,7 @@ export default {
       }
     }
     .slide-three{
+      
       width: 100%;
       height: 100vh;
       flex-direction: row;
@@ -703,8 +718,10 @@ export default {
           justify-content: flex-start;
           width: 100%;
           height: 100vh;
+          margin-top: 18rem;
           transform: translateY(-10rem);
-          span.desc-target{
+          span.desc{
+            opacity: 1;
   
           }
           span.desc-1{
@@ -737,12 +754,14 @@ export default {
         width: 100%;
         margin-top: 0.5rem;
         transform: translateX(-5rem);
-          span.desc-target{
+          span.desc{
           width: 100%;
           margin-top: 0.5rem;
+            opacity: 1;
           }
           span.desc-1{
             width: 100%;
+
           }
           span.desc-2{
             width: 100%;
@@ -766,9 +785,10 @@ export default {
      .desc-container{
         justify-content: flex-start;
         width: 100%;
-          span.desc-target{
+          span.desc{
           width: 100%;
           margin-top: 0.5rem;
+            opacity: 1;
           }
           span.desc-1{
             width: 100%;
@@ -789,45 +809,60 @@ export default {
       }
     }
     .slide-six{
-      position: relative;
-      align-items: center;
+     height: 80vh;
       width: 100%;
-      .desc-container{
-        margin-top: 6rem;
-        span.desc{
-          text-align: center;
-        }
-        span.desc-1{
+     .desc-container{
+       width: 100%;
+       height: 100%;
+       span.desc{
+         text-align: center;
+         
+       }
+       span.desc-1{
+         width: 80%;
 
-        }
-        img{
-          position: absolute;
-          justify-content: center;
-        }
-        .button-hire{
-          .img-container{
-            img.flash{
+       }
+       img{
+         width: 12rem;
+        transform:translateY(-1rem);
+         height: 5rem;
+       }
+       .button-hire{
+         opacity: 0;
 
-            }
-          }
-        }
-      }
+       }
+     }
     }
     .slide-seven{
+      flex-direction: column;
+      height: 120vh;
+      width:100% ;
+      margin: 0;
+      img{
+        object-fit: cover;
+
+        width: 5rem;
+        height: 5rem;
+        margin: 0;
+        transform:translateY(25rem);
+      }
       .desc-container{
+        width: 80%;
+        transform: translateY(-12rem);
         span.desc{
           
         }
         span.desc-1{
-
+          width: 100%;
+          font-size: 30px;
         }
         .auth{
           span.desc-2{
-
+            
           }
         }
         span.desc-3{
-
+          
         }
 
       }
@@ -836,6 +871,35 @@ export default {
         height: 335px;
       }
     }
+    .slide-eight{
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      .left{
+        width: 100%;
+        img{
+          width: 100%;
+
+        }
+        .filter-black{
+          width: 100%;
+          
+        }
+      }
+        .right{
+          width: 100%;
+          img{
+            width: 100%;
+          }
+          .filter{
+            width: 100%;
+          }
+          span.desc{
+          text-align: center;
+          }
+        }
+      }
+    }
   }
-}
+
 </style>
