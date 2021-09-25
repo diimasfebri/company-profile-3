@@ -181,27 +181,33 @@
       }
     },
     mounted() {
-      const targets = document.querySelectorAll('.target')
-      this.scrollTargets = [...targets].map((a) => ({
-        distance: a.getBoundingClientRect().top - window.innerHeight,
-        el: a,
-      }))
-      this.scrollTargets.sort((a, b) => a.distance - b.distance)
+    const targets = document.querySelectorAll('.target')
+    this.scrollTargets = [...targets].map((a) => ({
+      distance: a.getBoundingClientRect().top - window.innerHeight,
+      el: a,
+    }))
+    this.scrollTargets.sort((a, b) => a.distance - b.distance)
     },
     methods: {
     scrollHandler(e) {
+      console.log(e)
       const top = e.target.scrollTop
+      if (top > this.scrollTop) {
+        this.$root.$emit('scroll-top')
+      } else {
+        this.$root.$emit('scroll-down')
+      }
       if (this.scrollTargets.length && top >= this.scrollTargets[0].distance) {
         // play anim
         gsap.to(this.scrollTargets[0].el.children, {
           opacity: 1,
           duration: 2,
-          stagger: 0.3,
-          y:0,
+          stagger: 0.5,
+          y: 0,
         })
         this.scrollTargets.splice(0, 1)
       }
-      console.log("test")
+      this.scrollTop = top
     },
     },
   }

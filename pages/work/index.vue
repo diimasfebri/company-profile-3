@@ -264,20 +264,53 @@
 </template>
 
 <script>
+import gsap from 'gsap'
 export default {
   data() {
     return {
       activeIndex: 0,
+      scrollTargets: [],
+
 }
   },
-   methods: {
-       slideHandler(direction) {
+
+  mounted() {
+    const targets = document.querySelectorAll('.target')
+    this.scrollTargets = [...targets].map((a) => ({
+      distance: a.getBoundingClientRect().top - window.innerHeight,
+      el: a,
+    }))
+    this.scrollTargets.sort((a, b) => a.distance - b.distance)
+  },
+
+  methods: {
+    slideHandler(direction) {
       if (direction === 'prev'){
         this.activeIndex = this.activeIndex === 0 ? 0 : this.activeIndex - 1 
       }
       else{
         this.activeIndex = this.activeIndex === 1 ? 1 : this.activeIndex + 1
       }
+    },
+    scrollHandler(e) {
+      console.log(e)
+      const top = e.target.scrollTop
+      if (top > this.scrollTop) {
+        this.$root.$emit('scroll-top')
+      } else {
+        this.$root.$emit('scroll-down')
+      }
+      if (this.scrollTargets.length && top >= this.scrollTargets[0].distance) {
+        // play anim
+        gsap.to(this.scrollTargets[0].el.children, {
+          opacity: 1,
+          duration: 2,
+          stagger: 0.5,
+          y: 0,
+        })
+        this.scrollTargets.splice(0, 1)
+      }
+      this.scrollTop = top
     },
    }
 }
@@ -932,15 +965,12 @@ export default {
        .bg{
          .line{
            img{
-
            }
-
          }
        }
        .desc-container {
          .desc{
            span{
-
            }
          }
        }
@@ -954,11 +984,9 @@ export default {
        }
        .content-container{
          span.desc{
-
          }
          .center-img {
            img{
-
            }
          }
          .bottom{

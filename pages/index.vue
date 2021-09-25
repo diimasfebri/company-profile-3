@@ -439,7 +439,6 @@ export default {
         this.scrollTargets.splice(0, 1)
       }
       this.scrollTop = top
-      console.log('test')
     },
     slideHandler(direction) {
       if (direction === 'prev') {

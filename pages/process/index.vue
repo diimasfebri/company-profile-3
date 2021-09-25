@@ -100,31 +100,34 @@ export default {
   },
   mounted() {
     const targets = document.querySelectorAll('.target')
-    this.scrollTargett = [...targets].map((a) => ({
+    this.scrollTargets = [...targets].map((a) => ({
       distance: a.getBoundingClientRect().top - window.innerHeight,
       el: a,
     }))
-    this.scrollTargett.sort((a, b) => a.distance - b.distance)
+    this.scrollTargets.sort((a, b) => a.distance - b.distance)
   },
   methods: {
-    scrollHand(e) {
+    scrollHandler(e) {
+      console.log(e)
       const top = e.target.scrollTop
-      if (this.scrollTargett.length && top >= this.scrollTargett[0].distance) {
-        // play anim
-        gsap.to(this.scrollTargett[0].el, {
-          opacity: 1,
-          duration: 1,
-          y:0,
-        })
-        this.scrollTargett.splice(0, 1)
+      if (top > this.scrollTop) {
+        this.$root.$emit('scroll-top')
+      } else {
+        this.$root.$emit('scroll-down')
       }
-      console.log('test')
+      if (this.scrollTargets.length && top >= this.scrollTargets[0].distance) {
+        // play anim
+        gsap.to(this.scrollTargets[0].el.children, {
+          opacity: 1,
+          duration: 2,
+          stagger: 0.5,
+          y: 0,
+        })
+        this.scrollTargets.splice(0, 1)
+      }
+      this.scrollTop = top
     },
-
-   
-  },
-
-
+    },
 }
 </script>
 
@@ -649,40 +652,46 @@ export default {
   @media screen and (max-width: 1024px) {
     .slide-one{
       width: 100%;
-      height: 100vh;
+      height: 80vh;
       img.bg-content{
         width: 100%;
+        object-fit: cover;
       }
       .desc-container{
-        width: 100%;
+        width: 80%;
         margin-left: 1rem;
         height: 90vh;
+        margin-top: 0;
         span.desc{
           
-        }
+          }
         span.desc-1{
+          line-height: 1;
           
         }
         span.desc-2{
-
+          font-size: 15px;
+          margin-top: 1rem;
         }
       }
     }
     .slide-two{
-      height: 120vh;
+      height: 60vh;
       width: 100%;
       img.bg-content{
         width: 100%;
         height: 100vh;
       }
       .button-container{
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-left: 1rem;
         span.desc{
 
         }
         span.desc-1{
-          width: 100%;
+          width: 90vw;
+          line-height: 1.8;
+
         }
       }
     }

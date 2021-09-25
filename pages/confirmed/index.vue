@@ -17,6 +17,48 @@
 </div>
 </template>
 
+<script>
+ import gsap from 'gsap'
+
+  export default {
+    data() {
+      return {
+        scrollTargets: [],
+      }
+    },
+    mounted() {
+    const targets = document.querySelectorAll('.target')
+    this.scrollTargets = [...targets].map((a) => ({
+      distance: a.getBoundingClientRect().top - window.innerHeight,
+      el: a,
+    }))
+    this.scrollTargets.sort((a, b) => a.distance - b.distance)
+  },
+    methods: {
+    scrollHandler(e) {
+      console.log(e)
+      const top = e.target.scrollTop
+      if (top > this.scrollTop) {
+        this.$root.$emit('scroll-top')
+      } else {
+        this.$root.$emit('scroll-down')
+      }
+      if (this.scrollTargets.length && top >= this.scrollTargets[0].distance) {
+        // play anim
+        gsap.to(this.scrollTargets[0].el.children, {
+          opacity: 1,
+          duration: 2,
+          stagger: 0.5,
+          y: 0,
+        })
+        this.scrollTargets.splice(0, 1)
+      }
+      this.scrollTop = top
+    },
+    },
+  }
+ </script>
+
 <style lang="scss" scoped>
 .body-container{
   position: relative;
@@ -121,4 +163,40 @@
     }
 }
  } 
+@media screen and (max-width: 1024px){
+  .body-container{
+    
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  .slide-one{
+    height: 100vh;
+    .massage-button{
+      margin-top: 4rem;
+      width: 13rem;
+      height: 5rem;
+    }
+  .desc-container{
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    span.desc-1{
+      width: 100%;
+      margin: 1.6rem 0;
+      font-size: 2.8rem;
+      text-align: center;
+      line-height: 1;
+    }
+    span.desc-2{
+      width: 100%;
+    }
+  }
+  }
+}
+}
+  
+
+
 </style>
