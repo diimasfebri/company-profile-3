@@ -1,5 +1,5 @@
 <template>
-<div class="body-container"> 
+<div class="body-container"  @scroll="scrollHandler"> 
   <div class="slide-one">
   <div class="desc-container">
     <span class="desc-1"> D*MN GOOD QUALITY </span>

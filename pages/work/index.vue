@@ -1,5 +1,5 @@
 <template>
-  <div class="body-container">
+  <div class="body-container"  @scroll="scrollHandler">
     <div class="slide-one">
       <div class="bg">
         <div class="line" aria-hidden="true">
